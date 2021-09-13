@@ -18,7 +18,6 @@ Documento* initDocumento(char* nomeDocumento);
 * Pós-condições: Ambos os documentos são alterados, registrando a relação entre eles;
 */
 void adicionaLinkOut(Documento *docAtual, Documento *docOut);
-
 /* Retorna o início da lista de links que saem do documento
 * Entradas: documento - ponteiro para o documento de que se deseja saber os links out
 * Saída: ponteiro para a lista de links saindo do documento;
@@ -46,6 +45,5 @@ char* retornaNomeDocumento(Documento *documento);
 * Pós-condições: A memória utilizada pelo documento é alocada e as listas destruidas sem destruir os documentos dentro delas;
 */
 void destroiDocumento(Documento *documento);
-
 
 #endif

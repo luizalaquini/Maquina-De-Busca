@@ -28,6 +28,27 @@ ListaDocumentos* leIndex(char* nomePasta, int *numDocs){
     return listaDocs;
 }
 
+/*RBT* leStopWords(RBT* arvore, char* nomePasta, int *numDocs){
+    //Cria arquivo
+    char caminhoSW[BUFFER_LEITURA];
+    strcpy(caminhoSW, nomePasta);
+    strcat(caminhoSW, "/stopwords.txt");
+    FILE *stopWords = fopen(caminhoSW, "r");
+
+    //Lê as Stop Words e cria a árvore rubro negra
+    
+    char leitura[BUFFER_LEITURA];
+    while(fscanf(index, "%s\n", leitura) == 1){
+        printf("%s\n", leitura);
+        
+        arvore = RBT_insert(arvore, leitura, stopWords);
+    }
+    
+    fclose(stopWords);
+
+    return arvore;
+}*/
+
 int main(int argc, char** argv){
     //Verifica se passou o nome da pasta
     if(argc != 2){
@@ -35,7 +56,6 @@ int main(int argc, char** argv){
         return 1;
     }
     char* nomePasta = argv[1];
-
 
     //Index
     int numDocs = 0;
@@ -48,8 +68,6 @@ int main(int argc, char** argv){
 
     //Pages
     RBT* rbtWorld = NULL;
-
-
 
 
     //Libera as estruturas

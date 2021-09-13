@@ -1,12 +1,12 @@
-#define RED 1
-#define BLACK 0
-
 #include <stdlib.h>
 #include <string.h>
 
 #include "arvore_rubro_negra.h"
 #include "documento.h"
 #include "listadocumentos.h"
+
+#define RED 1
+#define BLACK 0
 
 struct node {
     char* key;
