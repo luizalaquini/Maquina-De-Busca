@@ -40,20 +40,38 @@ ListaDocumentos* retornaListaLinksIn(Documento *documento);
 */
 char* retornaNomeDocumento(Documento *documento);
 
+/* 
+* Entradas: documento - ponteiro para o documento 
+* Saída: 
+* Pós-condições: -;
+*/
 double retornaPageRank(Documento *documento);
 
+/* 
+* Entradas: documento - ponteiro para o documento
+* Saída: 
+* Pós-condições: -;
+*/
 double retornaPageRankAnterior(Documento *documento);
+
+/* Compara o nome do documento
+* Entradas: 
+* Saída: Um inteiro indicando se as strings são iguais ou não;
+* Pós-condições: -;
+*/
+int comparaDocumento(const void* a, const void* b);
+
+
+
+void setPageRankAnterior(Documento *documento, double pagerank);
+
+void setPageRank(Documento *documento, double pagerank);
 
 /* Libera a memória utilizada pelo documento e seu nome
 * Entradas: documento - ponteiro para o documento de que se deseja destruir
 * Saída: -;
 * Pós-condições: A memória utilizada pelo documento é alocada e as listas destruidas sem destruir os documentos dentro delas;
 */
-
-void setPageRankAnterior(Documento *documento, double pagerank);
-
-void setPageRank(Documento *documento, double pagerank);
-
 void destroiDocumento(Documento *documento);
 
 #endif

@@ -128,6 +128,12 @@ void imprimeRBT(RBT* h){
 
 }
 
+ListaDocumentos* retornaListaRBT(RBT* h){
+    if(h)
+        return h->listaDoc;
+    return NULL;
+}
+
 void destroiRBT(RBT* h) {
     if(h == NULL){
         return;

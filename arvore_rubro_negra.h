@@ -71,5 +71,6 @@ void imprimeRBT(RBT* h);
 */
 void destroiRBT(RBT* h);
 
+ListaDocumentos* retornaListaRBT(RBT* h);
 
 #endif

@@ -41,7 +41,7 @@ ListaDocumentos* adicionaDocumentoLista(ListaDocumentos *lista, Documento *docum
 * Saída: Um ponteiro para a nova lista de documentos com a interseção
 * Pós-condições: Uma lista de documentos preenchida é criada, sua memória alocada
 */
-ListaDocumentos* intercecaoDuasListas(ListaDocumentos *lista1, ListaDocumentos *lista2);
+ListaDocumentos* intersecaoDuasListas(ListaDocumentos *lista1, ListaDocumentos *lista2);
 
 /* Passa pela lista, retornando o documento buscado
 * Entradas: lista - ponteiro para o início da lista que se deseja buscar o elemento // nome - nome do documento desejado;

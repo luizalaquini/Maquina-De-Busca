@@ -37,14 +37,14 @@ ListaDocumentos* adicionaDocumentoLista(ListaDocumentos *lista, Documento *docum
 }
 
 
-ListaDocumentos* intercecaoDuasListas(ListaDocumentos *lista1, ListaDocumentos *lista2){
+ListaDocumentos* intersecaoDuasListas(ListaDocumentos *lista1, ListaDocumentos *lista2){
     ListaDocumentos *intersecao = initListaDocumentos();
 
     //Para cada elemento da lista1, verifica se tem um elemento igual na lista dois
     while(lista1 != NULL){
         Documento *docEmComum = buscaDocumentoPorNome(lista2, retornaNomeDocumento(lista1->info));
         if(docEmComum != NULL){
-            adicionaDocumentoLista(intersecao, docEmComum);
+            intersecao = adicionaDocumentoLista(intersecao, docEmComum);
         }
 
         lista1 = lista1->prox;
@@ -55,6 +55,7 @@ ListaDocumentos* intercecaoDuasListas(ListaDocumentos *lista1, ListaDocumentos *
 
 
 Documento* buscaDocumentoPorNome(ListaDocumentos *lista, char *nome){
+    if(lista == NULL) return NULL;
     ListaDocumentos *busca = lista;
     while(1){
         if(busca == NULL){

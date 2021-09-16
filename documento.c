@@ -36,6 +36,16 @@ double retornaPageRankAnterior(Documento *documento){
     return documento->pageRankAnterior;
 }
 
+int comparaDocumento(const void* a, const void* b){
+    Documento* a1 = *(Documento **)a;
+    Documento* a2 = *(Documento **)b;
+    //Compara PageRanks
+    if(a1->pageRank > a2->pageRank) return -1;
+    if(a1->pageRank < a2->pageRank) return 1;
+    
+    return strcmp(retornaNomeDocumento(a1), retornaNomeDocumento(a2));
+}
+
 void adicionaLinkOut(Documento *docAtual, Documento *docOut){
     //Adiciona docOut na lista de linksOut do docAtual
     docAtual->out = adicionaDocumentoLista(docAtual->out, docOut);

@@ -73,9 +73,78 @@ void calculaPageRank(ListaDocumentos *todosDocumentos, int numDocumentos){
     }
 }
 
+Documento** procuraDocumentos(char* args, ListaDocumentos *todosDocumentos, RBT *rbtWords){
+    char s[2] = " ";
+    char* token = strtok(args, s);
 
-///////////////////////Funções de testes
-///////////////////////
+    ListaDocumentos *intersecaoDocumentos;
+    if(token != NULL){
+        //Busca na árvore a lista de documentos
+        intersecaoDocumentos = retornaListaRBT(RBT_search(rbtWords, token));
+        intersecaoDocumentos = intersecaoDuasListas(intersecaoDocumentos, intersecaoDocumentos);
+    }    
+
+    ListaDocumentos *aux = NULL;
+    token = strtok(NULL, s);
+    while (token != NULL) {
+        //printf("%s\n", token);
+        //Busca na árvore a lista de documentos
+        ListaDocumentos *documentosTermo = retornaListaRBT(RBT_search(rbtWords, token));
+
+        //compara com a lista de documentos que contém todos os termos até agora
+        //Passa por todos os elementos em intersecao, se um documento não estiver presente em documentosTermo, removemos ele de interseção
+        aux = intersecaoDuasListas(intersecaoDocumentos, documentosTermo);
+        destroiListaDocumentos(intersecaoDocumentos);
+        intersecaoDocumentos = aux;        
+    
+        
+        token = strtok(NULL, s);
+    }
+
+    //Passar a lista para um vetor, para ordenar a saída
+    int i = 0, numElementos = numDocumentosLista(intersecaoDocumentos);
+    Documento** vet = (Documento**)malloc(sizeof(Documento*)*(numElementos+1));//LIBERAR
+    ListaDocumentos *p = intersecaoDocumentos;
+
+    for(p = intersecaoDocumentos; p != NULL; p = retornaProximaCelulaLista(p)){
+       vet[i] = retornaElementoDaLista(p);
+       i++;
+    }
+    vet[i]=NULL;
+
+    qsort(vet, numElementos, sizeof(Documento*), comparaDocumento);
+    destroiListaDocumentos(intersecaoDocumentos);
+
+    return vet; 
+}
+
+/*
+
+search:abacate ruim
+pages:c.txt b.txt
+pr:0.74067344 0.09541328
+
+tar -xzvf 2004209608.tar.gz
+make
+./trab3 /tmp/data/
+
+*/
+
+
+void imprimeResultado(Documento **resultado, char *args){
+    int i=0;
+    printf("\npages:");
+    for(i=0; resultado[i] != NULL; i++){
+        printf("%s ", retornaNomeDocumento(resultado[i]));
+    }
+    printf("\npr:");
+    for(i=0; resultado[i] != NULL; i++){
+        printf("%lf ", retornaPageRank(resultado[i]));
+    }
+    printf("\n");
+}
+
+///////////////////////Funções de testes///////////////////////
 void ImprimeLista(ListaDocumentos *lista){
     printf("Imprimindo lista:\n");
     while(lista != NULL){
@@ -121,27 +190,36 @@ int main(int argc, char** argv){
     RBT* rbtStop = NULL;
     rbtStop = leStopWords(rbtStop, nomePasta);
     //Pages
-    RBT* rbtWord = lePaginas(todosDocumentos, rbtStop, nomePasta);
+    RBT* rbtWords = lePaginas(todosDocumentos, rbtStop, nomePasta);
 
     //Cálculo do page rank de todas as páginas (documentos)
     calculaPageRank(todosDocumentos, numDocs);
 
+    char leitura[1000]; //Perguntar pro giovanni tamanho das entradas
+    while(scanf("%[^\n]s\n", leitura) == 1){
+        //Imprime a pesquisa
+        printf("search:%s", leitura);
+        Documento **resultado = procuraDocumentos(leitura, todosDocumentos, rbtWords);
+        //Imprime o resultado dessa busca
+        imprimeResultado(resultado, leitura);
 
+        free(resultado);
+    }
 
     ////////////////////////////
     ///// TESTES ///////////////
 
-    ImprimeLista(todosDocumentos);
+    //ImprimeLista(todosDocumentos);
     /*printf("\n\nSTOP:\n");
     imprimeRBT(rbtStop);
     printf("\n\nWORD:\n");
-    imprimeRBT(rbtWord);*/
+    imprimeRBT(rbtWords);*/
 
 
     //Libera as estruturas
     destroiListaDocumentosEDocumentos(todosDocumentos); 
     destroiRBT(rbtStop);
-    destroiRBT(rbtWord);
+    destroiRBT(rbtWords);
 
     return 0;
 }
