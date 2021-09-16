@@ -3,7 +3,7 @@ all:
 	make executar
 
 compile:
-	gcc *.c -o trab3
+	gcc *.c -o trab3 -g
 
 executar:
-	valgrind ./trab3 teste1
+	valgrind --leak-check=full ./trab3 teste1

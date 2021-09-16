@@ -76,7 +76,7 @@ RBT* RBT_insert(RBT *h, char *key, Documento *doc) {
     }
     else /*cmp == 0*/ { 
         //Adicionar o documento na lista do termo
-        adicionaDocumentoLista(h->listaDoc, doc);
+        h->listaDoc = adicionaDocumentoLista(h->listaDoc, doc);
     }
 
     // Lean left.
@@ -94,24 +94,50 @@ RBT* RBT_insert(RBT *h, char *key, Documento *doc) {
     return h;
 }
 
-ListaDocumentos* RBT_search(RBT *n, char* key) {
+RBT* RBT_search(RBT *n, char* key) {
     while (n != NULL) {
         int cmp;
         cmp = compare(key, n->key);
         if (cmp < 0) n = n->l;
         else if (cmp > 0) n = n->r;
-        else return n->listaDoc;
+        else return n;
     }
     return NULL;
 }
 
+void imprimeRBT(RBT* h){
+    if(h == NULL){
+        return;
+    }
+
+    printf("%s: ", h->key);
+    ListaDocumentos *lista = h->listaDoc;
+    while(lista != NULL){
+        Documento *doc = retornaElementoDaLista(lista);
+        printf("%s ", retornaNomeDocumento(doc)); 
+
+        lista = retornaProximaCelulaLista(lista);
+    }
+    printf("\n");
+
+    if (h->l != NULL) imprimeRBT(h->l);
+    if (h->r != NULL) imprimeRBT(h->r);
+
+    
+
+}
+
 void destroiRBT(RBT* h) {
+    if(h == NULL){
+        return;
+    }
 
     free(h->key);
 
     if (h->l != NULL) destroiRBT(h->l);
     if (h->r != NULL) destroiRBT(h->r);
 
+    destroiListaDocumentos(h->listaDoc);
     free(h);
 }
 
