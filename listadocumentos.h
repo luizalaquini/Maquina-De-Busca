@@ -62,6 +62,9 @@ void destroiListaDocumentos(ListaDocumentos *lista);
 * Saída: -;
 * Pós-condições: A memória ocupada pela lista é liberada. Os documentos que possam estar contidos na lista TAMBÉM são liberados;
 */
+
+int numDocumentosLista(ListaDocumentos *documento);
+
 void destroiListaDocumentosEDocumentos(ListaDocumentos *lista);
 
 #endif

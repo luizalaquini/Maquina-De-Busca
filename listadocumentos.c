@@ -81,6 +81,21 @@ void destroiListaDocumentos(ListaDocumentos *lista){
     }
 }
 
+int numDocumentosLista(ListaDocumentos *documento){
+
+    int count = 0;
+    ListaDocumentos* aux = documento;
+
+    if(aux == NULL) return count;
+    else count++;
+
+    while(aux->prox != NULL){
+        count++;
+        aux = aux->prox;
+    }
+
+    return count;
+}
 
 void destroiListaDocumentosEDocumentos(ListaDocumentos *lista){
     ListaDocumentos *aux = lista;

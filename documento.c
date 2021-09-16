@@ -28,6 +28,14 @@ char* retornaNomeDocumento(Documento *documento){
     return documento->nome;
 }
 
+double retornaPageRank(Documento *documento){
+    return documento->pageRank;
+}
+
+double retornaPageRankAnterior(Documento *documento){
+    return documento->pageRankAnterior;
+}
+
 void adicionaLinkOut(Documento *docAtual, Documento *docOut){
     //Adiciona docOut na lista de linksOut do docAtual
     docAtual->out = adicionaDocumentoLista(docAtual->out, docOut);
@@ -47,6 +55,14 @@ ListaDocumentos* retornaListaLinksIn(Documento *documento){
     if(documento)
         return documento->in;
     return NULL;
+}
+
+void setPageRankAnterior(Documento *documento, double pagerank){
+    documento->pageRankAnterior = pagerank;
+}
+
+void setPageRank(Documento *documento, double pagerank){
+    documento->pageRank = pagerank;
 }
 
 

@@ -5,112 +5,72 @@
 #include "arvore_rubro_negra.h"
 #include "documento.h"
 #include "listadocumentos.h"
+#include "leitura.h"
 
-#define BUFFER_LEITURA 500
+#define alpha 0.85
 
-ListaDocumentos* leIndex(char* nomePasta, int *numDocs){
-    //Abre arquivo
-    char caminhoIndex[BUFFER_LEITURA];
-    strcpy(caminhoIndex, nomePasta);
-    strcat(caminhoIndex, "/index.txt");
-    FILE *index = fopen(caminhoIndex, "r");
 
-    //Lê o index e cria a lista
-    ListaDocumentos *listaDocs = initListaDocumentos();
-    char leitura[BUFFER_LEITURA];
-    *numDocs = 0;
-    while(fscanf(index, "%s\n", leitura) == 1){
-        //printf("%s\n", leitura);
-        Documento *novoDoc = initDocumento(leitura);
-        listaDocs = adicionaDocumentoLista(listaDocs, novoDoc);
-        (*numDocs)++;
-    }
-    
-    fclose(index);
-    return listaDocs;
-}
-
-void leGrafo(ListaDocumentos *todosDocumentos, char *nomePasta){
-    //Abre arquivo
-    char caminhoGrafo[BUFFER_LEITURA];
-    strcpy(caminhoGrafo, nomePasta);
-    strcat(caminhoGrafo, "/graph.txt");
-    FILE *graph = fopen(caminhoGrafo, "r");
-
-    //Lê o grafo 
-    char leitura[BUFFER_LEITURA];
-    int nLinks=0;
-    while(fscanf(graph, "%s", leitura) == 1){
-        //printf("%s ", leitura);
-        //Encontra documento com nome lido
-        Documento *docAtual = buscaDocumentoPorNome(todosDocumentos, leitura);
-        //Lê quantos links de saída tem no documento
-        fscanf(graph, "%d", &nLinks);
-        //printf("%d ", nLinks);
-        //Lê os links de saída
-        for(int i=0; i<nLinks; i++){
-            fscanf(graph, "%s", leitura);
-            //printf("%s ", leitura);
-            Documento *docOut = buscaDocumentoPorNome(todosDocumentos, leitura);
-            adicionaLinkOut(docAtual, docOut);
-        }
-        //printf("\n");
-    }
-    
-    fclose(graph);
-}
-
-RBT* leStopWords(RBT* arvore, char* nomePasta){
-    //Abre arquivo
-    char caminhoSW[BUFFER_LEITURA];
-    strcpy(caminhoSW, nomePasta);
-    strcat(caminhoSW, "/stopwords.txt");
-    FILE *stopWords = fopen(caminhoSW, "r");
-
-    //Lê as Stop Words e cria a árvore rubro negra
-    char leitura[BUFFER_LEITURA];
-    while(fscanf(stopWords, "%s\n", leitura) == 1){
-        //printf("%s\n", leitura);        
-        arvore = RBT_insert(arvore, leitura, NULL);
-    }
-    
-    fclose(stopWords);
-    return arvore;
-}
-
-RBT* lePaginas(ListaDocumentos *todosDocumentos, RBT *stopWords, char *nomePasta){
-    RBT *rbtWorld = NULL;
-    
-    //Abre arquivo
-    char caminhoPaginas[BUFFER_LEITURA];
-    strcpy(caminhoPaginas, nomePasta);
-    strcat(caminhoPaginas, "/pages/");
-
+double calculaMudancaPageRank(ListaDocumentos *todosDocumentos, int numDocumentos){
+    double mudanca = 0;
     while(todosDocumentos != NULL){
-        Documento *documentoAtual = retornaElementoDaLista(todosDocumentos);
+        Documento *doc = retornaElementoDaLista(todosDocumentos);
+        double diferenca = retornaPageRank(doc) - retornaPageRankAnterior(doc);
+        if(diferenca < 0.0) diferenca = -diferenca;
+        mudanca += diferenca;
 
-        char caminhoPagina[BUFFER_LEITURA];
-        strcpy(caminhoPagina, caminhoPaginas);
-        strcat(caminhoPagina, retornaNomeDocumento(documentoAtual));
-        //printf("\n\n%s :\n", caminhoPagina);
-        FILE *page = fopen(caminhoPagina, "r");
-
-        //Lê  
-        char leitura[BUFFER_LEITURA];
-        while(fscanf(page, "%s", leitura) == 1){
-            //printf("%s\n", leitura);
-            //Verifica se a palavra está em stopwords
-            if(RBT_search(stopWords, leitura) == NULL) continue;
-
-            //Se não está, adiciona na árvore World
-            rbtWorld = RBT_insert(rbtWorld, leitura, documentoAtual);
-        }
-        
-        fclose(page);
         todosDocumentos = retornaProximaCelulaLista(todosDocumentos);
     }
+    return mudanca/numDocumentos;
+}
 
-    return rbtWorld;
+//Função para cálculo do pagerank
+void calculaPageRank(ListaDocumentos *todosDocumentos, int numDocumentos){
+    //Inicializa todos os documentos com pagerank 1/n
+    ListaDocumentos *lista = todosDocumentos;
+    while(lista != NULL){
+        Documento *doc = retornaElementoDaLista(lista);
+        setPageRankAnterior(doc, 0);
+        setPageRank(doc, (1.0/numDocumentos));
+        lista = retornaProximaCelulaLista(lista);
+    }
+
+    //Laço computando o pagerank até que o erro seja menor que 
+    while(calculaMudancaPageRank(todosDocumentos, numDocumentos) > 0.000001){
+        //Atualiza o pagerank anterior com o pagerank da última iteração
+        lista = todosDocumentos;
+        while(lista != NULL){
+            Documento *doc = retornaElementoDaLista(lista);
+            setPageRankAnterior(doc, retornaPageRank(doc));
+            lista = retornaProximaCelulaLista(lista);
+        }
+
+        //Calcula os pageranks atuais com base nos pageranks anteriores
+        lista = todosDocumentos;
+        while(lista != NULL){
+            Documento *doc = retornaElementoDaLista(lista);
+            
+            double pageRank = (1 - alpha)/numDocumentos;
+            double influenciaIn = 0;
+            //Calcula influência das páginas que tem link para doc
+            ListaDocumentos *paginasIn = retornaListaLinksIn(doc);
+            while(paginasIn != NULL){
+                influenciaIn += retornaPageRankAnterior(retornaElementoDaLista(paginasIn)) /
+                                numDocumentosLista(retornaListaLinksOut(retornaElementoDaLista(paginasIn)));
+
+                paginasIn = retornaProximaCelulaLista(paginasIn);
+            }
+            pageRank = pageRank + alpha*influenciaIn; 
+
+            //Verifica a condição |Out(i)|=0
+            if(retornaListaLinksOut(doc) == NULL){
+                pageRank += alpha * retornaPageRankAnterior(doc);
+            }
+
+            setPageRank(doc, pageRank); 
+
+            lista = retornaProximaCelulaLista(lista);
+        }
+    }
 }
 
 
@@ -120,7 +80,7 @@ void ImprimeLista(ListaDocumentos *lista){
     printf("Imprimindo lista:\n");
     while(lista != NULL){
         Documento *doc = retornaElementoDaLista(lista);
-        printf("%s IN: ", retornaNomeDocumento(doc));
+        printf("%s PR: %lf IN: ", retornaNomeDocumento(doc), retornaPageRank(doc));
         ListaDocumentos *links = retornaListaLinksIn(doc);
         while(links != NULL){
             Documento *docIn = retornaElementoDaLista(links);
@@ -151,30 +111,37 @@ int main(int argc, char** argv){
     }
     char* nomePasta = argv[1];
 
+    //Realização das leituras de arquivos
     //Index
     int numDocs = 0;
     ListaDocumentos *todosDocumentos = leIndex(nomePasta, &numDocs);
-
     //Graph
     leGrafo(todosDocumentos, nomePasta);
-
     //StopWords
     RBT* rbtStop = NULL;
     rbtStop = leStopWords(rbtStop, nomePasta);
-
     //Pages
-    RBT* rbtWorld = lePaginas(todosDocumentos, rbtStop, nomePasta);
+    RBT* rbtWord = lePaginas(todosDocumentos, rbtStop, nomePasta);
+
+    //Cálculo do page rank de todas as páginas (documentos)
+    calculaPageRank(todosDocumentos, numDocs);
+
+
 
     ////////////////////////////
     ///// TESTES ///////////////
 
     ImprimeLista(todosDocumentos);
+    /*printf("\n\nSTOP:\n");
+    imprimeRBT(rbtStop);
+    printf("\n\nWORD:\n");
+    imprimeRBT(rbtWord);*/
 
 
     //Libera as estruturas
     destroiListaDocumentosEDocumentos(todosDocumentos); 
     destroiRBT(rbtStop);
-    destroiRBT(rbtWorld);
+    destroiRBT(rbtWord);
 
     return 0;
 }
