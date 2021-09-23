@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <time.h>
 
 #include "arvore_rubro_negra.h"
 #include "documento.h"
 #include "listadocumentos.h"
 #include "leitura.h"
-#include <time.h>
+
 
 #define alpha 0.85
 
