@@ -6,6 +6,7 @@
 #include "documento.h"
 #include "listadocumentos.h"
 #include "leitura.h"
+#include <time.h>
 
 #define alpha 0.85
 
@@ -180,21 +181,52 @@ int main(int argc, char** argv){
     }
     char* nomePasta = argv[1];
 
+    clock_t leituraStart = clock();
+ 
     //Realização das leituras de arquivos
     //Index
+    clock_t indexStart = clock();
     int numDocs = 0;
     ListaDocumentos *todosDocumentos = leIndex(nomePasta, &numDocs);
+    clock_t indexEnd = clock();
+    double indexTime = (double)(indexEnd - indexStart) / CLOCKS_PER_SEC;
+    printf("Tempo de leitura de Index: %lf\n", indexTime);
+
     //Graph
+    clock_t graphStart = clock();
     leGrafo(todosDocumentos, nomePasta);
+    clock_t graphEnd = clock();
+    double graphTime = (double)(graphEnd - graphStart) / CLOCKS_PER_SEC;
+    printf("Tempo de leitura de graph: %lf\n", graphTime);
+
     //StopWords
+    clock_t stopStart = clock();
     RBT* rbtStop = NULL;
     rbtStop = leStopWords(rbtStop, nomePasta);
+    clock_t stopEnd = clock();
+    double stopTime = (double)(stopEnd - stopStart) / CLOCKS_PER_SEC;
+    printf("Tempo de leitura de StopWords: %lf\n", stopTime);
+
     //Pages
+    clock_t pagesStart = clock();
     RBT* rbtWords = lePaginas(todosDocumentos, rbtStop, nomePasta);
+    clock_t pagesEnd = clock();
+    double pagesTime = (double)(pagesEnd - pagesStart) / CLOCKS_PER_SEC;
+    printf("Tempo de leitura das paginas: %lf\n", pagesTime);
+
+
+    clock_t leituraEnd = clock();
+    double leituraTime = (double)(leituraEnd - leituraStart) / CLOCKS_PER_SEC;
+    printf("Tempo de leitura de arquivo: %lf\n", leituraTime);
 
     //Cálculo do page rank de todas as páginas (documentos)
+    clock_t calcStart = clock();
     calculaPageRank(todosDocumentos, numDocs);
-
+    clock_t calcEnd = clock();
+    double calcTime = (double)(calcEnd - calcStart) / CLOCKS_PER_SEC;
+    printf("Tempo de calculo de PageRank: %lf\n", calcTime);
+    
+    clock_t escritaStart = clock();
     char leitura[1000]; //Perguntar pro giovanni tamanho das entradas
     while(scanf("%[^\n]s\n", leitura) == 1){
         //Imprime a pesquisa
@@ -205,6 +237,10 @@ int main(int argc, char** argv){
 
         free(resultado);
     }
+    clock_t escritaEnd = clock();
+    double escritaTime = (double)(escritaEnd - escritaStart) / CLOCKS_PER_SEC;
+    printf("Tempo de escrita de arquivo: %lf\n", escritaTime);
+
 
     ////////////////////////////
     ///// TESTES ///////////////
