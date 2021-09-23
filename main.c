@@ -8,6 +8,7 @@
 #include "listadocumentos.h"
 #include "leitura.h"
 
+
 #define alpha 0.85
 
 void ImprimeLista(ListaDocumentos *lista);
@@ -188,7 +189,7 @@ int main(int argc, char** argv){
     char* nomePasta = argv[1];
 
     clock_t leituraStart = clock();
-
+ 
     //Realização das leituras de arquivos
     //Index
     clock_t indexStart = clock();
@@ -227,13 +228,11 @@ int main(int argc, char** argv){
     //Cálculo do page rank de todas as páginas (documentos)
     clock_t calcStart = clock();
     calculaPageRank(todosDocumentos, numDocs);
-
     clock_t calcEnd = clock();
     double calcTime = (double)(calcEnd - calcStart) / CLOCKS_PER_SEC;
     printf("Tempo de calculo de PageRank: %lf\n", calcTime);
-
+    
     clock_t escritaStart = clock();
-
     char leitura[1000]; //Perguntar pro giovanni tamanho das entradas
     while(scanf("%[^\n]\n", leitura) == 1){
         //Imprime a pesquisa
