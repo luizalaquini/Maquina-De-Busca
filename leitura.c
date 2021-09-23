@@ -62,7 +62,7 @@ void leGrafo(ListaDocumentos *todosDocumentos, char *nomePasta){
         //Lê os links de saída
         for(int i=0; i<nLinks; i++){
             fscanf(graph, "%s", leitura);
-            //printf("%s ", leitura);
+            //printf("DocOut: %s\n", leitura);
             Documento *docOut = buscaDocumentoPorNome(todosDocumentos, leitura);
             adicionaLinkOut(docAtual, docOut);
         }

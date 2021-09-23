@@ -26,6 +26,8 @@ ListaDocumentos* adicionaDocumentoLista(ListaDocumentos *lista, Documento *docum
     if(documento == NULL){
         return lista;
     }
+
+    if(buscaDocumentoPorNome(lista, retornaNomeDocumento(documento)) != NULL) return lista;
     
     //Cria nova célula com o documento passado
     ListaDocumentos *novaCelula = (ListaDocumentos*) malloc(sizeof(ListaDocumentos));
@@ -82,19 +84,14 @@ void destroiListaDocumentos(ListaDocumentos *lista){
     }
 }
 
-int numDocumentosLista(ListaDocumentos *documento){
-
+int numDocumentosLista(ListaDocumentos *documentos){
     int count = 0;
-    ListaDocumentos* aux = documento;
+    ListaDocumentos* aux = documentos;
 
-    if(aux == NULL) return count;
-    else count++;
-
-    while(aux->prox != NULL){
-        count++;
+    while(aux != NULL){
         aux = aux->prox;
+        count++;
     }
-
     return count;
 }
 

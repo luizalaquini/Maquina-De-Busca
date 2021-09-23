@@ -58,12 +58,12 @@ Documento* buscaDocumentoPorNome(ListaDocumentos *lista, char *nome);
 void destroiListaDocumentos(ListaDocumentos *lista);
 
 /* Libera toda a memória alocada para a lista
-* Entradas: lista - ponteiro para o início da lista que se deseja desalocar;
+* Entradas: documentos - ponteiro para o início da lista que se deseja desalocar;
 * Saída: -;
 * Pós-condições: A memória ocupada pela lista é liberada. Os documentos que possam estar contidos na lista TAMBÉM são liberados;
 */
 
-int numDocumentosLista(ListaDocumentos *documento);
+int numDocumentosLista(ListaDocumentos *documentos);
 
 void destroiListaDocumentosEDocumentos(ListaDocumentos *lista);
 

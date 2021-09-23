@@ -2,6 +2,7 @@
 #include "listadocumentos.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 
 struct doc{
@@ -47,6 +48,9 @@ int comparaDocumento(const void* a, const void* b){
 }
 
 void adicionaLinkOut(Documento *docAtual, Documento *docOut){
+    if(docAtual == docOut) return;
+    if(docAtual == NULL) printf("Doc Atual NULLOO!!\n");
+    if(docOut == NULL) printf("Doc Out NULLOO!!\n");
     //Adiciona docOut na lista de linksOut do docAtual
     docAtual->out = adicionaDocumentoLista(docAtual->out, docOut);
     //Adiciona docAtual na lista de linksIn do docOut

@@ -1,0 +1,1000 @@
+0.txt 12 776.txt 911.txt 430.txt 41.txt 265.txt 988.txt 523.txt 497.txt 414.txt 940.txt 802.txt 849.txt 
+1.txt 4 582.txt 867.txt 821.txt 782.txt 
+2.txt 1 93.txt 
+3.txt 7 606.txt 557.txt 133.txt 378.txt 937.txt 618.txt 485.txt 
+4.txt 7 310.txt 105.txt 738.txt 405.txt 490.txt 158.txt 92.txt 
+5.txt 19 261.txt 759.txt 367.txt 814.txt 707.txt 965.txt 861.txt 757.txt 667.txt 944.txt 542.txt 29.txt 860.txt 476.txt 794.txt 965.txt 255.txt 664.txt 53.txt 
+6.txt 18 841.txt 82.txt 496.txt 780.txt 267.txt 37.txt 0.txt 149.txt 678.txt 600.txt 481.txt 988.txt 777.txt 752.txt 382.txt 327.txt 788.txt 22.txt 
+7.txt 10 970.txt 154.txt 404.txt 666.txt 49.txt 74.txt 840.txt 548.txt 96.txt 374.txt 
+8.txt 7 379.txt 985.txt 384.txt 129.txt 197.txt 721.txt 44.txt 
+9.txt 14 627.txt 382.txt 273.txt 141.txt 190.txt 887.txt 692.txt 6.txt 346.txt 514.txt 474.txt 919.txt 619.txt 82.txt 
+10.txt 18 33.txt 439.txt 494.txt 591.txt 15.txt 211.txt 473.txt 832.txt 503.txt 843.txt 284.txt 669.txt 830.txt 164.txt 35.txt 533.txt 501.txt 335.txt 
+11.txt 14 886.txt 573.txt 877.txt 946.txt 799.txt 476.txt 462.txt 520.txt 875.txt 601.txt 194.txt 189.txt 823.txt 524.txt 
+12.txt 15 275.txt 673.txt 541.txt 682.txt 358.txt 146.txt 390.txt 11.txt 383.txt 494.txt 280.txt 658.txt 829.txt 471.txt 707.txt 
+13.txt 8 297.txt 701.txt 931.txt 700.txt 821.txt 869.txt 911.txt 190.txt 
+14.txt 3 630.txt 719.txt 773.txt 
+15.txt 6 11.txt 533.txt 753.txt 37.txt 161.txt 934.txt 
+16.txt 11 480.txt 492.txt 291.txt 426.txt 232.txt 457.txt 5.txt 419.txt 874.txt 673.txt 728.txt 
+17.txt 16 424.txt 826.txt 310.txt 983.txt 374.txt 296.txt 178.txt 784.txt 722.txt 721.txt 553.txt 677.txt 284.txt 112.txt 939.txt 27.txt 
+18.txt 5 125.txt 677.txt 459.txt 342.txt 245.txt 
+19.txt 1 803.txt 
+20.txt 4 266.txt 690.txt 650.txt 869.txt 
+21.txt 5 428.txt 706.txt 428.txt 650.txt 288.txt 
+22.txt 4 248.txt 24.txt 627.txt 457.txt 
+23.txt 9 913.txt 849.txt 85.txt 17.txt 606.txt 314.txt 433.txt 388.txt 542.txt 
+24.txt 12 859.txt 596.txt 186.txt 223.txt 171.txt 198.txt 173.txt 686.txt 698.txt 93.txt 722.txt 775.txt 
+25.txt 12 786.txt 949.txt 863.txt 863.txt 15.txt 219.txt 953.txt 892.txt 312.txt 651.txt 484.txt 43.txt 
+26.txt 6 675.txt 210.txt 442.txt 615.txt 557.txt 58.txt 
+27.txt 20 491.txt 718.txt 283.txt 980.txt 292.txt 201.txt 75.txt 66.txt 260.txt 844.txt 552.txt 341.txt 258.txt 381.txt 854.txt 834.txt 412.txt 187.txt 253.txt 931.txt 
+28.txt 3 760.txt 133.txt 558.txt 
+29.txt 17 77.txt 354.txt 612.txt 865.txt 620.txt 295.txt 88.txt 522.txt 949.txt 352.txt 402.txt 425.txt 19.txt 997.txt 33.txt 106.txt 867.txt 
+30.txt 17 827.txt 296.txt 625.txt 30.txt 636.txt 669.txt 846.txt 215.txt 263.txt 49.txt 406.txt 385.txt 656.txt 137.txt 83.txt 472.txt 7.txt 
+31.txt 0 
+32.txt 2 948.txt 218.txt 
+33.txt 18 171.txt 647.txt 238.txt 836.txt 860.txt 283.txt 490.txt 667.txt 901.txt 912.txt 545.txt 930.txt 540.txt 190.txt 667.txt 926.txt 631.txt 966.txt 
+34.txt 16 365.txt 599.txt 28.txt 863.txt 234.txt 920.txt 30.txt 903.txt 398.txt 373.txt 977.txt 971.txt 66.txt 434.txt 978.txt 313.txt 
+35.txt 17 343.txt 768.txt 134.txt 765.txt 348.txt 885.txt 157.txt 292.txt 442.txt 988.txt 258.txt 580.txt 63.txt 765.txt 538.txt 773.txt 883.txt 
+36.txt 10 59.txt 21.txt 982.txt 820.txt 940.txt 931.txt 808.txt 291.txt 896.txt 80.txt 
+37.txt 19 93.txt 957.txt 632.txt 681.txt 862.txt 764.txt 854.txt 649.txt 527.txt 36.txt 646.txt 378.txt 448.txt 540.txt 808.txt 110.txt 699.txt 467.txt 615.txt 
+38.txt 20 431.txt 439.txt 772.txt 741.txt 104.txt 67.txt 375.txt 714.txt 474.txt 383.txt 44.txt 622.txt 680.txt 174.txt 604.txt 352.txt 335.txt 273.txt 727.txt 337.txt 
+39.txt 6 265.txt 394.txt 26.txt 199.txt 225.txt 405.txt 
+40.txt 14 593.txt 898.txt 536.txt 32.txt 251.txt 289.txt 680.txt 984.txt 652.txt 680.txt 211.txt 131.txt 780.txt 356.txt 
+41.txt 12 340.txt 236.txt 170.txt 923.txt 935.txt 394.txt 591.txt 917.txt 706.txt 290.txt 566.txt 283.txt 
+42.txt 20 114.txt 25.txt 759.txt 281.txt 250.txt 228.txt 142.txt 754.txt 104.txt 692.txt 758.txt 913.txt 558.txt 89.txt 604.txt 432.txt 32.txt 30.txt 95.txt 223.txt 
+43.txt 1 292.txt 
+44.txt 13 532.txt 554.txt 718.txt 882.txt 119.txt 180.txt 388.txt 230.txt 296.txt 29.txt 230.txt 119.txt 582.txt 
+45.txt 8 427.txt 499.txt 263.txt 83.txt 310.txt 346.txt 22.txt 74.txt 
+46.txt 2 409.txt 40.txt 
+47.txt 11 64.txt 440.txt 566.txt 464.txt 584.txt 351.txt 263.txt 524.txt 395.txt 401.txt 630.txt 
+48.txt 17 323.txt 135.txt 570.txt 728.txt 547.txt 309.txt 812.txt 960.txt 517.txt 197.txt 731.txt 780.txt 446.txt 169.txt 158.txt 989.txt 826.txt 
+49.txt 2 352.txt 423.txt 
+50.txt 15 876.txt 272.txt 372.txt 652.txt 912.txt 248.txt 709.txt 484.txt 785.txt 993.txt 337.txt 87.txt 551.txt 324.txt 229.txt 
+51.txt 7 858.txt 514.txt 565.txt 165.txt 251.txt 840.txt 236.txt 
+52.txt 8 55.txt 901.txt 743.txt 524.txt 495.txt 875.txt 964.txt 379.txt 
+53.txt 19 873.txt 911.txt 221.txt 467.txt 514.txt 728.txt 494.txt 959.txt 735.txt 533.txt 369.txt 751.txt 465.txt 745.txt 31.txt 878.txt 951.txt 37.txt 933.txt 
+54.txt 4 449.txt 569.txt 305.txt 494.txt 
+55.txt 2 973.txt 200.txt 
+56.txt 17 11.txt 485.txt 668.txt 535.txt 308.txt 786.txt 555.txt 953.txt 430.txt 724.txt 236.txt 96.txt 383.txt 633.txt 69.txt 345.txt 658.txt 
+57.txt 1 376.txt 
+58.txt 18 201.txt 210.txt 756.txt 657.txt 969.txt 205.txt 42.txt 197.txt 460.txt 415.txt 361.txt 966.txt 294.txt 824.txt 897.txt 266.txt 989.txt 460.txt 
+59.txt 7 86.txt 955.txt 666.txt 968.txt 470.txt 23.txt 139.txt 
+60.txt 9 290.txt 591.txt 157.txt 271.txt 235.txt 827.txt 495.txt 478.txt 906.txt 
+61.txt 15 186.txt 570.txt 221.txt 829.txt 928.txt 328.txt 300.txt 328.txt 823.txt 709.txt 28.txt 497.txt 366.txt 367.txt 66.txt 
+62.txt 18 177.txt 66.txt 993.txt 834.txt 243.txt 913.txt 475.txt 317.txt 919.txt 686.txt 364.txt 175.txt 520.txt 191.txt 165.txt 7.txt 984.txt 266.txt 
+63.txt 14 454.txt 301.txt 952.txt 931.txt 259.txt 495.txt 675.txt 89.txt 395.txt 767.txt 80.txt 77.txt 675.txt 207.txt 
+64.txt 15 127.txt 645.txt 627.txt 413.txt 549.txt 942.txt 703.txt 17.txt 208.txt 275.txt 721.txt 934.txt 823.txt 647.txt 822.txt 
+65.txt 13 295.txt 294.txt 526.txt 864.txt 225.txt 454.txt 469.txt 541.txt 453.txt 564.txt 949.txt 347.txt 845.txt 
+66.txt 2 319.txt 445.txt 
+67.txt 2 118.txt 784.txt 
+68.txt 14 963.txt 706.txt 765.txt 845.txt 929.txt 512.txt 113.txt 621.txt 593.txt 249.txt 442.txt 480.txt 271.txt 737.txt 
+69.txt 1 98.txt 
+70.txt 3 301.txt 719.txt 470.txt 
+71.txt 10 520.txt 634.txt 817.txt 8.txt 271.txt 158.txt 841.txt 774.txt 204.txt 269.txt 
+72.txt 2 800.txt 608.txt 
+73.txt 8 125.txt 514.txt 491.txt 577.txt 187.txt 472.txt 304.txt 600.txt 
+74.txt 19 527.txt 888.txt 116.txt 326.txt 123.txt 819.txt 316.txt 186.txt 896.txt 876.txt 956.txt 221.txt 359.txt 122.txt 452.txt 820.txt 467.txt 536.txt 946.txt 
+75.txt 14 598.txt 447.txt 465.txt 42.txt 746.txt 786.txt 526.txt 689.txt 872.txt 686.txt 948.txt 484.txt 931.txt 688.txt 
+76.txt 11 474.txt 972.txt 398.txt 204.txt 930.txt 304.txt 54.txt 428.txt 862.txt 243.txt 288.txt 
+77.txt 8 333.txt 202.txt 246.txt 197.txt 842.txt 962.txt 117.txt 299.txt 
+78.txt 6 98.txt 307.txt 946.txt 680.txt 747.txt 892.txt 
+79.txt 4 448.txt 357.txt 610.txt 166.txt 
+80.txt 8 403.txt 554.txt 920.txt 725.txt 883.txt 981.txt 430.txt 377.txt 
+81.txt 16 859.txt 464.txt 346.txt 571.txt 544.txt 393.txt 490.txt 854.txt 17.txt 163.txt 152.txt 461.txt 688.txt 781.txt 862.txt 620.txt 
+82.txt 4 787.txt 501.txt 517.txt 299.txt 
+83.txt 15 864.txt 877.txt 470.txt 90.txt 131.txt 387.txt 35.txt 50.txt 975.txt 665.txt 217.txt 193.txt 178.txt 316.txt 84.txt 
+84.txt 9 935.txt 793.txt 38.txt 500.txt 4.txt 534.txt 677.txt 326.txt 853.txt 
+85.txt 6 718.txt 629.txt 839.txt 109.txt 328.txt 926.txt 
+86.txt 0 
+87.txt 4 755.txt 193.txt 896.txt 859.txt 
+88.txt 12 997.txt 194.txt 340.txt 924.txt 189.txt 640.txt 14.txt 539.txt 786.txt 713.txt 8.txt 872.txt 
+89.txt 2 786.txt 621.txt 
+90.txt 6 730.txt 94.txt 492.txt 675.txt 588.txt 600.txt 
+91.txt 2 604.txt 176.txt 
+92.txt 13 528.txt 578.txt 563.txt 571.txt 810.txt 602.txt 272.txt 820.txt 823.txt 990.txt 898.txt 688.txt 780.txt 
+93.txt 15 942.txt 579.txt 740.txt 361.txt 904.txt 116.txt 94.txt 363.txt 151.txt 176.txt 400.txt 124.txt 806.txt 164.txt 595.txt 
+94.txt 17 186.txt 127.txt 843.txt 286.txt 309.txt 441.txt 869.txt 17.txt 703.txt 510.txt 379.txt 974.txt 312.txt 438.txt 609.txt 854.txt 280.txt 
+95.txt 17 526.txt 993.txt 754.txt 552.txt 802.txt 958.txt 885.txt 131.txt 969.txt 505.txt 29.txt 142.txt 825.txt 13.txt 615.txt 86.txt 645.txt 
+96.txt 11 322.txt 929.txt 689.txt 405.txt 946.txt 210.txt 98.txt 837.txt 349.txt 776.txt 47.txt 
+97.txt 6 439.txt 825.txt 380.txt 938.txt 862.txt 836.txt 
+98.txt 11 588.txt 851.txt 44.txt 360.txt 428.txt 60.txt 995.txt 484.txt 288.txt 745.txt 836.txt 
+99.txt 12 389.txt 204.txt 613.txt 183.txt 235.txt 254.txt 136.txt 778.txt 88.txt 257.txt 746.txt 392.txt 
+100.txt 4 470.txt 465.txt 974.txt 789.txt 
+101.txt 18 867.txt 199.txt 930.txt 988.txt 552.txt 946.txt 367.txt 478.txt 49.txt 679.txt 515.txt 219.txt 616.txt 227.txt 939.txt 295.txt 497.txt 709.txt 
+102.txt 4 692.txt 630.txt 366.txt 173.txt 
+103.txt 14 956.txt 736.txt 713.txt 752.txt 837.txt 220.txt 705.txt 79.txt 934.txt 617.txt 756.txt 124.txt 670.txt 391.txt 
+104.txt 0 
+105.txt 18 357.txt 594.txt 809.txt 111.txt 974.txt 2.txt 319.txt 536.txt 786.txt 584.txt 342.txt 299.txt 167.txt 870.txt 356.txt 169.txt 769.txt 910.txt 
+106.txt 15 17.txt 568.txt 964.txt 539.txt 840.txt 487.txt 58.txt 976.txt 825.txt 265.txt 823.txt 65.txt 192.txt 829.txt 994.txt 
+107.txt 7 634.txt 595.txt 784.txt 995.txt 744.txt 673.txt 435.txt 
+108.txt 4 732.txt 835.txt 86.txt 901.txt 
+109.txt 8 234.txt 470.txt 460.txt 560.txt 59.txt 103.txt 233.txt 514.txt 
+110.txt 12 813.txt 841.txt 614.txt 253.txt 421.txt 493.txt 730.txt 280.txt 653.txt 555.txt 705.txt 76.txt 
+111.txt 6 943.txt 965.txt 323.txt 505.txt 198.txt 407.txt 
+112.txt 15 852.txt 682.txt 593.txt 634.txt 306.txt 716.txt 476.txt 923.txt 431.txt 769.txt 679.txt 166.txt 371.txt 226.txt 538.txt 
+113.txt 0 
+114.txt 7 576.txt 100.txt 344.txt 681.txt 986.txt 249.txt 641.txt 
+115.txt 9 201.txt 796.txt 116.txt 550.txt 114.txt 342.txt 772.txt 893.txt 878.txt 
+116.txt 19 559.txt 739.txt 305.txt 8.txt 770.txt 661.txt 123.txt 755.txt 135.txt 492.txt 990.txt 495.txt 978.txt 251.txt 280.txt 417.txt 903.txt 597.txt 433.txt 
+117.txt 7 185.txt 168.txt 214.txt 409.txt 863.txt 162.txt 571.txt 
+118.txt 20 186.txt 319.txt 101.txt 719.txt 370.txt 300.txt 786.txt 18.txt 311.txt 339.txt 907.txt 26.txt 622.txt 505.txt 520.txt 991.txt 622.txt 350.txt 582.txt 819.txt 
+119.txt 9 184.txt 756.txt 802.txt 953.txt 551.txt 681.txt 772.txt 566.txt 773.txt 
+120.txt 16 253.txt 193.txt 967.txt 975.txt 916.txt 650.txt 751.txt 603.txt 687.txt 962.txt 473.txt 93.txt 322.txt 811.txt 219.txt 228.txt 
+121.txt 2 223.txt 597.txt 
+122.txt 16 218.txt 611.txt 892.txt 309.txt 931.txt 952.txt 72.txt 747.txt 375.txt 779.txt 225.txt 469.txt 997.txt 855.txt 685.txt 751.txt 
+123.txt 1 274.txt 
+124.txt 8 561.txt 5.txt 181.txt 970.txt 988.txt 60.txt 426.txt 286.txt 
+125.txt 7 227.txt 848.txt 827.txt 613.txt 308.txt 580.txt 754.txt 
+126.txt 18 61.txt 591.txt 609.txt 467.txt 253.txt 660.txt 179.txt 483.txt 901.txt 484.txt 234.txt 160.txt 693.txt 136.txt 937.txt 641.txt 498.txt 90.txt 
+127.txt 1 934.txt 
+128.txt 7 415.txt 523.txt 372.txt 137.txt 494.txt 29.txt 157.txt 
+129.txt 18 888.txt 800.txt 532.txt 278.txt 47.txt 905.txt 934.txt 909.txt 711.txt 978.txt 408.txt 646.txt 230.txt 337.txt 886.txt 839.txt 237.txt 114.txt 
+130.txt 16 435.txt 279.txt 803.txt 758.txt 676.txt 816.txt 450.txt 662.txt 469.txt 22.txt 366.txt 245.txt 595.txt 346.txt 227.txt 999.txt 
+131.txt 10 381.txt 788.txt 520.txt 89.txt 402.txt 293.txt 17.txt 399.txt 797.txt 917.txt 
+132.txt 13 159.txt 417.txt 63.txt 919.txt 175.txt 919.txt 42.txt 314.txt 125.txt 868.txt 795.txt 981.txt 811.txt 
+133.txt 15 362.txt 493.txt 330.txt 787.txt 630.txt 827.txt 790.txt 346.txt 902.txt 558.txt 710.txt 635.txt 759.txt 726.txt 894.txt 
+134.txt 15 535.txt 203.txt 743.txt 570.txt 932.txt 738.txt 764.txt 653.txt 855.txt 129.txt 27.txt 671.txt 781.txt 497.txt 113.txt 
+135.txt 11 640.txt 658.txt 596.txt 282.txt 499.txt 300.txt 840.txt 722.txt 123.txt 463.txt 289.txt 
+136.txt 18 439.txt 540.txt 62.txt 443.txt 507.txt 782.txt 206.txt 432.txt 712.txt 143.txt 170.txt 652.txt 510.txt 47.txt 167.txt 59.txt 722.txt 616.txt 
+137.txt 2 185.txt 419.txt 
+138.txt 6 391.txt 460.txt 969.txt 714.txt 308.txt 213.txt 
+139.txt 0 
+140.txt 3 30.txt 273.txt 18.txt 
+141.txt 16 797.txt 30.txt 594.txt 802.txt 486.txt 181.txt 587.txt 714.txt 473.txt 1.txt 947.txt 275.txt 666.txt 574.txt 12.txt 701.txt 
+142.txt 18 709.txt 696.txt 655.txt 498.txt 169.txt 497.txt 292.txt 353.txt 366.txt 853.txt 812.txt 268.txt 39.txt 100.txt 299.txt 175.txt 586.txt 570.txt 
+143.txt 5 871.txt 975.txt 46.txt 16.txt 231.txt 
+144.txt 14 36.txt 465.txt 83.txt 967.txt 866.txt 739.txt 173.txt 829.txt 406.txt 90.txt 679.txt 419.txt 508.txt 601.txt 
+145.txt 13 933.txt 535.txt 1.txt 451.txt 25.txt 679.txt 328.txt 750.txt 813.txt 666.txt 703.txt 945.txt 738.txt 
+146.txt 4 143.txt 638.txt 336.txt 791.txt 
+147.txt 19 657.txt 152.txt 949.txt 967.txt 403.txt 450.txt 628.txt 459.txt 187.txt 641.txt 896.txt 754.txt 905.txt 821.txt 867.txt 319.txt 424.txt 863.txt 471.txt 
+148.txt 12 719.txt 651.txt 814.txt 993.txt 903.txt 39.txt 881.txt 695.txt 415.txt 358.txt 290.txt 279.txt 
+149.txt 2 100.txt 257.txt 
+150.txt 10 916.txt 408.txt 192.txt 232.txt 311.txt 831.txt 489.txt 148.txt 166.txt 430.txt 
+151.txt 13 866.txt 892.txt 973.txt 729.txt 647.txt 741.txt 209.txt 360.txt 996.txt 289.txt 940.txt 378.txt 587.txt 
+152.txt 12 642.txt 149.txt 391.txt 994.txt 204.txt 817.txt 88.txt 639.txt 17.txt 925.txt 126.txt 641.txt 
+153.txt 15 77.txt 38.txt 266.txt 720.txt 871.txt 424.txt 917.txt 596.txt 579.txt 809.txt 611.txt 569.txt 859.txt 324.txt 999.txt 
+154.txt 6 842.txt 944.txt 809.txt 384.txt 498.txt 850.txt 
+155.txt 18 514.txt 552.txt 915.txt 292.txt 702.txt 793.txt 963.txt 426.txt 552.txt 547.txt 424.txt 829.txt 942.txt 593.txt 281.txt 820.txt 196.txt 666.txt 
+156.txt 15 427.txt 910.txt 758.txt 253.txt 785.txt 366.txt 155.txt 228.txt 981.txt 161.txt 891.txt 940.txt 905.txt 139.txt 766.txt 
+157.txt 19 502.txt 230.txt 164.txt 16.txt 30.txt 357.txt 354.txt 236.txt 325.txt 835.txt 141.txt 92.txt 183.txt 229.txt 754.txt 108.txt 18.txt 112.txt 931.txt 
+158.txt 7 956.txt 855.txt 104.txt 61.txt 428.txt 577.txt 789.txt 
+159.txt 12 174.txt 688.txt 459.txt 250.txt 529.txt 861.txt 201.txt 638.txt 198.txt 20.txt 769.txt 732.txt 
+160.txt 3 516.txt 351.txt 409.txt 
+161.txt 16 209.txt 563.txt 172.txt 235.txt 950.txt 921.txt 971.txt 652.txt 604.txt 491.txt 35.txt 772.txt 946.txt 717.txt 751.txt 906.txt 
+162.txt 1 706.txt 
+163.txt 17 636.txt 468.txt 929.txt 598.txt 177.txt 504.txt 884.txt 918.txt 808.txt 291.txt 221.txt 360.txt 210.txt 372.txt 850.txt 140.txt 144.txt 
+164.txt 3 759.txt 308.txt 966.txt 
+165.txt 0 
+166.txt 5 647.txt 617.txt 416.txt 438.txt 12.txt 
+167.txt 7 840.txt 89.txt 336.txt 434.txt 331.txt 990.txt 884.txt 
+168.txt 3 529.txt 378.txt 388.txt 
+169.txt 8 532.txt 639.txt 179.txt 568.txt 522.txt 125.txt 543.txt 809.txt 
+170.txt 11 931.txt 836.txt 600.txt 327.txt 322.txt 94.txt 248.txt 333.txt 271.txt 594.txt 124.txt 
+171.txt 17 396.txt 423.txt 120.txt 604.txt 845.txt 937.txt 473.txt 945.txt 692.txt 177.txt 387.txt 318.txt 329.txt 191.txt 178.txt 177.txt 141.txt 
+172.txt 11 198.txt 219.txt 306.txt 868.txt 360.txt 758.txt 50.txt 947.txt 400.txt 472.txt 575.txt 
+173.txt 10 498.txt 684.txt 838.txt 796.txt 824.txt 736.txt 895.txt 520.txt 608.txt 374.txt 
+174.txt 0 
+175.txt 14 240.txt 53.txt 741.txt 587.txt 705.txt 820.txt 706.txt 514.txt 199.txt 263.txt 609.txt 892.txt 76.txt 510.txt 
+176.txt 0 
+177.txt 6 510.txt 430.txt 596.txt 197.txt 726.txt 996.txt 
+178.txt 3 979.txt 570.txt 914.txt 
+179.txt 6 127.txt 844.txt 66.txt 59.txt 941.txt 529.txt 
+180.txt 4 81.txt 690.txt 11.txt 633.txt 
+181.txt 18 715.txt 107.txt 58.txt 342.txt 952.txt 347.txt 855.txt 196.txt 770.txt 318.txt 771.txt 340.txt 237.txt 460.txt 467.txt 765.txt 855.txt 252.txt 
+182.txt 14 361.txt 239.txt 239.txt 943.txt 327.txt 356.txt 916.txt 290.txt 79.txt 803.txt 729.txt 273.txt 32.txt 643.txt 
+183.txt 3 93.txt 765.txt 873.txt 
+184.txt 8 7.txt 246.txt 711.txt 954.txt 952.txt 716.txt 332.txt 341.txt 
+185.txt 3 155.txt 158.txt 305.txt 
+186.txt 10 676.txt 424.txt 884.txt 560.txt 791.txt 459.txt 111.txt 484.txt 698.txt 123.txt 
+187.txt 11 842.txt 486.txt 823.txt 607.txt 157.txt 596.txt 822.txt 24.txt 835.txt 594.txt 562.txt 
+188.txt 7 271.txt 936.txt 3.txt 247.txt 72.txt 706.txt 275.txt 
+189.txt 15 839.txt 761.txt 281.txt 146.txt 589.txt 563.txt 118.txt 982.txt 413.txt 752.txt 5.txt 541.txt 9.txt 698.txt 34.txt 
+190.txt 2 172.txt 769.txt 
+191.txt 16 805.txt 566.txt 892.txt 957.txt 525.txt 514.txt 148.txt 791.txt 412.txt 783.txt 654.txt 714.txt 490.txt 58.txt 630.txt 116.txt 
+192.txt 11 852.txt 306.txt 89.txt 477.txt 314.txt 966.txt 434.txt 342.txt 927.txt 436.txt 283.txt 
+193.txt 17 472.txt 907.txt 953.txt 781.txt 177.txt 994.txt 304.txt 571.txt 277.txt 538.txt 927.txt 231.txt 24.txt 319.txt 159.txt 946.txt 464.txt 
+194.txt 19 68.txt 595.txt 156.txt 360.txt 396.txt 830.txt 257.txt 757.txt 846.txt 447.txt 755.txt 806.txt 923.txt 454.txt 558.txt 440.txt 419.txt 383.txt 146.txt 
+195.txt 19 405.txt 43.txt 662.txt 204.txt 925.txt 690.txt 869.txt 882.txt 213.txt 407.txt 81.txt 656.txt 308.txt 728.txt 576.txt 632.txt 203.txt 736.txt 326.txt 
+196.txt 20 519.txt 728.txt 664.txt 730.txt 29.txt 813.txt 954.txt 214.txt 791.txt 433.txt 675.txt 663.txt 323.txt 819.txt 80.txt 841.txt 304.txt 727.txt 934.txt 158.txt 
+197.txt 17 15.txt 135.txt 167.txt 21.txt 707.txt 192.txt 597.txt 120.txt 40.txt 595.txt 496.txt 466.txt 101.txt 958.txt 209.txt 978.txt 595.txt 
+198.txt 1 586.txt 
+199.txt 11 762.txt 402.txt 867.txt 283.txt 683.txt 729.txt 316.txt 11.txt 488.txt 711.txt 521.txt 
+200.txt 1 923.txt 
+201.txt 2 731.txt 333.txt 
+202.txt 12 660.txt 480.txt 419.txt 894.txt 202.txt 200.txt 692.txt 407.txt 992.txt 57.txt 438.txt 453.txt 
+203.txt 2 43.txt 862.txt 
+204.txt 12 880.txt 87.txt 947.txt 597.txt 214.txt 135.txt 421.txt 493.txt 882.txt 340.txt 109.txt 713.txt 
+205.txt 13 493.txt 741.txt 100.txt 549.txt 866.txt 508.txt 479.txt 848.txt 721.txt 230.txt 994.txt 999.txt 772.txt 
+206.txt 0 
+207.txt 16 674.txt 685.txt 621.txt 873.txt 965.txt 227.txt 759.txt 163.txt 24.txt 689.txt 975.txt 354.txt 155.txt 711.txt 496.txt 869.txt 
+208.txt 8 538.txt 799.txt 200.txt 57.txt 586.txt 816.txt 576.txt 260.txt 
+209.txt 17 672.txt 23.txt 173.txt 988.txt 589.txt 292.txt 93.txt 657.txt 690.txt 186.txt 79.txt 374.txt 168.txt 729.txt 229.txt 950.txt 429.txt 
+210.txt 12 7.txt 696.txt 964.txt 744.txt 895.txt 415.txt 954.txt 172.txt 706.txt 20.txt 671.txt 296.txt 
+211.txt 18 365.txt 758.txt 247.txt 21.txt 321.txt 904.txt 945.txt 647.txt 561.txt 667.txt 942.txt 865.txt 633.txt 351.txt 582.txt 818.txt 596.txt 693.txt 
+212.txt 12 623.txt 42.txt 722.txt 597.txt 60.txt 307.txt 571.txt 133.txt 159.txt 950.txt 46.txt 301.txt 
+213.txt 4 416.txt 225.txt 291.txt 20.txt 
+214.txt 16 746.txt 363.txt 424.txt 306.txt 656.txt 552.txt 791.txt 451.txt 930.txt 225.txt 418.txt 43.txt 257.txt 213.txt 780.txt 936.txt 
+215.txt 1 646.txt 
+216.txt 6 657.txt 188.txt 725.txt 492.txt 487.txt 19.txt 
+217.txt 9 241.txt 188.txt 257.txt 712.txt 255.txt 124.txt 349.txt 153.txt 275.txt 
+218.txt 9 191.txt 111.txt 781.txt 970.txt 615.txt 357.txt 336.txt 210.txt 875.txt 
+219.txt 20 348.txt 540.txt 41.txt 336.txt 730.txt 750.txt 105.txt 800.txt 292.txt 447.txt 347.txt 294.txt 484.txt 41.txt 136.txt 57.txt 652.txt 800.txt 448.txt 373.txt 
+220.txt 7 737.txt 255.txt 465.txt 282.txt 737.txt 411.txt 424.txt 
+221.txt 7 435.txt 95.txt 503.txt 287.txt 571.txt 841.txt 784.txt 
+222.txt 3 240.txt 290.txt 313.txt 
+223.txt 10 366.txt 450.txt 193.txt 401.txt 870.txt 545.txt 644.txt 514.txt 787.txt 690.txt 
+224.txt 2 864.txt 194.txt 
+225.txt 7 182.txt 745.txt 708.txt 938.txt 623.txt 718.txt 138.txt 
+226.txt 15 32.txt 877.txt 656.txt 563.txt 602.txt 608.txt 919.txt 51.txt 176.txt 376.txt 351.txt 965.txt 960.txt 394.txt 560.txt 
+227.txt 12 931.txt 835.txt 979.txt 703.txt 378.txt 83.txt 456.txt 833.txt 247.txt 763.txt 425.txt 421.txt 
+228.txt 7 587.txt 231.txt 224.txt 478.txt 580.txt 953.txt 617.txt 
+229.txt 16 142.txt 230.txt 930.txt 545.txt 440.txt 814.txt 271.txt 845.txt 643.txt 858.txt 215.txt 628.txt 174.txt 942.txt 571.txt 505.txt 
+230.txt 5 309.txt 845.txt 961.txt 742.txt 906.txt 
+231.txt 0 
+232.txt 8 126.txt 238.txt 895.txt 82.txt 75.txt 875.txt 975.txt 278.txt 
+233.txt 20 178.txt 537.txt 236.txt 819.txt 870.txt 495.txt 564.txt 209.txt 85.txt 853.txt 104.txt 275.txt 239.txt 710.txt 994.txt 733.txt 14.txt 78.txt 955.txt 692.txt 
+234.txt 10 271.txt 886.txt 58.txt 878.txt 594.txt 945.txt 421.txt 517.txt 726.txt 492.txt 
+235.txt 11 742.txt 527.txt 788.txt 38.txt 254.txt 77.txt 93.txt 22.txt 257.txt 904.txt 161.txt 
+236.txt 11 507.txt 749.txt 361.txt 81.txt 390.txt 725.txt 156.txt 770.txt 599.txt 309.txt 577.txt 
+237.txt 19 506.txt 926.txt 172.txt 993.txt 243.txt 813.txt 426.txt 62.txt 713.txt 181.txt 519.txt 751.txt 661.txt 954.txt 681.txt 433.txt 925.txt 553.txt 729.txt 
+238.txt 11 92.txt 445.txt 736.txt 653.txt 67.txt 90.txt 149.txt 829.txt 884.txt 908.txt 170.txt 
+239.txt 3 196.txt 847.txt 727.txt 
+240.txt 19 60.txt 37.txt 977.txt 976.txt 323.txt 148.txt 633.txt 779.txt 539.txt 967.txt 658.txt 819.txt 328.txt 37.txt 381.txt 115.txt 254.txt 1.txt 785.txt 
+241.txt 17 771.txt 106.txt 362.txt 945.txt 718.txt 843.txt 727.txt 65.txt 241.txt 610.txt 665.txt 892.txt 558.txt 869.txt 168.txt 644.txt 265.txt 
+242.txt 10 28.txt 508.txt 542.txt 985.txt 639.txt 497.txt 525.txt 731.txt 794.txt 175.txt 
+243.txt 16 321.txt 434.txt 53.txt 461.txt 576.txt 313.txt 170.txt 268.txt 125.txt 3.txt 110.txt 375.txt 823.txt 321.txt 587.txt 692.txt 
+244.txt 13 393.txt 813.txt 592.txt 477.txt 67.txt 362.txt 103.txt 747.txt 157.txt 850.txt 336.txt 281.txt 899.txt 
+245.txt 4 294.txt 482.txt 71.txt 462.txt 
+246.txt 1 529.txt 
+247.txt 14 346.txt 21.txt 356.txt 886.txt 483.txt 891.txt 791.txt 53.txt 636.txt 366.txt 141.txt 432.txt 8.txt 173.txt 
+248.txt 13 741.txt 948.txt 817.txt 488.txt 734.txt 205.txt 716.txt 473.txt 700.txt 106.txt 332.txt 266.txt 868.txt 
+249.txt 8 596.txt 877.txt 618.txt 284.txt 611.txt 882.txt 640.txt 628.txt 
+250.txt 12 411.txt 955.txt 160.txt 575.txt 687.txt 69.txt 720.txt 40.txt 572.txt 246.txt 956.txt 170.txt 
+251.txt 14 675.txt 391.txt 751.txt 591.txt 600.txt 467.txt 252.txt 420.txt 727.txt 500.txt 95.txt 268.txt 207.txt 933.txt 
+252.txt 19 16.txt 979.txt 703.txt 298.txt 553.txt 149.txt 829.txt 198.txt 346.txt 286.txt 466.txt 503.txt 269.txt 18.txt 834.txt 796.txt 750.txt 106.txt 984.txt 
+253.txt 17 544.txt 390.txt 416.txt 886.txt 149.txt 668.txt 671.txt 232.txt 64.txt 887.txt 456.txt 64.txt 148.txt 286.txt 507.txt 332.txt 738.txt 
+254.txt 11 513.txt 256.txt 419.txt 677.txt 348.txt 222.txt 3.txt 735.txt 512.txt 724.txt 999.txt 
+255.txt 1 332.txt 
+256.txt 15 317.txt 442.txt 374.txt 384.txt 826.txt 40.txt 468.txt 790.txt 442.txt 248.txt 524.txt 177.txt 295.txt 683.txt 326.txt 
+257.txt 10 421.txt 103.txt 275.txt 544.txt 545.txt 536.txt 216.txt 12.txt 630.txt 856.txt 
+258.txt 20 881.txt 74.txt 158.txt 953.txt 544.txt 440.txt 202.txt 143.txt 685.txt 234.txt 895.txt 605.txt 0.txt 390.txt 362.txt 219.txt 598.txt 295.txt 782.txt 198.txt 
+259.txt 1 823.txt 
+260.txt 6 73.txt 960.txt 417.txt 580.txt 601.txt 493.txt 
+261.txt 13 31.txt 179.txt 973.txt 38.txt 559.txt 845.txt 704.txt 607.txt 269.txt 813.txt 190.txt 784.txt 680.txt 
+262.txt 10 773.txt 547.txt 418.txt 478.txt 351.txt 370.txt 868.txt 341.txt 855.txt 233.txt 
+263.txt 13 346.txt 618.txt 849.txt 796.txt 386.txt 742.txt 258.txt 137.txt 475.txt 453.txt 898.txt 757.txt 896.txt 
+264.txt 19 792.txt 689.txt 299.txt 559.txt 197.txt 530.txt 170.txt 328.txt 225.txt 911.txt 741.txt 775.txt 13.txt 943.txt 838.txt 895.txt 335.txt 635.txt 715.txt 
+265.txt 12 489.txt 849.txt 321.txt 495.txt 535.txt 321.txt 210.txt 722.txt 230.txt 197.txt 287.txt 906.txt 
+266.txt 2 554.txt 698.txt 
+267.txt 6 22.txt 455.txt 982.txt 351.txt 992.txt 105.txt 
+268.txt 17 574.txt 325.txt 42.txt 800.txt 430.txt 862.txt 124.txt 743.txt 178.txt 814.txt 589.txt 856.txt 931.txt 281.txt 228.txt 905.txt 3.txt 
+269.txt 1 26.txt 
+270.txt 5 366.txt 832.txt 81.txt 748.txt 609.txt 
+271.txt 15 670.txt 364.txt 347.txt 693.txt 179.txt 381.txt 539.txt 566.txt 935.txt 684.txt 491.txt 854.txt 103.txt 79.txt 675.txt 
+272.txt 15 367.txt 64.txt 667.txt 898.txt 510.txt 348.txt 376.txt 706.txt 611.txt 280.txt 547.txt 625.txt 184.txt 959.txt 521.txt 
+273.txt 6 681.txt 648.txt 607.txt 245.txt 312.txt 748.txt 
+274.txt 4 469.txt 378.txt 428.txt 45.txt 
+275.txt 3 584.txt 746.txt 380.txt 
+276.txt 11 71.txt 203.txt 962.txt 782.txt 814.txt 948.txt 796.txt 327.txt 278.txt 285.txt 4.txt 
+277.txt 2 941.txt 191.txt 
+278.txt 9 509.txt 284.txt 41.txt 495.txt 649.txt 697.txt 483.txt 369.txt 228.txt 
+279.txt 13 363.txt 806.txt 946.txt 53.txt 501.txt 191.txt 997.txt 189.txt 349.txt 89.txt 309.txt 586.txt 153.txt 
+280.txt 9 458.txt 671.txt 766.txt 918.txt 84.txt 640.txt 937.txt 267.txt 462.txt 
+281.txt 0 
+282.txt 1 962.txt 
+283.txt 0 
+284.txt 1 840.txt 
+285.txt 18 288.txt 396.txt 580.txt 600.txt 469.txt 95.txt 258.txt 355.txt 403.txt 881.txt 465.txt 50.txt 375.txt 489.txt 851.txt 146.txt 935.txt 652.txt 
+286.txt 15 74.txt 324.txt 709.txt 71.txt 80.txt 725.txt 420.txt 417.txt 444.txt 896.txt 148.txt 545.txt 684.txt 382.txt 853.txt 
+287.txt 17 25.txt 321.txt 270.txt 121.txt 971.txt 170.txt 427.txt 632.txt 578.txt 526.txt 230.txt 26.txt 149.txt 845.txt 838.txt 964.txt 344.txt 
+288.txt 9 966.txt 504.txt 814.txt 753.txt 491.txt 481.txt 48.txt 522.txt 439.txt 
+289.txt 8 829.txt 703.txt 190.txt 84.txt 453.txt 5.txt 801.txt 24.txt 
+290.txt 17 964.txt 346.txt 901.txt 502.txt 607.txt 6.txt 135.txt 252.txt 42.txt 589.txt 503.txt 117.txt 51.txt 124.txt 849.txt 714.txt 880.txt 
+291.txt 15 751.txt 648.txt 514.txt 848.txt 93.txt 399.txt 645.txt 674.txt 558.txt 492.txt 120.txt 754.txt 590.txt 272.txt 764.txt 
+292.txt 4 783.txt 299.txt 153.txt 680.txt 
+293.txt 15 480.txt 116.txt 236.txt 512.txt 534.txt 420.txt 115.txt 452.txt 333.txt 623.txt 965.txt 793.txt 875.txt 762.txt 968.txt 
+294.txt 5 34.txt 495.txt 950.txt 203.txt 940.txt 
+295.txt 9 826.txt 726.txt 481.txt 325.txt 806.txt 944.txt 601.txt 681.txt 488.txt 
+296.txt 2 967.txt 950.txt 
+297.txt 16 376.txt 766.txt 412.txt 41.txt 738.txt 329.txt 863.txt 113.txt 98.txt 170.txt 23.txt 174.txt 461.txt 402.txt 299.txt 464.txt 
+298.txt 6 567.txt 662.txt 541.txt 184.txt 636.txt 182.txt 
+299.txt 11 605.txt 737.txt 192.txt 13.txt 468.txt 915.txt 533.txt 793.txt 816.txt 696.txt 849.txt 
+300.txt 19 364.txt 352.txt 990.txt 1.txt 502.txt 354.txt 541.txt 842.txt 918.txt 433.txt 585.txt 593.txt 169.txt 165.txt 124.txt 437.txt 339.txt 377.txt 584.txt 
+301.txt 12 641.txt 818.txt 929.txt 505.txt 554.txt 470.txt 667.txt 241.txt 972.txt 684.txt 636.txt 260.txt 
+302.txt 17 551.txt 889.txt 566.txt 416.txt 486.txt 961.txt 193.txt 832.txt 38.txt 387.txt 407.txt 202.txt 515.txt 793.txt 404.txt 347.txt 791.txt 
+303.txt 1 245.txt 
+304.txt 4 212.txt 437.txt 514.txt 872.txt 
+305.txt 5 588.txt 580.txt 400.txt 646.txt 679.txt 
+306.txt 13 938.txt 537.txt 806.txt 194.txt 284.txt 781.txt 638.txt 213.txt 421.txt 741.txt 822.txt 388.txt 688.txt 
+307.txt 20 522.txt 307.txt 783.txt 709.txt 303.txt 532.txt 492.txt 436.txt 287.txt 20.txt 697.txt 397.txt 957.txt 641.txt 927.txt 213.txt 597.txt 353.txt 100.txt 212.txt 
+308.txt 5 151.txt 990.txt 408.txt 363.txt 382.txt 
+309.txt 2 304.txt 0.txt 
+310.txt 17 69.txt 193.txt 678.txt 266.txt 167.txt 293.txt 965.txt 602.txt 920.txt 888.txt 958.txt 538.txt 867.txt 808.txt 364.txt 322.txt 481.txt 
+311.txt 8 263.txt 742.txt 72.txt 994.txt 446.txt 485.txt 993.txt 906.txt 
+312.txt 20 148.txt 672.txt 391.txt 33.txt 755.txt 151.txt 334.txt 994.txt 237.txt 197.txt 467.txt 703.txt 878.txt 451.txt 123.txt 990.txt 304.txt 705.txt 878.txt 340.txt 
+313.txt 18 167.txt 992.txt 683.txt 436.txt 488.txt 893.txt 17.txt 197.txt 858.txt 143.txt 54.txt 356.txt 336.txt 20.txt 148.txt 458.txt 993.txt 412.txt 
+314.txt 6 467.txt 114.txt 179.txt 2.txt 645.txt 643.txt 
+315.txt 13 708.txt 423.txt 343.txt 15.txt 382.txt 598.txt 658.txt 51.txt 80.txt 159.txt 759.txt 257.txt 147.txt 
+316.txt 0 
+317.txt 14 20.txt 721.txt 770.txt 394.txt 19.txt 205.txt 253.txt 570.txt 457.txt 722.txt 485.txt 449.txt 657.txt 292.txt 
+318.txt 20 48.txt 464.txt 410.txt 770.txt 429.txt 169.txt 637.txt 851.txt 679.txt 311.txt 428.txt 656.txt 723.txt 653.txt 384.txt 366.txt 757.txt 738.txt 198.txt 868.txt 
+319.txt 5 924.txt 940.txt 41.txt 807.txt 714.txt 
+320.txt 14 522.txt 644.txt 91.txt 448.txt 559.txt 329.txt 104.txt 428.txt 278.txt 92.txt 760.txt 524.txt 725.txt 805.txt 
+321.txt 8 400.txt 128.txt 383.txt 575.txt 978.txt 452.txt 349.txt 986.txt 
+322.txt 13 159.txt 65.txt 242.txt 289.txt 326.txt 583.txt 159.txt 317.txt 191.txt 655.txt 558.txt 741.txt 826.txt 
+323.txt 3 139.txt 637.txt 315.txt 
+324.txt 18 172.txt 733.txt 878.txt 990.txt 732.txt 482.txt 93.txt 547.txt 435.txt 849.txt 351.txt 73.txt 7.txt 270.txt 516.txt 190.txt 210.txt 361.txt 
+325.txt 17 873.txt 128.txt 577.txt 124.txt 997.txt 936.txt 738.txt 674.txt 75.txt 174.txt 364.txt 948.txt 249.txt 242.txt 246.txt 696.txt 900.txt 
+326.txt 3 484.txt 316.txt 42.txt 
+327.txt 1 858.txt 
+328.txt 20 514.txt 771.txt 335.txt 476.txt 493.txt 772.txt 81.txt 766.txt 498.txt 642.txt 450.txt 836.txt 737.txt 829.txt 406.txt 193.txt 574.txt 353.txt 791.txt 995.txt 
+329.txt 15 316.txt 523.txt 343.txt 227.txt 400.txt 280.txt 208.txt 915.txt 807.txt 71.txt 493.txt 16.txt 826.txt 963.txt 536.txt 
+330.txt 19 73.txt 957.txt 50.txt 411.txt 574.txt 16.txt 341.txt 631.txt 525.txt 345.txt 830.txt 905.txt 758.txt 649.txt 607.txt 843.txt 247.txt 123.txt 131.txt 
+331.txt 10 892.txt 175.txt 253.txt 891.txt 860.txt 647.txt 105.txt 663.txt 487.txt 478.txt 
+332.txt 7 533.txt 541.txt 783.txt 593.txt 429.txt 717.txt 605.txt 
+333.txt 17 359.txt 361.txt 220.txt 414.txt 84.txt 289.txt 550.txt 550.txt 349.txt 429.txt 258.txt 252.txt 982.txt 817.txt 338.txt 571.txt 814.txt 
+334.txt 7 568.txt 815.txt 918.txt 390.txt 430.txt 137.txt 368.txt 
+335.txt 4 0.txt 790.txt 460.txt 547.txt 
+336.txt 0 
+337.txt 6 511.txt 859.txt 532.txt 368.txt 757.txt 12.txt 
+338.txt 3 422.txt 287.txt 478.txt 
+339.txt 4 853.txt 842.txt 655.txt 129.txt 
+340.txt 12 588.txt 97.txt 540.txt 879.txt 818.txt 555.txt 121.txt 580.txt 282.txt 182.txt 320.txt 224.txt 
+341.txt 18 304.txt 581.txt 153.txt 902.txt 61.txt 36.txt 868.txt 574.txt 266.txt 653.txt 71.txt 257.txt 728.txt 876.txt 450.txt 345.txt 960.txt 996.txt 
+342.txt 3 214.txt 597.txt 75.txt 
+343.txt 6 511.txt 778.txt 946.txt 163.txt 464.txt 585.txt 
+344.txt 12 393.txt 104.txt 297.txt 911.txt 693.txt 927.txt 537.txt 945.txt 696.txt 820.txt 621.txt 904.txt 
+345.txt 9 5.txt 168.txt 419.txt 104.txt 193.txt 376.txt 707.txt 978.txt 664.txt 
+346.txt 17 196.txt 622.txt 964.txt 963.txt 531.txt 119.txt 571.txt 842.txt 320.txt 543.txt 550.txt 974.txt 569.txt 460.txt 480.txt 157.txt 591.txt 
+347.txt 11 613.txt 480.txt 761.txt 910.txt 287.txt 506.txt 194.txt 754.txt 245.txt 889.txt 336.txt 
+348.txt 10 786.txt 906.txt 187.txt 216.txt 248.txt 466.txt 867.txt 371.txt 91.txt 574.txt 
+349.txt 13 514.txt 438.txt 300.txt 763.txt 400.txt 577.txt 272.txt 639.txt 293.txt 340.txt 535.txt 534.txt 14.txt 
+350.txt 11 821.txt 184.txt 411.txt 866.txt 686.txt 320.txt 667.txt 363.txt 999.txt 263.txt 771.txt 
+351.txt 19 589.txt 355.txt 329.txt 745.txt 278.txt 326.txt 743.txt 302.txt 634.txt 467.txt 398.txt 224.txt 410.txt 479.txt 832.txt 236.txt 280.txt 756.txt 273.txt 
+352.txt 9 146.txt 759.txt 64.txt 678.txt 997.txt 277.txt 142.txt 604.txt 200.txt 
+353.txt 3 90.txt 386.txt 819.txt 
+354.txt 6 202.txt 88.txt 685.txt 98.txt 795.txt 783.txt 
+355.txt 5 113.txt 630.txt 388.txt 345.txt 943.txt 
+356.txt 20 42.txt 482.txt 881.txt 260.txt 419.txt 446.txt 631.txt 457.txt 540.txt 569.txt 416.txt 194.txt 563.txt 345.txt 983.txt 432.txt 434.txt 700.txt 642.txt 415.txt 
+357.txt 5 382.txt 958.txt 716.txt 64.txt 161.txt 
+358.txt 7 212.txt 400.txt 760.txt 318.txt 911.txt 193.txt 16.txt 
+359.txt 2 978.txt 517.txt 
+360.txt 7 313.txt 248.txt 938.txt 677.txt 87.txt 987.txt 212.txt 
+361.txt 19 133.txt 766.txt 790.txt 408.txt 408.txt 448.txt 915.txt 19.txt 948.txt 432.txt 750.txt 960.txt 130.txt 632.txt 169.txt 635.txt 923.txt 970.txt 629.txt 
+362.txt 16 533.txt 624.txt 940.txt 373.txt 946.txt 249.txt 518.txt 669.txt 367.txt 990.txt 622.txt 530.txt 699.txt 650.txt 974.txt 753.txt 
+363.txt 5 846.txt 36.txt 549.txt 161.txt 305.txt 
+364.txt 0 
+365.txt 9 946.txt 726.txt 781.txt 152.txt 293.txt 623.txt 198.txt 520.txt 396.txt 
+366.txt 2 499.txt 740.txt 
+367.txt 1 968.txt 
+368.txt 15 595.txt 52.txt 38.txt 204.txt 955.txt 773.txt 105.txt 487.txt 624.txt 611.txt 634.txt 572.txt 285.txt 138.txt 989.txt 
+369.txt 11 795.txt 924.txt 319.txt 971.txt 733.txt 244.txt 628.txt 32.txt 14.txt 441.txt 213.txt 
+370.txt 3 641.txt 850.txt 930.txt 
+371.txt 9 613.txt 424.txt 421.txt 625.txt 926.txt 991.txt 98.txt 246.txt 324.txt 
+372.txt 3 724.txt 859.txt 763.txt 
+373.txt 1 119.txt 
+374.txt 10 159.txt 735.txt 517.txt 799.txt 849.txt 134.txt 145.txt 893.txt 748.txt 760.txt 
+375.txt 7 373.txt 255.txt 717.txt 447.txt 182.txt 795.txt 987.txt 
+376.txt 12 482.txt 297.txt 166.txt 680.txt 533.txt 103.txt 435.txt 397.txt 185.txt 593.txt 1.txt 458.txt 
+377.txt 7 514.txt 96.txt 735.txt 987.txt 249.txt 82.txt 806.txt 
+378.txt 0 
+379.txt 0 
+380.txt 4 337.txt 800.txt 578.txt 416.txt 
+381.txt 15 482.txt 996.txt 590.txt 28.txt 207.txt 912.txt 108.txt 290.txt 670.txt 218.txt 902.txt 542.txt 634.txt 603.txt 627.txt 
+382.txt 1 270.txt 
+383.txt 16 883.txt 543.txt 413.txt 148.txt 237.txt 491.txt 111.txt 801.txt 664.txt 377.txt 306.txt 737.txt 205.txt 993.txt 838.txt 89.txt 
+384.txt 20 863.txt 392.txt 49.txt 801.txt 544.txt 758.txt 785.txt 958.txt 25.txt 980.txt 649.txt 383.txt 249.txt 449.txt 252.txt 126.txt 715.txt 571.txt 238.txt 388.txt 
+385.txt 2 847.txt 509.txt 
+386.txt 19 305.txt 704.txt 412.txt 549.txt 452.txt 427.txt 50.txt 538.txt 26.txt 812.txt 920.txt 885.txt 254.txt 260.txt 798.txt 258.txt 706.txt 588.txt 244.txt 
+387.txt 14 208.txt 40.txt 945.txt 804.txt 188.txt 813.txt 219.txt 196.txt 380.txt 274.txt 519.txt 862.txt 910.txt 112.txt 
+388.txt 11 355.txt 372.txt 700.txt 837.txt 940.txt 184.txt 693.txt 84.txt 453.txt 242.txt 207.txt 
+389.txt 20 360.txt 588.txt 812.txt 424.txt 556.txt 224.txt 249.txt 482.txt 735.txt 821.txt 399.txt 136.txt 403.txt 199.txt 742.txt 249.txt 74.txt 452.txt 229.txt 52.txt 
+390.txt 18 599.txt 90.txt 966.txt 521.txt 991.txt 551.txt 968.txt 638.txt 525.txt 464.txt 13.txt 222.txt 776.txt 321.txt 648.txt 280.txt 632.txt 948.txt 
+391.txt 15 173.txt 981.txt 730.txt 648.txt 247.txt 682.txt 923.txt 150.txt 166.txt 941.txt 496.txt 37.txt 696.txt 506.txt 917.txt 
+392.txt 19 940.txt 464.txt 471.txt 623.txt 824.txt 912.txt 743.txt 917.txt 684.txt 209.txt 500.txt 216.txt 326.txt 205.txt 538.txt 64.txt 874.txt 823.txt 315.txt 
+393.txt 11 322.txt 172.txt 924.txt 3.txt 960.txt 769.txt 425.txt 469.txt 578.txt 140.txt 54.txt 
+394.txt 7 252.txt 358.txt 719.txt 223.txt 508.txt 78.txt 336.txt 
+395.txt 11 344.txt 21.txt 963.txt 128.txt 966.txt 929.txt 682.txt 619.txt 639.txt 121.txt 383.txt 
+396.txt 1 286.txt 
+397.txt 3 92.txt 404.txt 471.txt 
+398.txt 12 438.txt 241.txt 618.txt 459.txt 380.txt 471.txt 735.txt 174.txt 666.txt 66.txt 41.txt 481.txt 
+399.txt 1 160.txt 
+400.txt 9 575.txt 259.txt 806.txt 832.txt 95.txt 579.txt 500.txt 798.txt 796.txt 
+401.txt 15 103.txt 437.txt 842.txt 843.txt 286.txt 813.txt 584.txt 812.txt 970.txt 401.txt 493.txt 976.txt 327.txt 191.txt 315.txt 
+402.txt 15 99.txt 710.txt 657.txt 427.txt 415.txt 309.txt 562.txt 466.txt 418.txt 577.txt 415.txt 645.txt 698.txt 654.txt 859.txt 
+403.txt 7 639.txt 350.txt 36.txt 803.txt 164.txt 919.txt 274.txt 
+404.txt 2 953.txt 415.txt 
+405.txt 1 189.txt 
+406.txt 13 950.txt 426.txt 802.txt 404.txt 589.txt 309.txt 648.txt 115.txt 146.txt 39.txt 81.txt 134.txt 985.txt 
+407.txt 3 849.txt 839.txt 293.txt 
+408.txt 14 271.txt 964.txt 570.txt 242.txt 595.txt 584.txt 97.txt 445.txt 514.txt 259.txt 989.txt 77.txt 546.txt 780.txt 
+409.txt 16 560.txt 490.txt 153.txt 562.txt 932.txt 429.txt 649.txt 102.txt 443.txt 895.txt 984.txt 814.txt 714.txt 203.txt 536.txt 93.txt 
+410.txt 4 701.txt 978.txt 318.txt 18.txt 
+411.txt 6 26.txt 334.txt 199.txt 618.txt 201.txt 239.txt 
+412.txt 9 885.txt 727.txt 807.txt 59.txt 109.txt 202.txt 117.txt 305.txt 196.txt 
+413.txt 20 888.txt 479.txt 186.txt 82.txt 562.txt 723.txt 758.txt 299.txt 181.txt 672.txt 575.txt 144.txt 258.txt 809.txt 455.txt 284.txt 108.txt 547.txt 476.txt 257.txt 
+414.txt 13 867.txt 356.txt 846.txt 965.txt 623.txt 760.txt 979.txt 239.txt 630.txt 275.txt 300.txt 67.txt 263.txt 
+415.txt 10 252.txt 815.txt 284.txt 198.txt 222.txt 933.txt 573.txt 921.txt 782.txt 137.txt 
+416.txt 8 857.txt 7.txt 512.txt 593.txt 616.txt 679.txt 980.txt 750.txt 
+417.txt 19 820.txt 830.txt 740.txt 81.txt 40.txt 762.txt 397.txt 292.txt 678.txt 925.txt 46.txt 358.txt 6.txt 668.txt 473.txt 0.txt 786.txt 397.txt 80.txt 
+418.txt 10 362.txt 115.txt 307.txt 145.txt 283.txt 698.txt 523.txt 239.txt 281.txt 800.txt 
+419.txt 19 698.txt 739.txt 129.txt 132.txt 908.txt 289.txt 370.txt 733.txt 528.txt 83.txt 713.txt 15.txt 681.txt 801.txt 869.txt 938.txt 985.txt 532.txt 173.txt 
+420.txt 0 
+421.txt 20 628.txt 625.txt 260.txt 886.txt 903.txt 505.txt 681.txt 500.txt 286.txt 332.txt 540.txt 872.txt 843.txt 459.txt 417.txt 611.txt 253.txt 386.txt 547.txt 127.txt 
+422.txt 12 299.txt 6.txt 327.txt 995.txt 515.txt 618.txt 68.txt 635.txt 200.txt 309.txt 833.txt 36.txt 
+423.txt 10 167.txt 553.txt 653.txt 782.txt 783.txt 942.txt 736.txt 725.txt 584.txt 954.txt 
+424.txt 17 475.txt 821.txt 700.txt 735.txt 142.txt 61.txt 959.txt 706.txt 657.txt 423.txt 70.txt 229.txt 909.txt 161.txt 11.txt 868.txt 188.txt 
+425.txt 13 91.txt 175.txt 354.txt 59.txt 630.txt 756.txt 565.txt 751.txt 823.txt 564.txt 228.txt 618.txt 839.txt 
+426.txt 5 341.txt 748.txt 758.txt 359.txt 79.txt 
+427.txt 5 628.txt 835.txt 499.txt 821.txt 369.txt 
+428.txt 8 868.txt 52.txt 543.txt 463.txt 101.txt 907.txt 614.txt 256.txt 
+429.txt 19 898.txt 125.txt 994.txt 20.txt 350.txt 21.txt 231.txt 498.txt 397.txt 178.txt 23.txt 873.txt 414.txt 420.txt 109.txt 948.txt 963.txt 560.txt 448.txt 
+430.txt 8 677.txt 140.txt 30.txt 158.txt 973.txt 218.txt 466.txt 327.txt 
+431.txt 9 795.txt 24.txt 946.txt 730.txt 805.txt 35.txt 1.txt 689.txt 438.txt 
+432.txt 18 662.txt 680.txt 498.txt 65.txt 789.txt 824.txt 851.txt 395.txt 485.txt 722.txt 916.txt 186.txt 253.txt 818.txt 528.txt 650.txt 167.txt 686.txt 
+433.txt 6 692.txt 508.txt 77.txt 41.txt 501.txt 633.txt 
+434.txt 11 70.txt 532.txt 201.txt 399.txt 518.txt 834.txt 300.txt 21.txt 163.txt 469.txt 739.txt 
+435.txt 6 528.txt 498.txt 889.txt 318.txt 53.txt 578.txt 
+436.txt 12 492.txt 797.txt 407.txt 234.txt 183.txt 845.txt 378.txt 247.txt 566.txt 664.txt 100.txt 365.txt 
+437.txt 16 290.txt 101.txt 877.txt 28.txt 129.txt 12.txt 606.txt 257.txt 456.txt 641.txt 756.txt 777.txt 485.txt 590.txt 383.txt 673.txt 
+438.txt 6 570.txt 589.txt 517.txt 885.txt 85.txt 758.txt 
+439.txt 12 336.txt 318.txt 418.txt 279.txt 521.txt 874.txt 444.txt 790.txt 269.txt 618.txt 960.txt 424.txt 
+440.txt 3 769.txt 84.txt 815.txt 
+441.txt 5 942.txt 822.txt 411.txt 710.txt 778.txt 
+442.txt 11 791.txt 455.txt 625.txt 461.txt 887.txt 433.txt 422.txt 486.txt 392.txt 146.txt 828.txt 
+443.txt 4 21.txt 653.txt 662.txt 945.txt 
+444.txt 9 294.txt 13.txt 316.txt 496.txt 282.txt 882.txt 309.txt 760.txt 526.txt 
+445.txt 17 433.txt 255.txt 81.txt 402.txt 693.txt 992.txt 928.txt 911.txt 263.txt 414.txt 597.txt 755.txt 845.txt 318.txt 156.txt 857.txt 467.txt 
+446.txt 15 783.txt 554.txt 699.txt 659.txt 632.txt 670.txt 220.txt 191.txt 143.txt 782.txt 445.txt 627.txt 203.txt 898.txt 393.txt 
+447.txt 13 696.txt 537.txt 15.txt 611.txt 385.txt 421.txt 826.txt 655.txt 129.txt 404.txt 943.txt 913.txt 386.txt 
+448.txt 8 255.txt 120.txt 970.txt 301.txt 161.txt 1.txt 824.txt 597.txt 
+449.txt 6 214.txt 195.txt 732.txt 395.txt 127.txt 689.txt 
+450.txt 3 505.txt 969.txt 883.txt 
+451.txt 1 606.txt 
+452.txt 10 380.txt 672.txt 686.txt 760.txt 312.txt 337.txt 91.txt 318.txt 89.txt 937.txt 
+453.txt 7 409.txt 547.txt 494.txt 681.txt 394.txt 713.txt 957.txt 
+454.txt 9 601.txt 765.txt 550.txt 667.txt 591.txt 333.txt 710.txt 269.txt 434.txt 
+455.txt 0 
+456.txt 14 989.txt 477.txt 445.txt 399.txt 813.txt 910.txt 663.txt 41.txt 632.txt 748.txt 842.txt 920.txt 808.txt 534.txt 
+457.txt 5 350.txt 565.txt 275.txt 471.txt 754.txt 
+458.txt 2 620.txt 543.txt 
+459.txt 20 787.txt 823.txt 718.txt 153.txt 409.txt 867.txt 762.txt 17.txt 176.txt 929.txt 452.txt 414.txt 894.txt 343.txt 315.txt 84.txt 926.txt 367.txt 811.txt 193.txt 
+460.txt 9 740.txt 774.txt 493.txt 764.txt 16.txt 407.txt 636.txt 769.txt 334.txt 
+461.txt 10 778.txt 68.txt 576.txt 622.txt 558.txt 600.txt 969.txt 429.txt 640.txt 906.txt 
+462.txt 18 686.txt 76.txt 994.txt 833.txt 990.txt 395.txt 753.txt 971.txt 187.txt 26.txt 96.txt 2.txt 682.txt 607.txt 265.txt 749.txt 773.txt 863.txt 
+463.txt 6 801.txt 482.txt 567.txt 923.txt 782.txt 84.txt 
+464.txt 8 168.txt 560.txt 878.txt 632.txt 244.txt 235.txt 804.txt 285.txt 
+465.txt 6 986.txt 226.txt 62.txt 852.txt 663.txt 27.txt 
+466.txt 1 125.txt 
+467.txt 8 490.txt 412.txt 72.txt 25.txt 432.txt 896.txt 97.txt 566.txt 
+468.txt 6 389.txt 59.txt 601.txt 95.txt 191.txt 712.txt 
+469.txt 8 812.txt 305.txt 681.txt 260.txt 427.txt 661.txt 388.txt 668.txt 
+470.txt 1 743.txt 
+471.txt 2 671.txt 304.txt 
+472.txt 4 968.txt 200.txt 651.txt 465.txt 
+473.txt 10 350.txt 55.txt 7.txt 381.txt 729.txt 114.txt 749.txt 857.txt 304.txt 290.txt 
+474.txt 2 995.txt 50.txt 
+475.txt 2 0.txt 822.txt 
+476.txt 15 702.txt 606.txt 282.txt 987.txt 366.txt 609.txt 365.txt 868.txt 770.txt 897.txt 919.txt 723.txt 479.txt 859.txt 423.txt 
+477.txt 19 424.txt 919.txt 55.txt 310.txt 722.txt 174.txt 575.txt 594.txt 424.txt 590.txt 977.txt 644.txt 189.txt 25.txt 672.txt 181.txt 455.txt 399.txt 323.txt 
+478.txt 10 856.txt 154.txt 117.txt 533.txt 21.txt 298.txt 400.txt 327.txt 68.txt 578.txt 
+479.txt 13 557.txt 541.txt 520.txt 540.txt 661.txt 895.txt 767.txt 698.txt 549.txt 150.txt 794.txt 912.txt 542.txt 
+480.txt 12 581.txt 869.txt 702.txt 297.txt 534.txt 680.txt 766.txt 466.txt 215.txt 760.txt 860.txt 973.txt 
+481.txt 15 915.txt 435.txt 674.txt 142.txt 472.txt 656.txt 315.txt 474.txt 638.txt 197.txt 988.txt 124.txt 349.txt 289.txt 39.txt 
+482.txt 16 609.txt 307.txt 903.txt 427.txt 658.txt 837.txt 593.txt 544.txt 124.txt 679.txt 749.txt 555.txt 803.txt 939.txt 824.txt 256.txt 
+483.txt 16 693.txt 827.txt 591.txt 322.txt 270.txt 84.txt 7.txt 44.txt 525.txt 844.txt 623.txt 234.txt 359.txt 835.txt 227.txt 227.txt 
+484.txt 18 160.txt 453.txt 332.txt 41.txt 755.txt 97.txt 468.txt 250.txt 676.txt 114.txt 997.txt 679.txt 277.txt 631.txt 94.txt 757.txt 217.txt 384.txt 
+485.txt 4 151.txt 778.txt 160.txt 494.txt 
+486.txt 5 178.txt 501.txt 257.txt 183.txt 226.txt 
+487.txt 19 380.txt 322.txt 846.txt 957.txt 41.txt 190.txt 273.txt 769.txt 335.txt 562.txt 235.txt 829.txt 449.txt 335.txt 859.txt 947.txt 980.txt 494.txt 479.txt 
+488.txt 3 521.txt 742.txt 758.txt 
+489.txt 5 631.txt 443.txt 518.txt 901.txt 65.txt 
+490.txt 15 556.txt 485.txt 975.txt 571.txt 704.txt 875.txt 77.txt 755.txt 592.txt 923.txt 653.txt 294.txt 507.txt 252.txt 538.txt 
+491.txt 15 820.txt 404.txt 482.txt 845.txt 781.txt 630.txt 663.txt 589.txt 559.txt 343.txt 163.txt 574.txt 856.txt 438.txt 248.txt 
+492.txt 19 804.txt 107.txt 891.txt 375.txt 963.txt 293.txt 31.txt 33.txt 655.txt 3.txt 163.txt 219.txt 175.txt 292.txt 116.txt 486.txt 647.txt 682.txt 897.txt 
+493.txt 8 699.txt 967.txt 996.txt 866.txt 308.txt 599.txt 263.txt 363.txt 
+494.txt 20 610.txt 705.txt 854.txt 651.txt 834.txt 904.txt 153.txt 19.txt 27.txt 908.txt 659.txt 491.txt 280.txt 446.txt 283.txt 972.txt 402.txt 420.txt 878.txt 824.txt 
+495.txt 5 192.txt 927.txt 547.txt 97.txt 987.txt 
+496.txt 14 386.txt 124.txt 784.txt 813.txt 325.txt 651.txt 246.txt 782.txt 518.txt 959.txt 725.txt 182.txt 604.txt 620.txt 
+497.txt 8 612.txt 980.txt 745.txt 853.txt 161.txt 342.txt 202.txt 290.txt 
+498.txt 15 425.txt 625.txt 825.txt 253.txt 254.txt 378.txt 859.txt 390.txt 15.txt 613.txt 493.txt 963.txt 609.txt 269.txt 976.txt 
+499.txt 3 181.txt 768.txt 874.txt 
+500.txt 14 972.txt 539.txt 592.txt 479.txt 261.txt 650.txt 774.txt 714.txt 384.txt 217.txt 820.txt 110.txt 347.txt 817.txt 
+501.txt 20 289.txt 643.txt 362.txt 246.txt 654.txt 826.txt 335.txt 344.txt 543.txt 372.txt 175.txt 735.txt 349.txt 360.txt 461.txt 969.txt 743.txt 470.txt 10.txt 381.txt 
+502.txt 16 372.txt 172.txt 645.txt 360.txt 747.txt 826.txt 752.txt 714.txt 990.txt 173.txt 981.txt 907.txt 436.txt 881.txt 727.txt 41.txt 
+503.txt 5 155.txt 362.txt 739.txt 196.txt 386.txt 
+504.txt 14 843.txt 584.txt 375.txt 824.txt 12.txt 770.txt 859.txt 196.txt 51.txt 155.txt 188.txt 763.txt 383.txt 704.txt 
+505.txt 4 263.txt 864.txt 306.txt 287.txt 
+506.txt 15 274.txt 392.txt 586.txt 424.txt 905.txt 276.txt 804.txt 241.txt 796.txt 537.txt 911.txt 718.txt 177.txt 813.txt 681.txt 
+507.txt 15 898.txt 632.txt 589.txt 968.txt 146.txt 496.txt 671.txt 248.txt 462.txt 368.txt 952.txt 959.txt 862.txt 666.txt 969.txt 
+508.txt 17 805.txt 679.txt 429.txt 506.txt 70.txt 103.txt 267.txt 375.txt 683.txt 82.txt 710.txt 651.txt 540.txt 378.txt 660.txt 938.txt 502.txt 
+509.txt 13 215.txt 959.txt 168.txt 719.txt 137.txt 127.txt 595.txt 278.txt 573.txt 678.txt 709.txt 826.txt 675.txt 
+510.txt 17 292.txt 782.txt 429.txt 417.txt 109.txt 800.txt 77.txt 159.txt 657.txt 880.txt 339.txt 921.txt 915.txt 649.txt 190.txt 568.txt 897.txt 
+511.txt 3 464.txt 124.txt 147.txt 
+512.txt 0 
+513.txt 0 
+514.txt 11 112.txt 647.txt 669.txt 213.txt 159.txt 422.txt 424.txt 662.txt 374.txt 441.txt 278.txt 
+515.txt 5 280.txt 979.txt 289.txt 939.txt 136.txt 
+516.txt 7 553.txt 813.txt 787.txt 578.txt 938.txt 846.txt 650.txt 
+517.txt 13 983.txt 739.txt 681.txt 412.txt 884.txt 203.txt 775.txt 442.txt 815.txt 177.txt 811.txt 860.txt 511.txt 
+518.txt 11 533.txt 363.txt 261.txt 585.txt 262.txt 526.txt 809.txt 787.txt 917.txt 511.txt 742.txt 
+519.txt 19 452.txt 28.txt 338.txt 242.txt 132.txt 302.txt 991.txt 829.txt 573.txt 228.txt 619.txt 59.txt 625.txt 398.txt 666.txt 217.txt 147.txt 70.txt 760.txt 
+520.txt 0 
+521.txt 3 0.txt 878.txt 316.txt 
+522.txt 2 239.txt 395.txt 
+523.txt 9 823.txt 537.txt 386.txt 161.txt 481.txt 175.txt 570.txt 841.txt 940.txt 
+524.txt 7 988.txt 11.txt 591.txt 276.txt 503.txt 344.txt 81.txt 
+525.txt 17 997.txt 119.txt 485.txt 975.txt 824.txt 174.txt 695.txt 189.txt 612.txt 111.txt 147.txt 624.txt 285.txt 937.txt 450.txt 841.txt 554.txt 
+526.txt 4 218.txt 189.txt 57.txt 302.txt 
+527.txt 13 806.txt 344.txt 692.txt 778.txt 689.txt 940.txt 165.txt 323.txt 791.txt 247.txt 319.txt 571.txt 777.txt 
+528.txt 1 836.txt 
+529.txt 20 952.txt 155.txt 762.txt 792.txt 848.txt 242.txt 994.txt 740.txt 686.txt 471.txt 756.txt 208.txt 436.txt 230.txt 727.txt 992.txt 437.txt 392.txt 770.txt 115.txt 
+530.txt 10 108.txt 764.txt 829.txt 570.txt 854.txt 229.txt 810.txt 621.txt 501.txt 93.txt 
+531.txt 4 754.txt 453.txt 598.txt 359.txt 
+532.txt 6 671.txt 632.txt 150.txt 95.txt 924.txt 499.txt 
+533.txt 12 175.txt 707.txt 379.txt 265.txt 894.txt 422.txt 687.txt 51.txt 500.txt 364.txt 289.txt 191.txt 
+534.txt 13 910.txt 564.txt 203.txt 469.txt 528.txt 158.txt 256.txt 364.txt 816.txt 437.txt 14.txt 140.txt 56.txt 
+535.txt 4 885.txt 428.txt 400.txt 708.txt 
+536.txt 6 645.txt 545.txt 571.txt 885.txt 811.txt 1.txt 
+537.txt 14 255.txt 228.txt 42.txt 470.txt 530.txt 735.txt 440.txt 141.txt 719.txt 545.txt 286.txt 322.txt 582.txt 671.txt 
+538.txt 8 303.txt 49.txt 810.txt 409.txt 41.txt 168.txt 259.txt 330.txt 
+539.txt 9 196.txt 768.txt 569.txt 992.txt 734.txt 44.txt 865.txt 147.txt 850.txt 
+540.txt 19 637.txt 684.txt 380.txt 29.txt 479.txt 325.txt 617.txt 464.txt 596.txt 409.txt 90.txt 269.txt 398.txt 938.txt 543.txt 60.txt 389.txt 531.txt 9.txt 
+541.txt 11 5.txt 479.txt 384.txt 149.txt 905.txt 178.txt 555.txt 354.txt 324.txt 475.txt 777.txt 
+542.txt 15 115.txt 166.txt 431.txt 193.txt 168.txt 460.txt 629.txt 373.txt 135.txt 926.txt 283.txt 199.txt 846.txt 5.txt 930.txt 
+543.txt 20 934.txt 962.txt 129.txt 92.txt 477.txt 799.txt 701.txt 608.txt 993.txt 832.txt 189.txt 944.txt 283.txt 86.txt 582.txt 72.txt 537.txt 963.txt 472.txt 627.txt 
+544.txt 8 109.txt 316.txt 626.txt 574.txt 285.txt 968.txt 664.txt 718.txt 
+545.txt 6 643.txt 913.txt 736.txt 907.txt 687.txt 658.txt 
+546.txt 0 
+547.txt 1 76.txt 
+548.txt 1 817.txt 
+549.txt 20 207.txt 481.txt 166.txt 973.txt 718.txt 552.txt 498.txt 187.txt 295.txt 880.txt 395.txt 68.txt 881.txt 841.txt 328.txt 353.txt 677.txt 91.txt 77.txt 208.txt 
+550.txt 15 482.txt 210.txt 722.txt 379.txt 39.txt 249.txt 863.txt 105.txt 439.txt 966.txt 630.txt 591.txt 116.txt 997.txt 118.txt 
+551.txt 16 668.txt 687.txt 875.txt 836.txt 243.txt 15.txt 212.txt 248.txt 378.txt 416.txt 408.txt 857.txt 777.txt 536.txt 943.txt 17.txt 
+552.txt 0 
+553.txt 15 26.txt 465.txt 138.txt 463.txt 27.txt 419.txt 394.txt 948.txt 793.txt 535.txt 750.txt 684.txt 580.txt 746.txt 970.txt 
+554.txt 16 350.txt 176.txt 884.txt 369.txt 956.txt 213.txt 384.txt 903.txt 653.txt 152.txt 2.txt 267.txt 728.txt 291.txt 929.txt 883.txt 
+555.txt 6 281.txt 164.txt 131.txt 574.txt 725.txt 941.txt 
+556.txt 15 192.txt 641.txt 585.txt 725.txt 789.txt 474.txt 832.txt 543.txt 880.txt 725.txt 295.txt 38.txt 875.txt 31.txt 401.txt 
+557.txt 0 
+558.txt 12 868.txt 270.txt 558.txt 44.txt 532.txt 712.txt 21.txt 941.txt 971.txt 178.txt 463.txt 774.txt 
+559.txt 0 
+560.txt 20 45.txt 487.txt 756.txt 473.txt 3.txt 731.txt 955.txt 593.txt 894.txt 392.txt 807.txt 361.txt 246.txt 910.txt 949.txt 246.txt 79.txt 435.txt 111.txt 434.txt 
+561.txt 18 541.txt 201.txt 183.txt 573.txt 294.txt 204.txt 207.txt 230.txt 632.txt 357.txt 772.txt 545.txt 827.txt 726.txt 595.txt 906.txt 452.txt 569.txt 
+562.txt 11 720.txt 889.txt 797.txt 903.txt 859.txt 122.txt 58.txt 200.txt 119.txt 732.txt 390.txt 
+563.txt 16 753.txt 890.txt 826.txt 310.txt 663.txt 5.txt 177.txt 968.txt 837.txt 960.txt 70.txt 941.txt 381.txt 374.txt 245.txt 465.txt 
+564.txt 9 201.txt 718.txt 340.txt 56.txt 315.txt 443.txt 727.txt 364.txt 283.txt 
+565.txt 20 823.txt 794.txt 484.txt 821.txt 331.txt 386.txt 776.txt 684.txt 957.txt 438.txt 427.txt 324.txt 158.txt 122.txt 323.txt 693.txt 636.txt 657.txt 847.txt 759.txt 
+566.txt 15 570.txt 943.txt 813.txt 316.txt 930.txt 999.txt 932.txt 130.txt 442.txt 78.txt 406.txt 60.txt 523.txt 780.txt 375.txt 
+567.txt 4 326.txt 486.txt 85.txt 884.txt 
+568.txt 3 35.txt 550.txt 820.txt 
+569.txt 19 883.txt 945.txt 550.txt 60.txt 342.txt 61.txt 339.txt 270.txt 983.txt 682.txt 271.txt 579.txt 77.txt 679.txt 500.txt 588.txt 98.txt 510.txt 551.txt 
+570.txt 2 207.txt 14.txt 
+571.txt 4 264.txt 887.txt 117.txt 633.txt 
+572.txt 6 406.txt 939.txt 260.txt 282.txt 625.txt 857.txt 
+573.txt 20 831.txt 859.txt 267.txt 965.txt 230.txt 66.txt 400.txt 561.txt 981.txt 515.txt 465.txt 969.txt 934.txt 946.txt 871.txt 184.txt 638.txt 597.txt 123.txt 723.txt 
+574.txt 9 584.txt 561.txt 103.txt 316.txt 237.txt 438.txt 980.txt 509.txt 386.txt 
+575.txt 9 765.txt 934.txt 687.txt 824.txt 43.txt 949.txt 397.txt 113.txt 423.txt 
+576.txt 18 948.txt 501.txt 200.txt 2.txt 607.txt 928.txt 345.txt 387.txt 541.txt 930.txt 89.txt 204.txt 892.txt 261.txt 692.txt 685.txt 476.txt 852.txt 
+577.txt 12 358.txt 718.txt 81.txt 350.txt 472.txt 425.txt 900.txt 101.txt 788.txt 894.txt 552.txt 509.txt 
+578.txt 9 167.txt 686.txt 586.txt 765.txt 794.txt 406.txt 365.txt 600.txt 374.txt 
+579.txt 10 964.txt 410.txt 843.txt 499.txt 739.txt 144.txt 665.txt 341.txt 32.txt 343.txt 
+580.txt 16 529.txt 301.txt 976.txt 851.txt 82.txt 991.txt 700.txt 661.txt 301.txt 666.txt 148.txt 445.txt 949.txt 290.txt 306.txt 194.txt 
+581.txt 0 
+582.txt 6 732.txt 119.txt 860.txt 233.txt 850.txt 467.txt 
+583.txt 17 934.txt 117.txt 294.txt 713.txt 145.txt 579.txt 655.txt 619.txt 300.txt 199.txt 789.txt 662.txt 648.txt 734.txt 762.txt 780.txt 804.txt 
+584.txt 19 722.txt 257.txt 147.txt 77.txt 510.txt 303.txt 628.txt 121.txt 84.txt 96.txt 852.txt 251.txt 596.txt 637.txt 847.txt 895.txt 449.txt 880.txt 771.txt 
+585.txt 1 88.txt 
+586.txt 8 120.txt 778.txt 619.txt 377.txt 72.txt 704.txt 795.txt 491.txt 
+587.txt 10 988.txt 43.txt 667.txt 557.txt 516.txt 356.txt 451.txt 244.txt 686.txt 994.txt 
+588.txt 12 302.txt 225.txt 26.txt 928.txt 957.txt 327.txt 544.txt 120.txt 880.txt 356.txt 739.txt 545.txt 
+589.txt 3 346.txt 659.txt 231.txt 
+590.txt 0 
+591.txt 17 386.txt 518.txt 115.txt 453.txt 858.txt 130.txt 81.txt 181.txt 290.txt 198.txt 202.txt 892.txt 49.txt 596.txt 534.txt 263.txt 348.txt 
+592.txt 2 479.txt 967.txt 
+593.txt 10 375.txt 352.txt 672.txt 803.txt 86.txt 687.txt 990.txt 499.txt 822.txt 775.txt 
+594.txt 4 480.txt 699.txt 637.txt 197.txt 
+595.txt 11 355.txt 658.txt 522.txt 748.txt 425.txt 9.txt 229.txt 518.txt 494.txt 719.txt 420.txt 
+596.txt 12 155.txt 949.txt 178.txt 790.txt 146.txt 176.txt 688.txt 220.txt 757.txt 241.txt 436.txt 235.txt 
+597.txt 3 984.txt 159.txt 262.txt 
+598.txt 3 681.txt 750.txt 463.txt 
+599.txt 1 350.txt 
+600.txt 8 352.txt 647.txt 450.txt 153.txt 980.txt 617.txt 952.txt 105.txt 
+601.txt 6 701.txt 580.txt 559.txt 751.txt 37.txt 111.txt 
+602.txt 12 189.txt 342.txt 542.txt 753.txt 308.txt 473.txt 739.txt 616.txt 490.txt 388.txt 805.txt 105.txt 
+603.txt 5 564.txt 582.txt 332.txt 456.txt 8.txt 
+604.txt 2 207.txt 933.txt 
+605.txt 5 904.txt 588.txt 943.txt 445.txt 559.txt 
+606.txt 1 371.txt 
+607.txt 2 774.txt 113.txt 
+608.txt 4 680.txt 906.txt 209.txt 723.txt 
+609.txt 20 577.txt 316.txt 42.txt 178.txt 653.txt 663.txt 219.txt 239.txt 961.txt 172.txt 975.txt 317.txt 764.txt 12.txt 974.txt 729.txt 55.txt 573.txt 357.txt 490.txt 
+610.txt 14 417.txt 314.txt 979.txt 292.txt 368.txt 322.txt 199.txt 372.txt 833.txt 698.txt 624.txt 877.txt 54.txt 153.txt 
+611.txt 17 990.txt 358.txt 644.txt 138.txt 976.txt 641.txt 347.txt 570.txt 40.txt 633.txt 472.txt 193.txt 500.txt 573.txt 565.txt 643.txt 625.txt 
+612.txt 7 218.txt 792.txt 565.txt 618.txt 968.txt 866.txt 605.txt 
+613.txt 8 129.txt 807.txt 127.txt 795.txt 539.txt 468.txt 987.txt 477.txt 
+614.txt 8 236.txt 616.txt 700.txt 198.txt 86.txt 597.txt 117.txt 578.txt 
+615.txt 7 386.txt 78.txt 675.txt 672.txt 178.txt 147.txt 821.txt 
+616.txt 0 
+617.txt 15 464.txt 893.txt 273.txt 328.txt 837.txt 83.txt 658.txt 381.txt 17.txt 426.txt 451.txt 604.txt 194.txt 498.txt 785.txt 
+618.txt 14 687.txt 912.txt 186.txt 451.txt 127.txt 322.txt 709.txt 177.txt 711.txt 69.txt 948.txt 62.txt 160.txt 767.txt 
+619.txt 16 935.txt 6.txt 757.txt 152.txt 484.txt 660.txt 185.txt 952.txt 553.txt 891.txt 13.txt 581.txt 241.txt 142.txt 906.txt 114.txt 
+620.txt 7 445.txt 519.txt 480.txt 622.txt 602.txt 806.txt 689.txt 
+621.txt 10 631.txt 638.txt 530.txt 366.txt 797.txt 892.txt 353.txt 401.txt 879.txt 771.txt 
+622.txt 9 61.txt 785.txt 507.txt 669.txt 319.txt 15.txt 620.txt 436.txt 848.txt 
+623.txt 1 386.txt 
+624.txt 6 922.txt 32.txt 249.txt 218.txt 300.txt 587.txt 
+625.txt 13 260.txt 612.txt 621.txt 953.txt 92.txt 260.txt 415.txt 329.txt 498.txt 632.txt 109.txt 735.txt 347.txt 
+626.txt 11 792.txt 124.txt 230.txt 20.txt 687.txt 137.txt 648.txt 785.txt 332.txt 513.txt 989.txt 
+627.txt 8 749.txt 601.txt 109.txt 129.txt 231.txt 18.txt 254.txt 112.txt 
+628.txt 12 95.txt 562.txt 569.txt 750.txt 116.txt 479.txt 957.txt 145.txt 845.txt 141.txt 944.txt 903.txt 
+629.txt 1 320.txt 
+630.txt 14 158.txt 946.txt 518.txt 946.txt 81.txt 621.txt 374.txt 216.txt 262.txt 737.txt 169.txt 965.txt 924.txt 389.txt 
+631.txt 9 347.txt 867.txt 215.txt 177.txt 615.txt 136.txt 952.txt 848.txt 617.txt 
+632.txt 11 238.txt 969.txt 544.txt 36.txt 886.txt 877.txt 2.txt 309.txt 635.txt 84.txt 218.txt 
+633.txt 1 379.txt 
+634.txt 4 224.txt 664.txt 754.txt 14.txt 
+635.txt 11 352.txt 796.txt 780.txt 601.txt 478.txt 282.txt 451.txt 714.txt 67.txt 993.txt 954.txt 
+636.txt 6 943.txt 911.txt 828.txt 4.txt 179.txt 702.txt 
+637.txt 15 203.txt 272.txt 892.txt 150.txt 54.txt 463.txt 410.txt 686.txt 67.txt 144.txt 689.txt 732.txt 187.txt 35.txt 837.txt 
+638.txt 20 238.txt 484.txt 743.txt 950.txt 363.txt 743.txt 389.txt 992.txt 86.txt 736.txt 996.txt 130.txt 322.txt 374.txt 43.txt 755.txt 789.txt 575.txt 764.txt 305.txt 
+639.txt 19 400.txt 700.txt 667.txt 150.txt 368.txt 991.txt 26.txt 526.txt 355.txt 988.txt 157.txt 203.txt 757.txt 400.txt 167.txt 733.txt 567.txt 200.txt 796.txt 
+640.txt 0 
+641.txt 12 968.txt 12.txt 597.txt 73.txt 439.txt 795.txt 840.txt 781.txt 382.txt 543.txt 611.txt 705.txt 
+642.txt 8 886.txt 428.txt 517.txt 902.txt 607.txt 483.txt 917.txt 792.txt 
+643.txt 17 950.txt 397.txt 781.txt 525.txt 349.txt 536.txt 203.txt 907.txt 92.txt 296.txt 253.txt 361.txt 15.txt 384.txt 654.txt 198.txt 596.txt 
+644.txt 15 324.txt 441.txt 912.txt 108.txt 629.txt 463.txt 607.txt 939.txt 920.txt 569.txt 550.txt 182.txt 220.txt 34.txt 371.txt 
+645.txt 6 637.txt 156.txt 427.txt 794.txt 111.txt 289.txt 
+646.txt 18 940.txt 601.txt 806.txt 332.txt 748.txt 539.txt 630.txt 207.txt 731.txt 737.txt 805.txt 545.txt 393.txt 756.txt 727.txt 883.txt 380.txt 438.txt 
+647.txt 17 355.txt 664.txt 71.txt 902.txt 391.txt 441.txt 775.txt 338.txt 96.txt 454.txt 490.txt 231.txt 297.txt 225.txt 844.txt 253.txt 265.txt 
+648.txt 20 182.txt 584.txt 324.txt 560.txt 788.txt 889.txt 236.txt 115.txt 422.txt 897.txt 725.txt 942.txt 350.txt 501.txt 831.txt 585.txt 507.txt 778.txt 607.txt 106.txt 
+649.txt 11 231.txt 365.txt 462.txt 633.txt 615.txt 981.txt 90.txt 691.txt 873.txt 288.txt 33.txt 
+650.txt 10 680.txt 700.txt 172.txt 901.txt 415.txt 459.txt 450.txt 693.txt 508.txt 215.txt 
+651.txt 1 849.txt 
+652.txt 4 537.txt 592.txt 841.txt 543.txt 
+653.txt 15 898.txt 593.txt 174.txt 508.txt 887.txt 282.txt 452.txt 732.txt 772.txt 699.txt 970.txt 874.txt 388.txt 464.txt 917.txt 
+654.txt 18 393.txt 641.txt 322.txt 747.txt 651.txt 645.txt 948.txt 101.txt 620.txt 454.txt 501.txt 959.txt 967.txt 256.txt 695.txt 162.txt 859.txt 470.txt 
+655.txt 1 193.txt 
+656.txt 14 584.txt 111.txt 49.txt 552.txt 481.txt 65.txt 525.txt 619.txt 561.txt 88.txt 230.txt 636.txt 561.txt 682.txt 
+657.txt 19 323.txt 807.txt 258.txt 323.txt 259.txt 652.txt 290.txt 445.txt 2.txt 781.txt 494.txt 890.txt 835.txt 747.txt 498.txt 492.txt 692.txt 915.txt 501.txt 
+658.txt 4 290.txt 64.txt 659.txt 531.txt 
+659.txt 9 784.txt 491.txt 199.txt 14.txt 777.txt 178.txt 155.txt 945.txt 606.txt 
+660.txt 0 
+661.txt 5 890.txt 425.txt 317.txt 853.txt 87.txt 
+662.txt 20 116.txt 27.txt 246.txt 302.txt 260.txt 798.txt 287.txt 834.txt 473.txt 657.txt 520.txt 856.txt 673.txt 936.txt 61.txt 993.txt 615.txt 833.txt 527.txt 588.txt 
+663.txt 19 126.txt 452.txt 103.txt 791.txt 669.txt 535.txt 803.txt 335.txt 100.txt 754.txt 670.txt 519.txt 432.txt 608.txt 441.txt 712.txt 207.txt 667.txt 470.txt 
+664.txt 16 949.txt 480.txt 956.txt 644.txt 762.txt 592.txt 139.txt 421.txt 430.txt 802.txt 129.txt 412.txt 47.txt 111.txt 829.txt 383.txt 
+665.txt 16 632.txt 232.txt 517.txt 455.txt 382.txt 231.txt 504.txt 262.txt 919.txt 83.txt 843.txt 441.txt 644.txt 995.txt 668.txt 795.txt 
+666.txt 14 925.txt 386.txt 444.txt 290.txt 512.txt 14.txt 830.txt 560.txt 566.txt 797.txt 729.txt 341.txt 126.txt 50.txt 
+667.txt 3 574.txt 444.txt 676.txt 
+668.txt 14 123.txt 18.txt 436.txt 169.txt 35.txt 191.txt 561.txt 25.txt 636.txt 136.txt 879.txt 730.txt 707.txt 765.txt 
+669.txt 9 615.txt 532.txt 507.txt 659.txt 198.txt 309.txt 312.txt 305.txt 952.txt 
+670.txt 18 361.txt 755.txt 196.txt 423.txt 139.txt 386.txt 409.txt 265.txt 705.txt 960.txt 275.txt 442.txt 7.txt 48.txt 114.txt 144.txt 682.txt 21.txt 
+671.txt 18 139.txt 852.txt 391.txt 707.txt 465.txt 385.txt 341.txt 14.txt 471.txt 21.txt 117.txt 18.txt 260.txt 983.txt 954.txt 545.txt 969.txt 406.txt 
+672.txt 0 
+673.txt 16 367.txt 457.txt 390.txt 188.txt 30.txt 806.txt 379.txt 354.txt 389.txt 706.txt 229.txt 150.txt 172.txt 801.txt 630.txt 143.txt 
+674.txt 12 85.txt 83.txt 935.txt 145.txt 650.txt 878.txt 183.txt 303.txt 344.txt 878.txt 70.txt 207.txt 
+675.txt 6 825.txt 353.txt 414.txt 773.txt 971.txt 290.txt 
+676.txt 0 
+677.txt 20 68.txt 659.txt 67.txt 690.txt 131.txt 480.txt 592.txt 470.txt 110.txt 483.txt 621.txt 781.txt 202.txt 777.txt 90.txt 407.txt 539.txt 303.txt 690.txt 438.txt 
+678.txt 3 908.txt 326.txt 1.txt 
+679.txt 20 622.txt 544.txt 945.txt 395.txt 833.txt 362.txt 92.txt 541.txt 104.txt 565.txt 373.txt 222.txt 549.txt 912.txt 425.txt 340.txt 817.txt 853.txt 719.txt 867.txt 
+680.txt 19 501.txt 871.txt 602.txt 136.txt 830.txt 818.txt 848.txt 524.txt 861.txt 557.txt 360.txt 356.txt 735.txt 395.txt 543.txt 775.txt 322.txt 828.txt 810.txt 
+681.txt 13 716.txt 323.txt 115.txt 939.txt 478.txt 797.txt 392.txt 50.txt 486.txt 338.txt 16.txt 984.txt 124.txt 
+682.txt 16 239.txt 204.txt 594.txt 53.txt 405.txt 677.txt 982.txt 788.txt 887.txt 874.txt 595.txt 468.txt 426.txt 296.txt 985.txt 238.txt 
+683.txt 12 771.txt 898.txt 942.txt 33.txt 284.txt 200.txt 895.txt 980.txt 139.txt 97.txt 572.txt 54.txt 
+684.txt 12 674.txt 618.txt 446.txt 953.txt 531.txt 552.txt 858.txt 463.txt 744.txt 265.txt 898.txt 657.txt 
+685.txt 9 830.txt 947.txt 85.txt 250.txt 1.txt 308.txt 617.txt 15.txt 147.txt 
+686.txt 16 551.txt 300.txt 300.txt 696.txt 859.txt 66.txt 391.txt 444.txt 952.txt 805.txt 673.txt 486.txt 288.txt 692.txt 115.txt 573.txt 
+687.txt 12 978.txt 141.txt 842.txt 625.txt 914.txt 923.txt 788.txt 493.txt 643.txt 988.txt 12.txt 798.txt 
+688.txt 8 330.txt 992.txt 403.txt 255.txt 522.txt 710.txt 798.txt 154.txt 
+689.txt 19 163.txt 884.txt 340.txt 1.txt 929.txt 489.txt 965.txt 961.txt 829.txt 807.txt 605.txt 562.txt 342.txt 710.txt 870.txt 210.txt 92.txt 900.txt 168.txt 
+690.txt 10 738.txt 474.txt 997.txt 182.txt 483.txt 737.txt 809.txt 66.txt 806.txt 136.txt 
+691.txt 4 132.txt 106.txt 452.txt 973.txt 
+692.txt 0 
+693.txt 15 246.txt 595.txt 674.txt 937.txt 356.txt 158.txt 949.txt 370.txt 15.txt 226.txt 811.txt 46.txt 90.txt 28.txt 944.txt 
+694.txt 15 877.txt 285.txt 789.txt 711.txt 103.txt 461.txt 843.txt 434.txt 296.txt 291.txt 827.txt 60.txt 982.txt 948.txt 728.txt 
+695.txt 10 746.txt 251.txt 550.txt 882.txt 377.txt 561.txt 432.txt 745.txt 256.txt 832.txt 
+696.txt 5 858.txt 241.txt 815.txt 460.txt 643.txt 
+697.txt 4 563.txt 57.txt 272.txt 791.txt 
+698.txt 11 495.txt 938.txt 432.txt 450.txt 132.txt 547.txt 950.txt 268.txt 133.txt 459.txt 893.txt 
+699.txt 11 246.txt 933.txt 801.txt 659.txt 49.txt 555.txt 78.txt 159.txt 29.txt 888.txt 28.txt 
+700.txt 5 924.txt 196.txt 458.txt 716.txt 220.txt 
+701.txt 8 511.txt 105.txt 113.txt 805.txt 562.txt 598.txt 247.txt 956.txt 
+702.txt 3 139.txt 30.txt 914.txt 
+703.txt 1 325.txt 
+704.txt 19 381.txt 735.txt 757.txt 580.txt 312.txt 851.txt 392.txt 430.txt 910.txt 166.txt 331.txt 448.txt 918.txt 370.txt 181.txt 168.txt 369.txt 25.txt 90.txt 
+705.txt 8 8.txt 302.txt 315.txt 680.txt 442.txt 490.txt 307.txt 227.txt 
+706.txt 19 915.txt 905.txt 900.txt 270.txt 679.txt 683.txt 753.txt 514.txt 582.txt 564.txt 487.txt 125.txt 576.txt 563.txt 611.txt 431.txt 36.txt 276.txt 968.txt 
+707.txt 0 
+708.txt 3 882.txt 864.txt 759.txt 
+709.txt 17 709.txt 275.txt 55.txt 253.txt 109.txt 176.txt 127.txt 508.txt 386.txt 811.txt 62.txt 9.txt 429.txt 764.txt 554.txt 555.txt 253.txt 
+710.txt 12 702.txt 569.txt 458.txt 707.txt 221.txt 450.txt 303.txt 544.txt 39.txt 337.txt 307.txt 652.txt 
+711.txt 19 496.txt 402.txt 715.txt 435.txt 360.txt 232.txt 440.txt 844.txt 252.txt 227.txt 277.txt 495.txt 654.txt 339.txt 984.txt 154.txt 99.txt 673.txt 44.txt 
+712.txt 9 637.txt 511.txt 503.txt 86.txt 704.txt 436.txt 203.txt 57.txt 661.txt 
+713.txt 12 652.txt 290.txt 373.txt 490.txt 700.txt 412.txt 672.txt 65.txt 269.txt 945.txt 616.txt 451.txt 
+714.txt 3 71.txt 974.txt 328.txt 
+715.txt 16 76.txt 152.txt 874.txt 802.txt 240.txt 92.txt 55.txt 622.txt 139.txt 362.txt 734.txt 820.txt 679.txt 734.txt 413.txt 434.txt 
+716.txt 5 478.txt 759.txt 801.txt 255.txt 139.txt 
+717.txt 7 694.txt 156.txt 906.txt 788.txt 608.txt 233.txt 978.txt 
+718.txt 8 771.txt 645.txt 230.txt 901.txt 495.txt 446.txt 134.txt 999.txt 
+719.txt 8 990.txt 715.txt 114.txt 694.txt 186.txt 520.txt 287.txt 836.txt 
+720.txt 4 12.txt 765.txt 197.txt 882.txt 
+721.txt 4 746.txt 423.txt 188.txt 778.txt 
+722.txt 19 713.txt 155.txt 186.txt 311.txt 912.txt 545.txt 447.txt 285.txt 151.txt 279.txt 228.txt 764.txt 736.txt 632.txt 656.txt 556.txt 262.txt 180.txt 921.txt 
+723.txt 17 179.txt 209.txt 274.txt 198.txt 760.txt 260.txt 277.txt 781.txt 965.txt 591.txt 149.txt 476.txt 59.txt 696.txt 733.txt 927.txt 720.txt 
+724.txt 9 772.txt 44.txt 734.txt 114.txt 688.txt 289.txt 207.txt 434.txt 824.txt 
+725.txt 2 509.txt 50.txt 
+726.txt 8 771.txt 364.txt 981.txt 828.txt 418.txt 77.txt 913.txt 407.txt 
+727.txt 16 973.txt 174.txt 531.txt 58.txt 712.txt 691.txt 923.txt 481.txt 162.txt 917.txt 623.txt 538.txt 64.txt 293.txt 994.txt 342.txt 
+728.txt 1 451.txt 
+729.txt 10 895.txt 302.txt 591.txt 695.txt 99.txt 872.txt 795.txt 601.txt 249.txt 359.txt 
+730.txt 9 125.txt 632.txt 295.txt 991.txt 596.txt 549.txt 650.txt 498.txt 162.txt 
+731.txt 2 715.txt 548.txt 
+732.txt 3 877.txt 395.txt 664.txt 
+733.txt 13 929.txt 652.txt 462.txt 143.txt 785.txt 557.txt 157.txt 940.txt 649.txt 761.txt 451.txt 125.txt 766.txt 
+734.txt 10 806.txt 268.txt 949.txt 995.txt 691.txt 793.txt 889.txt 362.txt 562.txt 665.txt 
+735.txt 13 817.txt 133.txt 23.txt 557.txt 499.txt 64.txt 198.txt 48.txt 327.txt 804.txt 562.txt 95.txt 22.txt 
+736.txt 8 71.txt 72.txt 39.txt 938.txt 508.txt 100.txt 390.txt 908.txt 
+737.txt 0 
+738.txt 5 94.txt 260.txt 752.txt 162.txt 142.txt 
+739.txt 6 761.txt 708.txt 361.txt 490.txt 726.txt 190.txt 
+740.txt 18 798.txt 45.txt 862.txt 862.txt 291.txt 240.txt 170.txt 74.txt 732.txt 108.txt 970.txt 795.txt 855.txt 253.txt 241.txt 309.txt 166.txt 571.txt 
+741.txt 7 852.txt 538.txt 742.txt 950.txt 20.txt 968.txt 430.txt 
+742.txt 13 991.txt 318.txt 140.txt 975.txt 596.txt 123.txt 738.txt 898.txt 608.txt 887.txt 642.txt 51.txt 440.txt 
+743.txt 9 597.txt 998.txt 41.txt 24.txt 403.txt 434.txt 746.txt 922.txt 351.txt 
+744.txt 9 802.txt 550.txt 837.txt 344.txt 532.txt 103.txt 851.txt 2.txt 367.txt 
+745.txt 7 708.txt 683.txt 561.txt 375.txt 982.txt 927.txt 161.txt 
+746.txt 13 512.txt 161.txt 406.txt 809.txt 473.txt 578.txt 754.txt 514.txt 889.txt 669.txt 679.txt 200.txt 720.txt 
+747.txt 9 968.txt 642.txt 121.txt 798.txt 458.txt 277.txt 295.txt 518.txt 528.txt 
+748.txt 2 184.txt 972.txt 
+749.txt 14 691.txt 854.txt 457.txt 773.txt 656.txt 175.txt 441.txt 323.txt 703.txt 962.txt 651.txt 20.txt 901.txt 777.txt 
+750.txt 10 437.txt 142.txt 247.txt 476.txt 592.txt 124.txt 928.txt 41.txt 104.txt 646.txt 
+751.txt 16 115.txt 330.txt 441.txt 561.txt 785.txt 959.txt 348.txt 555.txt 207.txt 762.txt 941.txt 886.txt 955.txt 855.txt 24.txt 881.txt 
+752.txt 16 995.txt 737.txt 39.txt 932.txt 345.txt 403.txt 90.txt 667.txt 739.txt 747.txt 268.txt 919.txt 153.txt 314.txt 384.txt 83.txt 
+753.txt 11 72.txt 938.txt 885.txt 328.txt 678.txt 975.txt 161.txt 45.txt 550.txt 686.txt 686.txt 
+754.txt 5 761.txt 509.txt 908.txt 142.txt 642.txt 
+755.txt 16 411.txt 340.txt 308.txt 66.txt 304.txt 612.txt 380.txt 810.txt 219.txt 357.txt 737.txt 927.txt 0.txt 289.txt 736.txt 766.txt 
+756.txt 14 891.txt 277.txt 632.txt 886.txt 622.txt 383.txt 741.txt 104.txt 100.txt 233.txt 570.txt 599.txt 935.txt 842.txt 
+757.txt 12 545.txt 188.txt 467.txt 194.txt 462.txt 833.txt 295.txt 845.txt 430.txt 945.txt 790.txt 182.txt 
+758.txt 10 64.txt 833.txt 827.txt 543.txt 839.txt 696.txt 259.txt 523.txt 769.txt 981.txt 
+759.txt 1 551.txt 
+760.txt 4 106.txt 882.txt 345.txt 107.txt 
+761.txt 7 629.txt 799.txt 691.txt 226.txt 636.txt 263.txt 595.txt 
+762.txt 20 376.txt 161.txt 399.txt 255.txt 791.txt 92.txt 340.txt 220.txt 661.txt 197.txt 29.txt 842.txt 250.txt 752.txt 125.txt 110.txt 163.txt 709.txt 841.txt 62.txt 
+763.txt 19 27.txt 993.txt 508.txt 123.txt 991.txt 54.txt 838.txt 527.txt 105.txt 755.txt 330.txt 535.txt 681.txt 856.txt 721.txt 148.txt 704.txt 719.txt 749.txt 
+764.txt 5 74.txt 932.txt 913.txt 426.txt 652.txt 
+765.txt 1 490.txt 
+766.txt 8 845.txt 818.txt 228.txt 357.txt 284.txt 340.txt 710.txt 723.txt 
+767.txt 3 109.txt 644.txt 489.txt 
+768.txt 2 268.txt 467.txt 
+769.txt 0 
+770.txt 12 181.txt 928.txt 795.txt 463.txt 862.txt 905.txt 792.txt 128.txt 756.txt 35.txt 842.txt 336.txt 
+771.txt 12 157.txt 179.txt 476.txt 390.txt 76.txt 311.txt 309.txt 586.txt 147.txt 558.txt 363.txt 384.txt 
+772.txt 3 903.txt 846.txt 989.txt 
+773.txt 5 508.txt 688.txt 373.txt 731.txt 331.txt 
+774.txt 9 12.txt 122.txt 839.txt 586.txt 507.txt 981.txt 452.txt 731.txt 726.txt 
+775.txt 15 910.txt 22.txt 902.txt 167.txt 654.txt 445.txt 822.txt 923.txt 429.txt 20.txt 8.txt 128.txt 710.txt 326.txt 674.txt 
+776.txt 14 811.txt 618.txt 744.txt 711.txt 447.txt 116.txt 484.txt 0.txt 578.txt 632.txt 478.txt 767.txt 435.txt 702.txt 
+777.txt 7 456.txt 456.txt 377.txt 589.txt 276.txt 851.txt 344.txt 
+778.txt 1 359.txt 
+779.txt 18 558.txt 824.txt 894.txt 178.txt 412.txt 883.txt 514.txt 198.txt 229.txt 293.txt 291.txt 189.txt 510.txt 283.txt 479.txt 851.txt 625.txt 670.txt 
+780.txt 6 723.txt 826.txt 328.txt 856.txt 730.txt 991.txt 
+781.txt 6 254.txt 411.txt 152.txt 916.txt 320.txt 492.txt 
+782.txt 3 259.txt 326.txt 524.txt 
+783.txt 17 611.txt 893.txt 220.txt 200.txt 464.txt 413.txt 272.txt 754.txt 204.txt 111.txt 579.txt 893.txt 635.txt 816.txt 821.txt 731.txt 105.txt 
+784.txt 13 983.txt 622.txt 37.txt 313.txt 254.txt 957.txt 313.txt 670.txt 996.txt 297.txt 343.txt 494.txt 486.txt 
+785.txt 16 96.txt 924.txt 188.txt 400.txt 962.txt 954.txt 715.txt 993.txt 986.txt 29.txt 144.txt 854.txt 720.txt 860.txt 595.txt 613.txt 
+786.txt 11 48.txt 731.txt 280.txt 671.txt 220.txt 162.txt 594.txt 744.txt 663.txt 90.txt 970.txt 
+787.txt 9 488.txt 647.txt 507.txt 155.txt 377.txt 626.txt 94.txt 262.txt 761.txt 
+788.txt 18 494.txt 956.txt 830.txt 9.txt 841.txt 367.txt 184.txt 667.txt 905.txt 716.txt 137.txt 543.txt 205.txt 644.txt 160.txt 992.txt 322.txt 812.txt 
+789.txt 15 723.txt 653.txt 36.txt 502.txt 136.txt 400.txt 545.txt 317.txt 539.txt 315.txt 595.txt 534.txt 209.txt 620.txt 342.txt 
+790.txt 20 897.txt 742.txt 297.txt 463.txt 763.txt 85.txt 499.txt 572.txt 592.txt 141.txt 269.txt 590.txt 39.txt 276.txt 303.txt 909.txt 39.txt 282.txt 336.txt 112.txt 
+791.txt 6 608.txt 11.txt 211.txt 869.txt 175.txt 175.txt 
+792.txt 18 532.txt 799.txt 771.txt 982.txt 435.txt 521.txt 722.txt 110.txt 924.txt 989.txt 968.txt 815.txt 918.txt 447.txt 910.txt 520.txt 133.txt 71.txt 
+793.txt 19 767.txt 274.txt 99.txt 545.txt 29.txt 713.txt 458.txt 262.txt 882.txt 466.txt 823.txt 922.txt 596.txt 193.txt 912.txt 204.txt 393.txt 688.txt 809.txt 
+794.txt 9 166.txt 534.txt 89.txt 313.txt 924.txt 909.txt 424.txt 994.txt 420.txt 
+795.txt 12 920.txt 464.txt 506.txt 168.txt 301.txt 312.txt 792.txt 899.txt 202.txt 349.txt 247.txt 194.txt 
+796.txt 17 452.txt 493.txt 548.txt 632.txt 399.txt 447.txt 942.txt 863.txt 441.txt 454.txt 534.txt 485.txt 22.txt 811.txt 58.txt 640.txt 610.txt 
+797.txt 19 945.txt 403.txt 129.txt 83.txt 491.txt 597.txt 489.txt 517.txt 8.txt 651.txt 807.txt 284.txt 365.txt 692.txt 503.txt 900.txt 808.txt 112.txt 920.txt 
+798.txt 13 283.txt 439.txt 42.txt 417.txt 235.txt 942.txt 283.txt 466.txt 85.txt 728.txt 951.txt 555.txt 989.txt 
+799.txt 6 882.txt 658.txt 388.txt 486.txt 3.txt 684.txt 
+800.txt 15 972.txt 605.txt 48.txt 484.txt 463.txt 795.txt 523.txt 938.txt 321.txt 721.txt 33.txt 504.txt 217.txt 628.txt 218.txt 
+801.txt 3 210.txt 363.txt 116.txt 
+802.txt 17 159.txt 563.txt 354.txt 326.txt 850.txt 318.txt 991.txt 189.txt 922.txt 889.txt 678.txt 359.txt 684.txt 768.txt 960.txt 824.txt 485.txt 
+803.txt 3 191.txt 500.txt 539.txt 
+804.txt 15 702.txt 471.txt 89.txt 981.txt 346.txt 855.txt 20.txt 65.txt 245.txt 856.txt 932.txt 794.txt 171.txt 380.txt 855.txt 
+805.txt 15 224.txt 870.txt 876.txt 74.txt 723.txt 287.txt 56.txt 923.txt 477.txt 476.txt 737.txt 743.txt 580.txt 899.txt 345.txt 
+806.txt 14 9.txt 580.txt 308.txt 551.txt 325.txt 630.txt 914.txt 308.txt 813.txt 237.txt 474.txt 914.txt 80.txt 504.txt 
+807.txt 11 755.txt 102.txt 776.txt 169.txt 237.txt 822.txt 310.txt 181.txt 569.txt 159.txt 706.txt 
+808.txt 11 463.txt 665.txt 291.txt 738.txt 132.txt 450.txt 778.txt 960.txt 779.txt 242.txt 899.txt 
+809.txt 1 934.txt 
+810.txt 18 478.txt 899.txt 43.txt 169.txt 835.txt 966.txt 658.txt 927.txt 270.txt 210.txt 902.txt 658.txt 442.txt 954.txt 69.txt 239.txt 454.txt 801.txt 
+811.txt 2 180.txt 985.txt 
+812.txt 1 406.txt 
+813.txt 4 21.txt 819.txt 608.txt 756.txt 
+814.txt 19 143.txt 844.txt 129.txt 250.txt 641.txt 7.txt 342.txt 901.txt 169.txt 426.txt 184.txt 543.txt 454.txt 80.txt 532.txt 455.txt 652.txt 947.txt 444.txt 
+815.txt 0 
+816.txt 5 622.txt 109.txt 912.txt 421.txt 490.txt 
+817.txt 4 623.txt 327.txt 353.txt 852.txt 
+818.txt 15 547.txt 327.txt 808.txt 546.txt 496.txt 834.txt 786.txt 76.txt 550.txt 930.txt 901.txt 477.txt 848.txt 42.txt 589.txt 
+819.txt 11 876.txt 170.txt 133.txt 300.txt 362.txt 131.txt 718.txt 870.txt 292.txt 592.txt 277.txt 
+820.txt 6 350.txt 938.txt 532.txt 502.txt 124.txt 999.txt 
+821.txt 18 664.txt 503.txt 311.txt 778.txt 369.txt 963.txt 236.txt 99.txt 804.txt 96.txt 410.txt 654.txt 730.txt 693.txt 917.txt 944.txt 573.txt 274.txt 
+822.txt 3 991.txt 408.txt 331.txt 
+823.txt 10 614.txt 891.txt 246.txt 165.txt 881.txt 93.txt 771.txt 787.txt 553.txt 788.txt 
+824.txt 20 780.txt 773.txt 835.txt 151.txt 558.txt 358.txt 42.txt 147.txt 919.txt 48.txt 711.txt 871.txt 779.txt 821.txt 12.txt 67.txt 221.txt 559.txt 232.txt 692.txt 
+825.txt 8 658.txt 754.txt 300.txt 584.txt 818.txt 915.txt 115.txt 649.txt 
+826.txt 17 804.txt 653.txt 256.txt 489.txt 363.txt 913.txt 144.txt 193.txt 632.txt 15.txt 995.txt 901.txt 719.txt 600.txt 129.txt 225.txt 256.txt 
+827.txt 11 846.txt 286.txt 500.txt 625.txt 47.txt 538.txt 503.txt 880.txt 876.txt 488.txt 821.txt 
+828.txt 6 149.txt 740.txt 81.txt 236.txt 585.txt 135.txt 
+829.txt 6 306.txt 481.txt 864.txt 196.txt 605.txt 956.txt 
+830.txt 3 704.txt 780.txt 239.txt 
+831.txt 5 353.txt 932.txt 409.txt 647.txt 148.txt 
+832.txt 20 554.txt 345.txt 515.txt 576.txt 924.txt 233.txt 393.txt 621.txt 387.txt 811.txt 793.txt 791.txt 125.txt 155.txt 480.txt 611.txt 340.txt 127.txt 855.txt 523.txt 
+833.txt 18 627.txt 297.txt 365.txt 591.txt 173.txt 111.txt 741.txt 953.txt 506.txt 510.txt 687.txt 964.txt 417.txt 145.txt 982.txt 501.txt 948.txt 849.txt 
+834.txt 9 910.txt 200.txt 229.txt 589.txt 187.txt 568.txt 962.txt 113.txt 982.txt 
+835.txt 19 651.txt 974.txt 729.txt 770.txt 820.txt 717.txt 218.txt 978.txt 375.txt 120.txt 693.txt 643.txt 346.txt 659.txt 599.txt 806.txt 607.txt 311.txt 470.txt 
+836.txt 13 18.txt 572.txt 711.txt 923.txt 653.txt 713.txt 106.txt 960.txt 14.txt 66.txt 861.txt 883.txt 123.txt 
+837.txt 17 265.txt 455.txt 116.txt 826.txt 591.txt 259.txt 592.txt 850.txt 136.txt 251.txt 964.txt 415.txt 802.txt 639.txt 836.txt 987.txt 529.txt 
+838.txt 16 599.txt 330.txt 598.txt 721.txt 835.txt 885.txt 290.txt 998.txt 78.txt 523.txt 450.txt 930.txt 591.txt 728.txt 401.txt 632.txt 
+839.txt 19 813.txt 117.txt 859.txt 284.txt 652.txt 219.txt 232.txt 687.txt 413.txt 855.txt 230.txt 639.txt 9.txt 897.txt 315.txt 895.txt 485.txt 845.txt 14.txt 
+840.txt 6 933.txt 418.txt 467.txt 564.txt 868.txt 471.txt 
+841.txt 18 672.txt 713.txt 896.txt 612.txt 398.txt 219.txt 586.txt 991.txt 935.txt 218.txt 539.txt 979.txt 390.txt 646.txt 689.txt 658.txt 641.txt 460.txt 
+842.txt 2 499.txt 178.txt 
+843.txt 16 533.txt 20.txt 720.txt 779.txt 720.txt 821.txt 905.txt 796.txt 421.txt 908.txt 575.txt 550.txt 337.txt 149.txt 469.txt 299.txt 
+844.txt 20 830.txt 756.txt 535.txt 546.txt 227.txt 108.txt 781.txt 612.txt 977.txt 620.txt 276.txt 519.txt 437.txt 353.txt 639.txt 595.txt 368.txt 325.txt 381.txt 717.txt 
+845.txt 1 309.txt 
+846.txt 3 121.txt 499.txt 923.txt 
+847.txt 12 868.txt 407.txt 186.txt 562.txt 865.txt 799.txt 586.txt 313.txt 100.txt 997.txt 897.txt 99.txt 
+848.txt 14 803.txt 424.txt 823.txt 106.txt 933.txt 977.txt 19.txt 319.txt 528.txt 545.txt 18.txt 358.txt 968.txt 507.txt 
+849.txt 0 
+850.txt 15 849.txt 459.txt 92.txt 531.txt 667.txt 451.txt 116.txt 295.txt 87.txt 796.txt 55.txt 368.txt 295.txt 635.txt 253.txt 
+851.txt 18 412.txt 716.txt 317.txt 467.txt 916.txt 428.txt 430.txt 663.txt 790.txt 849.txt 230.txt 229.txt 772.txt 172.txt 580.txt 54.txt 722.txt 816.txt 
+852.txt 19 57.txt 442.txt 781.txt 504.txt 458.txt 373.txt 784.txt 618.txt 579.txt 246.txt 412.txt 273.txt 96.txt 542.txt 602.txt 341.txt 974.txt 200.txt 226.txt 
+853.txt 12 311.txt 884.txt 302.txt 762.txt 868.txt 354.txt 348.txt 930.txt 103.txt 772.txt 964.txt 171.txt 
+854.txt 11 343.txt 742.txt 807.txt 512.txt 570.txt 608.txt 489.txt 633.txt 558.txt 605.txt 625.txt 
+855.txt 7 881.txt 969.txt 268.txt 163.txt 662.txt 760.txt 574.txt 
+856.txt 6 785.txt 935.txt 229.txt 786.txt 572.txt 43.txt 
+857.txt 15 674.txt 711.txt 446.txt 808.txt 861.txt 687.txt 222.txt 493.txt 469.txt 976.txt 996.txt 739.txt 247.txt 472.txt 227.txt 
+858.txt 16 526.txt 90.txt 355.txt 163.txt 442.txt 889.txt 699.txt 161.txt 474.txt 494.txt 180.txt 480.txt 140.txt 430.txt 237.txt 151.txt 
+859.txt 18 833.txt 224.txt 124.txt 82.txt 961.txt 649.txt 633.txt 49.txt 493.txt 135.txt 604.txt 469.txt 768.txt 102.txt 798.txt 983.txt 264.txt 941.txt 
+860.txt 4 136.txt 683.txt 85.txt 92.txt 
+861.txt 14 459.txt 937.txt 695.txt 50.txt 969.txt 924.txt 995.txt 840.txt 22.txt 129.txt 797.txt 146.txt 750.txt 457.txt 
+862.txt 18 764.txt 209.txt 640.txt 512.txt 79.txt 892.txt 138.txt 140.txt 927.txt 517.txt 995.txt 646.txt 780.txt 858.txt 88.txt 220.txt 260.txt 335.txt 
+863.txt 18 874.txt 876.txt 282.txt 552.txt 914.txt 983.txt 739.txt 440.txt 812.txt 804.txt 663.txt 578.txt 292.txt 661.txt 78.txt 235.txt 223.txt 547.txt 
+864.txt 9 952.txt 488.txt 30.txt 359.txt 696.txt 202.txt 153.txt 786.txt 649.txt 
+865.txt 12 523.txt 568.txt 850.txt 846.txt 26.txt 452.txt 662.txt 971.txt 815.txt 941.txt 846.txt 16.txt 
+866.txt 3 202.txt 18.txt 147.txt 
+867.txt 4 653.txt 470.txt 860.txt 994.txt 
+868.txt 12 150.txt 336.txt 571.txt 523.txt 14.txt 73.txt 222.txt 502.txt 202.txt 24.txt 655.txt 749.txt 
+869.txt 13 692.txt 407.txt 242.txt 630.txt 235.txt 467.txt 847.txt 548.txt 924.txt 14.txt 179.txt 108.txt 988.txt 
+870.txt 7 458.txt 455.txt 36.txt 379.txt 296.txt 620.txt 323.txt 
+871.txt 11 571.txt 881.txt 113.txt 871.txt 457.txt 737.txt 107.txt 321.txt 973.txt 269.txt 719.txt 
+872.txt 17 829.txt 488.txt 135.txt 393.txt 440.txt 499.txt 677.txt 604.txt 965.txt 794.txt 643.txt 235.txt 2.txt 861.txt 716.txt 924.txt 497.txt 
+873.txt 4 686.txt 580.txt 744.txt 311.txt 
+874.txt 16 172.txt 362.txt 374.txt 22.txt 83.txt 140.txt 389.txt 89.txt 609.txt 337.txt 9.txt 519.txt 106.txt 192.txt 998.txt 409.txt 
+875.txt 16 267.txt 765.txt 920.txt 824.txt 336.txt 423.txt 807.txt 630.txt 224.txt 617.txt 487.txt 78.txt 990.txt 367.txt 717.txt 473.txt 
+876.txt 0 
+877.txt 7 808.txt 869.txt 443.txt 865.txt 178.txt 889.txt 972.txt 
+878.txt 17 578.txt 289.txt 974.txt 882.txt 794.txt 349.txt 815.txt 959.txt 405.txt 889.txt 428.txt 91.txt 553.txt 983.txt 171.txt 238.txt 580.txt 
+879.txt 2 806.txt 551.txt 
+880.txt 3 94.txt 751.txt 259.txt 
+881.txt 10 174.txt 841.txt 458.txt 663.txt 923.txt 770.txt 737.txt 142.txt 687.txt 545.txt 
+882.txt 0 
+883.txt 17 110.txt 169.txt 337.txt 582.txt 513.txt 976.txt 984.txt 93.txt 357.txt 646.txt 981.txt 573.txt 300.txt 619.txt 986.txt 655.txt 592.txt 
+884.txt 2 863.txt 757.txt 
+885.txt 11 444.txt 970.txt 941.txt 833.txt 50.txt 808.txt 301.txt 438.txt 82.txt 350.txt 78.txt 
+886.txt 6 515.txt 572.txt 435.txt 124.txt 254.txt 307.txt 
+887.txt 15 389.txt 499.txt 838.txt 201.txt 205.txt 813.txt 829.txt 855.txt 353.txt 639.txt 732.txt 547.txt 110.txt 504.txt 989.txt 
+888.txt 2 442.txt 597.txt 
+889.txt 20 610.txt 819.txt 756.txt 239.txt 624.txt 88.txt 183.txt 677.txt 794.txt 558.txt 184.txt 240.txt 605.txt 100.txt 162.txt 758.txt 872.txt 102.txt 364.txt 960.txt 
+890.txt 1 874.txt 
+891.txt 20 411.txt 283.txt 540.txt 241.txt 787.txt 866.txt 938.txt 248.txt 53.txt 454.txt 218.txt 361.txt 430.txt 488.txt 618.txt 192.txt 580.txt 643.txt 381.txt 752.txt 
+892.txt 7 771.txt 313.txt 680.txt 726.txt 852.txt 251.txt 456.txt 
+893.txt 16 810.txt 283.txt 214.txt 913.txt 676.txt 365.txt 473.txt 790.txt 667.txt 729.txt 699.txt 680.txt 84.txt 908.txt 907.txt 807.txt 
+894.txt 14 505.txt 290.txt 778.txt 696.txt 372.txt 219.txt 51.txt 519.txt 353.txt 626.txt 36.txt 855.txt 883.txt 637.txt 
+895.txt 20 944.txt 30.txt 437.txt 236.txt 846.txt 563.txt 227.txt 235.txt 781.txt 962.txt 736.txt 509.txt 709.txt 868.txt 268.txt 904.txt 949.txt 783.txt 916.txt 943.txt 
+896.txt 6 597.txt 118.txt 172.txt 329.txt 789.txt 645.txt 
+897.txt 1 810.txt 
+898.txt 13 129.txt 83.txt 327.txt 955.txt 25.txt 729.txt 485.txt 229.txt 39.txt 149.txt 559.txt 504.txt 592.txt 
+899.txt 4 78.txt 759.txt 581.txt 725.txt 
+900.txt 19 233.txt 383.txt 775.txt 97.txt 676.txt 85.txt 713.txt 249.txt 736.txt 338.txt 53.txt 166.txt 454.txt 231.txt 560.txt 433.txt 543.txt 288.txt 906.txt 
+901.txt 13 675.txt 301.txt 117.txt 597.txt 159.txt 395.txt 976.txt 777.txt 497.txt 272.txt 994.txt 729.txt 700.txt 
+902.txt 8 662.txt 649.txt 410.txt 492.txt 67.txt 603.txt 944.txt 147.txt 
+903.txt 1 688.txt 
+904.txt 19 290.txt 524.txt 406.txt 617.txt 924.txt 902.txt 705.txt 848.txt 740.txt 55.txt 418.txt 501.txt 797.txt 998.txt 927.txt 522.txt 42.txt 503.txt 84.txt 
+905.txt 11 355.txt 857.txt 551.txt 493.txt 633.txt 23.txt 139.txt 397.txt 142.txt 684.txt 952.txt 
+906.txt 0 
+907.txt 12 55.txt 925.txt 157.txt 296.txt 290.txt 483.txt 164.txt 712.txt 892.txt 174.txt 200.txt 487.txt 
+908.txt 20 35.txt 864.txt 402.txt 188.txt 781.txt 46.txt 319.txt 977.txt 810.txt 655.txt 367.txt 731.txt 688.txt 989.txt 463.txt 929.txt 291.txt 941.txt 700.txt 152.txt 
+909.txt 6 679.txt 406.txt 664.txt 834.txt 218.txt 242.txt 
+910.txt 19 628.txt 462.txt 797.txt 655.txt 88.txt 629.txt 677.txt 279.txt 319.txt 124.txt 932.txt 697.txt 450.txt 133.txt 560.txt 191.txt 194.txt 201.txt 556.txt 
+911.txt 14 399.txt 933.txt 732.txt 886.txt 405.txt 135.txt 979.txt 179.txt 899.txt 530.txt 769.txt 238.txt 714.txt 796.txt 
+912.txt 16 759.txt 910.txt 953.txt 318.txt 193.txt 573.txt 423.txt 655.txt 164.txt 544.txt 362.txt 26.txt 37.txt 817.txt 49.txt 640.txt 
+913.txt 3 16.txt 488.txt 884.txt 
+914.txt 1 307.txt 
+915.txt 5 319.txt 815.txt 324.txt 494.txt 852.txt 
+916.txt 18 978.txt 684.txt 195.txt 816.txt 539.txt 98.txt 571.txt 887.txt 551.txt 964.txt 632.txt 528.txt 614.txt 865.txt 541.txt 731.txt 273.txt 134.txt 
+917.txt 16 527.txt 931.txt 923.txt 975.txt 69.txt 53.txt 91.txt 666.txt 584.txt 854.txt 447.txt 396.txt 928.txt 610.txt 287.txt 383.txt 
+918.txt 20 468.txt 732.txt 88.txt 148.txt 377.txt 753.txt 15.txt 424.txt 46.txt 392.txt 555.txt 443.txt 468.txt 429.txt 255.txt 402.txt 640.txt 876.txt 636.txt 17.txt 
+919.txt 16 754.txt 286.txt 292.txt 254.txt 574.txt 836.txt 245.txt 177.txt 146.txt 546.txt 998.txt 255.txt 483.txt 991.txt 966.txt 126.txt 
+920.txt 19 324.txt 417.txt 665.txt 154.txt 350.txt 191.txt 20.txt 614.txt 675.txt 531.txt 736.txt 250.txt 385.txt 531.txt 495.txt 88.txt 959.txt 919.txt 541.txt 
+921.txt 11 358.txt 414.txt 82.txt 618.txt 181.txt 14.txt 233.txt 672.txt 800.txt 783.txt 186.txt 
+922.txt 1 518.txt 
+923.txt 15 158.txt 613.txt 379.txt 573.txt 767.txt 901.txt 881.txt 639.txt 847.txt 693.txt 979.txt 26.txt 718.txt 420.txt 82.txt 
+924.txt 18 776.txt 345.txt 468.txt 68.txt 705.txt 409.txt 670.txt 257.txt 994.txt 643.txt 64.txt 45.txt 341.txt 193.txt 923.txt 331.txt 607.txt 688.txt 
+925.txt 2 42.txt 874.txt 
+926.txt 20 430.txt 874.txt 132.txt 825.txt 635.txt 378.txt 838.txt 993.txt 185.txt 633.txt 22.txt 535.txt 798.txt 969.txt 18.txt 616.txt 418.txt 321.txt 688.txt 160.txt 
+927.txt 20 959.txt 130.txt 89.txt 919.txt 110.txt 196.txt 304.txt 388.txt 391.txt 18.txt 16.txt 672.txt 700.txt 858.txt 932.txt 686.txt 368.txt 201.txt 213.txt 232.txt 
+928.txt 9 416.txt 551.txt 144.txt 795.txt 137.txt 967.txt 791.txt 979.txt 500.txt 
+929.txt 6 543.txt 68.txt 869.txt 804.txt 299.txt 916.txt 
+930.txt 16 816.txt 88.txt 482.txt 283.txt 778.txt 607.txt 275.txt 578.txt 573.txt 472.txt 232.txt 713.txt 265.txt 507.txt 977.txt 209.txt 
+931.txt 13 398.txt 701.txt 572.txt 585.txt 871.txt 791.txt 449.txt 228.txt 314.txt 411.txt 176.txt 518.txt 554.txt 
+932.txt 16 839.txt 108.txt 881.txt 691.txt 525.txt 649.txt 741.txt 516.txt 420.txt 157.txt 120.txt 946.txt 16.txt 183.txt 0.txt 103.txt 
+933.txt 16 582.txt 178.txt 571.txt 514.txt 16.txt 677.txt 77.txt 620.txt 913.txt 202.txt 141.txt 338.txt 355.txt 85.txt 962.txt 686.txt 
+934.txt 14 254.txt 2.txt 27.txt 77.txt 916.txt 269.txt 156.txt 336.txt 705.txt 571.txt 705.txt 364.txt 174.txt 615.txt 
+935.txt 14 397.txt 52.txt 336.txt 176.txt 514.txt 291.txt 487.txt 726.txt 428.txt 943.txt 466.txt 412.txt 583.txt 858.txt 
+936.txt 4 958.txt 435.txt 954.txt 184.txt 
+937.txt 17 136.txt 646.txt 82.txt 624.txt 426.txt 589.txt 236.txt 547.txt 424.txt 524.txt 135.txt 149.txt 303.txt 509.txt 205.txt 699.txt 11.txt 
+938.txt 14 511.txt 379.txt 918.txt 697.txt 565.txt 640.txt 177.txt 957.txt 753.txt 917.txt 816.txt 341.txt 336.txt 940.txt 
+939.txt 3 144.txt 224.txt 239.txt 
+940.txt 11 969.txt 275.txt 2.txt 123.txt 673.txt 319.txt 937.txt 725.txt 630.txt 737.txt 816.txt 
+941.txt 11 541.txt 545.txt 406.txt 756.txt 874.txt 698.txt 676.txt 747.txt 428.txt 636.txt 795.txt 
+942.txt 12 220.txt 880.txt 721.txt 735.txt 221.txt 620.txt 986.txt 849.txt 890.txt 873.txt 968.txt 271.txt 
+943.txt 17 243.txt 547.txt 708.txt 135.txt 710.txt 799.txt 181.txt 949.txt 454.txt 452.txt 522.txt 890.txt 912.txt 992.txt 317.txt 287.txt 165.txt 
+944.txt 0 
+945.txt 13 345.txt 714.txt 668.txt 815.txt 199.txt 950.txt 229.txt 204.txt 933.txt 155.txt 492.txt 459.txt 586.txt 
+946.txt 1 728.txt 
+947.txt 6 708.txt 283.txt 935.txt 365.txt 527.txt 109.txt 
+948.txt 16 361.txt 789.txt 31.txt 854.txt 610.txt 66.txt 89.txt 838.txt 593.txt 766.txt 996.txt 438.txt 349.txt 650.txt 870.txt 827.txt 
+949.txt 10 680.txt 375.txt 660.txt 839.txt 321.txt 273.txt 636.txt 275.txt 642.txt 481.txt 
+950.txt 6 200.txt 710.txt 811.txt 805.txt 966.txt 418.txt 
+951.txt 5 260.txt 842.txt 937.txt 262.txt 309.txt 
+952.txt 3 690.txt 50.txt 467.txt 
+953.txt 0 
+954.txt 5 584.txt 54.txt 741.txt 874.txt 703.txt 
+955.txt 13 465.txt 272.txt 630.txt 405.txt 152.txt 545.txt 852.txt 509.txt 988.txt 325.txt 10.txt 527.txt 505.txt 
+956.txt 12 153.txt 433.txt 756.txt 680.txt 468.txt 901.txt 735.txt 801.txt 677.txt 90.txt 999.txt 615.txt 
+957.txt 14 185.txt 951.txt 796.txt 204.txt 275.txt 374.txt 426.txt 913.txt 526.txt 712.txt 109.txt 758.txt 657.txt 845.txt 
+958.txt 10 956.txt 911.txt 631.txt 945.txt 983.txt 491.txt 239.txt 442.txt 384.txt 509.txt 
+959.txt 15 193.txt 113.txt 655.txt 420.txt 399.txt 232.txt 68.txt 558.txt 731.txt 898.txt 630.txt 810.txt 957.txt 67.txt 978.txt 
+960.txt 12 564.txt 177.txt 925.txt 910.txt 45.txt 298.txt 938.txt 864.txt 792.txt 841.txt 538.txt 732.txt 
+961.txt 20 790.txt 541.txt 63.txt 112.txt 429.txt 919.txt 557.txt 260.txt 957.txt 129.txt 927.txt 366.txt 395.txt 141.txt 314.txt 390.txt 481.txt 957.txt 889.txt 564.txt 
+962.txt 8 579.txt 667.txt 670.txt 448.txt 343.txt 135.txt 410.txt 207.txt 
+963.txt 17 852.txt 817.txt 304.txt 220.txt 160.txt 910.txt 762.txt 21.txt 364.txt 670.txt 811.txt 259.txt 580.txt 150.txt 756.txt 646.txt 959.txt 
+964.txt 16 442.txt 569.txt 556.txt 957.txt 78.txt 247.txt 864.txt 925.txt 982.txt 216.txt 538.txt 948.txt 704.txt 710.txt 502.txt 27.txt 
+965.txt 7 506.txt 331.txt 459.txt 708.txt 261.txt 745.txt 267.txt 
+966.txt 1 341.txt 
+967.txt 16 125.txt 220.txt 819.txt 437.txt 874.txt 564.txt 71.txt 542.txt 32.txt 30.txt 406.txt 103.txt 947.txt 291.txt 130.txt 581.txt 
+968.txt 3 294.txt 793.txt 588.txt 
+969.txt 12 953.txt 675.txt 560.txt 94.txt 785.txt 939.txt 303.txt 88.txt 698.txt 409.txt 43.txt 247.txt 
+970.txt 9 717.txt 113.txt 875.txt 98.txt 715.txt 572.txt 874.txt 139.txt 197.txt 
+971.txt 8 233.txt 935.txt 710.txt 270.txt 161.txt 71.txt 65.txt 175.txt 
+972.txt 3 550.txt 416.txt 221.txt 
+973.txt 4 613.txt 50.txt 948.txt 429.txt 
+974.txt 10 526.txt 616.txt 798.txt 627.txt 592.txt 710.txt 946.txt 933.txt 9.txt 407.txt 
+975.txt 15 718.txt 713.txt 61.txt 659.txt 605.txt 574.txt 809.txt 841.txt 700.txt 865.txt 55.txt 305.txt 787.txt 900.txt 64.txt 
+976.txt 10 758.txt 700.txt 193.txt 864.txt 732.txt 54.txt 298.txt 561.txt 600.txt 491.txt 
+977.txt 20 791.txt 52.txt 659.txt 548.txt 309.txt 336.txt 681.txt 959.txt 592.txt 939.txt 34.txt 756.txt 240.txt 643.txt 632.txt 716.txt 952.txt 270.txt 876.txt 205.txt 
+978.txt 18 158.txt 776.txt 95.txt 411.txt 821.txt 239.txt 546.txt 980.txt 446.txt 834.txt 827.txt 201.txt 847.txt 351.txt 623.txt 861.txt 483.txt 163.txt 
+979.txt 14 190.txt 809.txt 220.txt 104.txt 370.txt 160.txt 672.txt 125.txt 83.txt 148.txt 822.txt 720.txt 559.txt 30.txt 
+980.txt 13 319.txt 178.txt 826.txt 216.txt 285.txt 293.txt 686.txt 421.txt 293.txt 764.txt 947.txt 351.txt 121.txt 
+981.txt 7 56.txt 140.txt 360.txt 904.txt 966.txt 370.txt 729.txt 
+982.txt 16 100.txt 858.txt 379.txt 86.txt 491.txt 837.txt 274.txt 827.txt 87.txt 939.txt 262.txt 629.txt 538.txt 823.txt 651.txt 982.txt 
+983.txt 16 776.txt 512.txt 384.txt 904.txt 565.txt 604.txt 585.txt 396.txt 13.txt 535.txt 813.txt 562.txt 606.txt 876.txt 910.txt 112.txt 
+984.txt 20 100.txt 483.txt 140.txt 83.txt 974.txt 627.txt 366.txt 365.txt 19.txt 536.txt 992.txt 540.txt 890.txt 260.txt 685.txt 375.txt 228.txt 613.txt 253.txt 150.txt 
+985.txt 10 223.txt 375.txt 20.txt 920.txt 507.txt 417.txt 598.txt 162.txt 299.txt 119.txt 
+986.txt 3 993.txt 898.txt 85.txt 
+987.txt 17 877.txt 541.txt 787.txt 641.txt 542.txt 55.txt 31.txt 17.txt 286.txt 48.txt 844.txt 239.txt 76.txt 659.txt 682.txt 684.txt 714.txt 
+988.txt 9 623.txt 109.txt 586.txt 107.txt 248.txt 85.txt 313.txt 298.txt 37.txt 
+989.txt 2 800.txt 143.txt 
+990.txt 16 41.txt 743.txt 271.txt 809.txt 297.txt 783.txt 267.txt 837.txt 275.txt 626.txt 527.txt 712.txt 49.txt 544.txt 973.txt 961.txt 
+991.txt 4 471.txt 671.txt 188.txt 296.txt 
+992.txt 6 374.txt 817.txt 880.txt 12.txt 940.txt 755.txt 
+993.txt 1 933.txt 
+994.txt 4 778.txt 996.txt 566.txt 794.txt 
+995.txt 5 839.txt 294.txt 779.txt 831.txt 686.txt 
+996.txt 14 494.txt 232.txt 106.txt 102.txt 940.txt 982.txt 374.txt 531.txt 20.txt 481.txt 360.txt 932.txt 632.txt 668.txt 
+997.txt 14 458.txt 307.txt 286.txt 178.txt 368.txt 910.txt 200.txt 365.txt 202.txt 942.txt 728.txt 999.txt 66.txt 990.txt 
+998.txt 5 490.txt 974.txt 615.txt 545.txt 994.txt 
+999.txt 2 917.txt 893.txt 
