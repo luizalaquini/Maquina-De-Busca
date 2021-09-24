@@ -1,0 +1,100 @@
+position in the
+ul
+k
+anticipates that of the following vowel em high
+in the first case low in the second
+Most allophonic variation in English is anticipatory in that the sound
+is influenced by the following articulation rather than by
+preceding ones
+pp
+Nasalization is a feature which applies to vowels in English through
+anticipatory coarticulation
+In many languages for example French it is a
+ul
+distinctive
+feature for vowels in that it serves to distinguish one vowel phoneme class
+from another
+That this is not so in English sometimes tempts us to assume
+incorrectly that nasalization does not occur in vowels
+It does typically when the vowel is followed by a nasal consonant and it is
+important for synthesis that nasalized vowel allophones are recognized and
+treated accordingly
+pp
+Coarticulation can be predicted by phonological rules which show
+how a phonemic sequence will be realized by allophones
+Such rules have been studied extensively by linguists
+pp
+The reason for coarticulation and for the existence of allophones
+lies in the physical constraints imposed by the motion
+of the articulatory organs em particularly their acceleration and deceleration
+An immensely crude model is that the brain decides what phonemes to
+say for it is concerned with semantic things and the definition
+of a phoneme is a semantic one
+It then takes this sequence and translates it into neural commands
+which actually move the articulators into target positions
+However other commands may be issued and executed before these targets
+are reached and this accounts for coarticulation effects
+Phonological rules for converting a phonemic sequence to an
+allophonic one are a sort of discrete model of the process
+Particularly for work involving computers it is possible that this
+rule-based approach will be overtaken by potentially more accurate
+methods which attempt to model the continuous articulatory phenomena
+directly
+sh 23  Prosody
+pp
+The phonetic classification introduced above divides speech into
+segments and classifies these into phonemes or allophones
+Riding on top of this stream of segments are other more global
+attributes that dictate the overall prosody of the utterance
+Prosody is defined by the Oxford English Dictionary as the
+science of versification laws of metre
+which emphasizes the aspects of stress and rhythm that are central
+to classical verse
+There are however many other features which are more or less
+global
+These are collectively called prosodic or equivalently suprasegmental
+features for they lie above the level of phoneme or syllable segments
+pp
+Prosodic features can be split into two basic categories  features
+of voice quality and features of voice dynamics
+Variations in voice quality which are sometimes called
+paralinguistic phenomena are accounted for by anatomical
+differences and long-term muscular idiosyncrasies like a sore
+throat and have little part to play in the kind of applications
+for speech output that have been sketched in Chapter 1
+Variations in voice dynamics occur in three dimensions  pitch
+or fundamental frequency of the voice time and amplitude
+Within the first the pattern of pitch variation or
+ul
+intonation
+can be distinguished from the overall range within which that variation
+occurs
+The time dimension encompasses the rhythm of the speech pauses and the
+overall tempo em whether it is uttered quickly or slowly
+The third dimension amplitude is of relatively minor importance
+Intonation and rhythm work together to produce an effect commonly called
+stress and we will elaborate further on the nature of stress and discuss
+algorithms for synthesizing intonation and rhythm in Chapter 8
+pp
+These features have a very important role to play in communicating meaning
+They are not fancy optional components
+It is their neglect which is largely responsible for the laymans
+stereotype of computer speech
+a caricature of living speech em abrupt arhythmic and in a grating
+monotone em
+which was well characterized by Isaac Asimov when he wrote of speaking
+all in capital letters
+pp
+Timing has a syntactic function in that it sometimes helps to
+distinguish nouns from
+verbs
+c
+ul
+exc
+tract versus exc
+ul
+tractc
+
+and adjectives from verbs appc
+ul
+roxc

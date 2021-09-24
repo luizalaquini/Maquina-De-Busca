@@ -1,0 +1,100 @@
+followed by what seemed like a tremendous blowing of
+trumpets in the front of the house
+There said Oak laughing I knew those fellows
+were up to something by the look on their face 
+Oak took up the light and went into the porch
+followed by Bathsheba with a shawl over her head The
+rays fell upon a group of male figures gathered upon the
+gravel in front who when they saw the newly-married
+couple in the porch set up a loud Hurrah and at
+the same moment bang again went the cannon in the
+background followed by a hideous clang of music from
+a drum tambourine clarionet serpent hautboy tenor+
+viol and double-bass -- the only remaining relics of the
+true and original Weatherbury band -- venerable worm+
+eaten instruments which had celebrated in their own
+persons the victories of Marlhorough under the fingers
+of the forefathers of those who played them now The
+performers came forward and marched up to the
+front
+Those bright boys Mark Clark and Jan are at the
+bottom of all this said Oak  Come in souls and
+have something to eat and drink wi me and my wife
+Not to-night said Mr Clark with evident self+
+denial Thank ye all the same but well call at a
+more seemly time However we couldnt think of
+letting the day pass without a note of admiration of
+some sort If ye could send a drop of somat down to
+Warrens why so it is Heres long life and happiness
+to neighbour Oak and his comely bride
+Thank ye thank ye all said Gabriel A bit and
+a drop shall be sent to Warrens for ye at once I had
+a thought that we might very likely get a salute of some
+sort from our old friends and I was saying so to my
+wife but now
+Faith said Coggan in a critical tone turning to his
+companions the man hev learnt to say my wife
+in a wonderful 
+P 465
+naterel way considering how very youth+
+ful he is in wedlock as yet -- hey neighbours all
+I never heerd a skilful old married feller of twenty
+years standing pipe my wife in a more used note
+than a did said Jacob Smallbury It might have been
+a little more true to nater ift had been spoke a little
+chillier but that wasnt to be expected just now
+That improvement will come wi time said Jan
+twirling his eye
+Then Oak laughed and Bathsheba smiled for she
+never laughed readily now and their friends turned to
+go
+Yes I suppose thats the size ot said Joseph
+Poorgrass with a cheerful sigh as they moved away
+and I wish him joy o her though I were once or
+twice upon saying to-day with holy Hosea in my
+scripture manner which is my second nature Ephraim
+is joined to idols let him alone But since tis as tis
+why it might have been worse and I feel my thanks
+accordingly
+THE END
+EQ
+delim 
+EN
+CH 1  WHY SPEECH OUTPUT
+ds RT Why speech output
+ds CX Principles of computer speech
+pp
+Speech is our everyday informal communication medium  But although we use
+it a lot we probably dont assimilate as much information through our
+ears as we do through our eyes by reading or looking at pictures and diagrams
+You go to a technical lecture to get the feel of a subject em the overall
+arrangement of ideas and the motivation behind them em and fill in the details
+if you still want to know them from a book  You probably find out more about
+the news from ten minutes with a newspaper than from a ten-minute news broadcast
+So it should be emphasized from the start that speech output from computers is
+not a panacea  It doesnt solve the problems of communicating with computers
+it simply enriches the possibilities for communication
+pp
+What then are the advantages of speech output  One good reason for listening
+to a radio news broadcast instead of spending the time with a newspaper
+is that you can listen while shaving doing the housework or driving the car
+Speech leaves hands and eyes free for other tasks
+Moreover it is omnidirectional and does not require a free line of sight
+Related to this is the
+use of speech as a secondary medium for status reports and warning messages
+Occasional interruptions by voice do not interfere with other activities
+unless they demand unusual concentration and people can assimilate spoken messages
+and queue them for later action quite easily and naturally
+pp
+The second key feature of speech communication stems from the telephone
+It is the universality of the telephone receiver itself that is important
+here rather than the existence of a world-wide distribution network
+for with special equipment a modem and a VDU one does not need speech to take advantage of
+the telephone network for information transfer
+But speech needs no tools other than the telephone and this gives
+it a substantial advantage  You can go into a phone booth anywhere in the world
+carrying no special equipment and have access to your computer within seconds
+The problem of data input is still there  perhaps your computer
+system has a limited word recognizer or you use the touchtone telephone
+keypad or a portable calculator-sized tone generator  Easy remote access
+without special equipment is a great and unique asset to speech communication

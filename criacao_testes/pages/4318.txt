@@ -1,0 +1,100 @@
+
+Witten Madams 1978 Chatterbox
+
+However the need for tracking resistors and the inverse square root variation
+of the formant frequency with R sub 1 makes it rather unsuitable for serious
+applications
+pp
+A better analogue filter is the ring-of-three configuration
+shown in Figure 512
+FC Figure 512
+Ignore the secondary output for now  Control
+is achieved over the centre frequency by two multipliers driven from
+the same control input k  These have a high-impedance output producing a
+current kx if the input voltage is x
+It is not too difficult to show that the transfer function of the circuit is
+LB
+EQ
+-   k sup 2 over C sup 2  over
+ s sup 2 + 2 over RC s
++1+k sup 2 R sup 2 over R sup 2 C sup 2   
+EN
+LE
+Suppose that R is chosen so that  k sup 2 R sup 2   1  Then this is a
+unity-gain resonator with constant bandwidth  1 pi RC Hz  and centre
+frequency  k2 pi C Hz  Note that it is the combination of both multipliers that
+makes the centre frequency grow linearly with k  with one multiplier there
+would be a square-root relationship
+pp
+The ring-of-three filter of Figure 512 is arranged in a slightly unusual
+way with an inverting stage at the beginning and the two resonant stages
+following it  This ensures that the signal level at intermediate
+points in the filter does not exceed that at the output and gives the filter
+the best chance of coping with a wide range of input amplitudes without
+clipping  This contrasts markedly with the resonator of Figure 511 where
+the voltage at the output of the first integrator is wb times the final output em a
+factor of 50 in the worst case
+pp
+For a digital implementation of a formant consider the recurrence relation
+LB
+EQ
+yn =  a sub 1 yn-1 - a sub 2 yn-2 + a sub 0 xn 
+EN
+LE
+where xn is the input and yn the output at time n
+yn-1 and yn-2 are the previous two values of the output
+and a sub 0 a sub 1 and a sub 2 are real constants
+The minus sign is in front of the second term because it makes a sub 2
+turn out to be
+positive  To calculate the z-transform version of this relationship multiply
+through by z sup -n and sum from n=- infinity to infinity 
+LB nn
+EQ
+sum from n=- infinity to infinity ynz sup -n  mark =
+a sub 1 sum from n=- infinity to infinity yn-1z sup -n -
+a sub 2 sum from n=- infinity to infinity yn-2z sup -n +
+a sub 0 sum from n=- infinity to infinity xnz sup -n
+EN
+sp
+EQ
+lineup =  a sub 1 z sup -1  sum yn-1z sup -n-1 -
+a sub 2 z sup -2  sum yn-2z sup -n-2
++ a sub 0  sum xnx sup -n  
+EN
+LE nn
+Writing this in terms of z-transforms
+LB
+EQ
+Yz =  a sub 1 z sup -1 Yz - a sub 2 z sup -2 Yz + a sub 0 Xz 
+EN
+LE
+Thus the input-output transfer function of the system is
+LB
+EQ
+Hz =  Yz over Xz
+= a sub 0  over 1-a sub 1 z sup -1 +a sub 2 z sup -2  
+EN
+LE
+pp
+We learned in the previous chapter that the frequency response is obtained
+from the z-transform of a system by replacing z sup -1
+by  e sup -j2 pi fT  where f is the frequency variable in Hz
+Hence the amplitude response of the digital formant filter is
+LB
+EQ
+|He sup j2 pi fT | sup 2
+ =  left  a sub 0 over 1-a sub 1 e sup -j2 pi fT
++a sub 2 e sup -j4 pi fT   right  sup 2  
+EN
+sp
+LE
+It is fairly obvious from this that a DC gain of 1 is obtained if
+LB
+EQ
+a sub 0  =  1 - a sub 1  + a sub 2 
+EN
+LE
+for  e sup -j2 pi fT  is 1 at a frequency of 0 Hz  Some manipulation is
+required to show that under the usual assumption that the bandwidth is
+small the centre frequency is
+LB

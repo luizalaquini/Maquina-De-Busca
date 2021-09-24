@@ -1,0 +1,100 @@
+pp
+The third big advantage of speech output is that it is potentially very cheap
+Being all-electronic except for the loudspeaker speech systems are well
+suited to high-volume low-cost LSI manufacture  Other computer output
+devices are at present tied either to mechanical moving parts or to the CRT
+This was realized quickly by the computer hobbies market where speech output
+peripherals have been selling like hot cakes since the mid 1970s
+pp
+A further point in favour of speech is that it is natural-seeming and
+somehow cuddly when compared with printers or VDUs  It would have been much
+more difficult to make this point before the advent of talking toys like
+Texas Instruments Speak n Spell in 1978 but now it is an accepted fact that friendly
+computer-based gadgets can speak em there are talking pocket-watches
+that really do tell the time talking microwave ovens talking pinball machines and
+of course talking calculators
+It is however difficult to assess whether the appeal stems from
+mechanical speechs novelty em it
+is still a gimmick em and also to what extent it is tied up with
+economic factors
+After all most of the population dont use high-quality VDUs and their major
+experience of real-time interactive computing is through the very limited displays
+and keypads provided on video games and teletext systems
+pp
+Articles on speech communication with computers often list many more advantages of voice output
+see Hill 1971 Turn 1974 Lea 1980
+
+Hill 1971 Man-machine interaction using speech
+
+
+Lea 1980
+
+
+Turn 1974 Speech as a man-computer communication channel
+
+For example speech
+LB
+NP
+can be used in the dark
+NP
+can be varied from a confidential whisper to a loud shout
+NP
+requires very little energy
+NP
+is not appreciably affected by weightlessness or vibration
+LE
+However these either derive from the three advantages we have discussed above
+or relate
+mainly to exotic applications in space modules and divers helmets
+pp
+Useful as it is at present speech output would be even more attractive if it could
+be coupled with speech input  In many ways speech input is its big brother
+Many of the benefits of speech output are even more striking for speech input
+Although people can assimilate information faster through the eyes than the
+ears the majority of us can generate information faster with the mouth than
+with the hands  Rapid typing is a relatively uncommon skill and even high
+typing rates are much slower than speaking rates although whether we can
+originate ideas quickly enough to keep up with fast speech is another matter  To
+take full advantage of the telephone for interaction with machines machine
+recognition of speech is obviously necessary  A microwave oven calculator
+pinball machine or alarm clock that responds to spoken commands is certainly
+more attractive than one that just generates spoken status messages  A book
+that told you how to recognize speech by machine would undoubtedly be more
+useful than one like this that just discusses how to synthesize it  But the
+technology of speech recognition is nowhere near as advanced as that of
+synthesis em its a much more difficult problem  However because speech input
+is obviously complementary to speech output and even very limited input
+capabilities will greatly enhance many speech output systems it is worth
+summarizing the present state of the art of speech recognition
+pp
+Commercial speech recognizers do exist  Almost invariably they accept
+words spoken in isolation with gaps of silence between them rather than
+connected utterances
+It is not difficult to discriminate with high accuracy up to a hundred
+different words spoken by the same speaker especially if the vocabulary
+is carefully selected to avoid words which sound similar  If several
+different speakers are to be comprehended performance can be greatly improved
+if the machine is given an opportunity to calibrate their voices in a training
+session and is informed at recognition time which one is to speak
+With a large population of unknown speakers accurate recognition is difficult
+for vocabularies of more than a few carefully-chosen words
+pp
+A half-way house between isolated word discrimination and recognition of connected
+speech is the problem of spotting known words in continuous speech  This
+allows much more natural input if the dialogue is structured as keywords
+which may be
+interspersed by unimportant noise words  To speak in truly isolated
+words requires a great deal of self-discipline and concentration em it is
+surprising how much of ordinary speech is accounted for by vague sounds
+like ums and aahs and false starts  Word spotting disregards these and so
+permits a more relaxed style of speech  Some progress has been made on it in
+research laboratories but the vocabularies that can be accomodated are still
+very small
+pp
+The difficulty of recognizing connected speech depends crucially on what is
+known in advance about the dialogue  its pragmatic semantic and syntactic
+constraints  Highly structured dialogues constrain very heavily the choice of
+the next word  Recognizers which can deal with vocabularies of over 1000 words
+have been built in research laboratories but the structure of the input has
+been such that the average branching factor em the size of the set out of
+which the next word must be selected em is only around 10 Lea 1980

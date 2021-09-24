@@ -1,0 +1,100 @@
+Gf  =  1 over 4 pi sup 2 f sup 2 T1-cos 2 pi fT 
+EN
+LE
+This spectrum is sketched in Figure 56a and the measured result of an actual
+implementation in Figure 56b
+FC Figure 56
+The 3 dB point occurs when
+LB
+EQ
+Gf over G0 =1 over 2  
+EN
+LE
+and G0 is T2  Hence at the 3 dB point
+LB
+EQ
+1-cos 2 pi fT over 2 pi sup 2 f sup 2 T sup 2
+ =  1 over 2  
+EN
+LE
+which has solution  f=045T
+Thus a pseudo-random shift register generates
+noise whose spectrum is substantially flat up to half the clock frequency
+Anything over 10 kHz is therefore a suitable clocking rate for speech-quality
+noise  Choose 20 kHz to err on the conservative side  If the repetition occurs
+in less than 3 or 4 seconds it can be heard quite clearly but above this figure
+it is not noticeable  An 18-bit shift register clocked at 20 kHz repeats
+every  2 sup 18 -120000  =  13 seconds which is more than adequate
+sh 53  Simulating vocal tract resonances
+pp
+The vocal tract from glottis to lips can be modelled as an unconstricted
+tube of varying cross-section with no side branches and no sub-glottal coupling
+This has an all-pole transfer function which can be written in the form
+LB
+EQ
+Hs  = 
+w sub 1 sup 2 over s sup 2 + b sub 1 s + w sub 1 sup 2
+w sub 2 sup 2 over s sup 2 + b sub 2 s + w sub 2 sup 2    
+EN
+LE
+There is an unspecified conceptually infinite number of terms in the
+product  Each of them produces a peak in the energy spectrum
+and these are the formants we observed in Chapter 2
+pp
+Formants appear even in an over-simplified
+model of the tract as a tube of uniform cross-section with a sound source
+at one end the larynx and open at the other the lips
+This extremely crude model was discussed in Chapter 2 and surprisingly
+perhaps it gives a good approximation to the observed formant frequencies
+for a neutral relaxed vowel such as that in
+ul
+ac
+bove
+pp
+Speech is made by varying the postures of the various organs of the vocal tract
+Different vowels for example result largely from different tongue positions
+and lip postures  Naturally such physical changes alter the frequencies of the
+resonances and successful automatic speech synthesis depends upon
+successful movement of the formants  Fortunately only the first three or
+four resonances need to be altered even for extremely realistic synthesis and
+virtually all existing synthesizers provide control over these formants only
+rh Analysis of a single formant
+Each formant is modelled as a second-order resonance with transfer function
+LB
+EQ
+Hs  =  w sub c sup 2 over s sup 2 + b s + w sub c sup 2  
+EN
+LE
+As will be shown below w sub c is the nominal resonant frequency in
+radianss and b is the
+approximate 3 dB bandwidth of the resonance  The term w sub c sup 2 in the
+numerator adjusts the gain to be unity at DC s=0
+pp
+To calculate the frequency response of the formant write  s=jw  Then the
+energy spectrum is
+LB
+EQ
+|Hjw| sup 2  mark = 
+w sub c sup 4 over w sup 2 - w sub c sup 2  sup 2 + b sup 2 w sup 2
+EN
+sp
+sp
+EQ
+lineup = 
+w sub c sup 4 over
+w sup 2 -w sub c sup 2 - b sup 2 over 2  sup 2 
++b sup 2 w sub c sup 2-b sup 2 over 4  
+EN
+sp
+LE
+This reaches a maximum when the squared term in the denominator of the second
+expression is zero namely when  w=w sub c sup 2 - b sup 2 2 sup 12
+However
+formant bandwidths are low compared with their centre frequencies and so to
+a good approximation the peak occurs
+at  w=w sub c  and is of amplitude  w sub c b  that
+is  10log sub 10 w sub c b dB above the DC gain
+At frequencies higher than the peak the energy falls off as 1w sup 4
+a factor of 116 for each doubling
+in frequency and so the asymptotic decay is 12 dBoctave
+pp

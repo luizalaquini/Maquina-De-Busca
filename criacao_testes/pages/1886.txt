@@ -1,0 +1,100 @@
+But 11-bit quantization seems to give a very much better signal-to-noise
+ratio than these figures  To estimate its magnitude note that for N-bit quantization
+the error for each sample will lie between
+LB
+
+-  1 over 2  2 sup -N    and    +  1 over 2  2 sup -N 
+
+LE
+Assuming that it is uniformly distributed in this range em an assumption
+which is likely to be justified if the number of levels is sufficiently
+large em leads to a mean-squared error of
+LB
+EQ
+integral from -2 sup -N-1 to 2 sup -N-1 e sup 2 pe de
+EN
+LE
+where pe the probability density function of the error e is a constant
+which satisfies the usual probability normalization constraint namely
+LB
+EQ
+integral from -2 sup -N-1 to 2 sup -N-1  pe de = 1
+EN
+LE
+Hence pe=2 sup N  and so the mean-squared error is  2 sup -2N 12
+This is  10  log sub 10 2 sup -2N 12 dB or around -77 dB for 11-bit
+quantization
+pp
+This noise level is relative to the maximum amplitude range of the conversion
+A maximum-amplitude sine wave has a power of -9 dB relative to the same
+reference giving a signal-to-noise ratio of some 68 dB  This is far in excess
+of that needed for telephone-quality speech  However look at the very peaky
+nature of the typical speech waveform given in Figure 35
+FC Figure 35
+If clipping is to be avoided the maximum amplitude level of the AD converter
+must be set at a value which makes the power of the speech signal very much
+less than a maximum-amplitude sine wave  Furthermore different people
+speak at very different volumes and the overall level fluctuates constantly
+with just one speaker  Experience shows that while 8- or 9-bit quantization
+may provide sufficient signal-to-noise ratio to preserve telephone-quality
+speech if the overall speaker levels are carefully controlled about 11 bits
+are generally required to provide high-quality representation of speech with
+a uniform quantization  With 11 bits a sine wave whose amplitude is only 132
+of the full-scale value would be digitized with a signal-to-noise ratio
+of around 36 dB the most pessimistic figure quoted above for adequate quality
+Even then it is useful if the speaker is provided
+with an indication of the amplitude of his speech  a traffic-light
+indicator with red signifying clipping overload orange a suitable level
+and green too low a value is often convenient for this
+rh Logarithmic quantization
+For the purposes of speech
+ul
+processing
+it is essential to have the signal quantized uniformly  This is because
+all of the theory applies to linear systems and nonlinearities introduce
+complexities which are not amenable to analysis
+Uniform quantization although a nonlinear operation is linear in the
+limiting case as the number of levels becomes large and for most purposes
+its effect can be modelled by assuming that the quantized signal is obtained
+from the original analogue one by the addition of a small amount of
+uniformly-distributed quantizing noise as in fact was done above
+Usually the quantization noise is disregarded in subsequent analysis
+pp
+However the peakiness of the speech signal illustrated in Figure 35 leads
+one to suspect that a non-linear representation for example a logarithmic one
+could provide a better signal-to-noise ratio over a wider range of input
+amplitudes and hence be more useful than linear quantization em at least
+for speech storage and transmission
+And indeed this is the case  Linear quantization has the unfortunate effect
+that the absolute noise level is independent of the signal level so that an excessive
+number of bits must be used if a reasonable ratio is to be achieved for peaky
+signals  It can be shown that a logarithmic representation like
+LB
+EQ
+y  =  1  +  k  log  x
+EN
+LE
+where x is the original signal and y is the value which is to be quantized
+gives a
+signal-to-noise
+ul
+ratio
+which is independent of the input signal level
+This relationship cannot be realized physically for it is undefined when the signal
+is negative and diverges when it is zero
+However realizable approximations to it can be made which retain the advantages
+of constant signal-to-noise ratio within a useful range of signal amplitudes
+Figure 36 shows the logarithmic relation with one widely-used approximation to it
+called the A-law
+FC Figure 36
+The idea of non-linearly quantizing a signal to achieve adequate signal-to-noise
+ratios for a wide variety of amplitudes is called companding a contraction
+of compressing-expanding  The original signal can be retrieved from
+its A-law compression by antilogarithmic expansion
+pp
+Figure 36 also
+shows one common coding scheme which is a piecewise linear approximation
+to the A-law  This provides an 8-bit code and gives the equivalent
+of 12-bit linear quantization for small signal levels  It approximates
+the A-law in 16 linear segments 8 for positive and 8 for negative
+inputs

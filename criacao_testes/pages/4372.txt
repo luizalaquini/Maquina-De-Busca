@@ -1,0 +1,100 @@
+rather than
+ul
+phonetic
+for it attempts to distinguish the features which make a logical difference
+to the listener instead of the acoustic details of the pitch contours
+pp
+It is necessary to take these contours and subject them to a sort of
+phonological-to-phonetic embellishment before applying them in synthetic
+speech
+For example the stretches with constant pitch which precede the tonic
+syllable in tone groups 1 2 and 3 sound
+most unnatural when synthesized em for pitch is hardly ever
+exactly constant in living speech
+Some pretonic pitch variation is necessary
+and this can be made to emphasize the salient syllable
+of each foot  A lilting effect which reaches a peak at each foot
+boundary and drops rather faster at the beginning of the foot than it
+rises at the end sounds more natural  The magnitude of this inflection
+can be altered slightly to add interest but a considerable increase in it
+produces a semantic change by making the utterance sound more emphatic
+It is a major problem to pin down exactly the turning points of pitch in
+the falling-rising and rising-falling contours 4 and 5 in Figure 85
+And even deciding on precise values for the pitch frequencies involved is not
+always easy
+pp
+The aim of the pitch assignment method of ISP is to allow the person
+or program which originates a spoken message to exercise a great deal
+of control over its intonation without having to concern himself with
+foot or syllable structure  The message to be spoken must be broken down
+into tone groups
+which correspond roughly to Hallidays tone groups
+Each one comprises a
+ul
+tonic
+of one or more feet which is optionally preceded by a
+ul
+pretonic
+also with a number of feet  It is advantageous to allow a tone group
+boundary to occur in the middle of a foot whereas Hallidays scheme
+insists that it occurs at a foot boundary
+The first foot of the tonic the
+ul
+tonic foot
+is marked by an asterisk at the beginning
+It is on the first syllable of this foot em the
+tonic or nuclear
+syllable em that the major stress of the tone group occurs
+If there is no asterisk in a tone group
+ISP takes the final foot as the tonic
+since this is the most common case
+pp
+The pitch contour on a tone group is specified by an array of ten numbers
+Of course the system cannot generate all conceivable contours for a tone
+group but the definitions of the ten specifiable quantities have been
+chosen to give a useful range of contours
+If necessary more precise control over the pitch of an utterance can
+be achieved by making the tone groups smaller
+pp
+The overall pitch movement is controlled by specifying the pitch at three
+places  the beginning of the tone group the beginning of the tonic syllable
+and the end of the tone group
+Provision is made for an abrupt pitch break at the start of the tonic
+syllable in order to simulate tone groups 2 and 3 and to a lesser
+extent tone groups 4 and 5
+The pitch is interpolated linearly over the first part of the
+tone group up to the tonic syllable and over the last part from there to
+the end except that it is possible to specify a non-linearity on the tonic
+syllable for emphasis as shown in Figure 86
+FC Figure 86
+pp
+On this basic shape are superimposed two finer pitch patterns
+One of these is an initialization-continuation option which allows
+the pitch to rise or fall independently on the initial and final feet
+to specified values without affecting the contour on the rest
+of the tone group Figure 87
+FC Figure 87
+The other is a foot pattern which is superimposed on each pretonic foot
+to give the stressed syllables of the pretonic added prominence and avoid
+the monotony of constant pitch
+This is specified by a
+ul
+non-linearity
+parameter which distorts the contour on the foot at a pre-determined
+point along it
+Figure 88 shows the effect
+FC Figure 88
+pp
+The ten quantities that define a pitch contour are summarized in
+Table 83 and shown diagrammatically in Figure 89
+FC Figure 89
+RF
+nr x0 wH    u
+nr x1 nx0+wfraction along foot of the non-linearity position for the tonic footu
+nr x1 nl-nx12
+in nx1u
+ta nx0u +4n
+A	continuation from previous tone group
+		zero gives no continuation
+		non-zero gives pitch at start of tone group
+B	notional pitch at start

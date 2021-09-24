@@ -1,0 +1,100 @@
+j
+in jig is another interesting case  It can be considered
+to belong to a
+ul
+j
+phoneme or to be a sequence of two
+phonemes
+ul
+d
+followed by
+ul
+zh
+the sound in vision  There is
+disagreement on this point in phonetics textbooks and we do not
+have the time nor probably the inclination to consider the
+pros and cons of this moot point
+I have resolved the matter arbitrarily by writing it as a separate
+phoneme  The
+ul
+ch
+in choose is a similar case
+c
+ul
+t
+followed by the
+ul
+sh
+in shoes
+pp
+Another difficulty this time where Table 21 does not show how to
+distinguish between two sounds which
+ul
+do
+discriminate words in many peoples English is the
+ul
+w
+in witch
+and that in which  The latter is conventionally transcribed
+as a sequence of two phonemes
+ul
+h w
+pp
+The last few difficulties are all to do with deciding whether a
+sound belongs to a single phoneme class or comprises a sequence
+of sounds each of which belongs to a phoneme
+Are the
+ul
+j
+in jug the
+ul
+ch
+in chug and the
+ul
+w
+in which
+single phonemes or not  The definition above of a phoneme
+as a set of sounds whose members do not discriminate any words
+in the language does not help us to answer this question
+As far as this definition is concerned we could go so far as
+to call each and every word of the language an individual phoneme
+It is clear that some acoustic evidence and quite a lot of judgement
+is being used when phonemes such as those of Table 21 are defined
+pp
+So much for the consonants  This same problem occurs in vowel sounds
+particularly in diphthongs which are sequences of two vowel-like sounds
+Do the vowels of main and man belong to different phonemes
+Clearly so if they are both transcribed as single units for they
+distinguish the two words
+Notwithstanding the fact that they are sequences of separate sounds
+a logically consistent system could be constructed which gave separate
+unitary symbols to each diphthong
+However it is usual to employ a compound symbol which indicates explicitly
+the character of the two vowel-like sounds involved
+We will transcribe the diphthong of main as a sequence of two
+vowels
+ul
+e
+as in head and
+ul
+i
+as in hid not I
+This is done primarily for economy of symbols choosing the constituent
+sounds on the basis of the closest match to existing vowel sounds
+Note that this again violates purely
+ul
+logical
+criteria for identifying phonemes
+rh Categories of speech sounds
+A phoneme is defined as a set of sounds whose members to not discriminate
+between any words in the language under consideration
+The phonemes themselves can be classified into groups which reflect
+similarities between them
+This can be done in many different ways using various criteria
+for classification  In fact one branch of linguistic research
+is concerned with defining a set of distinctive
+features such that a phoneme class is uniquely identified by
+the values of the features  Distinctive features are binary
+and include such things as voicedemunvoiced fricativeemnot fricative
+aspiratedemunaspirated  We will not be concerned here with such
+detailed classifications but it is as well to know that they exist

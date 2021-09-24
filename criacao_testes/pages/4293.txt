@@ -1,0 +1,100 @@
+ul
+channel vocoder
+which was the first device that attempted to take advantage of the source-filter
+model for speech coding Dudley 1939
+
+Dudley 1939
+
+The word vocoder is a contraction
+of
+ul
+voc
+ice
+ul
+coder
+The energy in each filter band is
+estimated by rectification and smoothing and the resulting approximation to
+the frequency spectrum is transmitted or stored  The source properties are
+represented by the type of excitation voiced or unvoiced and if voiced
+the pitch  It is not necessary to include the overall amplitude of the speech
+explicitly because this is conveyed by the energy levels from the separate
+bandpass filters
+pp
+Figure 41 shows the encoding part of a channel vocoder which has been used
+successfully for many years Holmes 1980
+
+Holmes 1980 JSRU channel vocoder
+
+FC Figure 41
+We will discuss the block labelled pre-emphasis shortly
+The shape of the spectrum is estimated by 19 bandpass filters whose spacing
+and bandwidth decrease slightly with decreasing frequency to obtain the rather
+greater resolution that is needed in the lower frequency region
+as shown in Table 41
+RF
+nr x0 4n+26i+w00u+wbandwidth2
+nr x1 nl-nx02
+in nx1u
+ta 4n +13i +13i
+lnx0uul
+sp
+nr x1 wchannel2
+nr x2 wcentre2
+nr x3 wanalysis2
+	0h-nx1uchannel	0h-nx2ucentre	00h-nx3uanalysis
+nr x1 wnumber2
+nr x2 wfrequency2
+nr x3 wbandwidth2
+	0h-nx1unumber	00h-nx2ufrequency	00h-nx3ubandwidth
+nr x2 wHz2
+		0h-nx2uHz	00h-nx2uHz
+lnx0uul
+sp
+	01	0240	0120
+	02	0360	0120
+	03	0480	0120
+	04	0600	0120
+	05	0720	0120
+	06	0840	0120
+	07	1000	0150
+	08	1150	0150
+	09	1300	0150
+	10	1450	0150
+	11	1600	0150
+	12	1800	0200
+	13	2000	0200
+	14	2200	0200
+	15	2400	0200
+	16	2700	0200
+	17	3000	0300
+	18	3300	0300
+	19	3750	0500
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 41  Filter specifications for a vocoder analyser after Holmes 1980
+
+Holmes 1980 JSRU channel vocoder
+
+The 3 dB points
+of adjacent filters are halfway between their centre frequencies so that there
+is some overlap between bands
+The filter characteristics do not need to have very sharp edges because the energy
+in neighbouring bands is fairly highly correlated  Indeed there is a
+disadvantage in making them too sharp because the phase delays associated
+with sharp cutoff filters induce smearing of the spectrum in the time domain
+This particular channel vocoder uses second-order Butterworth bandpass filters
+pp
+For regenerating speech stored in this way an excitation of unit impulses
+at the specified pitch period for voiced sounds or white noise for unvoiced
+sounds is produced and passed through a bank of bandpass filters similar
+to the analysis ones  The excitation has a flat spectrum for regular impulses
+have harmonics at multiples of the repetition frequency which are all of the
+same size and so the spectrum of the output signal is completely determined
+by the filter bank  The gain of each filter is controlled by the stored
+magnitude of the spectrum at that frequency
+pp
+The frequency spectrum and voicing pitch of speech change at much slower rates
+than the time waveform  The changes are due to movements of the articulatory
+organs tongue lips etc in the speaker and so are limited in their speed
+by physical constraints  A typical rate of production of phonemes is 15 per

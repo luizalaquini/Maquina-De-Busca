@@ -1,0 +1,100 @@
+ul
+do begin
+in+2n
+E = 1-coeffi-1coeffi-1E
+br
+coeffi = Ri
+br
+ul
+for
+j=1
+ul
+to
+i-1
+ul
+do
+coeffi = coeffi - Ri-jcoeffj
+br
+coeffi = coeffiE
+br
+ul
+for
+j=1
+ul
+to
+i-1
+ul
+do
+tempj = coeffj - coefficoeffi-j
+br
+ul
+for
+j=1
+ul
+to
+i-1
+ul
+do
+coeffj = tempj
+in-2n
+ul
+end
+in-6n
+ul
+end
+nf
+FG Procedure 61  Pascal algorithm for the autocorrelation method
+pp
+This algorithm is not quite as efficient as it might be for some
+multiplications are repeated during the calculation of the
+autocorrelation vector  Blankinship 1974 shows how
+the number of multiplications can be reduced by about half
+
+Blankinship 1974
+
+pp
+If the algorithm is performed in fixed-point arithmetic
+as it often is in practice because of speed considerations
+some scaling must be done  The maximum and minimum values of
+the windowed signal can be determined within the window
+calculation loop and one extra pass over the vector will
+suffice to scale it to maximum significance
+Incidentally if all sample values are the same the procedure
+cannot produce a solution because E becomes zero and this
+can easily be checked when scaling
+pp
+The absolute value of the R-vector has no significance and since
+R0 is always the greatest element this can be set to the largest
+fixed-point number and the other Rs scaled down appropriately
+after they have been calculated
+These scaling operations are shown as dashed boxes in Figure 65
+E decreases monotonically
+as the computation proceeds so it is safe to initialize it to R0
+without extra scaling  The remainder of the scaling is straightforward
+with the linear prediction coefficients a sub k appearing as fractions
+rh The covariance method
+One of the advantages of linear predictive methods that was
+promised earlier was that it allows us to escape from
+the problem of windowing  To do this we must abandon the
+requirement that the coefficients of the matrix equation have
+the symmetry property of autocorrelations  Instead suppose
+that the range of n-summation uses a fixed number of
+elements say N starting at n=h to estimate the prediction
+coefficients between sample number h and sample number h+N
+pp
+This leads to the matrix equation
+LB
+EQ
+sum from k=1 to p a sub k sum from n=h to h+N-1 xn-jxn-k =
+sum from n=h to h+N-1 xnxn-jj=12p
+EN
+LE
+Alternatively we could write
+LB
+EQ
+sum from k=1 to p a sub k  Q sub jk sup h=Q sub 0j sup h
+j=12p
+EN
+LE
+where
+LB

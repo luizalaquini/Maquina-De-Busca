@@ -1,0 +1,100 @@
+of its components are clearly morphic
+Between these extremes lies a hazy region where what one considers
+to be a morph depends upon how complex one is prepared to make the
+concatenation rules
+The following description draws on techniques used in a project at MIT
+in which a morph-based pronunciation system has been implemented
+Lee 1969 Allen 1976
+
+Lee 1969
+
+
+Allen 1976 Synthesis of speech from unrestricted text
+
+pp
+Estimates of the number of morphs in English vary from 10000 to 30000
+Although these seem to be very large numbers they are considerably less
+than the number of words in the language
+For example Websters
+ul
+New Collegiate Dictionary
+7th edition contains about 100000 entries
+If all forms of the words were included this number would probably
+double
+pp
+There are several classes of morphs with restrictions on the combinations
+that occur
+A general word has prefixes a root and suffixes as shown in Figure 93
+only the root is mandatory
+FC Figure 93
+Suffixes usually perform a grammatical role affecting the
+conjugation of a verb or declension of a noun or transforming one
+part of speech into another
+-al can make a noun into an adjective while -ness performs the reverse
+transformation  Other
+suffixes such as -dom or -ship only apply to certain parts of
+speech nouns in this case but do not change the grammatical
+role of the word  Such suffixes and all prefixes alter the meaning
+of a word
+pp
+Some root morphs cannot combine with other morphs but always stand
+alone em for instance this
+Others called free morphs can either occur on their own or combine
+with further morphs to form a word
+Thus the root house can be joined on either side by another root
+such as boat
+or by a suffix such as ing
+A third type of root morph is one which
+ul
+must
+combine with another morph like crimin- -ceive
+pp
+Even with a morph dictionary decomposing a word into a sequence
+of morphs is not a trivial operation
+The process of lexical concatenation often results in a
+minor change in the constituents
+How big this change is allowed to be governs the morph system being used
+For example Allen 1976 gives three concatenation rules  a
+final e can be omitted as in
+ta 11i
+LB
+NI
+give + ing	em  giving
+LE
+the last consonant of the root can be doubled as in
+LB
+NI
+bid + ing	em  bidding
+LE
+or a final y can change to an i as in
+LB
+NI
+handy + cap	em  handicap
+
+Allen 1976 Synthesis of speech from unrestricted text
+
+LE
+If these are the only rules permitted the morph dictionary will
+have to include multiple versions of some suffixes
+For example the plural morpheme -s needs to be represented both by
+-s and -es to account for
+LB
+NI
+pea + s	em  peas
+LE
+and
+LB
+NI
+baby + es	em  babies  using the y em i rule
+LE
+This would not be necessary if a  y em ie  rule were included too
+Similarly the morpheme -ic will include morphs
+-ic and -c the latter to cope with
+LB
+NI
+specify + c	em  specific    using the y em i rule
+LE
+Furthermore non-morphemic roots such as galact need to be included because
+the concatenation rules do not capture the transformation
+LB
+NI

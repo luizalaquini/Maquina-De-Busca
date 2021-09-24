@@ -1,0 +1,100 @@
+logical
+criteria for identifying phonemes
+rh Categories of speech sounds
+A phoneme is defined as a set of sounds whose members to not discriminate
+between any words in the language under consideration
+The phonemes themselves can be classified into groups which reflect
+similarities between them
+This can be done in many different ways using various criteria
+for classification  In fact one branch of linguistic research
+is concerned with defining a set of distinctive
+features such that a phoneme class is uniquely identified by
+the values of the features  Distinctive features are binary
+and include such things as voicedemunvoiced fricativeemnot fricative
+aspiratedemunaspirated  We will not be concerned here with such
+detailed classifications but it is as well to know that they exist
+pp
+There is an everyday distinction between vowels and consonants
+A vowel forms the nucleus of every syllable and one or more consonants
+may optionally surround the vowel
+But the distinction sometimes becomes a little ambiguous
+Syllables like
+ul
+sh
+are commonly uttered and certainly do not
+contain a vowel  Furthermore when we say vowel in everyday
+language we usually refer to the
+ul
+written
+vowels a e i o and u there are many more vowel sounds
+A vowel in orthography is different to a vowel as a phoneme
+Is a diphthong a phonetic vowel  em certainly by the syllable-nucleus
+criterion but it is a little different from ordinary vowels because
+it is a changing sound rather than a constant one
+pp
+Table 22 shows one classification of the phonemes of Table 21 which
+will be useful in our later studies of speech synthesis from phonetics
+It shows twelve vowels including the rather peculiar one
+ul
+uh
+which corresponds to the first vowel in the word above
+This is the sound produced by the vocal tract when it is in a relaxed
+neutral position and it never occurs in prominent stressed
+syllables  The vowels later in the list are almost always longer
+than the earlier ones  In fact the first six
+c
+ul
+uh a e i o uc
+
+are often called short vowels and the last five
+c
+ul
+ee er uu ar awc
+
+long ones  The shortness or longness of the one in the middle
+c
+ul
+aac
+
+is rather ambiguous
+RF
+nr x0 w000unvoiced fricative    u
+nr x1 nx0+wnot classified as individual phonemesu
+nr x1 nl-nx12
+in nx1u
+ta nx0u
+fi
+vowel	c
+ul
+uh  a  e  i  o  u  aa  ee  er  uu  ar  aw
+br
+diphthong	not classified as individual phonemes
+br
+glide or liquid	c
+ul
+r  w  l  y
+br
+stop
+br
+000unvoiced stop	c
+ul
+p  t  k
+br
+000voiced stop	c
+ul
+b  d  g
+br
+nasal	c
+ul
+m  n  ng
+br
+fricative
+br
+000unvoiced fricative	c
+ul
+s  sh  f  th
+br
+000voiced fricative	c
+ul
+z  zh  v  dh
+br

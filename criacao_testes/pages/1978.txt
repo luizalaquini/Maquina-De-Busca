@@ -1,0 +1,100 @@
+Halliday 1970 Course in spoken English Intonation
+
+pp
+These extremely crude and simplistic rules are really the most that one can do
+without subjecting the utterance to a complicated semantic analysis
+In statistical terms they are actually remarkably effective
+Table 92 shows part of a spontaneous monologue which was transcribed by
+Halliday and appears in his teaching text on intonation
+Halliday 1970 p 133
+
+Halliday 1970 Course in Spoken English Intonation
+
+Among the prosodic markers are some that were not introduced in Chapter 8
+Firstly each tone group has secondary contours which are identified
+by 1+ 1- for tone group 1 and so on
+Secondly the mark  is used to indicate a pause which disrupts
+the speech rhythm
+Notice that its positioning belies the advice of the old elocutionists
+br
+ev2
+in 0
+LB
+fi
+A Comma stops the Voice while we may privately tell
+NI
+ul
+one
+a Semi-colon
+ul
+two
+a Colon
+ul
+threec
+  and a Period
+ul
+four
+br
+nr x0 wfIonefR a Semi-colon fItwofR a Colon fIthreefR  and a Period fIfour-wMasonfR 1748
+NI
+hnx0uMason 1748
+nf
+LE
+br
+ev
+Thirdly compound tone groups such as 13 appear which contain
+ul
+two
+tonic syllables
+This differs from a simple concatenation of tone groups
+with contours 1 and 3 in this case because the second is in some sense subsidiary to
+the first
+Typically it forms an adjunct clause while the first clause gives the
+main information  Halliday provides many examples such as
+LB
+NI
+Jane goes shopping in town every Friday
+NI
+ I met Arthur on the train
+LE
+But he does not comment on the
+ul
+acoustic
+difference between a compound tone group and a concatenation of simple ones em
+which is after all the information needed for synthesis
+A final minor difference between Hallidays scheme and that outlined earlier
+is that he compels tone group boundaries to occur at the beginning
+of a foot
+RF
+nr x0 33i+13i+wcomplete
+nr x1 nl-nx02
+in nx1u
+ta 33i +13i
+	excerpt in	complete
+	Table 92	passage
+lnx0uul
+sp
+number of tone groups	25	74
+sp
+number of boundaries correctly	19 76	47 64
+placed
+sp
+number of boundaries incorrectly	00	01 01
+placed
+sp
+number of tone groups having a	22 88	60 81
+tonic syllable at the beginning
+of the final foot
+sp
+number of tone groups whose	17 68	51 69
+contours are correctly assigned
+lnx0uul
+sp
+number of compound tone groups	02 08	06 08
+sp
+number of secondary intonation	07 28	13 17
+contours
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 93  Success of simple intonation assignment rules

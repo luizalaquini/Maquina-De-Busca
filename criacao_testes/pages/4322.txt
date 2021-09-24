@@ -1,0 +1,100 @@
+	h-nx3ulnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in-05i
+FG Table 52  Implementation options for resonance speech synthesizers
+
+Rice 1976 Byte
+
+
+Rabiner Jackson Schafer Coker 1971
+
+
+Liljencrants 1968
+
+
+Holmes 1973 Influence of glottal waveform on naturalness
+
+
+Morris and Paillet 1972
+
+All but one have certainly been used as the basis for synthesis and
+the table includes reference to published descriptions
+pp
+Each method has advantages and disadvantages  Series decomposition obviates
+the need for control over the amplitudes of individual formants but does
+not allow synthesis of sounds which use the nasal tract as well as the oral
+one for these are in parallel  Analogue implementation of series synthesizers
+is complicated by the need for higher-pole correction and the fact that
+the gains at different frequencies can vary widely throughout the system
+Higher-pole correction is not so important for digital synthesizers
+Parallel decomposition eliminates some of these problems  higher-pole correction
+can be implemented individually for each formant  However the formant
+amplitudes must be controlled rather precisely to simulate the vocal tract
+which is essentially serial
+Time-domain synthesis is associated with low hardware costs but does not
+easily allow proper control over the excitation sources  In particular
+it cannot simulate dynamical movement of the spectrum during aspiration
+Implementation of the entire vocal tract model as a single high-order filter
+without breaking it down into individual formants in series or parallel
+is attractive from the computational point of view because less arithmetic
+operations are required  It is best analysed in terms of linear predictive
+coding which is the subject of the next chapter
+sh 56  References
+LB nnnn
+
+LIST
+
+LE nnnn
+sh 57  Further reading
+pp
+Historically-minded readers should look at the early speech synthesizer
+designed by Lawrence 1953
+This and other classic papers on the subject
+are reprinted in Flanagan and Rabiner 1973
+A good description of a quite sophisticated parallel synthesizer can
+be found in Holmes 1973 above and another of a switchable
+seriesparallel one in Klatt 1980 who even includes a listing of
+the Fortran program that implements it
+Here are some useful books on speech synthesizers
+LB nn
+Fant-1960-1
+-
+ds A Fant G
+ds D 1960
+ds T Acoustic theory of speech production
+ds I Mouton
+ds C The Hague
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+Fant really started the study of the vocal tract as an acoustic system
+and this book marks the beginning of modern speech synthesis
+in-2n
+Flanagan-1972-1
+-
+ds A Flanagan JL
+ds D 1972
+ds T Speech analysis synthesis and perception 2nd expanded edition
+ds I Springer Verlag
+ds C Berlin
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This book is the speech researchers bible and like the bible its not
+all that easy to read
+However it is an essential reference source for speech acoustics and
+speech synthesis as well as for human speech perception
+in-2n
+Flanagan-1973-2
+-
+ds A Flanagan JL
+as A  and Rabiner LREditors
+ds D 1973
+ds T Speech synthesis
+ds I Dowsen Hutchinson and Ross
+ds C Stroudsburg Pennsylvania
+nr T 0

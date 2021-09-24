@@ -1,0 +1,100 @@
+extra aspiration for unvoiced stops beginning stressed syllables
+can be applied only if stress markers are included in the phonetic
+transcription
+pp
+To specify a rule it is necessary to give a
+ul
+matching part
+and a
+ul
+context
+which define at what points in an utterance it is applicable and a
+ul
+replacement part
+which is used to replace the matching part
+The context can be specified in mathematical set notation using curly brackets
+For example
+LB
+G SH W K OO		IU OO
+LE
+states that the matching part OO is replaced by IU OO after a G SH W or K
+In fact allophonic variations of each sound segment
+should also be accepted as valid context so this rule will also replace OO
+after G CH W K or X1 Table 112 gives allophones of each segment
+pp
+Table 115 gives some rules that have been used for this purpose
+FC Table 115
+They were derived from careful study of the hints given in the
+ML-I manual Votrax 1976
+
+Votrax 1976
+
+Classes such as voiced and stop-consonant in the context specify sets
+of sound segments in the obvious way
+The beginning of a stressed syllable is marked in the input by syll
+Parentheses in the replacement part have a significance which is explained in
+the next section
+rh Handling prosodic features
+We know from Chapter 8 the vital importance of prosodic features
+in synthesizing lifelike speech
+To allow them to be assigned to Votrax utterances an intermediate
+output from a prosodic analysis program like ISP can be used
+For example
+LB
+1  c
+ul
+dh i s  i z  d zh aa k s  h aa u s
+LE
+which specifies this is Jacks house in a declarative intonation with
+emphasis on the Jacks can be intercepted in the following form
+LB
+syll
+ul
+dhc
+ 50 0 110
+ul
+ic
+ 60
+ul
+sc
+ 90 0 99
+ul
+ic
+ 60
+ul
+zc
+ 60 50 110
+syll
+ul
+dc
+ 50 0 110
+ul
+zhc
+ 50
+ul
+aac
+ 90
+ul
+kc
+ 120 10 90
+ul
+sc
+ 90
+syll
+ul
+hc
+ 60
+ul
+aac
+ 140
+ul
+uc
+ 60
+ul
+sc
+ 140
+ 50 40 70 
+LE
+Syllable boundaries pitches and durations have been assigned by the
+procedures given earlier Chapter 8
+A number always follows each phoneme to specify its duration

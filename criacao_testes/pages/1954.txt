@@ -1,0 +1,100 @@
+FC Figure 71
+There are eight parameters
+You can see the onset of frication at the beginning and end parameter 5
+and the amplitude of voicing parameter 1 come on for the
+ul
+i
+and off again before the
+ul
+k
+The pitch parameter 0 is falling slowly throughout the utterance
+These tracks are stylized  they come from a computer synthesis-by-rule
+program and not from a human utterance
+With a parameter update rate of 10 msec the graphs can be represented
+by 90 sets of eight parameter values a total of 720 values or 4320 bits
+if a 6-bit representation is used for each value
+Contrast this with the input of only four phoneme segments or say 24 bits
+rh A segment-by-segment system
+A seminal paper appearing in 1964 was the first comprehensive
+description of a computer-based synthesis-by-rule system
+Holmes
+ul
+et al
+1964
+
+Holmes Mattingly Shearme 1964
+
+The same system is still in use and has been reimplemented in a more
+portable form Wright 1976
+
+Wright 1976
+
+The inventory of sound segments
+includes the phonemes listed in Table 21 as well as diphthongs and
+a second allophone of
+ul
+l
+Many British speakers use quite a different vocal posture for
+pre- and post-vocalic
+ul
+lc
+s called clear and dark
+ul
+lc
+s
+respectively  Some phonemes are expanded into sub-phonemic
+phases by the program  Stops have three phases corresponding to
+the closure silent steady state and opening
+Diphthongs have two phases  We will call individual phases and
+single-phase phonemes segments for they are subject to exactly
+the same transition rules
+pp
+Parameter tracks are constructed out of linear pieces
+Consider a pair of adjacent segments in an utterance to be synthesized
+Each one has a steady-state portion and an internal transition
+The internal transition of one phoneme is dubbed external
+as far as the other is concerned
+This is important because instead of each segment being responsible
+for its own internal transition one of the pair is identified
+as dominant and it controls the duration of both transitions em its
+internal one and its external the others internal one
+For example in Figure 72 the segment
+ul
+sh
+dominates
+ul
+ee
+and so it
+governs the duration of both transitions shown
+FC Figure 72
+Note that each
+segment contributes as many as three linear pieces to the parameter track
+pp
+The notion of domination is similar to that discussed earlier for
+word concatenation
+The difference is that for word concatenation the dominant segment was
+determined by computing the spectral derivative over the transition
+region whereas for synthesis-by-rule
+segments are ranked according to a static precedence
+and the higher-ranking segment dominates
+Segments of stop consonants have the highest rank and also
+the greatest spectral derivative while fricatives nasals glides
+and vowels follow in that order
+pp
+The concatenation procedure is controlled by a table which associates
+25 quantities with each segment  They are
+LB
+NI
+rank
+NI
+2  overall durations for stressed and unstressed occurrences
+NI
+4  transition durations for internal and external transitions of
+formant frequencies and amplitudes
+NI
+8  target parameter values amplitudes and frequencies of three
+formant resonances plus fricative information
+NI
+5  quantities which specify how to calculate boundary values for
+formant frequencies two for each formant except the third
+which has only one

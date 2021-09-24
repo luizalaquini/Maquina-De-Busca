@@ -1,0 +1,100 @@
+process is relatively easy
+A phonetic transcription of each morph may be stored in the morph dictionary
+or else letter-to-sound rules can be used on individual morphs
+These are likely to be quite successful because final-e processing can be
+now be done with confidence  there are no hidden final es in the middle
+of morphs
+In either case the resulting phonetic transcriptions of the individual morphs
+must be concatenated to give the transcription of the complete word
+Although some contextual modification has to be accounted for
+it is relatively straightforward and easy to predict
+For example the plural morphs -s and -es can be realized phonetically
+by
+ul
+uh z
+ul
+s
+or
+ul
+z
+depending on context
+Similarly the past-tense suffix -ed may be rendered as
+ul
+uh d
+ul
+t
+or
+ul
+d
+The suffixes -ion and -ure sometimes cause modification of the previous
+morph  for example
+LB
+NI
+act + ion  em  c
+ul
+a k tc
+  + ion  em  c
+ul
+a k sh uh n
+LE
+pp
+The morph dictionary does not remove the need for a lexicon of exceptional
+words
+The irregular final-e words mentioned earlier done anemone fete
+need to be treated on an individual basis
+as do words such as quadruped which have misleading endings
+it should not be decomposed as quadrup|ed
+rh Pronunciation of languages other than English
+Text-to-speech systems for other languages have been reported in
+the literature
+For example French Esperanto
+Italian Russian Spanish and German are covered
+by Lesmo
+ul
+et al
+1978 OShaughnessy
+ul
+et al
+1981 Sherwood 1978
+Mangold and Stall 1978
+
+Lesmo 1978
+
+
+OShaughnessy Lennig Mermelstein Divay 1981
+
+
+Sherwood 1978
+
+
+Mangold Stall 1978
+
+Generally speaking these present fewer difficulties than does English
+Esperanto is particularly easy because each letter in its orthography
+has only one sound making the pronunciation problem trivial
+Moreover stress in polysyllabic words always occurs on the penultimate
+syllable
+pp
+It is tempting and often sensible when designing a synthesis system for
+English to use an utterance representation somewhere between phonetics and
+ordinary spelling
+This may happen in practice even if it is not intended  a user finding
+that a given word is pronounced incorrectly will alter the spelling to
+make it work
+The Word English Spelling alphabet Dewey 1971 amongst others Haas 1966
+is a simplified and apparently natural scheme which was developed by the
+spelling reform movement
+
+Dewey 1971
+
+
+Haas 1966
+
+It maps very simply on to a phonetic representation just like Esperanto
+However it can provide little help with the crucial problem of stress
+assignment except perhaps by explicitly indicating reduced vowels
+sh 93  Discussion
+pp
+This chapter has really only touched the tip of a linguistic iceberg
+I have given some examples of representations rules algorithms
+and exceptions to make the concepts more tangible but a whole mass of

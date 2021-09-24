@@ -1,0 +1,100 @@
+use of a telephone keypad for data entry will be taken up again in Chapter 10
+pp
+A distinction is drawn throughout the system between data entries and
+commands the latter being prefixed by a   In this example the
+programmer chose to define a command for each possible question about a
+component so that a new component name can be entered at any time
+without ambiguity  The price paid for the resulting brevity of dialogue
+is the burden of memorizing the meaning of the commands  This is an
+inherent disadvantage of a one-dimensional auditory display over the
+more conventional graphical output   presenting menus by speech is tedious and
+long-winded  In practice however for a simple task such as the
+Stores Information Service it is quite convenient for the caller to
+search for the appropriate command by trying out all possibilities em there
+are only a few
+pp
+The problem of memorizing commands is alleviated by establishing some
+system-wide conventions  Each input is terminated by a  and
+the meaning of standard commands is given in Table 15
+RF
+fi
+nh
+na
+in 03i
+nr x0 w alone  
+nr x1 wem  
+ta nx0u +nx1u
+nr x2 nx0+nx1
+in+nx2u
+ti-nx2u
+	em	Erase this input line regardless of what has
+been typed before the 
+ti-nx2u
+0	em	Stop  Used to exit from any service
+ti-nx2u
+1	em	Yes
+ti-nx2u
+2	em	No
+ti-nx2u
+3	em	Repeat question or summarize state of current
+transaction
+ti-nx2u
+ alone	em	Short form of repeat  Repeats or summarizes
+in an abbreviated fashion
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+nf
+FG Table 15  System-wide conventions for the service
+pp
+A summary of services available on the system is given in
+Table 16
+RF
+fi
+na
+in 03i
+nr x0 w000  
+nr x1 wem  
+nr x2 nx0+nx1
+in+nx2u
+ta nx0u +nx1u
+ti-nx2u
+001	em	tells the time
+ti-nx2u
+002	em	Biffo a game of NIM
+ti-nx2u
+003	em	MOO a game similar to that marketed under the name Mastermind
+ti-nx2u
+004	em	error demonstration
+ti-nx2u
+005	em	speak a file in phonetic format
+ti-nx2u
+006	em	listening test
+ti-nx2u
+007	em	music allows you to enter a tune and play it
+ti-nx2u
+008	em	gives the date
+sp
+ti-nx2u
+100	em	squash ladder
+ti-nx2u
+101	em	stores information service
+ti-nx2u
+102	em	computes means and standard deviations
+ti-nx2u
+103	em	telephone directory
+sp
+ti-nx2u
+411	em	user information
+ti-nx2u
+412	em	change password
+ti-nx2u
+413	em	gripe permits feedback on services from caller
+sp
+ti-nx2u
+600	em	first year laboratory marks entering service
+sp
+ti-nx2u
+910	em	repeat utterance allows testing of system
+ti-nx2u
+911	em	speak utterance allows testing of system
+ti-nx2u

@@ -1,0 +1,100 @@
+EQ
+1 over 2 pi T  cos sup -1  a sub 1 over 2 a sub 2 sup 12 
+EN
+Hz
+LE
+Furthermore the 3 dB bandwidth of the resonance is given approximately by
+LB
+EQ
+- 1 over 2 pi T  log sub e a sub 2 
+EN
+Hz
+LE
+pp
+As an example Figure 513 shows an amplitude response for this digital filter
+FC Figure 513
+The parameters a sub 0 a sub 1 and a sub 2
+were generated from the above
+relationships for a sampling frequency of 8 kHz centre frequency of 1 kHz
+and bandwidth of 75 Hz
+It exhibits a peak of approximately the right bandwidth at the correct
+frequency 1 kHz  Note that the response is flat at half the sampling
+frequency for the frequency response from 4 kHz to 8 kHz is just a reflection of
+that up to 4 kHz
+This contrasts sharply with that of an analogue formant filter also shown
+in Figure 513 which slopes
+at -12 dBoctave at frequencies above resonance
+pp
+The behaviour of a digital formant filter at frequencies above
+resonance actually makes it preferable to an analogue implementation
+We saw earlier that considerable trouble must be taken with the latter to
+compensate for the cumulative effect of -12 dBoctave at higher frequencies for
+each of the formants
+This is not necessary with digital implementations for the response of
+a digital formant filter is flat at half the sampling frequency  In fact further
+study shows that digital synthesizers without any higher-pole correction
+give a closer approximation to the vocal tract than analogue ones with higher-pole
+correction Gold and Rabiner 1968
+
+Gold Rabiner 1968 Analysis of digital and analogue formant synthesizers
+
+rh Time-domain methods
+An interesting alternative to frequency-domain speech synthesis is to construct
+the formants in the time domain  When a second-order resonance is excited by
+an impulse an exponentially decaying sinusoid is produced as illustrated by
+Figure 514
+FC Figure 514
+The oscillation occurs at the resonant frequency of the filter
+while the decay is related to the bandwidth  In fact if the formant filter
+has transfer function
+LB
+EQ
+w sup 2 over s sup 2 + b s + w sup 2  
+EN
+LE
+the time waveform for impulsive excitation is
+LB
+EQ
+xt =  w e sup -bt2  sin  wt 
+EN
+neglecting  b sup 2 w sup 2
+LE
+It is the combination of several such time waveforms coupled with the regular
+reappearance of excitation at the pitch period that produces the characteristic
+wiggly waveform of voiced speech
+pp
+Now suppose we take a sine wave of frequency w and multiply it by a
+decaying exponential  e sup -bt2  This gives a signal
+LB
+EQ
+xt =  e sup -bt2  sin  wt 
+EN
+LE
+which is identical with the filtered impulse except for a factor w
+If there are several formants in parallel all with the same bandwidth
+the exponential factor is the same for each
+LB
+EQ
+xt =  e sup -bt2  A sub 1  sin  w sub 1 t
++  A sub 2  sin  w sub 2 t  +  A sub 3   sin  w sub 3 t 
+EN
+LE
+A sub 1 A sub 2 and A sub 3 control the formant amplitudes
+as in an ordinary parallel synthesizer
+except that they need adjusting to account for the missing
+factors w sub 1 w sub 2 and w sub 3
+pp
+A neat way of implementing such a synthesizer digitally is to store one cycle of a
+sine wave in a read-only memory ROM  Then the formant frequencies can be
+controlled by reading the ROM at different rates  For example if twice the
+basic frequency is desired every second value should be read
+Multiplication is needed for amplitude control of each formant  this can be
+accomplished by shifting the digital word each place shifted accounts for
+6 dB of attenuation  Finally the exponential damping factor can be
+provided in analogue hardware by a single capacitor after the DA converter
+This implementation gives a system for hardware-software synthesis which
+involves an absolutely minimal amount of extra hardware apart from the computer
+and does not need hardware multiplication for real-time operation
+It could easily be made to work in real time with a microprocessor coupled
+to a DA converter damping capacitor and fixed tone-control filter to give
+the required spectral equalization

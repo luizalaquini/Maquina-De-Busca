@@ -1,0 +1,100 @@
+NP
+natural and artificial pitch contours using segmentals extracted from
+natural utterances
+LE
+There are many other topics which have not yet been fully investigated
+It would be interesting for example to define rules for generating speech
+at different tempos
+Elisions where phonemes or even whole syllables are suppressed
+occur in fast speech these have been analyzed by linguists
+but not yet incorporated into synthetic models
+It should be possible to simulate emotion by altering parameters such as
+pitch range and mean pitch level but this seems exceptionally difficult
+to evaluate  One situation where it would perhaps be possible to
+measure emotion is in the reading of sports results em in fact a study
+has already been made of intonation in soccer results Bonnet 1980
+
+Bonnet 1980
+
+Even the synthesis of voices with different pitch ranges requires
+investigation for as noted earlier it is difficult to place
+precise frequency specifications on phonological contours such as
+those sketched in Figure 85
+Clearly the topic of prosodic synthesis is a rich and potentially
+rewarding area of research
+sh 85  References
+LB nnnn
+
+LIST
+
+LE nnnn
+sh 86  Further reading
+pp
+There are quite a lot of books in the field of linguistics which
+describe prosodic features
+Here is a small but representative sample from both sides of the Atlantic
+LB nn
+Abercrombie-1965-1
+-
+ds A Abercrombie D
+ds D 1965
+ds T Studies in phonetics and linguistics
+ds I Oxford Univ Press
+ds C London
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+Abercrombie is one of the leading English authorities on phonetics
+and this is a collection of essays which he has written over the years
+Some of them treat prosodics explicitly and others show the influence
+of verse structure on Abercrombies thinking
+in-2n
+Bolinger-1972-2
+-
+ds A Bolinger DEditor
+ds D 1972
+ds T Intonation
+ds I Penguin
+ds C Middlesex England
+nr T 0
+nr A 0
+nr O 0
+ 2 book
+in+2n
+A collection of papers that treat a wide variety of different aspects
+of intonation in living speech
+in-2n
+Crystal-1969-3
+-
+ds A Crystal D
+ds D 1969
+ds T Prosodic systems and intonation in English
+ds I Cambridge Univ Press
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This book attempts to develop a theoretical basis for the study of British
+English intonation
+in-2n
+Gimson-1966-3
+-
+ds A Gimson AC
+ds D 1966
+ds T The linguistic relevance of stress in English
+ds B Phonetics and linguistics
+ds E WEJones and JLaver
+ds P 94-102
+nr P 1
+ds I Longmans
+ds C London
+nr T 0
+nr A 1
+nr O 0
+ 3 article-in-book
+in+2n
+Here is a careful discussion of what is meant by stress with much more
+detail than has been possible in this chapter

@@ -1,0 +1,100 @@
+Accent is the potential for salience as marked for example
+in a dictionary or lexicon
+Thus the discussion of the diplo- words above is about accent
+Stress is an articulatory phenomenon associated with increased
+muscular activity
+Usually syllables which are perceived as salient were produced with stress
+but in shouting for example all syllables can be stressed em even
+non-salient ones
+Furthermore accented syllables may not be salient
+For instance the first syllable of the word very is accented
+that is potentially salient but in a sentence as uttered it may or may not be
+salient  One can say
+LB
+c
+ul
+hes
+very good
+LE
+with salience on he and possibly good or
+LB
+hes
+ul
+very
+good
+LE
+with salience on the first syllable of very and possibly good
+pp
+Non-standard stress patterns are frequently used to bring out contrasts
+Words like a and the are normally unstressed but can be stressed
+in contexts where ambiguity has arisen
+Thus factors which operate at a much higher level than the phonetic structure
+of the utterance must be taken into account when deciding where stress
+should be assigned  These include syntactic and semantic considerations
+as well as the attitude of the speaker and the likely attitude of
+the listener to the material being spoken
+For example I might say
+LB
+Anna
+ul
+and
+Nikki should go
+LE
+with emphasis on the and purely because I was aware that my listener
+might quibble about the expense of sending them both
+Clearly some notation is needed to communicate to the synthesis process
+how the utterance is supposed to be rendered
+sh 82  Transferring pitch from one utterance to another
+pp
+For speech stored in source-filter form and concatenated on a
+slot-filling basis it would be useful to
+have stored typical pitch contours which can be applied to the
+synthetic utterances
+From a practical point of view it is important to be able to generate
+natural-sounding pitch for high-quality artificial speech
+Although several algorithms for creating completely synthetic contours
+have been proposed em and we will examine one later in this chapter em
+they are unsuitable for high-quality speech
+They are generally designed for use with synthesis-by-rule from phonetics
+and the rather poor quality of articulation does not encourage the
+development of excellent pitch assignment procedures  With speech
+synthesized by rule there is generally an emphasis on keeping the
+data storage requirements to a minimum and so it is not appropriate
+to store complete contours
+Moreover if speech is entered in textual
+form as phoneme strings it is natural to attach pitch information as markers
+in the text rather than by entering a complete and detailed contour
+pp
+The picture is rather different for concatenated segments of natural speech
+In the airline reservation system with utterances formed from templates like
+LB
+Flight number em leaves em at em  arrives in em at em 
+LE
+it is attractive to store the pitch contour of one complete instance of the
+utterance and apply it to all synthetic versions
+pp
+There is an enormous literature on the anatomy of intonation and much of it
+rests upon the notion of a pitch contour as a descriptive aid to analysis
+Underlying this is the assumption usually unstated that a contour can be
+discussed independently of the particular stream of words that manifests it
+that a single contour can somehow be bound to any sentence or phrase or
+clause to produce an acceptable utterance  But the contour and its binding
+are generally described only at the grossest level the details being left
+unspecified
+pp
+There are phonetic influences on pitch em the characteristic lowering
+during certain consonants was mentioned above em and these are
+not normally considered as part of intonation
+Such effects will certainly spoil attempts to store contours extracted
+from living speech and apply them to different utterances but the impairment
+may not be too great for pitch is only one of many segmental clues to
+consonant identification
+pp
+In the system mentioned earlier which generated 7-digit telephone numbers
+by concatenating formant-coded words a single natural pitch contour
+was applied to all utterances
+It was taken to match as well as possible the general shape of the
+contours measured in naturally-spoken telephone numbers  However this is a very
+restricted environment for telephone numbers exhibit almost no variety in
+the configuration of stressed and unstressed syllables em
+the only digit which is not a monosyllable is seven

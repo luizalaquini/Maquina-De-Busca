@@ -1,0 +1,100 @@
+Suppose the input were a concept in some as yet undetermined representation
+What are the
+ul
+acoustic
+manifestations of such high-level features as anaphoric references or
+antithetical comparisons
+of parenthetical or satirical remarks
+of emotions  warmth sarcasm sadness and despair
+Can we program the art of elocution
+These are good questions 
+sh 94  References
+LB nnnn
+
+LIST
+
+LE nnnn
+sh 95  Further reading
+pp
+Books on pronunciation give surprisingly little help in designing
+a text-to-speech procedure
+The best aid is a good on-line dictionary and flexible software to
+search it and record rules examples and exceptions
+Here are some papers that describe existing systems
+LB nn
+Ainsworth-1974-1
+-
+ds A Ainsworth WA
+ds D 1974
+ds T A system for converting text into speech
+ds J IEEE Trans Audio and Electroacoustics
+ds V AU-21
+ds P 288-290
+nr P 1
+nr T 0
+nr A 1
+nr O 0
+ 1 journal-article
+in+2n
+in-2n
+Colby-1978-2
+-
+ds A Colby KM
+as A  Christinaz D
+as A  and Graham S
+ds D 1978
+ds K 
+ds T A computer-driven personal portable and intelligent speech prosthesis
+ds J Computers and Biomedical Research
+ds V 11
+ds P 337-343
+nr P 1
+nr T 0
+nr A 1
+nr O 0
+ 1 journal-article
+in+2n
+in-2n
+Elovitz-1976-3
+-
+ds A Elovitz HS
+as A  Johnson RW
+as A  McHugh A
+as A  and Shore JE
+ds D 1976
+ds K 
+ds T Letter-to-sound rules for automatic translation of English text to phonetics
+ds J IEEE Trans Acoustics Speech and Signal Processing
+ds V ASSP-24
+ds N 6
+ds P 446-459
+nr P 1
+ds O December
+nr T 0
+nr A 1
+nr O 0
+ 1 journal-article
+in+2n
+in-2n
+Kooi-1978-4
+-
+ds A Kooi R
+as A  and Lim WC
+ds D 1978
+ds T An on-line minicomputer-based system for reading printed text aloud
+ds J IEEE Trans Systems Man and Cybernetics
+ds V SMC-8
+ds P 57-62
+nr P 1
+ds O January
+nr T 0
+nr A 1
+nr O 0
+ 1 journal-article
+in+2n
+in-2n
+Umeda-1975-5
+-
+ds A Umeda N
+as A  and Teranishi R
+ds D 1975

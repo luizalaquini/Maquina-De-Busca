@@ -1,0 +1,100 @@
+				fIits inconfRceivable
+	sal-long	weak 	weak	fIafter thefR war	231
+	sal-short	weak 	weak	fImiddle tofR top	132
+	sal-long	weak	weak	fInobodyfR knows	312
+	sal-short	weak	weak	fIanythingfR more	111
+sp
+	 denotes a word boundary
+	 is an optional word boundary
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+FG Table 82  Syllable patterns and rhythms
+pp
+A foot may have the rhythmical characteristics of a two-syllable foot
+while having only one syllable if the first place in it is filled by a
+silent stress marked by 
+This is shown in the second one-syllable example of
+Table 82
+A similar effect may occur with two- and three-syllable feet
+although examples are not given in the table
+Feet of four and five syllables em with or without a silent stress em are
+considerably rarer
+pp
+Syllabification em splitting an utterance into syllables em is a job
+which had to be done for the pitch-transfer procedure described earlier
+and the nature of syllable rhythms calls for it here too
+Even though the utterance is now specified phonetically instead of
+acoustically the same basic principle applies
+Syllables normally coincide with peaks of sonority
+where sonority measures the inherent loudness of a sound relative to
+other sounds of the same duration and pitch
+However difficult cases exist where it seems to be unclear how many syllables
+there are in a word  Ladefoged 1975 discusses this problem with examples
+such as real realistic and reality  Furthermore
+
+Ladefoged 1975
+
+care must be taken to avoid counting two syllables in a word like sky
+because of its two peaks of sonority em for the stop
+ul
+k
+has lower
+sonority than the fricative
+ul
+s
+pp
+Three levels of notional sonority are enough for syllabification
+Dividing phoneme segments into
+ul
+sonorants
+glides and nasals
+ul
+obstruents
+stops and fricatives and vowels a general syllable has the form
+LB
+EQ
+obstruent sup   sonorant sup   vowel sup   sonorant sup  
+obstruent sup   
+EN
+LE
+where  means repetition that is occurrence zero or more times
+This sidesteps the sky problem by giving fricatives the same
+sonority as stops
+It is easy to use the above structure to count the number
+of syllables in a given utterance by counting the sonority
+peaks
+pp
+However what is required is an indication of syllable
+ul
+boundaries
+as well as a syllable count
+For slow conversational speech these can be approximated as follows
+Word divisions obviously form syllable boundaries as should
+foot markers em but it may be wise not to assume that the latter do if the
+utterance has been prepared by someone with little knowledge of linguistics
+Syllable boundaries should be made to coincide with sonority minima
+As an
+ul
+ad hoc
+pragmatic
+rule if only one segment has the minimum sonority the boundary is placed
+before it
+If there are two segments each with the minimum sonority it is placed between
+them while for three or more it is placed after the first two
+pp
+These rules produce obviously acceptable divisions in many cases
+today ashtray taxfree with perhaps unexpected positioning of the
+boundary in others inspire department
+Actually people do differ in placement of syllable boundaries
+Abercrombie 1967
+
+Abercrombie 1967
+
+rh From syllables to segments
+The theory of isochronous feet with the caveats noted earlier
+and that of syllable rhythms provide a way of producing durations for
+individual syllables  But where are these durations supposed to be measured
+There is a beat point or tapping point near the beginning of each syllable
+This is the place where a listener will tap if asked to give one tap to each
+syllable it has been investigated experimentally by Allen 1972
+
+Allen 1972 Location of rhythmic stress beats in English One

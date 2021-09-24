@@ -1,0 +1,100 @@
+LB
+NI
+baby + es	em  babies  using the y em i rule
+LE
+This would not be necessary if a  y em ie  rule were included too
+Similarly the morpheme -ic will include morphs
+-ic and -c the latter to cope with
+LB
+NI
+specify + c	em  specific    using the y em i rule
+LE
+Furthermore non-morphemic roots such as galact need to be included because
+the concatenation rules do not capture the transformation
+LB
+NI
+galaxy + ic	em  galactic
+LE
+There is clearly a trade-off between the size of the morph dictionary
+and the complexity of the concatenation rules
+pp
+Since a text-to-speech system is presented with already-concatenated
+morphs it must be prepared to reverse the effects of the concatenation
+rules to deduce the constituents of a word
+When two morphs combine with any of the three rules given above
+the changes in spelling occur only in the lefthand one
+Therefore the word is best scanned in a right-to-left direction to
+split off the morphs starting with suffixes as McIlroys program does
+If the procedure fails at any point one of the three rules is
+hypothesized its effect is undone and splitting continues
+For example consider the word
+LB
+NI
+grasshoppers	em  grass + hop + er + s
+LE
+Lee 1969
+
+Lee 1969
+
+The -s is detected first then -er these are both stored in
+the dictionary as suffixes
+The remainder grasshopp cannot be decomposed and does not appear
+in the dictionary
+So each of the rules above is hypothesized in turn and the
+result investigated  The y em i rule is obviously not
+applicable  When
+the final-consonant-doubling rule is considered the sequence
+grasshop is investigated
+Shop could be split off this but then the unknown morph gras
+would result
+The alternative to remove hop leaves a remainder grass which
+ul
+is
+a free morph as desired
+Thus a unique and correct decomposition is obtained
+Notice that the procedure would fail if for example grass had
+been inadvertently omitted from the dictionary
+pp
+Sometimes several seemingly valid decompositions present themselves
+Allen 1976
+
+Allen 1976 Synthesis of speech from unrestricted text
+
+For example
+LB
+NI
+scarcity	em  scar + city
+NI
+	em  scarce + ity  using final-e deletion
+NI
+	em  scar + cite + y  using final-e deletion
+NI
+resting	em  rest + ing
+NI
+	em  re + sting
+NI
+biding	em  bide + ing  using final-e deletion
+NI
+	em  bid + ing
+NI
+unionized	em  un + ion + ize + d
+NI
+	em  union + ize + d
+NI
+winding	em  winddNu + ing
+NI
+	em  winddVu + ing
+LE
+The last distinction is important because the pronunciation of wind
+depends on whether it is a noun or a verb
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+pp
+Several sources of information can be used to resolve these ambiguities
+The word structure of Figure 93 together with the division of root
+morphs into bound and free ones may eliminate some possibilities
+Certain letter sequences such as rp do not appear at the beginning
+of a word or morph and others never occur at the end
+Knowledge of these sequences can reject some unacceptable
+decompositions em or perhaps more importantly can enable intelligent guesses
+to be made in cases where a constituent morph has been omitted from the
+dictionary

@@ -1,0 +1,100 @@
+Obviously ten pulses are generated for a 0 rather than none  Unfortunately
+once the connection is made it is difficult to signal with dial pulses
+They cannot be decoded reliably at the other end because the telephone
+network is not designed to transmit such low frequencies
+However hand-held tone generators can be purchased for use with dial
+telephones
+Although these are undeniably extra equipment and one purpose of using speech
+output is to avoid this they are very cheap and portable compared with other
+computer terminal equipment
+pp
+The small number of keys on the telephone pad makes it rather difficult
+to use for communicating with computers
+Provision is made for 16 keys but only 12 are implemented em the others
+may be used for some military purposes
+Of course if a separate tone generator is used then advantage can be taken
+of the extra keys but this will introduce incompatibility with those
+who use unmodified touch-tone phones
+More sophisticated terminals are available which extend the keypad em such
+as the Displayphone of Northern Telecommunications
+However they are designed as a complete communications terminal and
+contain their own visual display as well
+rh Keying alphabetic data
+Figure 102 shows the near-universal scheme for overlaying alphabetic letters
+on to the telephone keypad
+FC Figure 102
+Since more than one symbol occupies each key it is obviously necessary
+to have multiple keystrokes per character if the input sequence is to be
+decodable as a string of letters
+One way of doing this is to depress the appropriate button the number of
+times corresponding to the position of the letter on it
+For example to enter the letter L the user would key the 5 button
+three times in rapid succession
+Keying rhythm must be used to distinguish the four entries J J J
+J K K J and L unless one of the bottom three buttons is used
+as a separator
+A different method is to use  0 and  as shift keys to indicate whether
+the first second or third letter on a key is intended
+Then 5 would represent L
+Alternatively the shift could follow the key instead of preceding it
+so that 5 represented L
+pp
+If numeric as well as alphabetic information may be entered a mode-shift
+operation is commonly used to switch between numeric and alphabetic modes
+pp
+The relative merits of these three methods multiple depressions shift
+key prefix and shift key suffix have been investigated
+experimentally Kramer 1970
+
+Kramer 1970
+
+The results were rather inconclusive
+The first method seemed to be slightly inferior in terms of user accuracy
+It seemed that preceding rather than following shifts gave higher accuracy
+although this is perhaps rather counter-intuitive and may have been
+fortuitous
+The most useful result from the experiments was that users exhibited
+significant learning behaviour and a training period of at least two hours
+was recommended
+Operators were found able to key at rates of at least three to four
+characters per second and faster with practice
+pp
+If a greater range of characters must be represented then the coding problem
+becomes more complex
+Figure 103 shows a keypad which can be used for entry of the full 64-character
+standard upper-case ASCII alphabet Shew 1975
+
+Shew 1975
+
+FC Figure 103
+The system is intended for remote vocabulary updating in a phonetically-based
+speech synthesis system
+There are three modes of operation  numeric alphabetic and symbolic
+These are entered by   and 0 respectively
+Two function modes signalled by 0 and  allow some
+rudimentary line-editing and monitor facilities to be incorporated
+Line-editing commands include character and line delete and two kinds of
+read-back commands em one tries to pronounce the words in a line
+and the other spells out the characters
+The monitor commands allow the user to repeat the effect of the last input line
+as though he had entered it again to order the system to read back the
+last complete output line and to query time and system status
+rh Incomplete keying of alphanumeric data
+It is obviously going to be rather difficult for the operator to key
+alphanumeric information unambiguously on a 12-key pad
+In the description of the telephone enquiry service in Chapter 1
+it was mentioned that single-key entry can be useful for alphanumeric data
+if the ambiguity can be resolved by the computer
+If a multiple-character entry is known to refer to an item on a given
+list the characters can be keyed directly according to the coding scheme
+of Figure 102
+pp
+Under most circumstances no ambiguity will arise
+For example Table 101 shows the keystrokes that would be entered for the
+first 50 5-letter words in an English dictionary
+Only two clashes occur em between  adore and afore and
+agate and agave
+RF
+nr x2 wabeam  u
+nr x3 w00000    u
+nr x0 nx2u+nx3u+nx2u+nx3u+nx2u+nx3u+nx2u+nx3u+nx2u+w00000u

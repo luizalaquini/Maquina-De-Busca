@@ -1,0 +1,100 @@
+no systems would exist
+The technical difficulties in creating synthetic dialogues
+for the majority of voice systems probably
+explain why speech output technology is still greatly under-used
+Finally we look at techniques for using small keypads such as those on
+touch-tone telephones
+for they are an essential part of many voice response systems
+sh 101  Programming principles for natural interaction
+pp
+Special attention must be paid to be details of the man-machine interface
+in speech-output systems
+This section summarizes experience of human factors considerations
+gained in developing the remote
+telephone enquiry service described in Chapter 1 Witten and Madams 1977
+which employs an ordinary touch-tone keypad for input in conjunction with
+synthetic voice response
+
+Witten Madams 1977 Telephone Enquiry Service
+
+Most of the principles which emerged were the result of natural evolution
+of the system and were not clear at the outset
+Basically they stem from the fact that speech is both more intrusive
+and more ephemeral than writing and so they are applicable in general to
+speech output information retrieval systems with keyboard or even voice
+input
+Be warned however that they are based upon casual observation and
+speculation rather than empirical research
+There is a desperate need for proper studies of user psychology in speech
+systems
+rh Echoing
+Most alphanumeric input peripherals echo on a character-by-character basis
+Although one can expect quite a high proportion of mistakes with
+unconventional keyboards especially when entering alphabetic data on a
+basically numeric keypad audio character echoing is distracting and annoying
+If you type 123 and the computer echoes
+LB
+NI
+one  two  three
+LE
+after the individual key-presses it is liable to divert your
+attention for voice output is much more intrusive than a purely visual echo
+pp
+Instead an immediate response to a completed input line is preferable
+This response can take the form or a reply to a query or if successive
+data items are being typed confirmation of the data entered
+In the latter case it is helpful if the information can be generated in
+the same way that the user himself would be likely to verbalize it
+Thus for example when entering numbers
+LB
+nr x0 wCOMPUTER
+nr x1 wUSER
+NI
+USERhnx0u-nx1u 123	 is the end-of-line character
+NI
+COMPUTER One hundred and twenty-three
+LE
+For a query which requires lengthy processing the input should be
+repeated in a neat meaningful format to give the user a chance to abort
+the request
+rh Retracting actions
+Because commands are entered directly without explicit confirmation
+it must always be easy for the user to revoke his actions
+The utility of an undo command is now commonly recognized for
+any interactive system and it becomes even more important in speech
+systems because it is easier for the user to lose his place in the
+dialogue and so make errors
+rh Interrupting
+A command which interrupts output and returns to a known state
+should be recognized at every level of the system
+It is essential that voice output be terminated immediately
+rather than at the end of the utterance
+We do not want the user to live in fear of the system embarking on
+a long boring monologue that is impossible to interrupt
+Again the same is true of interactive dialogues which do not use speech
+but becomes particularly important with voice response because it takes
+longer to transmit information
+rh Forestalling prompts
+Computer-generated prompts must be explicit and frequent enough
+to allow new users to understand what they are expected to do
+Experienced users will type ahead quite naturally
+and the system should suppress unnecessary prompts under these conditions
+by inspecting the input buffer before prompting
+This allows the user to concatenate frequently-used commands into chunks whose
+size is entirely at his own discretion
+pp
+With the above-mentioned telephone enquiry service for example
+it was found that people often took advantage of the prompt-suppression
+feature to enter their
+user number password and required service number as a single keying
+sequence
+As you becomes familiar with a service you quickly and easily learn to
+forestall expected prompts by typing ahead
+This provides a very natural way for the system to adapt itself automatically
+to the experience of the user
+New users will naturally wait to be prompted and proceed through the dialogue
+at a slower and more relaxed pace
+pp
+Suppressing unnecessary prompts is a good idea in any interactive system
+whether or not it uses the medium of speech em although it is hardly ever done
+in conventional systems

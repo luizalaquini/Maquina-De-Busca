@@ -1,0 +1,100 @@
+nr O 0
+ 2 book
+in+2n
+Martin concerns himself with all aspects of man-computer dialogue
+and the book even contains a short chapter on  the use of
+voice response systems
+in-2n
+Smith-1980-3
+-
+ds A Smith HT
+as A  and Green TRGEditors
+ds D 1980
+ds T Human interaction with computers
+ds I Academic Press
+ds C London
+nr T 0
+nr A 0
+nr O 0
+ 2 book
+in+2n
+A recent collection of contributions on man-computer systems and programming
+research
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 11  COMMERCIAL SPEECH OUTPUT DEVICES
+ds RT Commercial speech output devices
+ds CX Principles of computer speech
+pp
+This chapter takes a look at four speech output peripherals that are
+available today
+It is risky in a book of this nature to descend so close to the technology
+as to discuss particular examples of commercial products
+for such information becomes dated very quickly
+Nevertheless having covered the principles of various types of speech
+synthesizer and the methods of driving them from widely differing utterance
+representations it seems worthwhile to see how these principles are
+embodied in a few products actually on the market
+pp
+Developments in electronic speech devices are moving so fast that it is
+hard to keep up with them and the newest technology today will undoubtedly
+be superseded next year
+Hence I have not tried to choose examples from the very latest technology
+Instead this chapter discusses synthesizers which exemplify rather different
+principles and architectures in order to give an idea of the range of options
+which face the system designer
+pp
+Three of the devices are landmarks in the commercial adoption of speech
+technology and have stood the test of time
+Votrax was introduced in the early 1970s and has been re-implemented
+several times since in an attempt to cover different market sectors
+The Computalker appeared in 1976
+It was aimed primarily at the burgeoning computer hobbies market
+One of its most far-reaching effects was to stimulate the interest of
+hobbyists always eager for new low-cost peripherals in speech synthesis
+and so provide a useful new source of experimentation and expertise
+which will undoubtedly help this heretofore rather esoteric discipline to
+mature
+Computalker is certainly the longest-lived and probably still the most
+popular hobbyists speech synthesizer
+The Texas Instruments speech synthesis chip brought speech output technology to the
+consumer
+It was the first single-chip speech synthesizer and is still the biggest
+seller
+It forms the heart of the Speak n Spell talking toy which appeared in
+toyshops in the summer of 1978
+Although talking calculators had existed several years before they were
+exotic gadgets rather than household toys
+sh 111  Formant synthesizer
+pp
+The Computalker is a straightforward implementation of a serial formant
+synthesizer
+A block diagram of it is shown in Figure 111
+FC Figure 111
+In the centre is the main vocal tract path with three formant filters
+whose resonant frequencies can be controlled individually
+A separate nasal branch in parallel with the oral one is provided
+with a nasal formant of fixed frequency
+It is less important to allow for variation of the nasal formant
+frequency than it is for the oral ones because the size and
+shape of the nasal tract is relatively fixed
+However it is essential to control the nasal amplitude in particular to turn
+it off during non-nasal sounds
+Computalker provides independent oral and nasal amplitude parameters
+pp
+Unvoiced excitation can be passed through the main vocal tract
+through the aspiration amplitude control AH
+In practice the voicing amplitudes AV and AN will probably always be zero when AH
+is non-zero for physiological constraints prohibit simultaneous voicing
+and aspiration
+A second unvoiced excitation path passes through a fricative formant filter
+whose resonant frequency can be varied and has its amplitude independently
+controlled by AF
+rh Control parameters
+Table 111 summarizes the nine parameters which drive Computalker
+RF
+nr x0 waddress0+wfundamental frequency of voicing00+w0 bits0+wlogarithmic00+w0000-00000 Hz
+nr x1 nl-nx02

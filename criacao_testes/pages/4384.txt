@@ -1,0 +1,100 @@
+strongly contrasting words or phrases and the second element taking part
+in it is generally emphasized
+Psychologist in the passage is an antithesis of everyone
+systematic and possibly study of observation
+Thus
+LB
+NI
+ the psychologist
+LE
+would probably receive intonation contour 4 since it is also introducing
+a new actor while
+LB
+NI
+tries to bring them under systemmatic study
+LE
+could receive contour 5
+He and everyone are antithetical not only does the latter receive
+emphasis but the former has its accent restored em for otherwise
+it would have been removed because of anaphora with psychologist
+Hence it will certainly begin a foot possibly a tonic foot
+pp
+A factor that does not affect the sample passage is the accentuation
+of unusual syllables of similar words to bring out a contrast
+For example
+LB
+NI
+he went
+ul
+outc
+side not
+ul
+inc
+side
+LE
+Although this may seem to be just another facet of antithesis
+Vanderslice points out that it is phonetic rather than structural
+similarity that is contrasted
+LB
+NI
+I said
+ul
+dec
+plane not
+ul
+comc
+plain
+LE
+This introduces an interesting interplay between the phonetic and
+prosodic levels
+pp
+Anaphora and antithesis provide an ideal domain for speech synthesis from
+concept
+Determining them from plain text is a very difficult problem
+requiring a great deal of real-world knowledge
+The first has received some attention in the field of natural language
+understanding
+Finding pronoun referents is an important problem for language translation
+for their gender is frequently distinguished in say French where it is not
+in English
+Examples such as
+LB
+NI
+I bought the wine sat on a table and drank it
+NI
+I bought the wine sat on a table and broke it
+LE
+have been closely studied Wilks 1975 for if they were to be translated
+into French the pronoun it would be rendered differently in each case
+c
+ul
+le
+vin
+ul
+la
+table
+
+Wilks 1975 An intelligent analyzer and understander of English
+
+pp
+In spoken language emphasis is used to indicate the referent of a pronoun
+when it would not otherwise be obvious
+Vanderslice gives the example
+LB
+NI
+Bill saw John across the room and he ran over to him
+NI
+Bill saw John across the room and
+ul
+he
+ran over to
+ul
+him
+LE
+where the emphasis reverses the pronoun referents
+so that John did the running
+He suggests accenting a personal pronoun whenever the true
+antecedent is not the same as the unmarked or default one
+Unfortunately he does not elaborate on what is meant by unmarked
+Does it mean that the referent cannot be predicted from
+knowledge of the words alone em as in the second example above

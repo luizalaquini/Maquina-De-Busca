@@ -1,0 +1,100 @@
+sort of considerations apply to choosing a window for linear
+prediction
+pp
+This is known as the
+ul
+autocorrelation method
+of computing prediction parameters  Typically a window of
+100 to 250 samples is used for analysis of one frame of speech
+rh Algorithm for the autocorrelation method
+The algorithm for obtaining linear prediction coefficients
+by the autocorrelation method is quite simple  It is
+straightforward to compute the matrix coefficients
+Rm from the speech samples and window coefficients
+The Durbin-Levinson method of solving matrix equations operates
+directly on this R-vector to produce the coefficient vector a sub k
+The complete procedure is given as Procedure 61 and is shown
+diagrammatically in Figure 65
+FC Figure 65
+RF
+fi
+na
+nh
+ul
+const
+N=256 p=15
+ul
+type
+svec =
+ul
+array
+0N-1
+ul
+of
+real
+cvec =
+ul
+array
+1p
+ul
+of
+real
+sp
+ul
+procedure
+autocorrelationsignal vec window svec
+ul
+var
+coeff cvec
+sp
+computes linear prediction coefficients by autocorrelation method
+in coeff1p
+sp
+ul
+var
+R temp
+ul
+array
+0p
+ul
+of
+real
+n 0N-1 ij 0p E real
+sp
+ul
+begin
+window the signal
+in+6n
+ul
+for
+n=0
+ul
+to
+N-1
+ul
+do
+signaln = signalnwindown
+sp
+compute autocorrelation vector
+br
+ul
+for
+i=0
+ul
+to
+p
+ul
+do begin
+in+2n
+Ri = 0
+br
+ul
+for
+n=0
+ul
+to
+N-1-i
+ul
+do
+Ri = Ri + signalnsignaln+i
+in-2n

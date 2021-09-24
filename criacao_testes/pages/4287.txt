@@ -1,0 +1,100 @@
+of constant signal-to-noise ratio within a useful range of signal amplitudes
+Figure 36 shows the logarithmic relation with one widely-used approximation to it
+called the A-law
+FC Figure 36
+The idea of non-linearly quantizing a signal to achieve adequate signal-to-noise
+ratios for a wide variety of amplitudes is called companding a contraction
+of compressing-expanding  The original signal can be retrieved from
+its A-law compression by antilogarithmic expansion
+pp
+Figure 36 also
+shows one common coding scheme which is a piecewise linear approximation
+to the A-law  This provides an 8-bit code and gives the equivalent
+of 12-bit linear quantization for small signal levels  It approximates
+the A-law in 16 linear segments 8 for positive and 8 for negative
+inputs
+Consider the positive part of the curve  The first two segments which
+are actually collinear correspond exactly to 12-bit linear conversion
+Thus the output codes 0 to 31 correspond to inputs from 0 to 312048
+in equal steps  Remember that both positive and negative signals
+must be converted so a 12-bit linear converter will allocate 2048 levels
+for positive signals and 2048 for negative ones  The next
+segment provides 11-bit linear quantization
+output codes 32 to 47 corresponding to inputs from 161024 to 311024
+Similarly the next segment corresponds to 10-bit quantization covering
+inputs from 16512 to 31512  And so on the last section giving 6-bit
+quantization of inputs from 1632 to 3132 the full-scale positive value
+Negative inputs are converted similarly
+For signal levels of less than 322048 that is 2 sup -8 this implementation
+of the A-law provides full 12-bit precision
+As the signal level increases the precision decreases gradually to 6 bits
+at maximum amplitudes
+pp
+Logarithmic encoding provides what is in effect a floating-point representation
+of the input  The conventional floating-point format however is not used
+because many different codes can represent the same value  For example with
+a 4-bit exponent preceding a 4-bit mantissa the words 00001000
+00010100 00100010 and 00110001 represent the numbers
+01  times  2 sup 0  001  times  2 sup 1
+  0001  times  2 sup 2  c
+and  00001  times  2 sup 3  respectively
+which are the same  Some floating-point conventions assume that an unwritten
+1 bit precedes the mantissa except when the whole word is zero but this
+gives decreased resolution around zero em which is exactly where we want the
+resolution to be greatest  Table 31 shows the 8-bit A-law codes
+RF
+in+07i
+ta 16i +wbits 1-3   u
+8-bit codeword	bit 0	sign bit
+	bits 1-3	3-bit exponent
+	bits 4-7	4-bit mantissa
+sp2
+ta 16i 35i
+ul
+ codeword	   interpretation
+sp
+0000 0000	hw0-0  +  u0000  times  2 sup -7
+000	0000
+0000 1111	hw0-0  +  u1111  times  2 sup -7
+0001 0000	2 sup -7  +  0000  times  2 sup -7
+000	0000
+0001 1111	2 sup -7  +  1111  times  2 sup -7
+0010 0000	2 sup -6  +  0000  times  2 sup -6
+000	0000
+0010 1111	2 sup -6  +  1111  times  2 sup -6
+0011 0000	2 sup -5  +  0000  times  2 sup -5
+000	0000
+0011 1111	2 sup -5  +  1111  times  2 sup -5
+0100 0000	2 sup -4  +  0000  times  2 sup -4
+000	0000
+0100 1111	2 sup -4  +  1111  times  2 sup -4
+0101 0000	2 sup -3  +  0000  times  2 sup -3
+000	0000
+0101 1111	2 sup -3  +  1111  times  2 sup -3
+0110 0000	2 sup -2  +  0000  times  2 sup -2
+000	0000
+0110 1111	2 sup -2  +  1111  times  2 sup -2
+0111 0000	2 sup -1  +  0000  times  2 sup -1
+000	0000
+0111 1111	2 sup -1  +  1111  times  2 sup -1
+
+1000 0000	hw0-0  u-  0000  times  2 sup -7	negative numbers treated as
+000	0000	above with a sign bit of 1
+1111 1111	h-w- u- 2 sup -1  -  1111  times  2 sup -1
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 31  8-bit A-law codes with their floating-point equivalents
+according
+to the piecewise linear approximation of Figure 36 written in a notation which
+suggests floating point  Each linear segment has a different exponent except
+the first two segments which as explained above are collinear
+pp
+Logarithmic encoders and decoders are available from many semiconductor
+manufacturers as single-chip devices
+called codecs for coderdecoder  Intended for use on digital communication
+links these generally provide a serial output bit-stream which
+should be converted to parallel by a shift register if the data is intended
+for a computer
+Because of the potentially vast market for codecs in telecommunications
+they are made in great quantities and are consequently very cheap
+Estimates of the speech quality necessary for telephone applications indicate

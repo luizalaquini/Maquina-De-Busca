@@ -1,0 +1,100 @@
+With the above-mentioned telephone enquiry service for example
+it was found that people often took advantage of the prompt-suppression
+feature to enter their
+user number password and required service number as a single keying
+sequence
+As you becomes familiar with a service you quickly and easily learn to
+forestall expected prompts by typing ahead
+This provides a very natural way for the system to adapt itself automatically
+to the experience of the user
+New users will naturally wait to be prompted and proceed through the dialogue
+at a slower and more relaxed pace
+pp
+Suppressing unnecessary prompts is a good idea in any interactive system
+whether or not it uses the medium of speech em although it is hardly ever done
+in conventional systems
+It is particularly important with speech however because an unexpected
+or unwanted
+prompt is quite distracting and it is not so easy to ignore it as it is
+with a visual display
+Furthermore speech messages usually take longer to present
+than displayed ones so that the user is distracted for more time
+rh Information units
+Lengthy computer voice responses are inappropriate for conveying information
+because attention wanders if one is not actively involved in the conversation
+A sequential exchange of terse messages each designed to dispense one
+small unit of information forces the user to take a meaningful part in the
+dialogue
+It has other advantages too allowing a higher degree of input-dependent
+branching and permitting rapid recovery from errors
+pp
+The following example from the Acidosis program an audio response system
+designed to help physicians to diagnose acidosis is a good example
+of what
+ul
+not
+to do
+LB
+Chime A VALUE OF SIX-POINT-ZERO-ZERO HAS BEEN ENTERED FOR PH
+THIS VALUE IS IMPOSSIBLE
+TO CONTINUE THE PROGRAM ENTER A NEW VALUE FOR PH IN THE RANGE
+BETWEEN SIX-POINT-SIX AND EIGHT-POINT-ZERO
+beep dah beep-beep  Smith and Goodwin 1970
+
+Smith Goodwin 1970
+
+LE
+The use of extraneous noises for example a chime heralds an error message
+and a beep dah beep-beep requests data input in the form
+digitpointdigitdigit
+was thought necessary in the Acidosis program to keep the user awake
+and help him with the format of the interaction
+Rather than a long monologue like this
+it seems much better to design a sequential interchange of terse messages
+so that the caller can be guided into a state where he can rectify his error
+For example
+LB
+nf
+ne11
+nr x0 wCOMPUTER
+nr x1 wCALLER
+CALLERhnx0u-nx1u 600
+COMPUTER Entry out of range
+CALLERhnx0u-nx1u 600  persists
+COMPUTER The minimum acceptable pH value is 66
+CALLERhnx0u-nx1u 903
+COMPUTER The maximum acceptable pH value is 80
+fi
+LE
+This dialogue allows a rapid exit from the error situation in the likely
+event that the entry has simply been mis-typed
+If the error persists the caller is given just one piece of information
+at a time and forced to continue to play an active role in the interaction
+rh Input timeouts
+In general input timeouts are dangerous because they introduce apparent
+acausality in the system seen by the user
+A case has been reported where a user became highly agitated and refused
+to go near the terminal again after her first timed-out prompt
+She had been quietly thinking what to do and the terminal suddenly
+interjecting and making its
+own suggestions was just too much for her Gaines and Facey 1975
+
+Gaines Facey 1975
+
+pp
+However voice response systems lack the satisfying visual feedback
+of end-of-line on termination of an entry
+Hence a timed-out reminder is appropriate if a delay occurs after some
+characters have been entered
+This requires the operating system to support a character-by-character mode
+of input rather than the usual line-by-line mode
+rh Repeat requests
+Any voice response system must support a universal repeat last utterance
+command because old output does not remain visible
+A fairly sophisticated facility is desirable as repeat requests are
+very frequent in practice
+They may be due to a simple inability to understand a response
+to forgetting what was said or to distraction of attention em which is
+especially common with office terminals
+pp
+In the telephone enquiry service two distinct commands were employed

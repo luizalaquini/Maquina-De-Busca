@@ -1,0 +1,100 @@
+pp
+One way
+is to low-pass filter the
+signal with a cut-off above the maximum pitch period say 600
+Hz  However formant 1 is often below this value  A different
+technique which may be used in conjunction with filtering is
+to centre-clip the signal as shown in Figure 413
+FC Figure 413
+This
+removes many of
+the ripples which are associated with formants  However it
+entails the use of an adjustable clipping threshold to cater for
+speech of varying amplitudes  Sondhi 1968 who introduced the
+technique set the clipping level at 30 of the maximum
+amplitude
+
+Sondhi 1968
+
+An alternative which achieves
+much the same effect without the need to fiddle with thresholds
+is to cube the signal or raise it to some other high odd
+power before taking the autocorrelation  This highlights the
+peaks and suppresses the effect of low-amplitude parts
+pp
+For very accurate pitch detection it is best to combine the evidence
+from several different methods of analysis of the time waveform
+The autocorrelation function provides one source of evidence
+and the cepstrum provides another
+A third source comes from the time waveform itself
+McGonegal
+ul
+et al
+1975 have described a semi-automatic method of pitch
+detection which uses human judgement to make a final decision based upon these
+three sources of evidence
+
+McGonegal Rabiner Rosenberg 1975 SAPD
+
+This appears to provide highly accurate pitch contours at the expense of
+considerable human effort em it takes an experienced user 30 minutes to
+process each second of speech
+rh Speeding up autocorrelation
+Calculating the autocorrelation function is an
+arithmetic-intensive procedure  For large lags it can best be
+done using FFT methods although there are simpler arithmetic
+tricks which speed it up without going to such complexity
+However with the availability of analogue delay lines using
+charge-coupled devices autocorrelation can now be done
+effectively and cheaply by analogue sampled-data hardware
+pp
+Nevertheless some techniques to speed up digital
+calculation of short-time autocorrelations are in wide use  It
+is tempting to hard-limit the signal so that it becomes binary
+Figure 414a thus eliminating multiplication
+FC Figure 414
+This can be
+disastrous however because hard-limited speech is known to
+retain considerable intelligibility and therefore the formant
+structure is still there  A better plan is to take
+centre-clipped speech and hard-limit that to a ternary signal
+Figure 414b  This simplifies the computation considerably
+with essentially no degradation in performance Dubnowski
+ul
+et al
+1976
+
+Dubnowski Schafer Rabiner 1976 Digital hardware pitch detector
+
+pp
+A different approach to reducing the amount of calculation is to
+perform a kind of autocorrelation which does not use
+multiplications  The
+average magnitude difference function
+which is defined by
+LB
+EQ
+dk =  sum from n=- infinity to infinity  |xn-xn+k| 
+EN
+LE
+has been used for this purpose with some success Ross
+ul
+et al
+1974
+
+Ross Schafer Cohen Freuberg Manley 1974
+
+It exhibits dips at pitch periods instead of the peaks of the
+autocorrelation function
+rh Feature-extraction methods
+Another possible way of extracting pitch in the time domain is to try to
+integrate information from different sources to give reliable
+pitch estimates  Several features of the time
+waveform can be defined each of which provides an estimate of the pitch period
+and
+an overall estimate can be obtained by majority vote
+pp
+For example suppose that the only feature of the speech
+waveform which is retained is the height and position of the
+peaks where a peak is defined by the simplistic criterion
+LB

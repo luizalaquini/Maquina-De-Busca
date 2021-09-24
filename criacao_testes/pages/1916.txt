@@ -1,0 +1,100 @@
+implementations fixed filters are sometimes included explicitly for
+formants 4 and 5  Although this lowers the gain of the higher-formant
+correction filter the total amplification at 5 kHz of the combined correction
+is still 72 dB  If one is less demanding and aims for a synthesizer that
+produces a correct spectrum only up to 35 kHz it is 35 dB
+This places quite stringent requirements on the preceding formant filters if
+the stray noise that they generate internally is not to be amplified to
+perceptible magnitudes by the correction filter at high frequencies
+pp
+Explicit inclusion of fixed filters for formants 4 and 5 undoubtedly improves
+the accuracy of the higher-formant correction  Recall that the above derivation
+of the correction filter characteristic used the first-order approximation
+LB
+EQ
+log sub e 1-w sup 2 over w sub n sup 2
+ =  - w sup 2 over w sub n sup 2  
+EN
+LE
+which is only valid if w  w sub n
+Thus it only holds at frequencies less than
+the highest explicitly synthesized formant
+and so with formants 4 35 kHz and
+5 45 kHz included a reasonable correction should be obtained for
+telephone-quality speech  However detailed analysis with a second-order
+approximation shows that the coefficient of the neglected term is in fact
+small Fant 1960
+
+Fant 1960 Acoustic theory of speech production
+
+A second perhaps more compelling reason for explicitly
+including a couple of fixed formants is that the otherwise enormous amplification
+provided by the correction can be distributed throughout the formant chain
+We saw earlier why there is reason to prefer the
+order F3emF1emF2 over F1emF2emF3
+With explicit formants 4 and 5 a suitable order which helps
+to keep the amplification at intermediate points in the chain within reasonable
+bounds is F3emF5emF2emF4emF1
+rh Parallel synthesizers
+A series synthesizer models the vocal tract resonances by a chain of formant
+filters in series  A parallel synthesizer utilizes a parallel connection of
+filters as illustrated in Figure 59
+FC Figure 59
+pp
+Consider a parallel combination of two formants with individually-controllable
+amplitudes  The combined transfer function is
+LB
+EQ
+Hs  mark =  A sub 1 w sub 1 sup 2 over
+s sup 2 + b sub 1 s + w sub 1 sup 2
++A sub 2 w sub 2 sup 2 over s sup 2 + b sub 2 s + w sub 2 sup 2
+EN
+sp
+sp
+EQ
+lineup =   A sub 1 w sub 1 sup 2 + A sub 2 w sub 2 sup 2 s sup 2
++A sub 1 b sub 2 w sub 1 sup 2 + A sub 2 b sub 1 w sub 2 sup 2 s
++ A sub 1 +A sub 2 w sub 1 sup 2 w sub 2 sup 2 
+over
+ s sup 2 +b sub 1 s+w sub 1 sup 2 
+s sup 2 +b sub 2 s+w sub 2 sup 2  
+EN
+LE
+If the formant bandwidths b sub 1 and b sub 2
+are equal and the amplitudes are
+chosen as
+LB
+EQ
+A sub 1 = w sub 2 sup 2 over w sub 2 sup 2 -w sub 1 sup 2
+
+A sub 2 =- w sub 1 sup 2 over w sub 2 sup 2 -w sub 1 sup 2  
+EN
+LE
+then the transfer function becomes the same as that of a two-formant series synthesizer
+namely
+LB
+EQ
+Hs  =  w sub 1 sup 2 over s sup 2 + b sub 1 s + w sub 1 sup 2
+  w sub 2 sup 2 over s sup 2 + b sub 2 s + w sub 2 sup 2  
+EN
+LE
+The argument can be extended to any number of formants under the assumption
+that the formant bandwidths are equal  Note that the signs of A sub 1
+and A sub 2
+differ  in general the formant amplitudes for a parallel synthesizer alternate
+in sign
+pp
+In theory therefore it would be possible to use five parallel formants to
+model a five-formant series synthesizer exactly  Then the same higher-formant
+correction filter would be needed for the parallel synthesizer as for the
+series one  If the formant amplitudes were set slightly incorrectly however
+the five filters would not combine to give a total of 60 dBoctave high-frequency
+decay above the resonances  It is easy to see this in the context of the
+simplified two-formant combination above  if the amplitudes were not chosen
+exactly right then the s sup 2
+term in the numerator would not be quite zero
+Then the decay in the two-formant combination would be -12 dBoctave instead
+of -24 dBoctave and in the five-formant case the decay would in fact still be
+-12 dBoctave  Advantage can be taken of this to equalize the levels
+within the synthesizer so that large amplitude variations do not occur
+This can best be done by associating relatively low-gain fixed correction filters

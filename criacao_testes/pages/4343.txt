@@ -1,0 +1,100 @@
+pp
+The word seems to be a sensibly-sized basic unit
+Many applications use a rather limited vocabulary em 190 words
+for the airline reservation system described in Chapter 1
+Even at PCM data rates this will consume less than 05 Mbyte of
+storage
+Unfortunately coarticulation and prosodic factors now come into play
+pp
+Real speech is connected em there are few gaps between words
+Coarticulation where sounds are affected by those on either side
+naturally operates across word boundaries
+And the time constants of coarticulation are associated with the
+mechanics of the vocal tract and hence measure tens or hundreds
+of msec  Thus the effects straddle several pitch periods 100 Hz pitch
+has 10 msec period and cannot be simulated by simple interpolation of the
+speech waveform
+pp
+Prosodic features em notably pitch and rhythm em span much longer
+stretches of speech than single words  As far as most speech output
+applications are concerned they operate at the utterance level of
+a single sentence-sized information unit  They cannot be
+accomodated if speech waveforms of individual words of
+the utterance are stored
+for it is rarely feasible to alter the fundamental
+frequency or duration of a time waveform without changing all the formant
+resonances as well
+However both word-to-word coarticulation and the essential features
+of rhythm and intonation can be incorporated if the stored words are
+coded in source-filter form
+pp
+For more general applications of speech output the limitations of
+word storage soon become apparent  Although peoples daily
+vocabularies are not large most words have a variety
+of inflected forms which need to be treated separately if a strict
+policy is adopted of word storage  For instance in this book
+there are 84000 words and 6500 8 different ones counting
+inflected forms
+In Chapter 1 alone there are 6800 words and 1700 25 different ones
+pp
+It seems crazy to treat a simple inflection like -s or its voiced
+counterpart -z as in inflectionc
+ul
+sc
+
+as a totally different word from the base form
+But once you consider storing roots and endings separately
+it becomes apparent
+that there is a vast number of different endings and it is difficult to know
+where to draw the line  It is natural to think instead of simply
+using the syllable as the basic unit
+pp
+A generous estimate of the number of different syllables in English is 10000
+At three a second only about an
+hours storage is required for them all  But waveform storage
+will certainly not do
+Although coarticulation effects between words are needed to make
+speech sound fluent coarticulation between syllables is necessary
+for it even to be
+ul
+comprehensible
+Adopting a source-filter form of representation is essential as is
+some scheme of interpolation between syllables which simulates
+coarticulation
+Unfortunately a great deal of acoustic action occurs at syllable
+boundaries em stops are exploded the sound source changes
+between voicing and frication and so on  It may be more appropriate
+to consider inverse syllables comprising a vowel-consonant-vowel sequence
+instead of consonant-vowel-consonant
+These have jokingly been dubbed lisibles
+pp
+There is again some considerable practical difficulty in creating
+an inventory of syllables or lisibles
+Now it is not so much the recording that is impractical but
+the editing needed to ensure that the cuts between syllables are made
+at exactly the right point  As units get smaller the exact
+placement of the boundaries becomes ever more critical and several thousand
+sensitive editing jobs is no easy task
+pp
+Since quite general effects of coarticulation must be accomodated
+with syllable synthesis there will not necessarily be significant
+deterioration if smaller demisyllable units are employed
+This reduces the segment inventory to an estimated 1000-2000 entries
+and the tedious job of editing each one individually becomes at
+least feasible if not enviable
+Alternatively the segment inventory could be created by artificial
+means involving cut-and-try experiments with resonance parameters
+pp
+The ultimate in economy of inventory size of course is to use
+phonemes as the basic unit  This makes the most critical
+part of the task interpolation between units rather than their
+construction or recording  With only about 40 phonemes
+in English each one can be examined in many different contexts to
+ascertain the best data to store
+There is no need to record them directly from a human voice em it
+would be difficult anyway for most cannot be produced in isolation
+In fact a phoneme is an abstract unit not a particular sound
+recall the discussion of phonology in Chapter 2 and so it is
+most appropriate that data be abstracted from several different
+realizations rather than an exact record made of any one
+pp

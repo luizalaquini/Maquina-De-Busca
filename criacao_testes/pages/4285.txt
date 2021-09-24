@@ -1,0 +1,100 @@
+avoid inaccuracies  The operation of quantization being non-linear
+is not very amenable to theoretical analysis  Quantization introduces issues
+such as accumulation of round-off noise in arithmetic operations
+which although they are very important in practical implementations can only
+be treated theoretically under certain somewhat unrealistic assumptions
+in particular independence of the quantization error from sample to sample
+rh Sampling
+A fundamental theorem of telecommunications states that a signal can only be
+reconstructed accurately from a sampled version if it does not contain
+components whose frequency is greater than half the frequency at which the
+sampling takes place  Figure 31a shows how a component of slightly greater
+than half the sampling frequency can masquerade as far as an observer with
+access only to the sampled data can tell as a component at slightly less
+than half the sampling frequency
+FC Figure 31
+Call the sampling interval T seconds so that the
+sampling frequency is 1T Hz
+Then components at 12T+f 32T-f 32T+f and so on all masquerade
+as a component at 12T-f  Similarly components at frequencies just under
+the sampling frequency masquerade as very low-frequency components as shown
+in Figure 31b  This phenomenon is often called aliasing
+pp
+Thus the continuous infinite frequency axis for the unsampled signal where
+two components at different frequencies can always be distinguished maps
+into a repetitive frequency axis when the signal is sampled  As depicted
+in Figure 32 the frequency
+interval 1T 2T udgd
+FN 3
+sp
+udgdIntervals are specified in brackets with a square bracket representing
+a closed end of the interval and a round one representing an open one
+Thus the interval 1T 2T specifies the range 1T  =  frequency
+   2T
+EF
+is mapped back into the band 0 1T as are the
+intervals 2T 3T  3T 4T and so on
+FC Figure 32
+Furthermore the interval 12T 1T between half the sampling frequency and the sampling
+frequency is mapped back into the interval
+below half the sampling frequency but this time the mapping is backwards
+with frequencies at just under 1T being mapped to frequencies slightly greater
+than zero and frequencies just over 12T being mapped to ones
+just under 12T
+The best way to represent a repeating frequency axis like this is as a circle
+Figure 33 shows how the linear frequency axis for continuous systems maps
+on to a circular axis for sampled systems
+FC Figure 33
+For present purposes it is
+easiest to imagine the bottom half of the circle as being reflected into
+the top half so that traversing the upper semicircle in the anticlockwise direction
+corresponds to frequencies increasing from 0 to 12T half the sample frequency
+and returning along the lower semicircle is actually the same as coming
+back round the upper one and corresponds to frequencies from 12T to 1T
+being mapped into the range 12T to 0
+pp
+As far as speech is concerned then we must ensure that before sampling a
+signal no significant components at greater than half the sample frequency
+are present  Furthermore the sampled signal will only contain information
+about frequency components less than this so the sample frequency must be
+chosen as twice the highest frequency of interest
+For example consider telephone-quality speech
+Telephones provide a familiar standard of speech quality which
+although it can only be an approximate standard
+will be much used throughout this book
+The telephone network
+aims to transmit only frequencies lower than 34 kHz  We saw in the
+previous chapter that this region will contain the information-bearing formants
+and some em but not all em of the fricative and aspiration energy
+Actually transmitting speech through the telephone system degrades its
+quality very significantly probably more than you realize since everyone is
+so accustomed to telephone speech  Try the dial-a-disc service and compare
+it with high-fidelity music for a striking example of the kind of degradation
+suffered
+pp
+For telephone speech the sampling frequency must be chosen to be
+at least 68 kHz
+Since speech contains significant amounts of energy above 34 kHz it should be
+filtered before sampling to remove this otherwise the higher components
+would be mapped back into the baseband and distort the low-frequency information
+Because it is difficult to make filters that cut off very sharply the
+sampling frequency is chosen rather greater than twice the highest frequency of
+interest  For example the digital telephone network samples at 8 kHz
+The pre-sampling filter should have a cutoff frequency of 4 kHz aim for
+negligible distortion below 34 kHz and transmit negligible components
+above 46 kHz em for these are reflected back into the band of interest
+namely 0 to 34 kHz  Figure 34 shows a block diagram for the input hardware
+FC Figure 34
+rh Quantization
+Before considering specifications for the pre-sampling filter let us turn
+from discretization in time to discretization in amplitude that is
+quantization
+This is performed by an AD converter analogue-to-digital which takes as input
+a constant analogue voltage produced by the sampler and generates a
+corresponding binary value as output  The simplest correspondence is
+ul
+uniform
+quantization where the amplitude range is split into equal regions by points
+termed quantization levels and the output is a binary representation of
+the nearest quantization level to the input voltage
+Typically 11-bit conversion is used for speech giving 2048 quantization

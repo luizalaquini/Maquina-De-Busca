@@ -1,0 +1,100 @@
+
+Fs  = 
+integral from 0 to infinity fte sup -st dt
+    where s is complex
+LE
+The main difference between these two transforms is that the range of integration
+begins at -infinity for the Fourier transform and at 0 for the Laplace
+Advocates of the Fourier transform which typically include people involved with
+telecommunications enjoy the freedom from initial conditions which is bestowed
+by an origin way back in the mists of time  Advocates of Laplace including
+most analogue filter theorists invariably
+consider systems where all is quiet before t=0 em altering the origin
+of measurement of time to achieve this if necessary em and welcome the opportunity
+to include initial conditions explicitly
+ul
+without
+having to worry about what happens in the mists of time
+Although there is a two-sided Laplace transform where the integration begins
+at -infinity it is not generally used because it causes some convergence
+complications  Ignoring this difference between the transforms by considering
+signals which are zero when t0 the Fourier spectrum can be found from the
+Laplace transform by writing  s=j2 pi f that is by considering values
+of s which lie on the imaginary axis
+pp
+The z-transform is
+LB
+
+Hz  =  sum from n=0 to infinity hnz sup -n
+    or    
+Hz  =  sum from n=- infinity to infinity hnz sup -n 
+
+LE
+depending on whether a one-sided or two-sided transform is used  The advantages
+and disadvantages of one- and two-sided transforms are the same as in the
+analogue case
+z plays the role of e sup sT  and so it is not surprising that the response
+to a sampled sinusoid input can be found by setting
+LB
+EQ
+z  =  e sup j2 pi fT
+EN
+LE
+in Hz as we proved explicitly above for the pre-emphasis filter
+pp
+The above relation between z and f means that real-valued frequencies correspond
+to points where |z|=1 that is the unit circle in the complex z-plane
+As you travel anticlockwise around this unit circle starting from the
+point z=1 the corresponding frequency increases from 0 to 12T half-way
+round z=-1 to 1T when you get back to the beginning z=1 again
+Frequencies greater than the sampling frequency are aliased back into the
+sampling band corresponding to further circuits of |z|=1 with frequency
+going from 1T to 2T 2T to 3T and so on  In fact this is the circle
+of Figure 33 which was used earlier to explain how sampling affects the frequency
+spectrum
+sh 44  Discrete Fourier transform
+pp
+Let us return from this brief digression into techniques of digital signal
+analysis to the problem of determining the frequency spectrum of speech
+Although a bank of bandpass filters such as is used in the channel vocoder
+is the perhaps most straightforward way to obtain a frequency spectrum
+there are other techniques which are in fact more commonly used in digital speech
+processing
+pp
+It is possible to define the Fourier transform of a discrete sequence of
+points  To motivate the definition consider first the
+ordinary Fourier transform FT which is
+LB
+
+gt  = 
+integral from - infinity to infinity Gfe sup +j2 pi ft df
+
+Gf  = 
+integral from - infinity to infinity gte sup -j2 pi ft dt 
+
+LE
+This takes a continuous time domain into a continuous frequency domain
+Sometimes you see a normalizing factor 12 pi multiplying the integral in
+either the forward or the reverse transform  This is only needed
+when the frequency variable is expressed in radianss and we will find it
+more convenient to express frequencies in Hz
+pp
+The Fourier series FS which should also be familiar to you
+operates on a periodic time waveform or equivalently
+one that only exists for a finite period of time which is notionally extended
+periodically  If a period lies in the time range 0b then the transform is
+LB
+
+gt  = 
+sum from r = - infinity to infinity Gre sup +j2 pi rtb
+
+Gr  =  1 over b  integral from 0 to b gte sup -j2 pi rtb dt 
+
+LE
+The Fourier series takes a periodic time-domain function into a discrete frequency-domain one
+Because of the basic duality between the time and frequency domains in the
+Fourier transforms it is not surprising that another version of the transform
+can be defined which takes a periodic
+ul
+frequencyc
+-domain function into a

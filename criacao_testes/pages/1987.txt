@@ -1,0 +1,100 @@
+Eye I ay aye whey key quay
+Say aver but ever fever
+Neither leisure skein receiver
+in +5n
+Never guess em it is not safe
+We say calves valves half but Ralf
+ne4
+in -5n
+Heron granary canary
+Crevice and device and eyrie
+in +5n
+Face preface but efface
+Phlegm phlegmatic ass glass bass
+ne4
+in -5n
+Large but target gin give verging
+Ought out joust and scour but scourging
+in +5n
+Ear but earn and wear and tear
+Do not rime with here but ere
+ne4
+in -5n
+Seven is right but so is even
+Hyphen roughen nephew Stephen
+in +5n
+Monkey donkey clerk and jerk
+Asp grasp wasp and cork and work
+ne4
+in -5n
+Pronunciation em think of psyche -
+Is a paling stout and spikey
+in +5n
+Wont it make you lose your wits
+Writing groats and saying groats
+ne4
+in -5n
+Its a dark abyss or tunnel
+Strewn with stones like rowlock gunwale
+in +5n
+Islington and Isle of Wight
+Housewife verdict and indict
+ne4
+in -5n
+Dont you think so reader rather
+Saying lather bather father
+in +5n
+Finally  which rimes with enough
+Though through plough cough hough or tough
+ne4
+in -5n
+Hiccough has the sound of cup
+My advice is  give it up
+LE nnnnnnnnnnnnnnnn
+br
+ev
+rh Letter-to-sound rules
+Despite such irregularities it is surprising how much can be done
+with simple letter-to-sound rules
+These specify phonetic equivalents of word fragments and single letters
+The longest stored fragment which matches the current word is translated
+and then the same strategy is adopted on the remainder of the word
+Table 95 shows some English fragments and their pronunciations
+RF
+nr x0 15i+wpronunciation  
+nr x1 nl-nx02
+in nx1u
+ta 15i
+fragment	pronunciation
+lnx0uul
+sp
+-p-	fIpfR
+-ph-	fIffR
+-phe|	fIf eefR
+-phe|s	fIf ee zfR
+-phot-	fIf uh u tfR
+-place|-	fIp l e i sfR
+-plac|i-	fIp l e i s ifR
+-ple|ment-	fIp l i m e n tfR
+-plie|-	fIp l aa i yfR
+-post	fIp uh u s tfR
+-pp-	fIpfR
+-pp|ly-	fIp l eefR
+-preciou-	fIp r e s uhfR
+-proce|d-	fIp r uh u s ee dfR
+-prope|r-	fIp r o p uh rfR
+-prov-	fIp r uu vfR
+-purpose-	fIp er p uh sfR
+-push-	fIp u shfR
+-put	fIp u tfR
+-puts	fIp u t sfR
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 95  Word fragments and their pronunciations
+pp
+It is sometimes important to specify that a rule applies only when
+the fragment is matched at the beginning or end of a word
+In the Table - means that other fragments can precede or follow this
+one
+The | sign is used to separate suffixes from a word stem

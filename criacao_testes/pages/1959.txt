@@ -1,0 +1,100 @@
+ds V 4
+ds P 27-89
+nr P 1
+nr T 0
+nr A 1
+nr O 0
+ 1 journal-article
+in+2n
+This is a careful early study of the quantitative implications of using
+phonemes demisyllables syllables and words as the basic building
+blocks for speech synthesis
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 8  PROSODIC FEATURES IN SPEECH SYNTHESIS
+ds RT Prosodic features
+ds CX Principles of computer speech
+pp
+Prosodic features are those which characterize an utterance as a whole
+rather than having a local influence on individual sound segments
+For speech output from computers an utterance usually comprises a
+single unit of information which stretches over several words em a clause
+or sentence  In natural speech an utterance can be very much longer but
+it will be broken into prosodic units which are again roughly the size of a
+clause or sentence  These prosodic units are certainly closely related
+to each other  For example the pitch contour used when introducing a new
+topic is usually different from those employed to develop it subsequently
+However for the purposes of synthesis the successive prosodic units can
+be treated independently and information about pitch contours to be used
+will have to be specified in the input for each one
+The independence between them is not complete however and
+lower-level contextual effects such as interpolation of pitch between
+the end of one prosodic unit and the start of the next must still be
+imitated
+pp
+Prosodic features were introduced briefly in Chapter 2
+Variations in voice dynamics occur in three dimensions  pitch of the voice
+time and amplitude
+These dimensions are inextricably twined together in living speech
+Variations in voice quality are much less important for the factual
+kind of speech usually sought in voice response applications
+although they can play a considerable in conveying emotions
+for a discussion of the acoustic manifestations of emotion in speech
+see Williams and Stevens 1972
+
+Williams Stevens 1972
+
+pp
+The distinction between prosodic and segmental effects is a traditional one
+but it becomes rather fuzzy when examined in detail
+It is analogous to the distinction between hardware and
+software in computer science  although useful from some points of view
+the borderline becomes blurred as one gets closer to actual systems em with
+microcode interrupts memory management and the like
+At a trivial level prosodics
+cannot exist without segmentals for there must be some vehicle to carry the
+prosodic contrasts
+Timing em a prosodic feature em is actually realized by the durations of
+individual segments  Pauses are tantamount to silent segments
+pp
+While pitch may seem to be relatively independent of segmentals em and
+this view is reinforced by the success of the source-filter model
+which separates the frequency of the
+excitation source from the filter characteristics em there
+are some subtle phonetic effects of pitch
+It has been observed that it drops on the transition into certain
+consonants and rises again on the transition out Haggard
+ul
+et al
+1970
+
+Haggard Ambler Callow 1970
+
+This can be explained in terms of variations in pressure from the
+lungs on the vocal cords Ladefoged 1967
+
+Ladefoged 1967
+
+Briefly the increase in mouth pressure which occurs during some consonants
+causes a reduction in the pressure difference across the vocal cords
+and in the rate of flow of air between them
+This results in a decrease in their frequency of vibration
+When the constriction is released there is a temporary increase in the air
+flow which increases the pitch again
+The phenomenon is called microintonation
+It is particularly noticeable in voiced stops but also occurs in voiced
+fricatives and unvoiced stops
+Simulation of the effect in synthesis-by-rule has often been found to give
+noticeable improvements in the speech quality
+pp
+Loudness also has a segmental role  For example we noted in the last chapter
+that amplitude values play a small part in identification of fricatives
+In fact loudness is a very
+ul
+weak
+prosodic feature  It contributes little to the perception of stress
+Even for shouting the distinction from normal speech is as much in the voice
+quality as in amplitude

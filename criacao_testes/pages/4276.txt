@@ -1,0 +1,100 @@
+p
+and
+ul
+d
+in
+pig and dig belong to different phonemes in English
+because they discriminate
+the two words
+ul
+b
+ul
+f
+and
+ul
+j
+belong to different phonemes again
+ul
+i
+and
+ul
+a
+in hid and had belong to different phonemes too
+Proceeding like this a list of phonemes can be drawn up
+pp
+Such a list is shown in Table 21 for British English
+The layout of the list does have some significance in terms of different
+categories of phonemes which will be explained later  In fact
+linguists use an
+assortment of English letters foreign letters and special
+symbols to represent phonemes  In this book we use one- or two-letter
+codes partly because they are more mnemonic and partly because
+they are more suitable for communication to computers using standard
+peripheral devices
+They are
+a direct transliteration of linguists standard International Phonetic
+Association symbols
+RF
+nr x1 3m+10i+05i+05i+05i+wyu
+nr x1 nl-nx12
+in nx1u
+ta 3m +10i +05i +05i +05i +05i +05i
+fIuhfR	the	fIpfR	fItfR	fIkfR
+fIafR	bud	fIbfR	fIdfR	fIgfR
+fIefR	head	fImfR	fInfR	fIngfR
+fIifR	hid
+fIofR	hod	fIrfR	fIwfR	fIlfR	fIyfR
+fIufR	hood
+fIaafR	had	fIsfR	fIzfR
+fIeefR	heed	fIshfR	fIzhfR
+fIerfR	heard	fIffR	fIvfR
+fIuufR	food	fIthfR	fIdhfR
+fIarfR	hard	fIchfR	fIjfR
+fIawfR	hoard	fIhfR
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 21 The phonemes of British English
+pp
+We will discuss the sounds which make up each of these phoneme classes
+shortly  First however it is worthwhile pointing out some rather
+tricky points in the definition of these phonemes
+rh Phonological difficulties
+There are snags with phonological classification as there are
+in any area where attempts are made to make completely logical
+statements about human activity
+Consider
+ul
+h
+and the
+ul
+ng
+in singing
+c
+ul
+ng
+is certainly not an
+ul
+n
+sound followed by a
+ul
+g
+sound although
+it is true that in some English accents singing is rendered with
+the
+ul
+ng
+followed by a
+ul
+g
+at each of its two occurrences  No words
+end with
+ul
+h
+and none begin with
+ul
+ng
+Notice that we are still talking about British English
+In Chinese the sound
+ul
+ng
+is a word in its own right and is a common

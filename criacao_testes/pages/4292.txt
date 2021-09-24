@@ -1,0 +1,100 @@
+ds C London
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+Again a standard work this time on delta modulation techniques
+Steele gives an excellent and exhaustive treatment of the subject from a
+communications viewpoint
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 4  SPEECH ANALYSIS
+ds RT Speech analysis
+ds CX Principles of computer speech
+pp
+Digital recordings of speech provide a jumping-off point for
+further processing of the audio waveform which is usually necessary for
+the purpose of speech output
+It is difficult to synthesize natural sounds by concatenating
+individually-spoken words
+Pitch is perhaps the most perceptually significant contextual effect
+which must be
+taken into account when forming connected speech out of isolated words
+The intonation of an utterance which manifests itself as a
+continually changing pitch is a holistic property of the utterance
+and not the sum of components determined by the individual words alone
+Happily and quite coincidentally communications engineers in their quest
+for reduced-bandwidth telephony have invented methods of coding speech that
+separate the pitch information from that carried by the articulation
+pp
+Although these analysis techniques which were first introduced in the late
+1930s Dudley 1939 were originally implemented by analogue means em and
+in many systems still are Blankenship 1978 describes a recent
+switched-capacitor realization em there is a continuing trend
+towards digital implementations particularly for the more sophisticated coding
+schemes
+
+Dudley 1939
+
+
+Blankenship 1978
+
+It is hard to see how the technique of linear prediction of speech
+which is described in detail in Chapter 6 could be accomplished in the
+absence of digital processing
+Some groundwork is laid for the theory of digital signal analysis in this
+chapter
+The ideas are not presented in a formal axiomatic way but are developed as
+and when they are needed to examine some of the structures that turn out to be
+useful in speech processing
+pp
+Most speech analysis views speech according to the source-filter model which
+was introduced in Chapter 2 and aims to separate the effects of the source from
+those of the filter  The frequency spectrum of the vocal tract filter is of
+great interest and the technique of discrete Fourier transformation is
+discussed in this chapter  For many purposes it is better to extract the formant
+frequencies from the spectrum and use these alone or in conjunction with their
+bandwidths to characterize it  As far as the signal source in the source-filter
+model is concerned its most interesting features are pitch and amplitude em the
+latter being easy to estimate  Hence we go on to look at pitch extraction
+Related to this is the problem of deciding whether a segment of speech has
+voiced or unvoiced excitation or both
+pp
+Estimating formant and pitch parameters is one of the messiest areas of
+speech processing  There is a delightful paper which points this out
+Schroeder 1970 entitled Parameter estimation in speech a lesson in unorthodoxy
+
+Schroeder 1970
+
+It emphasizes that the most successful estimation procedures have often relied
+on intuition based on knowledge of speech signals and their production in the
+human vocal apparatus rather than routine applications of well-established
+theoretical methods
+Fortunately the emphasis of the present book is on speech
+ul
+output
+which involves parameter estimation only in so far as it is needed to produce
+coded speech for storage and to illuminate the acoustic nature of speech
+for the development of synthesis by rule from phonetics or text
+Hence the many methods of formant and pitch estimation are treated rather
+cursorily and qualitatively here  our main interest is in how to
+ul
+use
+such information for speech output
+pp
+If the incoming speech can be analysed into its formant frequencies amplitude
+excitation mode and pitch if voiced it is quite easy to resynthesize
+it directly from these parameters  Speech synthesizers are described in the
+next chapter  They can be realized in either analogue or digital
+hardware the former being predominant in production systems and the latter
+in research systems em although as in other areas of electronics the balance
+is changing in favour of digital implementations
+sh 41  The channel vocoder
+pp
+A direct representation of the frequency spectrum of a signal can be obtained
+by a bank of bandpass filters  This is the basis of
+the

@@ -1,0 +1,100 @@
+previous section has been reported Olive 1975
+
+Olive 1975
+
+The reflection coefficients were spliced during an overlap region of
+only 20 msec
+More interestingly attempts were made to suppress the plosive bursts
+of stop sounds in cases where they were followed by another stop at
+the beginning of the next word
+This is a common coarticulation occurring for instance in the phrase
+stop burst  In running speech the plosion on the
+ul
+p
+of stop is
+normally suppressed because it is followed by another stop
+This is a particularly striking case because the place of articulation
+of the two stops
+ul
+p
+and
+ul
+b
+is the same  complete suppression is not as likely
+to happen in stop gap for example although it may occur
+Here is an instance of how extra information could improve the
+quality of the synthetic transitions considerably
+However automatically identifying the place of articulation of stops is
+a difficult job of a complexity far above what is appropriate for
+simply joining words stored in source-filter form
+pp
+Another innovation was introduced into the transition between two
+vowel sounds when the second word began with an accented syllable
+A glottal stop was placed at the juncture
+Although the glottal stop was not described in Chapter 2 it is a sound
+used in many dialects of English  It frequently occurs
+in the utterance uh-uh meaning no  Here it
+ul
+is
+used to separate two vowel sounds but in fact this is not particularly
+common in most dialects
+One could say the apple the orange the onion with a neutral vowel
+in the to rhyme with c
+ul
+ac
+bove and a glottal stop as separator
+but it is much more usual to rhyme the with he and introduce a
+ul
+y
+between the words
+Similarly even speakers who do not normally pronounce an
+ul
+r
+at the
+end of words will introduce one in bigger apple rather than
+using a glottal stop
+Note that it would be wrong to put an
+ul
+r
+in the apple even
+for speakers who usually terminate the and bigger with the same sound
+Such effects occur at a high level of processing and are practically
+impossible to simulate with word-interpolation rules
+Hence the expedient of introducing a glottal stop is a good one although
+it is certainly unnatural
+sh 72  Concatenating whole or partial syllables
+pp
+The use of segments larger than a single phoneme or allophone but smaller
+than a word as the basic unit for speech synthesis has an interesting
+history
+It has long been realized that transitions between phonemes are
+extremely sensitive and critical components of speech and thus are
+essential for successful synthesis
+Consider the unvoiced stop sounds
+ul
+p t
+and
+ul
+k
+Their central portion is actually silence  Try saying a word like
+butter with a very long
+ul
+tc
+  Hence
+in this case it is
+ul
+only
+the transitional information which can distinguish these sounds from
+each other
+pp
+Sound segments which comprise the transition from the centre of one phoneme
+to the centre of the next are called
+ul
+dyads
+or
+ul
+diphones
+The possibility of using them as the basic units for concatenation
+was first mooted in the mid 1950s
+The idea is attractive because there is relatively little spectral
+movement in the central so-called steady-state portion of many

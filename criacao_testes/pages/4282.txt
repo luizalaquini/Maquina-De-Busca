@@ -1,0 +1,100 @@
+imate versus approxic
+ul
+matec
+ em although segmental aspects play a part here too for the vowel
+qualities differ in each pair of words
+Nevertheless if you make a mistake when assigning stress to words
+like these in conversation you are very likely to be queried as
+to what you actually said
+pp
+Intonation has a big effect on meaning too
+Pitch often em but by no means always em rises on a question
+the extent and abruptness of the rise depending on features like whether
+a genuine information-bearing reply or merely confirmation is expected
+A distinctive pitch pattern accompanies the introduction of a new topic
+In conjunction with rhythm intonation can be used to bring out contrasts
+as in
+LB
+NI
+He didnt have a
+ul
+red
+car he had a
+ul
+black
+one
+LE
+In general the intonation patterns used by a reader depend not only on
+the text itself but on his interpretation of it and also on his
+expectation of the listeners interpretation of it
+For example
+LB
+NI
+He had a
+ul
+red
+car I think you thought it was black
+NI
+He had a red
+ul
+bic
+cycle I think you thought it was a car
+LE
+pp
+In natural speech prosodic features are significantly influenced by
+whether the utterance is generated spontaneously or read aloud
+The variations in spontaneous speech are enormous
+There are all sorts of emotions which are plainly audible in
+everyday speech  sarcasm excitement rudeness disagreement
+sadness fright love
+Variations in voice quality certainly play a part here
+Even with ordinary cooperative friendly conversation the need to find
+words and somehow fit them into an overall utterance produces great
+diversity of prosodic structures
+Applications for speech output from computers do not however call for
+spontaneous conversation but for a controlled delivery which is
+like that when reading aloud
+Here the speaker is articulating utterances which have been set out for
+him reducing his cognitive load to one of understanding and interpreting
+the text rather than generating it
+Unfortunately for us linguists are quite rightly
+primarily interested in living
+spontaneous speech rather than pre-prepared readings
+pp
+Nevertheless the richness of prosody in speech even when reading from
+a book should not be underestimated
+Read aloud to an audience and listen to the contrasts in voice dynamics
+deliberately introduced for varietys sake
+If stories are to be read there is even a case for controlling voice
+ul
+quality
+to cope with quotations and affective imitations
+pp
+We saw earlier that the source-filter model is particularly
+helpful in distinguishing prosodic features which are largely
+properties of the source from segmental ones which belong to
+the filter
+Pitch and amplitude are primarily source properties
+Rhythm and speed of speaking are not but neither are they filter
+properties for they belong to the source-filter system as a whole
+and not specifically to either part of it
+The difficult notion of stress is from an acoustic point of view
+a combination of pitch rhythm and amplitude
+Even some features of voice quality can be attributed to the source
+like laryngitis although others em cleft palate badly-fitting
+dentures em affect segmental features as well
+sh 24  Further reading
+pp
+This chapter has been no more than a cursory introduction to some
+of the difficult problems of linguistics and phonetics
+Here are some readable books which discuss these problems further
+LB nn
+Abercrombie-1967-1
+ds F 1
+-
+ds A Abercrombie D
+ds D 1967
+ds T Elements of general phonetics
+ds I Edinburgh Univ Press
+nr T 0
+nr A 1

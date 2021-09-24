@@ -1,0 +1,100 @@
+ds D 1975
+ds K 
+ds T Linear prediction a tutorial review
+ds J Proc IEEE
+ds V 63
+ds N 4
+ds P 561-580
+nr P 1
+ds O April
+nr T 0
+nr A 1
+nr O 0
+ 1 journal-article
+in+2n
+An interesting informative and readable survey of linear prediction
+in-2n
+Markel-1976-3
+-
+ds A Markel JD
+as A  and Gray AH
+ds D 1976
+ds T Linear prediction of speech
+ds I Springer Verlag
+ds C Berlin
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This is the only book which is entirely devoted to linear prediction of speech
+It is an essential reference work for those interested in the subject
+in-2n
+Wiener-1947-4
+-
+ds A Wiener N
+ds D 1947
+ds T Extrapolation interpolation and smoothing of stationary time series
+ds I MIT Press
+ds C Cambridge Massachusetts
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+Linear prediction is often thought of as a relatively new technique
+but it is only its application to speech processing that is novel
+Wiener develops all of the basic mathematics used in linear prediction
+of speech except the lattice filter structure
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 7  JOINING SEGMENTS OF SPEECH
+ds RT Joining segments of speech
+ds CX Principles of computer speech
+pp
+The obvious way to provide speech output from computers
+is to select the basic acoustic units to be used record them
+and generate utterances by concatenating together appropriate segments
+from this pre-stored inventory
+The crucial question then becomes what are the basic units
+Should they be whole sentences words syllables or phonemes
+pp
+There are several trade-offs to be considered here
+The larger the units the more utterances have to be stored
+It is not so much the length of individual utterances that is of concern
+but rather their variety which tends to increase exponentially instead
+of linearly with the size of the basic unit  Numbers provide an
+easy example  there are 10 sup 7 7-digit telephone numbers and it is
+certainly infeasible to record each one individually
+Note that as storage technology improves the limitation is becoming
+more and more one of recording the utterances in the first place rather
+than finding somewhere to store them
+At a PCM data rate of 50 Kbits a 100 Mbyte disk can hold over 4 hours
+of continuous speech
+With linear predictive coding at 1 Kbits it holds 08 of a
+megasecond em well over a week  And this is a 24-hour 7-day week
+which corresponds to a working month and continuous speech em without
+pauses em which probably requires another factor of five for
+production by a person
+Setting up a recording session to fill the disk would be a formidable
+task indeed
+Furthermore the use of videodisks em which will be common domestic items
+by the end of the decade em could increase these figures by a factor of 50
+pp
+The word seems to be a sensibly-sized basic unit
+Many applications use a rather limited vocabulary em 190 words
+for the airline reservation system described in Chapter 1
+Even at PCM data rates this will consume less than 05 Mbyte of
+storage
+Unfortunately coarticulation and prosodic factors now come into play
+pp
+Real speech is connected em there are few gaps between words
+Coarticulation where sounds are affected by those on either side
+naturally operates across word boundaries
+And the time constants of coarticulation are associated with the
+mechanics of the vocal tract and hence measure tens or hundreds
+of msec  Thus the effects straddle several pitch periods 100 Hz pitch
+has 10 msec period and cannot be simulated by simple interpolation of the

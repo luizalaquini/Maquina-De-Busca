@@ -1,0 +1,100 @@
+ul
+to
+p
+ul
+do
+Q0r = Q0rQrr
+br
+ul
+for
+r=p-1
+ul
+downto
+1
+ul
+do
+in+2n
+ul
+for
+i=r+1
+ul
+to
+p
+ul
+do
+Q0r = Q0r - QriQ0i
+in-2n
+ul
+for
+r=1
+ul
+to
+p
+ul
+do
+coeffr = Q0r
+in-6n
+ul
+end
+nf
+FG Procedure 62  Pascal algorithm for the covariance method
+and is shown diagrammatically in Figure 67
+FC Figure 67
+The algorithm shown is not terribly efficient from a computation
+and storage point of view although it is workable  For one thing
+it uses the obvious method for computing the covariance matrix
+by calculating
+EQ
+Q sub 01 sup h 
+EN
+EQ
+Q sub 02 sup h   
+EN
+EQ
+Q sub 0p sup h 
+EN
+EQ
+Q sub 11 sup h  
+EN
+in turn which repeats most of the multiplications p times em not
+an efficient procedure  A simple alternative is to precompute the necessary
+multiplications and store them in a  N+h times p+1 diagonally symmetric
+table but even apart from the extra storage required for this the number
+of additions which must be performed subsequently to give the Qs is far
+larger than necessary  It is possible however to write a procedure which is
+both time- and space-efficient Witten 1980
+
+Witten 1980 Algorithms for linear prediction
+
+pp
+The scaling problem is rather more tricky for the covariance
+method than for the autocorrelation method  The x-vector
+should be scaled initially in the same way as before but now there
+are p+1 diagonal elements of the covariance matrix any of which could
+be the greatest element  Of course
+LB
+EQ
+Q sub jk  =  Max  Q sub 11  Q sub 22   Q sub pp 
+EN
+LE
+but despite the considerable communality in the summands of the diagonal
+elements there are no
+ul
+a priori
+bounds on the ratios between them
+pp
+The only way to scale the Q matrix properly is to calculate each of its p
+diagonal elements and use the greatest as a scaling factor
+Alternatively the fact that
+LB
+EQ
+Q sub jk  =  N times Max x sub n sup 2 
+EN
+LE
+can be used to give a bound for scaling purposes however this
+is usually a rather conservative bound and as N is often around 100 several
+bits of significance will be lost
+pp
+Scaling difficulties do not cease when Q has been determined  It is possible
+to show that the elements of the lower-triangular matrix L which represents
+the square root of Q are actually

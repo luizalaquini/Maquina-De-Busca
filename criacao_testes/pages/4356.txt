@@ -1,0 +1,100 @@
+LB
+1
+ul
+dh i z  i z  d zh aa k s  h aa u s
+LE
+this is Jacks house the 1      are
+prosodic markers which will be discussed in the next chapter
+FC Figure 73
+Next the rhythm and pitch assignment routines
+augment the list with syllable boundaries phoneme
+cluster identifiers and duration and pitch specifications
+Then it is passed to the segmental synthesis routine
+which chains events into the appropriate places and as it
+proceeds removes the no longer useful elements phoneme names
+pitch specifiers etc which originally constituted the synthesis list
+Finally an interrupt-driven speech synthesizer handler removes
+events from the list as they become due and uses them to control
+the hardware synthesizer
+pp
+By adopting the synthesis list as a uniform data structure for
+holding utterances at every stage of processing the problems of storage
+allocation and garbage collection are minimized
+Each list element has a forward pointer and five data words the first
+indicating what type of element it is
+Lexical items which may appear in the input are
+LB
+NI
+end of utterance    
+NI
+intonation indicator 1 
+NI
+rhythm indicator  
+NI
+word boundary   
+NI
+syllable boundary 
+NI
+phoneme segment
+c
+ul
+ar b ng c
+
+NI
+explicit duration or pitch information
+LE
+Several of these have to do with prosodic features em a prime
+advantage of the structure is that it does not create an artificial
+division between segmentals and prosody
+Syllable boundaries and duration and pitch information are optional
+They will normally be computed by ISP but the user can override them in the
+input in a natural way
+The actual characters which identify lexical items are not fixed
+but are taken from the rule table
+pp
+As synthesis
+proceeds new elements are chained in to the synthesis list
+For segmental purposes three types of event are defined em
+target events increment events and aspiration events
+With each event is associated a time at which the event becomes due
+For a target event a parameter number target parameter value
+and time-increment are specified
+When it becomes due motion of the parameter towards the
+target is begun  If no other event for that parameter intervenes
+the target value will be reached after the given time-increment
+However another target event for the parameter may change its motion
+before the target has been attained
+Increment events contain a parameter number a parameter increment
+and a time-increment  The fixed increment is added to the parameter value
+throughout the time specified  This provides an easy way to make a
+fricative burst during the opening phase of a stop consonant
+Aspiration events switch the mode of excitation from voicing to aspiration
+for a given period of time  Thus the aspirated part of unvoiced stops
+can be accomodated in a natural manner by changing the mode of excitation
+for the duration of the aspiration
+RF
+nr x1 wexcitation2
+nr x2 wformant resonance2
+nr x3 wfricative2
+nr x4 wtype2
+nr x5 wfrequencies Hz2
+nr x6 wresonance Hz2
+nr x0 10i+07i+06i+06i+10i+12i+wlong vowel2
+nr x7 nl-nx02
+in nx7u
+ta 10i +07i +06i +06i +10i +12i
+	h-nx1uexcitation		00h-nx2uformant resonance	00h-nx3ufricative	h-nx4utype
+			00h-nx5ufrequencies Hz	00h-nx6uresonance Hz
+lnx0uul
+sp
+nr x1 wvoicing2
+nr x2 wvowel2
+fIuhfR	h-nx1uvoicing	0490	1480	2500		c
+h-nx2uvowel
+fIafR	h-nx1uvoicing	0720	1240	2540		h-nx2uvowel
+fIefR	h-nx1uvoicing	0560	1970	2640		h-nx2uvowel
+fIifR	h-nx1uvoicing	0360	2100	2700		h-nx2uvowel
+fIofR	h-nx1uvoicing	0600	0890	2600		h-nx2uvowel
+fIufR	h-nx1uvoicing	0380	0950	2440		h-nx2uvowel
+fIaafR	h-nx1uvoicing	0750	1750	2600		h-nx2uvowel
+nr x2 wlong vowel2

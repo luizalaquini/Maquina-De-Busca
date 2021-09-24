@@ -1,0 +1,100 @@
+form which ensured that all transitions started rapidly towards
+the target position but slowed down as it was approached Rabiner 1968 1969
+
+Rabiner 1968 Speech synthesis by rule Bell System Technical J
+
+
+Rabiner 1969 A model for synthesizing speech by rule
+
+The time-constant of decay was stored with each segment in the rule
+table  The rhythm of the synthetic speech was controlled at this level
+for the next segment was begun when all the formants had attained
+values sufficiently close to the current targets
+This is a poor model of the human speech production process where rhythm
+is dictated at a relatively high level and the next phoneme is not
+simply started when the current one happens to end
+Nevertheless the algorithm produced smooth continuous formant motions
+not unlike those found in spectrograms
+pp
+There is however by no means universal agreement on decaying exponential formant
+motions  Lawrence 1974 divided segments into checked and free
+categories corresponding roughly to consonants and vowels and postulated
+ul
+increasing
+exponential transitions into checked segments and decaying transitions into
+free ones
+
+Lawrence 1974
+
+This is a reasonable supposition if you consider the mechanics of
+articulation  The speed of movement of the tongue for example is likely
+to increase until it is physically stopped by reaching the roof of the
+mouth
+When moving away from a checked posture into a free one the transition will
+be rapid at first but slow down to approach the target asymptotically
+governed by proprioceptive feedback
+pp
+The only thing that seems to be agreed is that the formant tracks should
+certainly
+ul
+not
+be piecewise linear  However in the face of
+conflicting opinions as to whether exponentials should be decaying
+or increasing piecewise linear motions seem to be a reasonable
+compromise  It is likely that the precise shape of formant
+tracks is unimportant so long as the gross features are imitated
+correctly
+Nevertheless this is a question which an articulatory model
+could help to answer
+sh 76  References
+LB nnnn
+
+LIST
+
+LE nnnn
+sh 77  Further reading
+pp
+There are unfortunately few books to recommend on the subject of
+joining segments of speech
+The references form a representative and moderately comprehensive bibliography
+Here is some relevant background reading in linguistics
+LB nn
+Fry-1976-1
+-
+ds A Fry DBEditor
+ds D 1976
+ds T Acoustic phonetics
+ds I Cambridge Univ Press
+ds C Cambridge England
+nr T 0
+nr A 0
+nr O 0
+ 2 book
+in+2n
+This book of readings contains many classic papers on acoustic phonetics
+published from 1922-1965
+It covers much of the history of the subject and is intended
+primarily for students of linguistics
+in-2n
+Lehiste-1967-2
+-
+ds A Lehiste IEditor
+ds D 1967
+ds T Readings in acoustic phonetics
+ds I MIT Press
+ds C Cambridge Massachusetts
+nr T 0
+nr A 0
+nr O 0
+ 2 book
+in+2n
+Another basic collection of references which covers much the same ground
+as Fry 1976 above
+in-2n
+Sivertsen-1961-3
+-
+ds A Sivertsen E
+ds D 1961
+ds K 
+ds T Segment inventories for speech synthesis
+ds J Language and Speech

@@ -1,0 +1,100 @@
+From a speech point of view the resulting utterances can never be made
+convincingly fluent
+We discussed the early experiments of Stowe and Hampton 1961
+at the beginning of Chapter 3
+
+Stowe Hampton 1961
+
+A major drawback to word concatenation in the
+analogue domain is the introduction of clicks and other interference
+between words  it is difficult to prevent the time waveform transitions
+from adding extraneous sounds
+This poses no problem with digital storage however for the waveforms
+can be edited accurately prior to storage so that they start
+and finish at an exactly
+zero level
+Rather the lack of fluency stems from the absence of proper control
+of coarticulation and prosody
+pp
+But this is not necessarily a serious drawback if the application is
+a sufficiently limited one  Complete invariant utterances can be
+stored as one unit  Often they must contain data-dependent
+slot-fillers as in
+LB
+This flight makes em stops
+LE
+and
+LB
+Flight number em leaves em at em  arrives in em at em
+LE
+taken from the airline reservation system of Chapter 1
+Levinson and Shipley 1980
+
+Levinson Shipley 1980
+
+Then each slot-filling word is recorded in an intonation consistent
+both with its position in the template utterance and with the
+intonation of that utterance
+This could be done by embedding the word in the utterance
+for recording and excising it by digital editing before storage
+It would be dangerous to try to take into account coarticulation effects
+for the coarticulation could not be made consistent with both the
+several slot-fillers and the single template
+This could be overcome if several versions of the template were stored
+but then the scheme becomes subject to combinatorial explosion
+if there is more than one slot in a single utterance
+But it is not really necessary for the lack of fluency will probably
+be interpreted by a benevolent listener as an attempt to convey the
+information as clearly as possible
+pp
+Difficulties will occur if the same slot-filler is used in different
+contexts  For instance the first gap in each of the sentences above
+contains a number yet the intonation of that number is different
+Many systems simply ignore this problem
+Then one does notice anomalies if one is attentive  the words come
+as it were from different mouths without fluency
+However the problem is not necessarily acute  If it is two or more
+versions of each slot-filler can be recorded one for each context
+pp
+As an example consider the synthesis of 7-digit telephone numbers
+like 289-5371  If one version only of each digit is stored
+it should be recorded in a level tone of voice  A pause should be
+inserted after the third digit of the synthetic number to accord
+with common elocution  The result will certainly be unnatural although
+it should be clear and intelligible
+Any pitch errors in the recordings will make certain numbers
+audibly anomalous
+At the other extreme 70 single digits could be stored one version of
+each digit for each position in the number  The recording will be
+tedious and error-prone and the synthetic utterances will still not
+be fluent em for coarticulation is ignored em but instead
+unnaturally clearly enunciated  A compromise is to record only
+three versions of each digit one for any of the
+five positions
+nr x1 wul
+nr x2 8nx1
+nr x3 02m
+zxhnx1uzxhnx1uhnx1uz-hnx1uzxhnx1uzxhnx1uc
+zxhnx1uhnx1uvnx3ul-nx2uulv-nx3u 
+another one for the third position
+hnx1uhnx1uzxhnx1uz-hnx1uhnx1uc
+hnx1uhnx1uhnx1uvnx3ul-nx2uulv-nx3u 
+and the last for the final position
+hnx1uhnx1uhnx1uz-hnx1uhnx1uc
+hnx1uhnx1uzxhnx1uvnx3ul-nx2uulv-nx3u 
+The first version will be in a level voice the second an
+incomplete rising tone and the third a final dropping pitch
+rh Joining formant-coded words
+The limitations of the time-domain method are lack of
+fluency caused by unnatural transitions between words and the
+combinatorial explosion created by recording slot-fillers several times
+in different contexts
+Both of these problems can be alleviated by storing formant tracks
+concatenating them with suitable interpolation and applying a complete
+pitch contour suitable for the whole utterance
+But one can still not generate conversational speech for natural speech
+rhythms cause non-linear warpings of the time axis which cannot reasonably
+be imitated by this method
+pp
+Solving problems often creates others
+As we saw in Chapter 4 it is not easy to obtain reliable formant tracks

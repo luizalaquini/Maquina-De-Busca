@@ -1,0 +1,100 @@
+Thus the appealing segmentation of the overall problem shown in Figure 91
+is not very accurate for the individual processes cannot be rigidly
+separated as it implies  In fact we saw earlier how this intermixing of
+levels occurs with prosodic and segmental features
+Nevertheless it is helpful to structure discussion of the problem by
+separating levels as a first approximation
+Further influences on pronunciation come from the semantics and syntax
+of the utterance em and both also play a part in intonation and rhythm analysis
+The result of this second process is a phonetic representation still
+adorned with prosodic markers
+pp
+Now we move down from higher-level intonation and rhythm considerations
+to the details of the pitch contour and segment durations
+This process was the subject of the previous chapter
+The problems are twofold  to map an appropriate acoustic pitch contour
+on to the utterance using tonic stress point and foot boundaries as
+anchor points and to assign durations to segments using the
+footemsyllableemclusteremsegment hierarchy
+If it is accepted that the overall rhythm can be captured adequately by foot
+markers this process does not interact with earlier ones
+However many researchers do not believing instead that rhythm is
+syntactically determined at a very detailed level
+This will of course introduce strong interaction between the duration
+assignment process and the levels above
+Klatt 1975 puts it into his title em
+Vowel lengthening is syntactically determined in a connected discourse
+
+Klatt 1975 Vowel lengthening is syntactically determined
+
+Contrast this with the paper cited earlier Bolinger 1972 entitled
+Accent is predictable em if youre a mind reader
+
+Bolinger 1972 Accent is predictable em if youre a mind reader
+
+No-one would disagree that accent is an influential factor in vowel length
+pp
+Notice incidentally that the representation of the result of the pitch
+and duration assignment process in Table 91 is inadequate for each segment
+is shown as having just one pitch
+In practice the pitch varies considerably throughout every segment
+and can easily rise and fall on a single one  For example
+LB
+hes
+ul
+very
+good
+LE
+may have a rise-fall on the vowel of very
+The linked event-list data-structure of ISP is much more suitable
+than a textual string for utterance representation at this level
+pp
+The fourth and fifth processes of Figure 91 have little interaction with
+the first two which are the subject of this chapter  Segmental
+concatenation which was treated in Chapter 7 is affected by prosodic
+features like stress but a notation which indicates stressed syllables
+like Hallidays is sufficient to capture this influence
+Contextual modification of segments by which I mean
+the coarticulation effects which govern allophones of phonemes
+is included explicitly in the fourth process to emphasize that the upper levels
+need only provide a broad phonemic transcription rather than a detailed
+phonetic one
+Signal synthesis can be performed by either a formant synthesizer or a
+linear predictive one discussed in Chapters 5 and 6
+This will affect the details of the segmental concatenation process but should have no
+impact at all on the upper levels
+pp
+Figure 91 performs a useful function by summarizing where we have
+been in earlier chapters em the lower three boxes em and introducing the
+remaining problems that must be faced by a full text-to-speech system
+It also serves to illustrate an important point  that a speech output system
+can demand that its utterances be entered in any of a wide range of
+representations
+Thus one can enter at a low level with a digitized waveform or linear
+predictive parameters or higher up with a phonetic representation
+that includes detailed pitch and duration specification at the phoneme level
+or with a phonetic text or plain text adorned with prosodic markers
+or at the very top with plain text as it would appear in a book
+A heavy price in naturalness and intelligibility is paid by moving up
+ul
+any
+of these levels em and this is just as true at the top of the Figure as
+at the bottom
+sh 91  Deriving prosodic features
+pp
+If you really need to start with plain text
+some very difficult problems present themselves
+The text should be understood first of all and then decisions need to be
+made about how it is to be interpreted
+For an excellent speaker em like an actor em these decisions will be artistic
+at least in part
+They should certainly depend upon the opinion and attitude of the speaker
+and his perception of the structure and progress of the dialogue
+Very little is known about this upper level of speech synthesis from text
+In practice it is almost completely ignored em and the speech is at most
+barely intelligible and certainly uncomfortable to listen to
+Hence anybody contemplating building or using a speech output system which
+starts from something close to plain text should consider carefully whether some extra
+semantic information can be coded into the initial utterances to help with
+prosodic interpretation
+Only rarely is this impossible em and reading machines for the blind are

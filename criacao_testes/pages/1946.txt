@@ -1,0 +1,100 @@
+difficulty for there is not enough information in the formant-coded
+words to make possible sophisticated coarticulation
+The need for interpolation is most pressing when one word ends with
+a voiced sound and the next begins with one
+If either the end of the first or the beginning of the second word
+or both is unvoiced unnatural formant transitions do not matter
+for they will not be heard
+Actually this is only strictly true for fricative transitions  if
+the juncture is aspirated then formants will be perceived in the
+aspiration  However
+ul
+h
+is the only fully aspirated sound in English
+and it is relatively uncommon
+It is not absolutely necessary to interpolate the fricative filter resonance
+because smooth transitions from one fricative sound to another are rare
+in natural speech
+pp
+Hence unless both sides of the junction are voiced no interpolation
+is needed  simple abuttal of the stored parameter tracks will do
+Note that this is
+ul
+not
+the same as joining time waveforms for the synthesizer
+will automatically ensure a relatively smooth transition from one
+segment to another because of energy storage in the filters
+A new set of resonance parameters for the formant-coded words will be stored
+every 10 or 20 msec see Chapter 5 and so the transition will automatically
+be smoothed over this time period
+pp
+For voiced-to-voiced transitions some interpolation is needed
+An overlap period of duration say 50 msec is established and
+the resonance parameters in the final 50 msec of the first word are
+averaged with those in the first 50 msec of the second
+The average is weighted with the first words formants dominating
+at the beginning and their effect progressively dying out
+in favour of the second word
+pp
+More sophisticated than a simple average is to weight the components
+according to how rapidly they are changing
+If the spectral change in one word is much greater than that in the
+other we might expect that this will dominate the transition
+A simple measure of spectral derivative at any given time can be found
+by adding the magnitude of the discrepancies in each formant frequency
+between one sample and the next
+The spectral change in the transition region can be obtained by summing
+the spectral derivatives at each sample in the region
+Such a measure can perhaps be made more accurate by taking into
+account the relative importance of the formants but will probably
+never be more than a rough and ready yardstick
+At any rate it can be used to load the average in favour of the
+dominant side of the junction
+pp
+Much more important for naturalness of the speech are the effects
+of rhythm and intonation discussed in the next chapter
+pp
+Such a scheme has been implemented and tested on em guess what em 7-digit
+telephone numbers Rabiner
+ul
+et al
+1971
+
+Rabiner Schafer Flanagan 1971
+
+Significant improvement at the 5 level of statistical
+significance in peoples
+ability to recall numbers was found for this method over direct
+abuttal of either natural or synthetic versions of the digits
+Although the method seemed on balance to produce utterances that were
+recalled less accurately than completely natural spoken
+telephone numbers the difference was not significant at the 5 level
+The system was also used to generate wiring instructions by computer
+directly from the connection list as described in Chapter 1
+As noted there synthetic speech was actually preferred to natural speech
+in the noisy environment of the production line
+rh Joining linear predictive coded words
+Because obtaining accurate formant tracks for natural utterances
+by Fourier transform methods is difficult it is worth considering
+the use of linear prediction as the source-filter model
+Actually formant resonances can be extracted from linear predictive
+coefficients quite easily but there is no need to do this because
+the reflection coefficients themselves are quite suitable
+for interpolation
+pp
+A slightly different interpolation scheme from that described in the
+previous section has been reported Olive 1975
+
+Olive 1975
+
+The reflection coefficients were spliced during an overlap region of
+only 20 msec
+More interestingly attempts were made to suppress the plosive bursts
+of stop sounds in cases where they were followed by another stop at
+the beginning of the next word
+This is a common coarticulation occurring for instance in the phrase
+stop burst  In running speech the plosion on the
+ul
+p
+of stop is
+normally suppressed because it is followed by another stop

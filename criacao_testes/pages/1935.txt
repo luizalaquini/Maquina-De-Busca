@@ -1,0 +1,100 @@
+LE
+The symbol sq is used here and elsewhere
+to indicate an unimportant element of a vector
+or matrix  This certainly has the form of a linear predictive
+synthesis filter which is
+LB
+EQ
+Xz over Ez = 1 over 1- sum from k=1 to p a sub k
+z sup -k= 1 over 1-a sub 1 z sup -1  
+EN
+when p=1
+LE
+pp
+The behaviour of a second-order lattice filter shown in Figure 610
+can be described by
+LB
+ne4
+EQ
+left  matrix ccol X sub 3 sup + above X sub 3 sup - right   =
+ left  matrix ccol 1 above -k sub 2  ccol -k sub 2 z sup -1
+above z sup -1 right 
+ left  matrix ccol X sub 2 sup + above X sub 2 sup - right 
+EN
+sp
+ne4
+EQ
+left  matrix ccol X sub 2 sup + above X sub 2 sup - right   =
+ left  matrix ccol 1 above -k sub 1  ccol -k sub 1 z sup -1
+above z sup -1 right 
+ left  matrix ccol X sub 1 sup + above X sub 1 sup - right 
+EN
+LE
+with
+LB
+ne3
+EQ
+X sub 3 sup + =X sub input
+EN
+br
+EQ
+X sub 1 sup + = X sub 1 sup - = X sub output 
+EN
+LE
+FC Figure 610
+X sub 2 sup + and X sub 2 sup - can be eliminated by substituting the
+second equation into the first which yields
+LB
+EQ
+left  matrix ccol X sub input above sq  right   mark =
+ left  matrix ccol 1 above -k sub 2  ccol -k sub 2 z sup -1
+above z sup -1 right 
+ left  matrix ccol 1 above -k sub 1  ccol -k sub 1 z sup -1
+above z sup -1 right 
+ left  matrix ccol X sub output above X sub output right 
+EN
+sp
+sp
+EQ
+lineup =  left  matrix ccol 1+k sub 1 k sub 2 z sup -1 above sq 
+ccol  -k sub 1 z sup -1 -k sub 2 z sup -2 above sq  right 
+ left  matrix ccol X sub output above X sub output right   
+EN
+LE
+This leads to an input-output relationship
+LB
+EQ
+X sub output over X sub input  = 
+1 over 1+k sub 1 k sub 2 -1z sup -1 -k sub 2 z sup -2  
+EN
+LE
+which has the required form namely
+LB
+EQ
+1 over 1- sum from k=1 to p a sub k z sup -k   p=2
+EN
+LE
+when
+LB
+EQ
+a sub 1 =-k sub 1 k sub 2 -1
+EN
+br
+EQ
+a sub 2 =k sub 2
+EN
+LE
+pp
+A third-order filter is described by
+LB
+EQ
+left  matrix ccol X sub input above sq  right   =
+ left  matrix ccol 1 above -k sub 3  ccol -k sub 3 z sup -1
+above z sup -1 right 
+ left  matrix ccol 1 above -k sub 2  ccol -k sub 2 z sup -1
+above z sup -1 right 
+ left  matrix ccol 1 above -k sub 1  ccol -k sub 1 z sup -1
+above z sup -1 right 
+ left  matrix ccol X sub output above X sub output right   
+EN
+LE

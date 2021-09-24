@@ -1,0 +1,100 @@
+EN
+LE
+because W sup N is 1 recall the definition of W
+and so W sup -Nn is 1 for any n
+Thus
+LB
+EQ
+Xr  =  Gr + GN-r sup   over 2
+
+Yr  =  Gr - GN-r sup   over 2
+EN
+LE
+extracts the transforms Xr and Yr of the original sequences
+x and y
+pp
+With speech this trick is frequently used to calculate two spectra at once
+Using 256-point transforms a new estimate of the spectrum can be obtained
+every 16 msec by taking overlapping 32 msec stretches of speech with a
+computational requirement of one 256-point transform every 32 msec
+sh 46  The fast Fourier transform
+pp
+Straightforward calculation of the DFT expressed as
+LB
+EQ
+Gr  =  sum from n=0 to N-1 gnW sup nr 
+EN
+LE
+for r=0 1 2  N-1 takes N sup 2 operations where each operation
+is a complex multiply and add for W is of course a complex number
+There is a better way invented in the early sixties which reduces this to
+N  log sub 2 N operations em a very considerable improvement
+Dubbed the fast Fourier transform FFT for historical reasons it would actually
+be better called the Fourier transform with the straightforward method above
+known as the slow Fourier transform  There
+is no reason nowadays to use the slow method except for tiny transforms
+It is worth describing the basic principle of the FFT for it is surprisingly
+simple  More details on actual implementations can be found in Brigham 1974
+
+Brigham 1974
+
+pp
+It is important to realize that the FFT involves no approximation
+It is an
+ul
+exact
+calculation of the values that would be obtained by the slow method
+although it may be affected differently by round-off errors
+Problems of aliasing and windowing occur in all discrete Fourier transforms
+and they are neither alleviated nor exacerbated by the FFT
+pp
+To gain insight into the working of the FFT imagine the sequence gn split
+into two halves containing the even and odd points
+respectively
+LB
+even half en is g0 g2    gN-2
+br
+odd  half on is g1 g3    gN-1
+LE
+Then it is easy to show that if G is the transform of g
+E the transform of e
+and O that of o then
+LB
+
+Gr  =  Er + W sup r Or  for  r=0 1  half N -1
+LE
+and
+LB
+
+G half N +r   =  Er + W sup  half N +r Or  for  
+r = 0 1  half N -1
+LE
+Calculation of the E and O transforms involves  half N sup 2 operations each
+while combining them together according to the above relationship occupies
+N operations  Thus the total is  N + half N sup 2   operations which is considerably
+less than N sup 2
+pp
+But dont stop there  The even half can itself be broken down into
+even and odd parts to expedite its calculation and the same with the odd half
+The only constraint is that the number of elements in the sequences splits
+exactly into two at each stage
+Providing N is a power of 2 then we are left at the end with some 1-point
+transforms to do  But transforming a single point leaves it unaffected  Check
+the definition of the DFT  A quick calculation shows that the number of operations
+needed is not  N + half N sup 2 but N log sub 2 N
+Figure 49 compares this with N sup 2 the number of operations for
+straightforward DFT calculation and it can be seen that the FFT is very much
+faster
+FC Figure 49
+pp
+The only restriction on the use of the FFT is that N must be a power of two
+If it is not alternative more complicated algorithms can be used which
+give comparable computational advantages  However for speech processing
+the number of samples that are transformed is usually arranged to be a power
+of two  If a pitch synchronous analysis is undertaken the
+time stretch that is to be transformed is dictated by the length of the pitch
+period and will vary from time to time  Then it is usual to pad out the
+time waveform with zeros to bring the number of samples up to a power of two
+otherwise if different-length time stretches were transformed the scale
+of the resulting frequency components would vary too
+pp

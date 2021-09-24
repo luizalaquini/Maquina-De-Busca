@@ -1,0 +1,100 @@
+in Chapter 2
+The invention of the sound spectrograph in the late 1940s was an
+event of colossal significance for acoustic phonetics for it somehow
+seemed to make the intricacies of speech visible
+This was thought to be a greater advance than actually turned
+out  historically-minded readers should refer to Potter
+ul
+et al
+1947
+for an enthusiastic contemporary appraisal of the invention  A
+
+Potter Kopp Green 1947
+
+result of several years of research at Haskins Laboratories in New York
+during the 1950s was a set of minimal rules for synthesizing speech
+which showed how stylized formant patterns could generate cues for
+identifying vowels and particularly consonants
+Liberman 1957 Liberman
+ul
+et al
+1959
+
+Liberman 1957 Some results of research on speech perception
+
+
+Liberman Ingemann Lisker Delattre Cooper 1959
+
+pp
+These were to form the basis of many speech synthesis-by-rule computer
+programs in the ensuing decades  Such programs take as input a
+phonetic transcription of the utterance and generate a spoken version
+of it  The transcription may be broad or narrow depending on the
+system  Experience has shown that the Haskins rules really are
+minimal and the success of a synthesis-by-rule program depends on
+a vast collection of minutia each seemingly insignificant in isolation
+but whose effects combine to influence the speech quality dramatically
+The best current systems produce clearly understandable
+speech which is nevertheless something of a strain to listen to for
+long periods
+However many are not good and some are execrable
+In recent times commercial influences have unfortunately restricted
+the free exchange of results and programs between academic researchers
+thus slowing down progress
+Research attention has turned to prosodic factors
+which are certainly less well understood than segmental ones and
+to synthesis from plain English text rather than from phonetic transcriptions
+pp
+The remainder of this chapter describes the techniques of segmental
+synthesis  First it is necessary to introduce some
+elements of acoustic phonetics
+It may be worth re-reading Chapter 2 at this point to refresh
+your memory about the classification of speech sounds
+sh 74  Acoustic characterization of phonemes
+pp
+Shortly after the invention of the sound spectrograph an inverse
+instrument was developed called the pattern playback synthesizer
+This took as input a spectrogram either in its original form or
+painted by hand
+An optical arrangment was used to modulate the amplitude of some
+fifty harmonically-related oscillators by the lightness or darkness
+of each point on the frequency axis of the spectrogram
+As it was drawn past the playing head sound was produced which
+had approximately the frequency components shown on the spectrogram
+although the fundamental frequency was constant
+pp
+This device allowed the complicated
+acoustic effects seen on a spectrogram see for example Figures 23 and 24
+to be replayed in either original or simplified form
+Hence the features which are important for perception of the different sounds
+could be isolated  The procedure was to copy from an actual spectrogram
+the features which were most prominent visually and then to make further
+changes by trial and error until the result was judged to have
+reasonable intelligibility when replayed
+pp
+For the purpose of acoustic characterization of particular phonemes
+it is useful to consider the central steady-state part separately from
+transitions into and out of the segment
+The steady-state part is that sound which is heard when the phoneme
+is prolonged  The term phoneme is being used in a rather loose sense
+here  it is more appropriate to think of a sound segment rather than
+the abstract unit which forms the basis of phonological classification
+and this is the terminology I will adopt
+pp
+The essential auditory characteristics of some sound segments are inherent in
+their steady states
+If a vowel for example is spoken and prolonged it can readily be
+identified by listening to any part of the utterance
+This is not true for diphthongs  if you say I very slowly and freeze
+your vocal tract posture at any time the resulting steady-state sound
+will not be sufficient to identify the diphthong  Rather it will be
+a vowel somewhere between
+ul
+aa
+in had or
+ul
+ar
+in hard and
+ul
+ee
+in heed

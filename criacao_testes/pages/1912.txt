@@ -1,0 +1,100 @@
+which is sketched in Figure 54
+FC Figure 54
+The pulse is the wrong way round in time
+when compared with the desired one but this is not important under most
+listening conditions because phase differences are not noticeable this
+point is discussed further below
+The maximum is reached when t=T and has
+height A  The value zero is never actually attained for the decay to it
+is asymptotic and if the slight discontinuity between pulses shown in the
+Figure is left the asymptotic rate of decay of the frequency spectrum will
+be 6 dBoctave rather than 12 dBoctave  However in a real implementation
+involving filtering an impulse there will be no such discontinuity for the
+next pulse will start off where the last one ended
+pp
+This seems to be an attractive scheme because of its simplicity
+and indeed is sometimes used in speech synthesis  However it does not have
+the right properties when the pitch is varied for in real glottal
+waveforms the maximum occurs at a fixed
+ul
+fraction
+of the period whereas the filtered impulses maximum is at a fixed time T
+If T is chosen to make the system correct at high pitch frequencies say
+400 Hz then the pulse will be much too narrow at low pitches and sound rather
+harsh  The only solution is to vary the filter parameters with the pitch
+leading to complexity again
+pp
+Holmes 1973 has made an extensive study of the effect of the glottal
+waveshape on the naturalness of high-quality synthesized speech
+
+Holmes 1973 Influence of glottal waveform on naturalness
+
+He employed a rather special speech synthesizer which provides far more
+comprehensive and sophisticated control than most  It was driven by parameters
+which were extracted from natural utterances by hand em but the process of
+generating and tuning them took many months of a skilled persons time
+By using the pulse shape
+extracted from the natural utterance he found that synthetic and natural
+versions could actually be made indistinguishable to most people even under high-quality
+listening conditions using headphones  Performance dropped quite drastically
+when one of Rosenbergs pulse shapes similar to the three-section one given
+above was used  Holmes also investigated phase effects and found that whilst
+different pulse shapes with identical frequency spectra could easily be
+distinguished when listening over headphones there was no perceptible difference
+if the listener was placed at a comfortable distance from a loudspeaker in
+a room  This is attributable to the fact that the room itself imposes a
+complex modification to the phase characteristics of the speech signal
+pp
+Although a great deal of care must be taken with the glottal pulse shape for very
+high-quality synthetic speech for speech synthesized by rule from a written
+representation the degradation which stems from incorrect control of the
+synthesizer parameters is much greater than that caused by using a slightly
+inferior glottal pulse  The triangular pulse illustrated in Figure 53
+has been found quite satisfactory for speech synthesis by rule
+rh Unvoiced excitation
+Speech quality is much less sensitive to the characteristics of the unvoiced
+excitation  Broadband white noise will serve admirably  It is quite
+acceptable to generate this digitally using a pseudo-random feedback shift
+register  This gives a bit sequence whose autocorrelation is zero except at
+multiples of the repetition length  The repetition length
+can easily be made as long as the number of states in the shift
+register less one em in this case the configuration is called
+maximal length Gaines 1969
+
+Gaines 1969 Stochastic computing advances in information science
+
+For example an 18-bit maximal-length shift register will repeat
+every 2 sup 18 -1 cycles  If the bit-stream is used as a source of analogue
+noise the autocorrelation function will have triangular parts whose width is
+twice the clock period as shown in Figure 55
+FC Figure 55
+According to a well-known
+result the Weiner-Kinchine theorem see for example Chirlian 1973
+the power density of the frequency
+spectrum is the same as the Fourier transform of the autocorrelation function
+
+Chirlian 1973
+
+Since the feedback shift register gives a periodic autocorrelation function
+its transform is a Fourier series  The rth frequency component is
+LB
+EQ
+Gr  =  R sup 2 over 4 pi sup 2 r sup 2 T
+1-cos2 pi rT over R  
+EN
+LE
+Here T is the clock period and  R=2 sup N -1T  is the repetition time of
+an N-bit shift register
+pp
+The spectrum is a bar spectrum with components spaced
+at
+LB
+
+1 over R=1 over 2 sup N -1T   Hz
+LE
+These are very close together em with N=18 and
+sampling at 20 kHz 50 musec
+the spacing becomes under 01 Hz em and so it is reasonable to treat the
+spectrum as continuous with
+LB
+EQ

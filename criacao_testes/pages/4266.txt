@@ -1,0 +1,100 @@
+EF
+NI
+You have booked an alarm call for seven thirty hours
+NI
+Alarm call operator  At the third stroke it will be seven thirty
+LE
+pp
+Because of the rather small vocabulary the number of messages that can be
+stored in their entirety rather than being formed by concatenation of
+smaller units and the short time which was available for development
+System X stores speech as a time waveform slightly compressed by a time-domain
+encoding operation such techniques are described in Chapter 3
+Utterances which contain variable parts like the time of alarm in the messages
+above are formed by inserting separately-recorded digits in a fixed 
+carrier message  No attempt is made to apply uniform intonation
+contours to the synthetic utterances  The resulting speech is of excellent
+quality being a slightly compressed recording of a human voice but sometimes
+exhibits somewhat anomalous pitch contours
+For example the digits comprising numbers often sound rather jerky and
+out-of-context em which indeed they are
+pp
+Even more advanced facilities can be expected on telephone exchanges in
+the future  A message storage capability is one example  Although
+automatic call recording machines have been available for years a centralized
+facility could time and date a message collect the callers identity
+using the telephone keypad and allow the recipient to select messages left
+for him through an interactive dialogue so that he could control the order
+in which he listens to them  He could choose to leave certain messages to be
+dealt with later or re-route them to a colleague  He may even wish to leave
+reminders for himself to be dialled automatically at specified times like
+alarm calls with user-defined information attached  The sender of a message
+could be informed automatically by the system when it is delivered  None of
+this requires speech recognition but it does need economical speech
+ul
+storage
+and also speech
+ul
+synthesis
+for time and date tags
+sh 15  Travel consultant
+pp
+Some current research in speech communication with computers is aimed at
+embedding the dialogue in a task environment which provides it with an overall
+contextual framework
+This in fact was the motivation for the experimental telephone enquiry service
+described above and it was observed that people are able to tolerate rather
+low quality speech if they feel that the interaction is worthwhile  One step
+further is the use of speech
+ul
+input
+as well as output and here the context of the conversation which is provided
+by the task environment can be used to improve recognition accuracy
+significantly
+A system set up at Bell Telephone Laboratories indicates what we can expect
+to find operating commercially in the future Levinson and Shipley 1980
+
+Levinson Shipley 1980
+
+It provides timetable information about airline flights and allows the user
+to make reservations
+pp
+An example dialogue is given in Table 17
+RF
+fi
+nh
+na
+in 03i
+nr x0 wCOMPUTER  
+nr x1 wCALLER  
+in+nx0u
+ti-nx0u
+COMPUTER  This is the Bell Laboratories flight information system  May I help you
+ti-nx0u
+CALLERhnx0u-nx1u  I would like to go to Chicago
+ti-nx0u
+COMPUTER  Please specify the day of your departure
+ti-nx0u
+CALLERhnx0u-nx1u  I want to leave at four pm
+ti-nx0u
+COMPUTER  Please specify the day of your departure
+ti-nx0u
+CALLERhnx0u-nx1u  I want to depart on the two five May
+ti-nx0u
+COMPUTER  Flight number nine two leaves New York at four pm arrives in Chicago at five twenty five pm
+ti-nx0u
+CALLERhnx0u-nx1u  What plane is on the flight
+ti-nx0u
+COMPUTER  The aircraft is a Boeing seven twenty seven
+ti-nx0u
+CALLERhnx0u-nx1u  How much is the fare
+ti-nx0u
+COMPUTER  The round trip coach fare is one hundred forty two dollars
+ti-nx0u
+CALLERhnx0u-nx1u  I want a first class seat
+ti-nx0u
+COMPUTER  One seat thank you
+ti-nx0u
+CALLERhnx0u-nx1u  What is the fare
+ti-nx0u
+COMPUTER  The round trip first class fare is one hundred eighty four dollars

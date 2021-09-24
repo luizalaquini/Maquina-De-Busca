@@ -1,0 +1,100 @@
+of that frame and change them in a way that does not simply sound like
+superimposed noise
+pp
+Table 61 shows the LPC-10 coding scheme
+RF
+in+01i
+ta 20i +18i +06i
+nr x1 wvoiced sounds2
+nr x2 wunvoiced sounds2
+ul
+	h-nx1uvoiced sounds	h-nx2uunvoiced sounds
+sp
+pitchvoicing	7	7	60 pitch levels Hamming
+			hw00 uand Gray coded
+energy	5	5	logarithmically coded
+k sub 1	5	5	coded by table lookup
+k sub 2	5	5	coded by table lookup
+k sub 3	5	5
+k sub 4	5	5
+k sub 5	4	-
+k sub 6	4	-
+k sub 7	4	-
+k sub 8	4	-
+k sub 9	3	-
+k sub 10	2	-
+synchronization	1	1	alternating 10 pattern
+error detection	-	h-w0u21
+correction
+	h-wu+w0u	h-wu+w0u
+sp
+	h-w0u54	h-w0u54
+sp
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+	frame rate 444 Hz 225 msec frames
+in 0
+FG Table 61  Bit requirements for each parameter in LPC-10 coding scheme
+Different coding is used for voiced and unvoiced frames
+Only four reflection coefficients are transmitted for unvoiced frames
+because it has been determined that no perceptible increase in speech quality
+occurs when more are used
+The bits saved are more fruitfully employed to provide error detection
+and correction for the other parameters
+Seven bits are used for pitch and the voiced-unvoiced flag and they are
+redundant in that only 60 possible pitch values are
+allowed
+Most transmission errors in this field will be detected by the receiver
+which can then use an estimate of pitch based on previous values and
+discard the erroneous one  Pitch values are also Gray coded so that
+even if errors are not detected there is a good chance that an adjacent
+pitch value is read instead
+Different numbers of bits are allocated to the various reflection
+coefficients  experience shows that the lower-numbered ones contribute
+most highly to intelligibility and so these are quantized most finely
+In addition a table lookup operation is performed on the code
+generated for the first two providing a non-linear quantization which is
+chosen to minimize the error on a statistical basis
+pp
+With 54 bitsframe and 225 msec frames LPC-10 requires a 2400 bits
+data rate  Even lower rates have been used successfully for lower-quality
+speech  The Speak n Spell toy described in Chapter 11 has an
+average data rate of 1200 bits  Rates as low as 600 bits have
+been achieved Kang and Coulter 1976 by pattern recognition techniques operating
+on the reflection coefficients  however the speech quality is not good
+
+Kang Coulter 1976
+
+sh 66  References
+LB nnnn
+
+LIST
+
+LE nnnn
+sh 67  Further reading
+pp
+Most recent books on digital signal processing contain some information
+on linear prediction see Oppenheim and Schafer 1975 Rabiner and Gold 1975
+and Rabiner and Schafer 1978 all referenced at the end of Chapter 4
+LB nn
+Atal-1971-1
+-
+ds A Atal BS
+as A  and Hanauer SL
+ds D 1971
+ds T Speech analysis and synthesis by linear prediction of the acoustic wave
+ds J JASA
+ds V 50
+ds P 637-655
+nr P 1
+ds O August
+nr T 0
+nr A 1
+nr O 0
+ 1 journal-article
+in+2n
+This paper is of historical importance because it introduced the idea
+of linear prediction to the speech processing community
+in-2n
+Makhoul-1975-2
+-
+ds A Makhoul JI

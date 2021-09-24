@@ -1,0 +1,100 @@
+to those with one variable part were tested
+Pitch contours were transferred to sentences with the same cents
+figure but no dollars part for example
+the price is five dollars and thirteen cents
+to
+the price is thirteen cents  The
+contour was simply copied between the corresponding
+syllables so that no adjustment needed to be made
+for different syllable structures
+The overall score was 60 successes in 100 judgements em
+the same percentage as in the second experiment
+pp
+To summarize the results of these four experiments
+LB
+NP
+even accomplished linguists cannot distinguish an utterance from one with
+pitch transferred from a different recording of it
+NP
+when the utterance contained only one variable part embedded in a
+carrier sentence
+lay listeners identified the original correctly in 60 of cases
+over a wide variety of syllable structures  this
+figure differs significantly from the chance value of 50
+NP
+lay listeners identified the original confidently and correctly in
+50 of cases confidently but incorrectly in 25 of cases
+NP
+the greatest hindrance to successful transfer was the presence of
+a long uninterrupted period of voicing in the target utterance
+NP
+the performance of the method deteriorates as the number
+of variable parts in the utterances increases
+NP
+some utterances seemed to serve better than others as the pitch source for
+transfer although this was not correlated with complexity of syllable structure
+NP
+even when the utterance contained two variable parts
+there was one source utterance whose pitch contour was
+transferred to all the others so successfully that listeners could not identify
+the original
+LE
+pp
+The fact that only 60 of originals in the second experiment were
+spotted by lay listeners in a stringent
+paired-comparison test em many of them being identified without confidence em
+does encourage the use of the procedure for generating stereotyped
+but different utterances of high quality in voice-response systems
+The experiments indicate that although different syllable patterns
+can be handled satisfactorily by this procedure
+long voiced periods should be avoided if possible when designing
+the message set
+and that if individual utterances must contain multiple variable parts
+the source utterance should be chosen with the aid of listening tests
+sh 83  Assigning timing and pitch to synthetic speech
+pp
+The pitch transfer method can give good results within a fairly narrow
+domain of application
+But like any speech output technique which treats complete utterances
+as a single unit with provision for a small number of slot-fillers to
+accomodate data-dependent messages it becomes unmanageable in more general
+situations with a large variety of utterances
+As with segmental synthesis it becomes necessary to consider methods
+which use a textual rather than an acoustically-based representation
+of the prosodic features
+pp
+This raises a problem with prosodics that was not there for segmentals  how
+ul
+can
+prosodic features be written in text form
+The standard phonetic transcription method does not give much help with
+notation for prosodics  It does provide a diacritical mark to indicate
+stress but this is by no means enough information for synthesis
+Furthermore text-to-speech procedures described in the next chapter
+promise to allow segmentals to be specified by an ordinary orthographic
+representation of the utterance but we have seen that considerable
+intelligence is required to derive prosodic features from text
+More than mere intelligence may be needed  this is underlined by a paper
+Bolinger 1972
+delightfully entitled
+Accent is predictable em if youre a mind reader
+
+Bolinger 1972 Accent is predictable em if youre a mind reader
+
+pp
+If synthetic speech is to be used as a computer output medium rather
+than as an experimental tool for linguistic research it is important
+that the method of specifying utterances is natural and easy to learn
+Prosodic features must be communicated to the computer in a manner
+considerably simpler than individual duration and pitch specifications
+for each phoneme as was required in early synthesis-by-rule systems
+Fortunately a notation has been developed for conveying some of the
+prosodic features of utterances as a by-product of the linguistically
+important task of classifying the intonation contours used in
+conversational English Halliday 1967
+
+Halliday 1967
+
+This system has even been used to help foreigners speak English
+Halliday 1970 em which emphasizes the fact that it was designed for use
+by laymen not just linguists

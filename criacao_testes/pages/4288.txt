@@ -1,0 +1,100 @@
+that somewhat less than this accuracy is needed em 7-bit logarithmic encoding
+was used in early digital communications links and it may be that even 6 bits
+are adequate  However during the transition period when digital
+networks must coexist with the present analogue one it is anticipated that
+a particular telephone call may have to pass through several links some
+using analogue technology and some being digital  The possibility of
+several successive encodings and decodings has led telecommunications
+engineers to standardize on 8-bit representations leaving some margin
+before additional degradation of signal quality becomes unduly distracting
+pp
+Unfortunately world telecommunications authorities cannot agree on a single
+standard for logarithmic encoding  The A-law which we have described
+is the European standard but there is another system called
+the mu-law which is used universally in North America  It also is available
+in single-chip form with an 8-bit code  It has very similar
+quantization error characteristics to the A-law and would be indistinguishable
+from it on the scale of Figure 36
+rh The pre-sampling filter
+Now that we have some idea of the accuracy requirements for quantization
+let us discuss quantitative specifications for the pre-sampling filter
+Figure 37 sketches the characteristics of this filter
+FC Figure 37
+Assume a
+sampling frequency of 8 kHz and a range of interest from 0 to 34 kHz
+Although all components at frequencies above 4 kHz will fold back into
+the 0 - 4 kHz baseband those below 46 kHz fold back above 34 kHz and are
+therefore outside the range of interest  This gives a guard band between
+34 and 46 kHz which separates the passband from the stopband  The filter
+should transmit negligible components in the stopband above 46 kHz
+To reduce the harmonic distortion caused by aliasing to the same level
+as the quantization noise in 11-bit linear conversion the stopband
+attenuation should be around -68 dB the signal-to-noise ratio for a full-scale
+sine wave  Passband ripple is not so critical
+for two reasons  Whilst the presence of aliased components means that
+information has been lost about the frequency components within the range of
+interest passband ripple does not actually cause a loss of information but
+only a distortion and could if necessary be compensated by a suitable
+filter acting on the digitized waveform  Secondly distortion of the
+passband spectrum is not nearly so audible as the frequency images caused
+by aliasing  Hence one usually aims for a passband ripple of around 05 dB
+pp
+The pass and stopband targets we have mentioned above can be achieved with
+a 9th order elliptic filter  While such a filter is often used in
+high-quality signal-processing systems for telephone-quality speech
+much less stringent specifications seem to be sufficient  Figure 38 for
+example shows a template which has been recommended by telecommunications
+authorities
+FC Figure 38
+A 5th order elliptic filter can easily meet this specification
+Such filters implemented by switched-capacitor means are available in
+single-chip form  Integrated CCD charge-coupled device
+filters which meet the same specification
+are also marketed  Indeed some codecs provide input filtering on the same
+chip as the AD converter
+pp
+Instead of implementing a filter by analogue means to meet the aliasing
+specifications digital filtering can be used  A high sample-rate AD
+converter operating at say 32 kHz and preceded by a very simple low-pass
+pre-sampling filter is followed by a digital filter which meets the
+desired specification and its output is subsampled to provide an 8 kHz sample
+rate  While such implementations may be economic where a multichannel digitizing
+capability is required as in local telephone exchanges where the subscriber
+connection is an analogue one they are unlikely to prove cost-effective for
+a single channel
+rh Reconstructing the analogue waveform
+Having digitized and stored a signal it needs to be passed though a DA
+converter digital-to-analogue and low-pass filter when replayed
+DA converters are cheaper than AD converters and the characteristics of the
+low-pass filter for output can be the same as those for input
+However the desampling operation introduces an additional distortion which
+has an effect on the component at frequency f of
+LB
+EQ
+ sin  pi ff sub s  over  pi ff sub s   
+EN
+LE
+where f sub s is the sampling frequency  An aperture correction filter is
+needed to compensate for this although many systems simply do without it
+Such a filter is sometimes incorporated into the codec chip
+rh Summary
+For telephone-quality speech existing codec chips
+coupled if necessary with integrated pre-sampling filters can
+be used at a remarkably low cost
+For higher-quality speech storage the analogue interface can become quite complex
+A comprehensive study of the problems as they relate to digitization of audio
+which demands much greater fidelity than speech has been made by Blesser 1978
+
+Blesser 1978
+
+He notes the following sources of error amongst others
+LB
+NP
+slew-rate distortion in the pre-sampling filter for signals at the upper end
+of the audio band
+NP
+insufficient filtering of high-frequency input signals
+NP
+noise generated by the sample-and-hold amplifier or pre-sampling filter
+NP
+acquisition errors because of the finite settling time of the sample-and-hold

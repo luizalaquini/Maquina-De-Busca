@@ -1,0 +1,100 @@
+filters are placed in the chain  In a linear system of course the order in
+which the components occur does not matter
+In physical implementations however it is advantageous to minimize extreme
+amplification at intermediate points  By placing the formant 1 filter between
+formants 2 and 3 the formant 2 resonance is attenuated somewhat before it
+reaches formant 3  Continuing with the extreme example above where both
+formants 2 and 3 were set to 2500 Hz assume that formant 1 is at its
+nominal value of 500 Hz  It provides attenuation at approximately 12 dBoctave
+above this and so at the formant 2 peak 23 octaves higher the attenuation
+is 28 dB  Thus the gain at 2500 Hz
+which is 20  log sub 10  250050  =  34 dB after
+passing through the formant 2 filter is reduced to 6 dB by formant 1 only
+to be increased by 20  log sub 10  250070  =  31 dB to
+a value of 37 dB by formant 3
+This avoids the extreme 65 dB gain of formants 2 and 3 combined
+pp
+Figure 58 shows only three formant filters modelled explicitly
+The effect of the rest em and they do have an effect although it is small
+at low frequencies em is
+incorporated by lumping them together into the higher-formant correction filter
+To calculate the characteristics of this filter assume that the lumped
+formants have the values given by the simple uniform-tube model of Chapter 2
+namely 3500 Hz for formant 4 4500 Hz for formant 5 and in general
+5002n-1 Hz for formant n  The effect of each of these on the spectrum is
+LB
+EQ
+10 log sub 10  w sub n sup 4 over w sup 2 -w sub n sup 2  sup 2
++b sub n sup 2 w sup 2
+ =  - 10 log sub 10 1-w sup 2 over w sub n sup 2 sup 2
++ b sub n sup 2 w sup 2 over w sub n sup 4
+EN
+dB
+LE
+following from what was calculated above
+We will have to approximate this by assuming that
+b sub n sup 2 w sub n sup 2 is
+negligible em this is quite reasonable for these higher formants because
+Table 51 shows that the bandwidth does not increase in proportion to the
+formant frequency range em and approximate the logarithm by the first
+term of its series expansion
+LB
+EQ
+-10  log sub 10  1-w sup 2 over w sub n sup 2 sup 2
+ =  -20 log sub 10  e  log sub e 
+1-w sup 2 over w sub n sup 2
+ =  20 log sub 10  e  times  w sup 2 over w sub n sup 2  
+EN
+LE
+pp
+Now the total effect of formants 4 5  at frequency f Hz as distinct
+from w radianss is
+LB
+EQ
+20 log sub 10  e  times  sum from n=4 to infinity
+f sup 2 over 500 sup 2 2n-1 sup 2  
+EN
+LE
+This expression is
+LB
+EQ
+20 log sub 10  e  times 
+f sup 2 over 500 sup 2sum from n=1 to infinity
+1 over 2n-1 sup 2 - sum from n=1 to 3 1 over 2n-1 sup 2
+ 
+EN
+LE
+The infinite sum can actually be calculated in closed form and is equal
+to  pi sup 2 8  Hence the total correction is
+LB
+EQ
+20 log sub 10  e  times f sup 2 over 500 sup 2
+pi sup 2 over 8 - sum from n=1 to 3 1 over 2n-1 sup 2
+ =  287 times 10 sup -6 f sup 2
+EN
+dB
+LE
+pp
+Although this may at first seem to be a rather small correction
+it is in fact 72 dB when
+f=5 kHz  On further reflection this is not an unreasonable figure for the
+12 dBoctave decays contributed by formants 1 2 and 3 must all be annihilated
+by the higher-formant correction to give an overall flat spectral trend
+In fact formant 1 will contribute
+12 dBoctave from 500 Hz 33 octaves to 5 kHz representing 40 dB formant
+2 will contribute 12 dBoctave from 1500 Hz 17 octaves to 5 kHz representing
+21 dB and formant 3 will contribute 12 dBoctave from 2500 Hz 1 octave to 5 kHz
+representing 12 dB
+These sum to 73 dB
+pp
+If the first five formants are synthesized explicitly instead of just the
+first three the correction is
+LB
+EQ
+20 log sub 10  e  times  f sup 2 over 500 sup 2
+pi sup 2 over 8 - sum from n=1 to 5 1 over 2n-1 sup 2
+ =  173 times 10 sup -6  f sup 2
+EN
+dB
+LE
+giving a rather more reasonable value of 43 dB when f=5 kHz  In actual

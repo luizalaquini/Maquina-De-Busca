@@ -1,0 +1,100 @@
+pp
+It is a fact that if a periodic function has one or more discontinuities its frequency
+spectrum will decay at sufficiently high frequencies at the rate of 6 dBoctave
+For example the components of the square wave
+LB
+
+gt  =  mark 0
+  for 
+0 = t  h
+
+br
+
+lineup 1
+  for 
+h = t  b
+
+LE
+can be calculated from the Fourier series
+LB
+EQ
+Gr  =  1 over b  integral from 0 to b gte sup -j2 pi rtb dt
+ =  j over 2 pi r e sup -j2 pi rhb 
+EN
+LE
+so |Gr| is proportional to 1r and the change in one octave is
+LB
+EQ
+20log sub 10  |G2r| over |Gr|
+=20log sub 10  1 over 2
+ =  
+EN
+-6 dB
+LE
+However if the discontinuities are ones of slope only then the asymptotic decay
+at high frequencies is 12 dBoctave  Thus the glottal excitation of Figure 52
+will decay at this rate
+Note that it is not the
+ul
+number
+but the
+ul
+type
+of discontinuities which are important in determining the asymptotic spectral
+trend
+rh Voiced excitation in synthetic speech
+There are several ways that glottal excitation can be simulated in a synthesizer
+four of which are shown in Figure 53
+FC Figure 53
+The square pulse and the sawtooth pulse
+both exhibit discontinuities and so will have the wrong asymptotic rate of
+decay 6 dBoctave instead of 12 dBoctave  A better bet is the triangular
+pulse  This has the correct decay for there are only discontinuities of slope
+However although the asymptotic rate of decay is of first importance the fine
+structure of the frequency spectrum at the lower end is also significant and
+the fact that there are two discontinuities of slope instead of just one in the
+natural waveform means that the spectra cannot match closely
+pp
+Rosenberg 1971 has investigated several different shapes using listening
+tests and he found that the polynomial approximation sketched in Figure 53
+was preferred by listeners
+
+Rosenberg 1971
+
+This has one slope discontinuity and comprises
+three sections
+LB
+gt  =  0  for 0 = t  t sub 1    flat during the period of closure
+sp
+gt  =  A u sup 2 3 - 2u 	where
+u = t-t sub 1 over t sub 2 -t sub 1      for
+t sub 1 = t  t sub 2  opening phase
+sp
+sp
+gt  =  A 1 - v sup 2 	where
+v = t-t sub 2 over b-t sub 2      for
+t sub 2 = t  b    closing phase
+LE
+It is easy to see that the joins between the first and second section and
+between the second and third section are smooth but that the slope of the third
+section at the end of the cycle when t=b is
+LB
+EQ
+dg over dt  =  - 2A
+EN
+LE
+A is the maximum amplitude of the pulse and is reached when t=t sub 2
+pp
+A much simpler glottal pulse shape to implement is the filtered impulse
+Passing an impulse through a filter with characteristic
+LB
+EQ
+1 over 1+sT sup 2
+EN
+LE
+imparts a 12 dBoctave decay after frequency 1T  This gives a pulse shape of
+LB
+EQ
+gt  =  A t over T e sup 1-tT 
+EN
+LE

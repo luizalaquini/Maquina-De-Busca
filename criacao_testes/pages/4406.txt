@@ -1,0 +1,100 @@
+each with additional bits to control the duration and pitch of the segment
+In the earlier versions eg model VS-6 there are 63 sound segments specified
+by a 6-bit code and two further bits accompany each segment to provide a
+4-level control over pitch
+Four pitch levels are quite inadequate to generate acceptable intonation
+contours for anything but isolated words spoken in citation form
+However a later model ML-I uses an 8-level pitch specification
+as well as a 4-level duration qualifier
+associated with each sound segment
+It provides a vocabulary of 80 sound segments together with an additional
+code which allows local amplitude modifications and extra duration alterations
+to following segments
+A further low-cost model VS-K is now available which plugs in to the S-100
+bus and
+is aimed primarily at
+computer hobbyists
+It provides no pitch control at all and is therefore
+quite unsuited to serious voice response applications
+The device has recently been packaged as an LSI circuit model SC-01
+using analogue switched-capacitor filter technology
+pp
+One point where the ML-I scores favourably over other speech synthesis
+peripherals is the remarkably convenient engineering of its
+computer interface which was outlined in the previous chapter
+pp
+The internal workings of Votrax are not divulged by the manufacturer
+Figure 116 shows a block diagram at the level of detail that they supply
+FC Figure 116
+It seems to be essentially a formant synthesizer with analogue function
+generators and parameter smoothing circuits that provide transitions between
+sound segments
+rh Sound segments
+The 80 segments of the high-range ML-I model
+are summarized in Table 112
+FC Table 112
+They are divided into phoneme classes according to the
+classification discussed in Chapter 2
+The segments break down into the following categories
+Numbers in parentheses are the corresponding figures for VS-6
+LB 00 00 
+NI 00 00 
+11 11 vowel sounds which are representative of the phonological
+vowel classes for English
+NI 00 00 
+09 07 vowel allophones with slightly different sound qualities from the
+above
+NI 00 00 
+20 15 segments whose sound qualities are identical to the segments above but with
+different durations
+NI 00 00 
+22 22 consonant sounds which are representative of the phonological
+consonant classes for English
+NI 00 00 
+11 06 consonant allophones
+NI 00 00 
+04 00 segments to be used in conjunction with unvoiced plosives to increase
+their aspiration
+NI 00 00 
+02 02 silent segments with different pause durations
+NI 00 00 
+01 00 very short silent segment about 5 msec
+LE 00 00 
+Somewhat under half of the 80 elements
+can be put into one-to-one correspondence with the phonemes of English
+the rest are either allophonic variations or additional sounds which can
+sensibly be combined with certain phonemes in certain contexts
+The Votrax literature and consequently Votrax users persists in calling
+all elements phonemes and this can cause considerable confusion
+I prefer to use the term sound segment instead reserving phoneme for its
+proper linguistic use
+pp
+The rules which Votrax uses for transitions between sound segments are not
+made public by the manufacturer and are embedded in encapsulated circuits
+in the hardware
+They are clearly very crude
+The key to successful encoding of utterances is to use the many
+non-phonemic segments in an appropriate way as transitions between the main
+segments which represent phonetic classes  This is a tricky process and
+I have heard of one commercial establishment giving up in despair at the
+extreme difficulty of generating the utterances it wanted
+It probably explains the proliferation of letter-to-sound rules for
+Votrax which have been developed in research laboratories
+Colby
+ul
+et al
+1978 Elovitz
+ul
+et al
+1976 McIlroy 1974 Sherwood 1978
+
+Colby Christinaz Graham 1978
+
+
+Elovitz 1976 IEEE Trans Acoustics Speech and Signal Processing
+
+
+McIlroy 1974
+
+
+Sherwood 1978

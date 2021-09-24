@@ -1,0 +1,100 @@
+pp
+If the main computer system is time-shared the synthesis-by-rule
+procedure is best executed by an independent processor
+For example a 16-bit microcomputer controlling a hardware
+formant synthesizer has been used to run the
+ISP system in real time without too much difficulty Witten and Abbess 1979
+
+Witten Abbess 1979
+
+An important task is to define an interface between the two which
+allows the main process to control relevant aspects of the prosody of
+the speech in a way which is appropriate to the state of the interaction
+without having to bother about such things as matching the intonation contour
+to the utterance and the details of syllable rhythm
+Hallidays notation appears to be quite suitable for this purpose
+pp
+If there is only one synthesizer on the system there will be no
+difficulty in addressing it
+One way of dealing with multiple synthesizers is to treat them as
+assignable devices in the same way that non-spooling peripherals
+are in many operating systems
+Notice that the data rate to the synthesizer is quite low
+if the utterance is represented as text with prosodic markers
+and can easily be handled by a low-speed asynchronous serial line
+pp
+The Votrax ML-I synthesizer which is discussed in the next chapter has an
+interface which interposes it between a visual display unit and the serial
+port that connects it to the computer
+The VDU terminal can be used quite normally except that a special sequence
+of two control characters will cause Votrax to intercept the following
+message up to another control character and interpret it as speech
+The fact that the characters which specify the spoken message do not appear
+on the VDU screen means that the operation is invisible to the user
+However this transparency can be inhibited by a switch on the synthesizer
+to allow visual checking of the sound-segment character sequence
+pp
+Votrax buffers up to 64 sound segments which is sufficient to generate
+isolated spoken messages
+For longer passages it can be synchronized with the constant-rate
+serial output using the modem control lines of the serial interface
+together with appropriate device-driving software
+pp
+This is a particularly convenient interfacing technique in cases when the
+synthesizer should always be associated with a certain terminal 
+As an example of how it can be used
+one can arrange files each of whose lines contain a printed message
+together with its Votrax equivalent bracketed by the appropriate
+control characters
+When such a file is listed or examined with an editor program the lines
+appear simultaneously in spoken and typed English
+pp
+If a phonetic representation is used for utterances with real-time
+synthesis using a separate process or processor it is easy for
+the programmer to fiddle about with the interactive dialogue to get
+it feeling right
+For him each utterance is just a textual string which
+can be stored as a string constant within his program just as a VDU prompt
+would be  He can edit it as part of his program and print it to
+the speech synthesis device to hear it
+There are no more technical problems to developing an interactive dialogue
+with speech output than there are for a conventional interactive program
+Of course there are more human problems and the points discussed
+in the last section should always be borne in mind
+sh 103  Using the keypad
+pp
+One of the greatest advantages of speech output from computers is the
+ubiquity of the telephone network and the possibility of using it without
+the need for special equipment at the terminal
+The requirement for input as well as output obviously presents something of a problem
+because of the restricted nature of the telephone keypad
+pp
+Figure 101 shows the layout of the keypad
+FC Figure 101
+Signalling is achieved by dual-frequency tones
+For example if key 7 is pressed sinusoidal components at 852 Hz and 1209 Hz
+are transmitted down the line
+During the process of dialling these are received by the telephone exchange
+equipment which assembles the digits that form a number and attempts to route
+the call appropriately
+Once a connection is made either party is free to press keys if desired
+and the signals will be transmitted to the other end
+where they can be decoded by simple electronic circuits
+pp
+Dial telephones signal with closely-spaced dial pulses
+One pulse is generated for a 1 two for a 2 and so on
+Obviously ten pulses are generated for a 0 rather than none  Unfortunately
+once the connection is made it is difficult to signal with dial pulses
+They cannot be decoded reliably at the other end because the telephone
+network is not designed to transmit such low frequencies
+However hand-held tone generators can be purchased for use with dial
+telephones
+Although these are undeniably extra equipment and one purpose of using speech
+output is to avoid this they are very cheap and portable compared with other
+computer terminal equipment
+pp
+The small number of keys on the telephone pad makes it rather difficult
+to use for communicating with computers
+Provision is made for 16 keys but only 12 are implemented em the others
+may be used for some military purposes
+Of course if a separate tone generator is used then advantage can be taken

@@ -1,0 +1,100 @@
+The FFT provides very worthwhile cost savings over the use of a bank of
+bandpass filters for spectral analysis  Take the example of a 256-point
+transform with 8 kHz sampling giving 128 frequency components spaced
+by 3125 Hz from 0 up to almost 4 kHz  This can be computed on overlapping
+32 msec stretches of the time waveform giving a new spectrum every 16 msec
+by a single FFT calculation every 32 msec putting successive pairs of
+time stretches in the real and imaginary parts of the complex input sequence
+as described earlier  The FFT algorithm requires N log sub 2 N operations
+which is 2048 when N=256  An additional 512 operations are required
+for the windowing calculation  Repeated every 32 msec this gives
+a rate of 80000 operations per second  To achieve a much lower frequency
+resolution with 20 bandpass filters each of which are fourth-order
+will need a great deal more operations  Each filter will need between 4 and 8
+multiplications per sample depending on its exact digital implementation  But new
+samples appear every 125
+ul
+microc
+seconds and so somewhere around a million
+operations will be required every second
+If we increased the frequency resolution to that obtained by the FFT 128
+filters would be needed requiring between 4 and 8 million operations
+sh 47  Formant estimation
+pp
+Once the frequency spectrum of a speech signal has been calculated it may
+seem a simple matter to estimate the positions of the formants  But it is
+not  Spectra obtained in practice are not usually like the idealized ones
+of Figure 22  One reason for this is that unless the analysis is
+pitch-synchronous the frequency spectrum of the excitation source is mixed
+in with that of the vocal tract filter  There are other reasons which will
+be discussed later in this section  But first let us consider how to
+extract the vocal tract filter characteristics from the combined spectrum
+of source and filter  To do so we must begin to explore the theory of linear
+systems
+rh Discrete linear systems
+Figure 410 shows an input signal exciting a filter to produce an output
+signal
+FC Figure 410
+For present purposes imagine the input to be a glottal
+waveform the filter a vocal tract one and the output a
+speech signal which is then subjected to high-frequency de-emphasis
+by radiation from the lips
+We will consider here
+ul
+discrete
+systems so that the input xn and output yn are sampled signals
+defined only when n is integral  The theory is quite similar for continuous
+systems
+pp
+Assume that the system is
+ul
+linear
+that is if input x sub 1 n produces output y sub 1 n and
+input x sub 2 n produces output y sub 2 n
+then the sum of x sub 1 n and
+x sub 2 n will produce the sum of y sub 1 n and y sub 2 n
+It is easy to show from this that for any constant multiplier a
+the input axn will produce output ayn em it is pretty obvious
+when a=2
+or indeed any positive integer for then axn can be written as
+xn+xn+ 
+Assume further that the system is
+ul
+time-invariant
+that is if input xn
+produces output yn then a time-shifted version of x
+say xn+n sub 0  for
+some constant n sub 0 will produce the same output only time-shifted namely
+yn+n sub 0
+pp
+Now consider the discrete delta function delta n which is 0 except at
+n=0 when it is 1
+If this single impulse is presented as input to the system the output is called
+the
+ul
+impulse response
+and will be denoted by hn
+The fact that the system is time-invariant guarantees that the response does
+not depend upon the particular time at which the impulse occurred so that
+for example the impulsive input delta n+n sub 0  will produce output
+hn+n sub 0 
+A delta-function input and corresponding impulse response are shown in Figure
+410
+pp
+The impulse response of a linear time-invariant system is an extremely useful
+thing to
+know for it can be used to calculate the output of the system for any input
+at all  Specifically an input signal xn can be written
+LB
+EQ
+xn =  sum from k=- infinity to infinity  xk delta n-k 
+EN
+LE
+because delta n-k is non-zero only when k=n and so for any
+particular value of n the summation contains only
+one non-zero term em that is xn
+The action of the system on each term of the sum is to produce an output
+xkhn-k because xk is just a constant and
+the system is linear
+Furthermore the complete input xn is just the sum of such terms and since
+the system is linear the output is the sum of xkhn-k

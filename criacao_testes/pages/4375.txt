@@ -1,0 +1,100 @@
+in-2n
+Lehiste-1970-4
+-
+ds A Lehiste I
+ds D 1970
+ds T Suprasegmentals
+ds I MIT Press
+ds C Cambridge Massachusetts
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This is a comprehensive study of suprasegmental phenomena in natural speech
+It is divided into three major sections  quantity timing tonal features
+pitch and stress
+in-2n
+Pike-1945-5
+-
+ds A Pike KL
+ds D 1945
+ds T The intonation of American English
+ds I Univ of Michigan Press
+ds C Ann Arbor Michigan
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+A classic although somewhat dated study
+Notice that it deals specifically with American English
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 9  GENERATING SPEECH FROM TEXT
+ds RT Generating speech from text
+ds CX Principles of computer speech
+pp
+In the preceding two chapters I have described how artificial speech
+can be produced from a written phonetic representation with additional
+markers indicating intonation contours points of major stress rhythm
+and pauses
+This representation is substantially the same as that used by linguists
+when recording natural utterances
+What we will discuss now are techniques for generating this information
+or at least some of it from text
+pp
+Figure 91 shows various levels of the speech synthesis process
+FC Figure 91
+Starting from the top with plain text the first box splits it into
+intonation units tone groups decides where the major emphases
+tonic stresses should be placed
+and further subdivides the tone group into rhythmic units feet
+For intonation analysis it is necessary to decide on an interpretation
+of the text which in turn as was emphasized at the beginning of the
+previous chapter depends both on the semantics of what is being said and
+on the attitude of the speaker to his material
+The resulting representation will be at the level of Hallidays notation
+for utterances with the words still in English rather than phonetics
+Table 91 illustrates the utterance representation at the various levels
+of the Figure
+RF
+nr x0 wpitch and duration    +wat 8 kHz sampling rate a 4-second utterance
+nr x1 nl-nx02
+in nx1u
+ta wpitch and duration    u +wpause  u +w00 msec   u
+representation	example
+lnx0uul
+sp
+plain text	Automatic synthesis of speech
+	from a phonetic representation
+sp
+text adorned with	30 automatic synthesis of speech
+prosodic markers	10 from a phonetic representation
+sp
+phonetic text with	30fI  aw t uhm aa t i k  s i n th uh s i sfR
+prosodic markers	00fIuh v  s p ee t shfR 
+	10fI  f r uh m  uh  f uhn e t i kfR
+	00fIr e p r uh z e nt e i sh uh nfR 
+sp
+phonemes with	pause	80 msec
+pitch and duration	fIawfR	70 msec	105 Hz
+	fItfR	40 msec	136 Hz
+	fIuhfR	50 msec	148 Hz
+	fImfR	70 msec	175 Hz
+	fIaafR	90 msec	140 Hz
+		
+		
+		
+sp
+parameters for	10 parameters each updated at a frame
+formant or linear	rate of 10 msec
+predictive	4 second utterance gives 400 frames
+synthesizer	or 4000 data values
+sp
+acoustic wave	at 8 kHz sampling rate a 4-second utterance
+	has 32000 samples
+lnx0uul

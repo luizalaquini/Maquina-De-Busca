@@ -1,0 +1,100 @@
++b sup 2 w sub c sup 2-b sup 2 over 4  
+EN
+sp
+LE
+This reaches a maximum when the squared term in the denominator of the second
+expression is zero namely when  w=w sub c sup 2 - b sup 2 2 sup 12
+However
+formant bandwidths are low compared with their centre frequencies and so to
+a good approximation the peak occurs
+at  w=w sub c  and is of amplitude  w sub c b  that
+is  10log sub 10 w sub c b dB above the DC gain
+At frequencies higher than the peak the energy falls off as 1w sup 4
+a factor of 116 for each doubling
+in frequency and so the asymptotic decay is 12 dBoctave
+pp
+At the points which are 3 dB below the peak
+LB
+EQ
+|Hjw sub 3dB | sup 2  = 
+1 over 2 |Hjw sub max | sup 2  = 
+1 over 2  times  w sub c sup 2 over b sup 2  
+EN
+LE
+and it is easy to show that
+this is satisfied by  w sub 3dB  =  w sub c  +-  b2  to a
+good approximation neglecting higher powers of bw sub c   Figure 57
+summarizes the shape of an individual formant resonance
+FC Figure 57
+pp
+The bandwidth of a formant is fairly constant regardless of the formant
+frequency  This makes the formant filter a slightly unusual one  most
+engineering applications which use variable-frequency resonances require
+the bandwidth to be a constant proportion of the resonant
+frequency em the ratio
+w sub c b often called the Q of the filter is to be constant
+For formants we wish the Q to increase linearly with resonant frequency
+Since the amplitude gain of the formant at resonance is w sub c b
+this peak gain increases as the formant frequency is increased
+pp
+Although it is easy to measure formant frequencies on a spectrogram
+cf Chapter 2
+it is not so easy to measure bandwidths accurately  One rather unusual method
+was reported by van den Berg 1955 who took a subject who had had a partial
+laryngectomy an operation which left an opening into the vocal tract near
+the larynx position  Into this he inserted a sound source and made a
+swept-frequency calibration of the vocal tract
+
+Berg van den 1955
+
+Almost as bizarre is a
+technique which involves setting off a spark inside the mouth of a subject
+as he holds his articulators in a given position
+pp
+The results of several different kinds of experiment are reported by Dunn 1961
+and are summarized in Table 51 along with the formant frequency ranges
+
+Dunn 1961
+
+RF
+in+05i
+ta 17i +25i
+nr x1 wrange of formant2
+nr x2 wrange of bandwidths2
+	h-nx1urange of formant	h-nx2urange of bandwidths
+nr x1 wfrequencies Hz2
+nr x2 was measured in different2
+	h-nx1ufrequencies Hz	h-nx2uas measured in different
+nr x1 wexperiments Hz2
+		h-nx1uexperiments Hz
+nr x1 w0000 - 00002
+nr x2 w000 - 0002
+nr x0 25i+wrange of formant2+was measured in different2
+nr x3 wrange of formant2
+	h-nx3ulnx0uul
+sp
+formant 1	h-nx1u0100 - 1100	h-nx2u045 - 130
+formant 2	h-nx1u0500 - 2500	h-nx2u050 - 190
+formant 3	h-nx1u1500 - 3500	h-nx2u070 - 260
+	h-nx3ulnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in-05i
+MT 2
+Table 51  Different estimates of formant bandwidths with range of
+formant frequencies for reference
+TE
+Note that the bandwidths really are narrow compared with the resonant frequencies
+of the filters except at the lower end of the formant 1 range  Choosing the
+lowest bandwidth estimate leads to an amplification factor at resonance of 50 for formant 2
+when its frequency is at the top of its range and formant 3 happens to give
+the same value
+rh Series synthesizers
+The simplest realization of the vocal tract filter is a chain of formant
+filters in series as illustrated in Figure 58
+FC Figure 58
+This leads to particular difficulties if the frequencies of two formants
+stray close together  The worst case occurs if formants 2 and 3 have the
+same resonant frequencies at the top of the range of formant 2 namely 2500 Hz
+In this case and if the bandwidths of the formants are set to the lowest
+estimates a combined amplification factor
+of  250050 times 250070=1800  is

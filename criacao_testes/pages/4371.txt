@@ -1,0 +1,100 @@
+
+It is not necessarily at the very beginning of the syllable
+For example in straight the tapping point is certainly after the
+ul
+s
+and the stopped part of the
+ul
+t
+pp
+Another factor which relates to the division of the syllable duration
+amongst phonetic segments is the often-observed fact that the length of the
+vocalic nucleus is a strong clue to the degree of voicing of the terminating
+cluster Lehiste 1970
+
+Lehiste 1970 Suprasegmentals
+
+If you say in pairs words like cap cab cat cad tack tag
+you will find that the vowel in the first word of each pair is significantly
+shorter than that in the second
+In fact the major difference between such pairs is the vowel length
+not the final consonant
+pp
+Such effects can be taken into account by considering a syllable to comprise
+an initial consonant cluster followed by a vocalic nucleus and a final
+consonant cluster
+Any of these elements can be missing em the most unusual case where the
+nucleus is absent occurs for example in so-called syllabic
+ul
+nc
+s
+as in renderings of button pudding which might be written
+buttn puddn
+However it is convenient to modify the definition of the nucleus
+so as to rule out the possibility of it being empty
+Using the characterization of the syllable given above the clusters can
+be defined as
+LB
+NI
+initial cluster	=  obstruentud sonorantud
+NI
+nucleus	=  vowelud sonorantud
+NI
+final cluster	=  obstruentud
+LE
+Sonorants are included in the nucleus so that it is always present
+even in the case of a syllabic consonant
+pp
+Then rules can be used to divide the syllable duration between the
+initial cluster nucleus and final cluster
+These must distinguish between situations where the terminating cluster
+is voiced or unvoiced so that the characteristic differences in vowel lengths
+can be accomodated
+pp
+Finally the cluster durations must be apportioned amongst their constituent
+phonetic segments  There is little published data on which to base this
+Two simple schemes which have been used in ISP are described in
+Witten 1977 and Witten  Smith 1977
+
+Witten 1977 A flexible scheme for assigning timing and pitch to synthetic speech
+
+
+Witten Smith 1977 Synthesizing British English rhythm
+
+rh Pitch
+There are two basically different ways of looking at the pitch of an
+utterance
+One is to imagine pitch
+ul
+levels
+attached to individual syllables
+This has been popular amongst American linguists and some people
+have even gone so far as to associate pitch levels with levels of
+stress
+The second approach is to consider pitch
+ul
+contours
+as we did earlier when examining how to transfer pitch from one utterance
+to another
+This seems to be easier for the person who transcribes the utterances
+to produce for the information required is much less detailed than levels
+attached to each syllable  Some indication needs to be given of how
+the contour is to be bound to the utterance and in the notation introduced above
+the most prominent or tonic syllable is indicated in the transcription
+pp
+Hallidays 1970 classification identifies five different primary intonation
+contours each hinging on the tonic syllable
+
+Halliday 1970 Course in spoken English Intonation
+
+These are sketched in Figure 85 in the style of Halliday
+FC Figure 85
+Several secondary contours which are variations on the primary ones
+are defined as well
+However this classification scheme is intended for consumption by people
+who bring to the problem a wealth of prior knowledge of speech and years
+of experience with it  It captures only the gross features
+of the infinite variety of pitch contours found in living speech
+In a sense the classification is
+ul
+phonological

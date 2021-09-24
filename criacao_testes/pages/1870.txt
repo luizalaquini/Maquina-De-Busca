@@ -1,0 +1,100 @@
+output market and gives a brief synopsis of the activities of several
+interested companies
+in-2n
+Witten-1980-5
+-
+ds A Witten IH
+ds D 1980
+ds T Communicating with microcomputers
+ds I Academic Press
+ds C London
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+A recent book on microcomputer technology this is unusual in that
+it contains a major section on speech communication
+with computers as well as ones
+on computer buses interfaces and graphics
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 2  WHAT IS SPEECH
+ds RT What is speech
+ds CX Principles of computer speech
+pp
+People speak by using their vocal cords as a sound source and making rapid
+gestures of the articulatory organs tongue lips jaw and so on
+The resulting changes in shape of the vocal tract allow production
+of the different sounds that we know as the vowels and consonants of
+ordinary language
+pp
+What is it necessary to learn about this process for the purposes of
+speech output from computers
+That depends crucially upon how speech is represented in the system
+If utterances are stored as time waveforms em and this is what we will be
+discussing in the next chapter em the structure of speech is not important
+If frequency-related parameters of particular natural utterances are
+stored then it is advantageous to take into account some of the
+acoustic properties of the speech waveform
+pp
+This point can be brought into focus by contrasting the transmission
+or storage of speech with that of real-life television pictures
+as has been proposed for a videophone service
+Massive data reductions of the order of 501 can be achieved for speech
+using techniques that are described in later chapters  For pictures
+data reduction is still an important issue em even more so for the
+videophone than for the telephone because of the vastly higher
+information rates involved
+Unfortunately the potential for data reduction is much
+smaller em nothing like the 501 figure quoted above
+This is because speech sounds have definite characteristics imparted
+by the fact that they are produced by a human vocal tract which
+can be exploited for data reduction
+Television pictures have no equivalent generative structure for
+they show just those things that the camera points at
+pp
+Moving up from frequency-related parameters of
+ul
+particular
+utterances it
+is possible to store such parameters in a
+ul
+general
+form which characterizes the sound segments that appear in spoken language
+This immediately raises the issue of
+ul
+classification
+of sound segments to form a basis for storing generalized acoustic
+information and for retrieval of the information needed to synthesize
+any particular utterance
+Speech is by nature continuous and any synthesis system based upon
+discrete classification must come to terms with this by tackling
+the problems of transition from one segment to another
+and local modification of sound segments as a function of their context
+pp
+This brings us to another level of representation
+So far we have talked of the
+ul
+acoustic
+nature of speech but when we have to cope with transitions between
+discrete sound segments it may be fruitful to consider
+ul
+articulatory
+properties as well
+Any model of the speech production process
+is in effect a model of the articulatory process that generates the speech
+Some speech research is concerned with
+modelling
+the vocal tract directly rather than modelling the acoustic output from it
+One might specify for example position of tongue and posture of jaw and lips
+for a vowel instead of giving frequency-related
+characteristics of it  This is a potent
+tool in linguistic research for it brings one closer to human production of
+speech em in particular to the connection between brain and articulators
+pp
+Articulatory
+synthesis holds a promise of high-quality speech for the transitional

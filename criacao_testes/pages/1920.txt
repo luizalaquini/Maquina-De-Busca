@@ -1,0 +1,100 @@
+treating it as a fricative and although it will not sound completely realistic
+because there will be no variation with the formant positions of adjacent phonemes
+this can be tolerated because
+ul
+h
+is not too important for speech intelligibility
+A bigger disadvantage is the lack of proper aspiration control for producing
+unvoiced stops which as mentioned in Chapter 2 consist of an silent phase
+followed by a burst of aspiration
+Experience has shown that although it is difficult to drive such a synthesizer
+from a software synthesis-by-rule system quite intelligible output can
+be obtained if parameters are derived from real speech and tweaked by hand
+Then for each aspiration burst the most closely-matching fricative sound
+can be used
+sh 54  Aspiration and frication
+pp
+The model of the vocal tract as a filter which affects the frequency spectrum
+of the basic voiced excitation breaks down if there are constrictions in it
+for these introduce new sound sources caused by turbulent air
+The generation of unvoiced excitation has been discussed earlier in this
+chapter  now we must consider how to simulate the filtering action of
+the vocal tract for unvoiced sounds
+pp
+Aspiration and frication need to be dealt with separately  The former
+is caused by excitation at the vocal cords em the cords are held
+so close together that turbulent noise is produced
+This noise passes through the same vocal tract filter that modifies voiced
+sounds and the same kind of formant structure can be observed
+All that is needed to simulate it is to replace the voiced excitation
+source by white noise as shown in the upper part of Figure 515
+FC Figure 515
+pp
+Speech can be whispered by substituting aspiration for voicing throughout
+Of course there is no fundamental frequency associated with aspiration
+An interesting way of assessing informally the degradation caused by inadequate
+pitch control in a speech synthesis-by-rule system is to listen to
+whispered speech in which pitch variations play no part
+pp
+Voiced and aspirative excitation are rarely produced at the same time
+in natural speech but see the discussion in Chapter 2 about breathy voice
+However the excitation can change from one to the other quite quickly and
+when this happens there is no discontinuity in the formant structure
+pp
+Fricative or sibilant excitation is quite different from aspiration
+because it introduces a new sound source at a different place from the vocal
+cords  The constriction which produces the sound may be at the lips
+the teeth the hard ridge just behind the top front teeth or further
+back along the palate
+These positions each produce a different sound
+c
+ul
+f
+ul
+th
+ul
+s
+and
+ul
+sh
+respectively  However smooth transitions from one of these sounds to another
+do not occur in natural speech and dynamical movement of the frequency
+spectrum during a fricative is unnecessary for speech synthesis
+pp
+It is necessary however to be able to produce an approximation to the
+noise spectrum for each of these sound types  This is commonly achieved
+by a single high-pass resonance whose centre frequency can be controlled
+This is the purpose of the secondary output
+of the formant filter of Figure 512
+Taking the output from this point gives a high-pass instead of a low-pass
+resonance and this same filter configuration is quite acceptable for
+fricatives  Figure 515 shows the fricative sound path as a noise generator
+followed by such a filter
+pp
+Unlike aspiration fricative excitation is frequently combined with voicing
+This gives the voiced fricative sounds
+ul
+v
+ul
+dh
+ul
+z
+and
+ul
+zh
+It is possible to produce frication and aspiration together and although
+there are no examples of this in English speech synthesis-by-rule
+programs often use a short burst of aspiration
+ul
+and
+frication when simulating the opening of unvoiced stops
+Separate amplitude controls are therefore needed for voicing and frication
+but the former can be used for aspiration as well with a glottal excitation
+type switch to indicate aspiration rather than voicing
+sh 55  Summary
+pp
+A resonance speech synthesizer consists of a vocal tract filter excited by
+either a periodic pitch pulse or aspiration noise  In addition a set of
+sibilant sounds must be provided  The vocal tract filter is dynamic with
+three controllable resonances  These coupled with some fixed spectral
+compensation give it a fairly high order em about 10 complex poles are

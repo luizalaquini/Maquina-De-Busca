@@ -1,0 +1,100 @@
+sh 114  Programmable signal processors
+pp
+The TI chip has a fixed architecture and is destined forever
+to implement the same vocal tract model em a 10th order lattice filter
+A more recent device the Programmable Digital Signal Processor
+Caldwell 1980 from Telesensory Systems allows more flexibility
+in the type of model
+
+Caldwell 1980
+
+It can serve as a digital formant synthesizer or a linear predictive
+synthesizer and the order of model number of formants in the former case
+can be changed
+pp
+Before describing the PDSP it is worth looking at an earlier microprocessor
+which was designed for digital signal processing
+Some industry observers have said that this processor the Intel 2920
+is to the analogue design engineer what the first microprocessor was to
+the random logic engineer way back in the mists of time early 1970s
+rh The analogue microprocessor
+The 2920 is a digital microprocessor
+However it contains an on-chip DA converter which can be used in
+successive approximation fashion for AD conversion under program control
+and its architecture is designed to aid digital signal processing calculations
+Although the precision of conversion is 9 bits internal arithmetic is
+done with 25 bits to accomodate the accumulation of round-off errors in
+arithmetic operations
+An on-chip programmable read-only memory holds a 192-instruction program
+which is executed in sequence with no program jumps allowed
+This ensures that each pass through the program takes the same time
+so that the analogue waveform is regularly sampled and processed
+pp
+The device is implemented in n-channel MOS technology which makes it
+slightly faster than the pMOS Speak n Spell chip
+At its fastest operating speed each instruction takes 400 nsec
+The 192-instruction program therefore executes in 786 musec corresponding
+to a sampling rate of almost 13 kHz
+Thus the processor can handle signals with a bandwidth of 65 kHz em ample
+for high-quality speech
+However a special EOP end of program instruction is provided which
+causes an immediate jump back to the beginning
+Hence if the program occupies less than 192 instructions faster sampling
+rates can be used
+For example a single second-order formant resonance
+requires only 14 instructions and so can
+be executed at over 150 kHz
+pp
+Despite this speed the 2920 is only marginally capable of synthesizing
+speech
+Table 117 gives approximate numbers of instructions needed to do some
+subtasks for speech generation Hoff and Li 1980
+
+Hoff Li 1980 Software makes a big talker
+
+RF
+nr x0 wparameter entry and data distribution0000+w00000
+nr x1 winstructions
+nr x2 nl-nx02
+in nx2u
+ta wparameter entry and data distribution0000u
+lnx0uul
+sp
+task	00000h-nx1uinstructions
+lnx0uul
+sp
+parameter entry and data distribution	35-40
+glottal pulse generation	00008
+noise generation	00011
+lattice section	00020
+formant filter	00014
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 117  2920 instruction counts for typical speech subsystems
+The parameter entry and data distribution procedure
+collects 10 8-bit parameters from a serial input stream at a frame rate of
+100 framess
+The parameter data rate is 8 Kbits and the routine assumes that the
+2920 performs each complete cycle in 125 musec to generate sampled speech
+at 8 kHz
+Therefore one bit of parameter data is accepted on every cycle
+The glottal pulse program generates an asymmetrical triangular waveform
+Chapter 5 while the noise generator uses a 17-bit pseudo-random feedback
+shift register
+About 30 of the 192-instruction program memory is consumed by these
+essential tasks
+A two-multiplier lattice section takes 20 instructions
+and so only six sections can fit into the remaining program space
+It may be possible to use two 2920s to implement a complete 10 or 12th
+order lattice but the results of the first stage must be passed to the
+second by transmitting analogue or digital data between each of the
+2920s analogue ports em not a terribly satisfactory method
+pp
+Since a formant filter occupies only 14 instructions up to nine of them
+would fit in the program space left after the above-mentioned essential
+subsystems
+Although other necessary house-keeping tasks may reduce this number
+substantially
+it does seem possible to implement a formant synthesizer on a single 2920
+rh The Programmable Digital Signal Processor

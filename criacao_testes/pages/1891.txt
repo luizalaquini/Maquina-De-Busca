@@ -1,0 +1,100 @@
+It seems that ADPCM with
+adaptive quantization and adaptive prediction can provide a worthwhile
+advantage for speech storage reducing the number of bits needed per sample of
+telephone-quality speech from 7 for logarithmic PCM to perhaps 5 and the data
+rate from 56 Kbits to 40 Kbits  Disadvantages are additional complexity
+in the encoding and decoding processes and the fact that byte-oriented storage
+with 8 bitssample in logarithmic PCM is more convenient for computer use
+For low quality speech where hardware complexity is to be minimized
+adaptive delta modulation could provide worthwhile em although the ready
+availability of PCM codec chips reduces the cost advantage
+sh 33  References
+LB nnnn
+
+LIST
+
+LE nnnn
+sh 34  Further reading
+pp
+Probably the best single reference on time-domain coding of speech is
+the book by Rabiner and Schafer 1978 cited above
+However this does not contain a great deal of information on practical
+aspects of the analogue-to-digital conversion process this is
+covered by Blesser 1978 above who is especially interested in
+high-quality conversion for digital audio applications
+and Garrett 1978 below
+There are many textbooks in the telecommunications area which
+are relevant to the subject of the chapter
+although they concentrate primarily on fundamental theoretical aspects rather
+than the practical application of the technology
+LB nn
+Cattermole-1969-1
+-
+ds A Cattermole KW
+ds D 1969
+ds T Principles of pulse code modulation
+ds I Iliffe
+ds C London
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This is a standard definitive work on PCM and provides a good grounding
+in the theory
+It goes into the subject in much more depth than we have been able to here
+in-2n
+Garrett-1978-1
+-
+ds A Garrett PH
+ds D 1978
+ds T Analog systems for microprocessors and minicomputers
+ds I Reston Publishing Company
+ds C Reston Virginia
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+Garrett discusses the technology of data conversion systems including
+AD and DA converters and basic analogue filter design in a
+clear and practical manner
+in-2n
+Inose-1979-2
+-
+ds A Inose H
+ds D 1979
+ds T An introduction to digital integrated communications systems
+ds I Peter Peregrinus
+ds C Stevenage England
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+Inoses book is a recent one which covers the whole area of digital
+transmission and switching technology
+It gives a good idea of what is happening to the telephone networks
+in the era of digital communications
+in-2n
+Steele-1975-3
+-
+ds A Steele R
+ds D 1975
+ds T Delta modulation systems
+ds I Pentech Press
+ds C London
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+Again a standard work this time on delta modulation techniques
+Steele gives an excellent and exhaustive treatment of the subject from a
+communications viewpoint
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 4  SPEECH ANALYSIS

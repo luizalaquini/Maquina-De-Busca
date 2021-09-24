@@ -1,0 +1,100 @@
+algorithms work backwards as well identifying
+ul
+anchor points
+in the data which have clearly-defined formant positions and
+moving in both directions from these to disambiguate
+neighbouring frames of data  Finally absolute limits can be
+imposed upon the magnitude of formant movements between frames
+to give an overall smoothing to the formant tracks
+pp
+Very often people will refine the result of such automatic formant
+estimation procedures by hand looking at the tracks knowing
+what was said and making adjustments in the light of their
+experience of how formants move in speech  Unfortunately it is difficult to
+obtain high-quality formant tracks by completely automatic
+means
+pp
+One of the most difficult cases in formant estimation is where
+two formants are so close together that the individual peaks
+cannot be resolved  One simple solution to this problem is to
+employ analysis-by-synthesis whereby once a formant is
+identified a standard formant shape at this position is
+synthesized and
+subtracted from the
+logarithmic spectrum Coker 1963
+
+Coker 1963
+
+Then even if two formants
+are right on top of each other the second is not missed because
+it remains after the first one has been subtracted
+pp
+Unfortunately however the single peak which appears when
+two formants are close together usually does not correspond exactly with the
+position of either one
+There is one rather advanced signal-processing technique that
+can help in this case
+The frequency spectrum of
+speech is determined by
+ul
+poles
+which lie in the complex z-plane inside the unit circle  They
+must be inside the unit circle if the system is stable  Those
+familiar with Laplace analysis of analogue systems may like to note that the
+left half of the s-plane corresponds with the inside of the unit
+circle in the z-plane  As shown earlier computing a DFT is tantamount to
+evaluating the z-transform at equally-spaced points around the
+unit circle  However better resolution is obtained by
+evaluating around a circle which lies
+ul
+inside
+the unit circle but
+ul
+outside
+the outermost pole position  Such a circle is sketched in
+Figure 412
+FC Figure 412
+pp
+Recall that the FFT is a fast way of calculating the DFT of a
+sequence  Is there a similarly fast way of evaluating the
+z-transform inside the unit circle  The answer is yes and the
+technique is known as the chirp z-transform because it
+involves considering a signal whose frequency increases
+linearly em just like a radar chirp signal  The chirp method
+allows the z-transform to be computed quickly at equally-spaced
+points along spirally-shaped contours around the origin of the
+z-plane em corresponding to signals of linearly increasing
+complex frequency  The spiral nature of these curves is not of
+particular interest in speech processing  What
+ul
+is
+of interest though is that the spiral can begin at any point
+on
+the z=0 axis and its pitch can be set arbitrarily
+If we begin spiralling at z=09 say and set the pitch
+to zero the contour becomes a circle inside the unit one with
+radius 09  Such a circle is exactly what is needed to refine
+formant resolution
+sh 48  Pitch extraction
+pp
+The last section discussed how to characterize the vocal tract filter
+in the source-filter model of speech production  this one looks
+at how the most important property of the source em that is the
+pitch period em can be derived  In many ways pitch extraction
+is more important from a practical point of view than is formant
+estimation  In a voice-output system formant estimation is
+only necessary if speech is to be stored in formant-coded form
+For linear predictive storage of speech or for speech synthesis
+from phonetics or text formant extraction is unnecessary em
+although of course general information about formant
+frequencies and formant tracks in natural speech is needed
+before a synthesis-from-phonetics system can be built
+However knowledge of the pitch contour is needed for
+many different purposes  For example compact encoding of
+linearly predicted speech relies on the pitch being estimated and
+stored as a parameter separate from the articulation
+Significant improvements in frequency analysis can be made by
+performing pitch-synchronous Fourier transformations
+because the need to window is eliminated
+Many synthesis-from-phonetics systems require the pitch contour
+for utterances to be stored rather computed from markers in the

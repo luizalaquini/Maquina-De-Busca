@@ -1,0 +1,100 @@
+Adaptive quantization exploits information about the amplitude of the signal
+and as a rough generalization yields a reduction of one bit per sample
+in the data rate for telephone-quality speech over ordinary logarithmic
+quantization for a given signal-to-noise ratio  Alternatively for the
+same data rate an improvement of 6 dB in signal-to-noise ratio can be obtained
+Some results for actual schemes are given by Rabiner and Schafer 1978
+
+Rabiner Schafer 1978 Digital processing of speech signals
+
+However there is other information in the time waveform of speech namely the
+sample-to-sample correlation which can be exploited to give further reductions
+rh Differential coding
+Differential pulse code modulation DPCM in its simplest form uses the
+present speech sample as a prediction of the next one
+and stores the prediction error em that is the sample-to-sample difference
+This is a simple case of predictive encoding
+Referring back to the speech waveform displayed in Figure 35
+it seems plausible that the data rate can be reduced by transmitting the difference
+between successive samples instead of their absolute values  less bits are
+required for the difference signal for a given overall accuracy because it
+does not assume such extreme values as the absolute signal level
+Actually the improvement is not all that great em about 4 - 5 dB in
+signal-to-noise ratio or just under one bit per sample for a given
+signal-to-noise ratio em for the difference signal can be nearly as large as
+the absolute signal level
+pp
+If DPCM is used in conjunction with adaptive quantization giving one form of
+adaptive differential pulse code modulation ADPCM both the overall amplitude
+variation and the sample-to-sample correlation are exploited leading to a
+combined gain of 10 - 11 dB in signal-to-noise ratio or just under two bits
+reduction per sample for telephone-quality speech  Another form of adaptation
+is to alter the predictor by multiplying the previous sample value by a
+parameter which is adjusted for best performance
+Then the transmitted signal at time n is
+LB
+EQ
+en  =  xn - axn-1
+EN
+LE
+where the parameter a is adapted and stored on a syllabic time-scale  This
+leads to a slight improvement in signal-to-noise ratio which can be combined
+with that achieved by adaptive quantization  Much more substantial benefits
+can be realized by using a weighted sum of the past several up to 15 speech
+samples and adapting all the weights  This is the basic idea of linear
+prediction which is developed in Chapter 6
+rh Delta modulation
+The coding methods presented so far all increase the complexity of the
+analogue-to-digital interface or if the sampled waveform is coded
+digitally they increase the processing required before and after storage
+One method which considerably
+ul
+simplifies
+the interface is the limiting case
+of DPCM with just 1-bit quantization  Only the sign of the difference between
+the current and last values is transmitted  Figure 39 shows the conversion
+hardware
+FC Figure 39
+The encoding part is essentially the same as a tracking DA
+where the value in a counter is forced to track the analogue input by
+incrementing or decrementing the counter according as the input exceeds or
+falls short of the analogue equivalent of the counters contents  However
+for this encoding scheme called delta modulation the increment-decrement
+signal itself forms the discrete representation of the waveform instead of the counters
+contents  The analogue waveform can be reconstituted from the bit stream with
+another counter and DA converter  Alternatively an all-analogue implementation
+can be used both for the encoder and decoder with a capacitor as integrator
+whose charging current is controlled digitally  This is a much cheaper realization
+pp
+It is fairly obvious that the sampling frequency for delta modulation will need
+to be considerably higher than for straightforward PCM  Figure 310 shows
+an effect called slope overload which occurs when the sampling rate is too low
+FC Figure 310
+Either a higher sample rate or a larger step size will reduce the overload
+however larger steps increase the noise level of the alternate 1s and -1s
+that occur when no input is present em called granular noise  A compromise
+is necessary between slope overload and granular noise for a given bit rate
+Delta modulation results in lower data rates than logarithmic quantization
+for a given signal-to-noise ratio if that ratio is low poor-quality speech
+As the desired speech quality is increased its data rate grows faster than
+that of logarithmic PCM  The crossover point occurs at much lower than
+telephone quality speech and so although delta modulation is used for some
+applications where the permissible data rate is severely constrained
+it is not really suitable for speech output from computers
+pp
+It is profitable to adjust the step size leading to
+ul
+adaptive
+delta modulation
+A common strategy is to increase or decrease the step size by a multiplicative
+constant which depends on whether the new transmitted bit will be equal to
+or different from the last one  That is
+LB nnnn
+NI nn
+stepsizen+1  =  stepsizen times 2  if xn+1xnxn-1
+or xn+1xnxn-1
+br
+slope overload condition
+NI nn
+stepsizen+1 = stepsizen2  if xn+1xn-1xn
+or xn+1xn-1xn

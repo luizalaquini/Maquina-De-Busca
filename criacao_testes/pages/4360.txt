@@ -1,0 +1,100 @@
+flow which increases the pitch again
+The phenomenon is called microintonation
+It is particularly noticeable in voiced stops but also occurs in voiced
+fricatives and unvoiced stops
+Simulation of the effect in synthesis-by-rule has often been found to give
+noticeable improvements in the speech quality
+pp
+Loudness also has a segmental role  For example we noted in the last chapter
+that amplitude values play a small part in identification of fricatives
+In fact loudness is a very
+ul
+weak
+prosodic feature  It contributes little to the perception of stress
+Even for shouting the distinction from normal speech is as much in the voice
+quality as in amplitude
+ul
+per se
+It is not necessary to consider varying loudness on a prosodic basis
+in most speech synthesis systems
+pp
+The above examples show how prosodic features have segmental influences
+as well
+The converse is also true  some segmental features have a prosodic effect
+The last chapter described how stress is associated with increased aspiration
+of syllable-initial unvoiced stops  Furthermore stressed syllables
+are articulated with greater effort than unstressed ones and hence the formant
+transitions are more likely to attain their target values
+under circumstances which would otherwise cause them to fall short
+In unstressed syllables extreme vowels like
+ul
+ee aa uuc
+
+tend to more centralized sounds
+like
+ul
+i uh u
+respectively
+Although all British English vowels
+ul
+can
+appear in unstressed syllables they often become reduced into a
+centralized form
+Consider the following examples
+LB
+NI
+diplomat	 
+ul
+d i p l uh m aa t
+NI
+diplomacy	 
+ul
+d i p l uh u m uh s i
+NI
+diplomatic	 
+ul
+d i p l uh m aa t i k
+LE
+The vowel of the second syllable is reduced to
+ul
+uh
+in diplomat and diplomatic whereas the root form diploma and also
+diplomacy has a diphthong
+c
+ul
+uh uc
+
+there  The third syllable has an
+ul
+aa
+in diplomat and diplomatic which is reduced to
+ul
+uh
+in diplomacy
+In these cases the reduction is shown explicitly in the phonetic transcription
+but in more marginal examples where it is less extreme it will not be
+pp
+I have tried to emphasize in previous chapters that prosodic features are
+important in speech synthesis
+There is something very basic about them
+Rhythm is an essential part of all bodily activity em of breathing
+walking working and playing em and so it pervades speech too
+Mothers and babies communicate effectively using intonation alone
+Some experiments have indicated that the language environment of
+an infant affects his babbling at an early age before he has effective
+segmental control
+There is no doubt that tone of voice plays a large part in human
+communication
+pp
+However early attempts at synthesis did not pay too
+much attention to prosodics perhaps because it was thought sufficient to get the
+meaning across by providing clear segmentals
+As artificial speech grows more widespread however it is becoming
+apparent that its acceptability to users and hence its ultimate
+success depends to a large extent on incorporating natural-sounding
+prosodics  Flat arhythmic speech may be comprehensible in short stretches
+but it strains the concentration in significant discourse and people
+are not usually prepared to listen to it
+Unfortunately current commercial speech output systems do not really tackle
+prosodic questions which indicates our present rather inadequate
+state of knowledge

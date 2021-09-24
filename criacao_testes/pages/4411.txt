@@ -1,0 +1,100 @@
+an on-chip quantization table to yield a 10-bit coefficient
+pp
+Table 116 shows the number of bits devoted to each parameter
+RF
+in+03i
+ta wrepeat flag00u +13i +08i
+nr x0 wrepeat flag00+13i+w00+wsize 10-bit words2
+lnx0uul
+nr x1 wbits2
+nr x2 wquantization table2
+nr x3 02m
+parameter	0h-nx1ubits	00h-nx2uquantization table
+nr x2 wsize 10-bit words2
+		00h-nx2usize 10-bit words
+lnx0uul
+sp
+energy	04	016	vnx3uv-nx3uz4vnx3uv-nx3u  energy=0 means 4-bit frame
+pitch	05	032
+repeat flag	01	0em	z1vnx3uv-nx3uz0vnx3uv-nx3u  repeat flag =1 means 10-bit frame
+k1	05	032
+k2	05	032
+k3	04	016
+k4	04	016	z2vnx3uv-nx3uz8vnx3uv-nx3u  pitch=0 unvoiced means 28-bit frame
+k5	04	016
+k6	04	016
+k7	04	016
+k8	03	008
+k9	03	008
+k10	03	008	z4vnx3uv-nx3uz9vnx3uv-nx3u  otherwise 49-bit frame
+		
+sp
+	49 bits	216 words
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in-03i
+FG Table 116  Bit allocation for Speak n Spell chip
+There are 4 bits for energy and 5 bits for pitch and the first two
+reflection coefficients
+Thereafter the number of bits allocated to reflection coefficients decreases
+steadily for higher coefficients are less important for intelligibility
+than lower ones
+Note that using a 10-stage filter is tantamount to allocating
+ul
+no
+bits to coefficients higher than the tenth  With a
+1-bit repeat flag whose role is discussed shortly the frame size
+becomes 49 bits
+Updated every 20 msec this gives a data rate of just under 25 Kbits
+pp
+The parameters are expanded into 10-bit numbers by a separate quantization
+table for each one
+For example the five pitch bits address a 32-word look-up table which
+returns a 10-bit value
+The transformation is logarithmic in this case the lowest pitch being
+around 50 Hz and the highest 190 Hz
+As shown in Table 116 a total of 216 10-bit words suffices to hold all
+twelve quantization tables and they are implemented on the synthesizer
+chip
+To provide further smoothing of the control parameters
+they are interpolated linearly from one frame to the next at eight points
+within the frame
+pp
+The raw data rate of 25 Kbits is reduced to an average of 1200 bits
+by further coding techniques
+Firstly if the energy parameter is zero the frame is silent
+and no more parameters are transmitted 4-bit frame
+Secondly if the repeat flag is 1 all reflection coefficients are held
+over from the previous frame giving a constant filter but with the ability
+to vary amplitude and pitch 10-bit frame
+Finally if the frame is unvoiced signalled by the pitch value being zero
+only four reflection coefficients are transmitted because the ear is
+relatively insensitive to spectral detail in unvoiced speech 28-bit frame
+The end of the utterance is signalled by the energy bits all being 1
+rh Chip organization
+The configuration of the lattice filter is shown in Figure 1110
+FC Figure 1110
+The two-multiplier structure Chapter 6 is used so the 10-stage filter
+requires 19 multiplications and 19 additions
+per speech sample
+The last operation in the reverse path at the bottom is not needed  Since
+a 10 kHz sample rate is used just 100 musec are available for each
+speech sample
+A single 5 musec adder and a pipelined multiplier are implemented on
+the chip and multiplexed among the 19 operations
+The latter begins a new multiplication every 5 musec and finishes it
+40 musec later
+These times are within the capability of p-channel MOS technology
+allowing the chip to be produced at low cost
+The time slot for the 20th unnecessary filter multiplication is used
+for an overall gain adjustment
+pp
+The final analogue signal is produced by an 8-bit on-chip DA converter
+which drives a 200 milliwatt speaker through an impedance-matching
+transformer
+These constitute the necessary analogue low-pass desampling filter
+pp
+Figure 1111 summarizes the organization of the synthesis chip
+FC Figure 1111
+Serial data enters directly from the read-only memories although a control
+signal from the processor begins synthesis and another signal is returned

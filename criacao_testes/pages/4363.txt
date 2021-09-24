@@ -1,0 +1,100 @@
+during certain consonants was mentioned above em and these are
+not normally considered as part of intonation
+Such effects will certainly spoil attempts to store contours extracted
+from living speech and apply them to different utterances but the impairment
+may not be too great for pitch is only one of many segmental clues to
+consonant identification
+pp
+In the system mentioned earlier which generated 7-digit telephone numbers
+by concatenating formant-coded words a single natural pitch contour
+was applied to all utterances
+It was taken to match as well as possible the general shape of the
+contours measured in naturally-spoken telephone numbers  However this is a very
+restricted environment for telephone numbers exhibit almost no variety in
+the configuration of stressed and unstressed syllables em
+the only digit which is not a monosyllable is seven
+Significant problems arise when more general utterances are considered
+pp
+Suppose the pitch contour of one utterance the source
+is to be transferred to another the target
+Assume that the utterances are encoded in source-filter form
+either as parameter tracks for a formant synthesizer or as linear predictive
+coefficients
+Then there are no technical obstacles to combining pitch and segmentals
+The source must be available as a complete utterance while the target
+may be formed by concatenating smaller units such as words
+pp
+For definiteness we will consider utterances of the form
+LB
+The price is em dollars and em cents
+LE
+where the slots are filled by numbers less than 100
+and of the form
+LB
+The price is em cents
+LE
+The domain of prices encompasses a wide range of syllable
+configurations
+There are between one and five syllables in each variable part
+if the numbers are restricted to be less than 100
+The sentences have a constant pragmatic semantic and syntactic structure
+As in the vast majority of real-life situations
+minimal phonetic distinctions between utterances do not occur
+pp
+Pitch transfer is complicated by the fact that values of the source pitch
+are only known during the voiced parts of the utterance
+Although it would certainly be possible to extrapolate pitch
+over unvoiced parts this would introduce some artificiality into
+the otherwise completely natural contours
+Let us assume therefore that the pitch contour
+of the voiced nucleus of each syllable in the source is applied to the
+corresponding syllable nucleus in the target
+pp
+The primary factors which might tend to inhibit successful transfer
+are
+LB
+NP
+different numbers of syllables in the utterances
+NP
+variations in the pattern of stressed and unstressed syllables
+NP
+different syllable durations
+NP
+pitch discontinuities
+NP
+phonetic differences between the utterances
+LE
+rh Syllabification
+It is essential to take into account the syllable structures
+of the utterances so that pitch is transferred between
+corresponding syllables rather than over the utterance
+as a whole
+Fortunately syllable boundaries can be detected automatically
+with a fair degree of accuracy especially if the speech is carefully
+enunciated
+It is worth considering briefly how this can be done even though it takes
+us off the main topic of synthesis and into speech analysis
+pp
+A procedure developed by Mermelstein 1975
+involves integrating the spectral energy
+at each point in the utterance
+
+Mermelstein 1975 Automatic segmentation of speech into syllabic units
+
+First the low 500 Hz and high 4000 Hz ends are filtered out
+with 12 dBoctave cutoffs
+The resulting energy signal is smoothed
+by a 40 Hz lowpass filter giving a so-called loudness
+function
+All this can be accomplished with simple recursive digital filters
+pp
+Then the loudness function is compared with its convex hull
+The convex hull is the shape a piece of elastic would assume if
+stretched over the top of the loudness function and anchored down at
+both ends as illustrated in Figure 81
+FC Figure 81
+The point of maximum difference between the hull and loudness function
+is taken to be a tentative syllable
+boundary
+The hull is recomputed but anchored to the actual loudness function
+at the tentative boundary

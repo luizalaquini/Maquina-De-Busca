@@ -1,0 +1,100 @@
+in 0
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+FG Table 102  Syntax for a telephone calculator
+A calculation is a sequence of operations followed by an EXIT function call
+There are twelve different operations one for each button on the keypad
+Actually two of them em
+ul
+cancel
+and
+ul
+function
+em share the same key so that  can be reserved for use as a
+separator but the context ensures that they cannot be confused by the system
+pp
+Six of the operations give control over the dialogue
+There are three different repeat commands a command called
+ul
+erasec
+
+which undoes the effect of the last operation
+one which reads out the value of a register
+and one which aborts the current utterance
+Four more commands provide the basic arithmetic operations of add
+subtract multiply and divide
+The operands of these may be keyed literal numbers or register values
+or function calls
+A further command clears a register
+pp
+It is through functions that the extensibility of the language is achieved
+A function has a name like SIN EXIT MYFUNC which is keyed with an
+appropriate single-key-per-character sequence namely 746 3948 693862
+respectively
+One function DEFINE allows new ones to be entered
+Another LOOP repeats sequences of operations
+TEST incorporates arithmetic testing
+The details of these are not important  what is interesting is the evident
+power of the calculator
+pp
+For example the keying sequence
+LB
+NI
+5    1  1  2  3    2  1    2    9    6    2  1    4  
+LE
+would be decoded as
+LB
+NI
+ul
+clearc
+  +  123  -  12  c
+ul
+display  erasec
+  -  14
+LE
+One of the difficulties with such a tight syntax is that almost any sequence
+will be intepreted as a valid calculation em syntax errors are nearly
+impossible
+Thus a small mistake by the user can have a catastrophic effect on the
+calculation
+Here however speech output gives an advantage over conventional
+character-by-character echoing
+on visual displays
+It is quite adequate to echo syntactic units as they are decoded instead
+of echoing keys as they are entered
+It was suggested earlier in this chapter that confirmation of entry
+should be generated in the same way that the user would be likely to
+verbalize it himself
+Thus the synthetic voice could respond to the above keying sequence as
+shown in the second line except that the
+ul
+display
+command would also state the result
+and possibly summarize the calculation so far
+Numbers could be verbalized as one hundred and twenty-three
+instead of as one  two  three
+Note however that this will make it necessary to await the  terminator
+after numbers and function names before they can be echoed
+sh 104  References
+LB nnnn
+
+LIST
+
+LE nnnn
+sh 105  Further reading
+pp
+There are no books which relate techniques of man-computer dialogue
+to speech interaction
+The best I can do is to guide you to some of the standard works on
+interactive techniques
+LB nn
+Gilb-1977-1
+-
+ds A Gilb T
+as A  and Weinberg GM
+ds D 1977
+ds T Humanized input
+ds I Winthrop
+ds C Cambridge Massachusetts
+nr T 0
+nr A 1
+nr O 0

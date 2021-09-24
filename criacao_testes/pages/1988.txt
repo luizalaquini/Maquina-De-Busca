@@ -1,0 +1,100 @@
+as will be explained
+shortly
+pp
+An advantage of the longest-string search strategy is that it is easy
+to account for exceptions simply by incorporating them into the fragment
+table
+If they occur in the input the complete word will automatically be
+matched first before any fragment of it is translated
+The exception list of complete words can be surprisingly small for
+quite respectable performance
+Table 96 shows the entire dictionary for an excellent early pronunciation
+system written at Bell Laboratories McIlroy 1974
+
+McIlroy 1974
+
+Some of the words are notorious exceptions in English while others are
+included simply because the rules would run amok on them
+Notice that the exceptions are all quite short with only a few of them
+having more than two syllables
+RF
+nr x1 09i+09i+09i+09i+09i+09i
+nr x1 nl-nx12
+in nx1u
+ta 09i +09i +09i +09i +09i
+a	doesnt	guest	meant	reader	those
+alkali	doing	has	moreover	refer	to
+always	done	have	mr	says	today
+any	dr	having	mrs	seven	tomorrow
+april	early	heard	nature	shall	tuesday
+are	earn	his	none	someone	two
+as	eleven	imply	nothing	something	upon
+because	enable	into	nowhere	than	very
+been	engine	is	nuisance	that	water
+being	etc	island	of	the	wednesday
+below	evening	john	on	their	were
+body	every	july	once	them	who
+both	everyone	live	one	there	whom
+busy	february	lived	only	thereby	whose
+copy	finally	living	over	these	woman
+do	friday	many	people	they	women
+does	gas	maybe	read	this	yes
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 96  Exception table for a simple pronunciation program
+pp
+Special action has to be taken with final es
+These lengthen and alter the quality
+of the preceding vowel so that bit becomes bite and so on
+Unfortunately if the word has a suffix the e must be detected even though
+it is no longer final as in lonely and it is even dropped sometimes
+biting em otherwise these would be pronounced lonelly bitting
+To make matters worse the suffix may be another word  we do not
+want kiteflying to have an extra syllable which rhymes with deaf
+Although simple procedures can be developed to take care of common
+word endings like -ly -ness -d it is difficult to decompose
+compound words like wisecrack and bumblebee reliably em but this must
+be done if they are not to be articulated with three syllables instead of two
+Of course there are exceptions to the final e rule
+Many common words some done livedVu disobey the rule by not
+lengthening the main vowel while in other rarer ones anemone
+catastrophe epitome the final e is actually pronounced
+There are also some complete anomalies fete
+pp
+McIlroys 1974 system is a superb example of a robust program which takes
+a pragmatic approach to these problems accepting that they will never be
+fully solved and which is careful to degrade
+gracefully when stumped
+
+McIlroy 1974
+
+The pronunciation of each word is found by a succession of increasingly
+desperate trials
+LB
+NP
+replace upper- by lower-case letters strip punctuation and try again
+NP
+remove final -s replace final ie by y and try again
+NP
+reject a word without a vowel
+NP
+repeatedly mark any suffixes with |
+NP
+mark with | probable morph divisions in compound words
+NP
+mark potential long vowels indicated by e|
+and long vowels elsewhere in the word
+NP
+mark voiced medial s as in busy usual
+replace final -s if stripped
+NP
+scanning the word from left to right apply letter-to-sound rules
+to word fragments
+NP
+when all else fails spell the word punctuation and all
+burp on letters for which no spelling rule exists
+LE
+RF
+nr x0 w| ment000+wreplace final ie by y000+wexcept when no vowel would remain in  
+nr x1 nl-nx02
+in nx1u

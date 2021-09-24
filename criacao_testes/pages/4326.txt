@@ -1,0 +1,100 @@
+as possible  Provided the time-frame for minimizing is short enough
+the impulse will correspond to a single excitation pulse
+If the speech is unvoiced minimization will lead to an error
+signal which is as nearly white noise as possible
+pp
+How does one choose the linear predictive coefficients to minimize
+the mean-squared error  The total squared prediction error is
+LB
+EQ
+M=sum from n en sup 2=sum from n
+xn- sum from k=1 to p a sub k x sub n-k  sup 2 
+EN
+LE
+leaving the range of summation unspecified for the moment
+To minimize M by choice of the coefficients a sub j differentiate
+with respect to each of them and set the resulting derivatives
+to zero
+LB
+EQ
+dM over da sub j =-2 sum from n xn-jxn-
+sum from k=1 to p a sub k xn-k=0
+EN
+LE
+so
+LB
+EQ
+sum from k=1 to p a sub k  sum from n xn-jxn-k=
+sum from n xnxn-jj=12p
+EN
+LE
+pp
+This is a set of p linear equations for the p unknowns a sub 1 
+a sub p
+Solving it is equivalent to inverting a p times p matrix
+This job must be repeated at the frame rate and so if
+real-time operation is desired quite a lot of calculation is needed
+rh The autocorrelation method
+So far the range of the n-summation has been left open  The
+coefficients of the matrix equation have the form
+LB
+EQ
+sum from n xn-jxn-k
+EN
+LE
+If a doubly-infinite summation were made with xn being defined
+as zero whenever n0 we could make use of the fact that
+sp
+ce
+EQ
+sum from n=- infinity to infinity xn-jxn-k=
+sum from n=- infinity to infinity xn-j+1xn-k+1==
+sum from n=- infinity to infinity xnxn+j-k
+EN
+sp
+to simplify the matrix equation  This just states that the
+autocorrelation of an infinite sequence depends only on the lag at which
+it is computed and not on absolute time
+pp
+Defining Rm as the
+autocorrelation at lag m that is
+LB
+EQ
+Rm= sum from n xnxn+m
+EN
+LE
+the matrix equation becomes
+LB
+ne7
+nf
+EQ
+R0a sub 1 +R1a sub 2 +R2a sub 3 +=R1
+EN
+EQ
+R1a sub 1 +R0a sub 2 +R1a sub 3 +=R2
+EN
+EQ
+R2a sub 1 +R1a sub 2 +R0a sub 3 +=R3
+EN
+EQ
+etc
+EN
+fi
+LE
+An elegant method due to Durbin and Levinson exists for solving this
+special system of equations  It requires much less computational
+effort than is generally needed for symmetric matrix equations
+pp
+Of course an infinite range of summation can not be used in
+practice  For one thing the power spectrum is changing and
+only the data from a short time-frame should be used for
+a realistic estimate of the optimum linear predictive coefficients
+Hence a windowing procedure
+LB
+EQ
+xn sup  =w sub n xn
+EN
+LE
+is used to reduce the signal to zero outside a finite range of
+interest  Windows were discussed in Chapter 4 from the
+point of view of Fourier analysis of speech signals and the same

@@ -1,0 +1,100 @@
+nr x0 08i+26i+wAH1 UH2  O U000+w i uh  - here
+lnx0uul
+sp
+vowel clusters
+	EH I	A1 AY	 e i  - hey
+	UH OO	O U	 uh u  - ho
+	AE I	AH1 EH3 I	 aa i  - hi
+	AE OO	AH1 UH2 O U	 aa u  - how
+	AW I	O UH E	 o i  - hoi
+	I UH	E I	 i uh  - here
+	EH UH	EH A1 EH	 e uh  - hair
+	OO UH	OO UH	 u uh  - poor
+	Y U	Y1 IU U
+sp
+vowel transitions
+	F M B P O	O1 O
+	L R EH	EH3 EH
+	B K T D R UH	UH3 UH
+	T D A1	EH3 A1
+	T D AW	AH1 AW
+	W I	I3 I
+	G SH W K OO	IU OO
+	AY K G T D	AY Y
+	E M T	E Y
+	I M T	I Y
+	E L	I3 UH
+	EH R N S D T	EH EH3
+	I R T	I I3
+	AE S N	AE EH
+	AE K	AE EH3
+	A1 R	A1 EH1
+	AH1 R P K	AH1 UH
+	AH1 ZH	AH1 EH3
+sp
+intervocalics
+	voiced T voiced	DT
+sp
+consonant transitions
+	L EH	L1
+	H U OO IU	H1
+lnx0uul
+sp3
+ce
+Table 115  Contextual rules for Votrax sound segments
+bp
+lnx0uul
+sp
+consonant clusters
+	B stop-consonant	B PA0
+	P stop-consonant	P PA0
+	D stop-consonant	D PA0
+	T stop-consonant	T PA0
+	DT stop-consonant	T PA0
+	G stop-consonant	G PA0
+	K stop-consonant	K PA0
+	D T R	X1 R
+	K R	K X1 R
+	consonant R	R
+	consonant L	L1
+	K W	K W
+	D ZH	D J
+	T SH	T CH
+sp
+initial effects
+	syll P vowel	P PH
+	syll K vowel	K H1
+	syll T vowel	T S
+	syll L	L1
+	syll H U OO O AW AH1	H1
+sp
+terminal effects
+	E PA0	E Y
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+sp3
+ce
+Table 115  continued
+ev
+
+
+
+The comet’s tail spread across the dawn a red slash that bled above the crags of Dragonstone like a wound in the pink and purple sky
+
+The maester stood on the windswept balcony outside his chambers It was here the ravens came after long flight Their droppings speckled the gargoyles that rose twelve feet tall on either side of him a hellhound and a wyvern two of the thousand that brooded over the walls of the ancient fortress When first he came to Dragonstone the army of stone grotesques had made him uneasy but as the years passed he had grown used to them Now he thought of them as old friends The three of them watched the sky together with foreboding
+
+The maester did not believe in omens And yet    old as he was Cressen had never seen a comet half so bright nor yet that color that terrible color the color of blood and flame and sunsets He wondered if his gargoyles had ever seen its like They had been here so much longer than he had and would still be here long after he was gone If stone tongues could speak   
+
+Such folly He leaned against the battlement the sea crashing beneath him the black stone rough beneath his fingers Talking gargoyles and prophecies in the sky I am an old done man grown giddy as a child again Had a lifetime’s hard-won wisdom fled him along with his health and strength He was a maester trained and chained in the great Citadel of Oldtown What had he come to when superstition filled his head as if he were an ignorant fieldhand
+
+And yet    and yet    the comet burned even by day now while pale grey steam rose from the hot vents of Dragonmont behind the castle and yestermorn a white raven had brought word from the Citadel itself word long-expected but no less fearful for all that word of summer’s end Omens all Too many to deny What does it all mean he wanted to cry
+
+Maester Cressen we have visitors Pylos spoke softly as if loath to disturb Cressen’s solemn meditations Had he known what drivel filled his head he would have shouted The princess would see the white raven Ever correct Pylos called her princess now as her lord father was a king King of a smoking rock in the great salt sea yet a king nonetheless Her fool is with her
+
+The old man turned away from the dawn keeping a hand on his wyvern to steady himself Help me to my chair and show them in
+
+Taking his arm Pylos led him inside In his youth Cressen had walked briskly but he was not far from his eightieth name day now and his legs were frail and unsteady Two years past he had fallen and shattered a hip and it had never mended properly Last year when he took ill the Citadel had sent Pylos out from Oldtown mere days before Lord Stannis had closed the isle    to help him in his labors it was said but Cressen knew the truth Pylos had come to replace him when he died He did not mind Someone must take his place and sooner than he would like   
+
+He let the younger man settle him behind his books and papers Go bring her It is ill to keep a lady waiting He waved a hand a feeble gesture of haste from a man no longer capable of hastening His flesh was wrinkled and spotted the skin so papery thin that he could see the web of veins and the shape of bones beneath And how they trembled these hands of his that had once been so sure and deft   
+
+When Pylos returned the girl came with him shy as ever Behind her shuffling and hopping in that queer sideways walk of his came her fool On his head was a mock helm fashioned from an old tin bucket with a rack of deer antlers strapped to the crown and hung with cowbells With his every lurching step the bells rang each with a different voice clang-a-dang bong-dong ring-a-ling clong clong clong

@@ -1,0 +1,100 @@
+lnx0uul
+sp
+nr x3 whid
+fIifR	I		118	h-nx3uhid
+	I1	sound equivalent of I	083
+	I2	sound equivalent of I	058
+	I3	allophone of I	058
+	I3	sound equivalent of I3	083
+	AY	allophone of I	065
+nr x3 whead
+fIefR	EH		118	h-nx3uhead
+	EH1	sound equivalent of EH	070
+	EH2	sound equivalent of EH	060
+	EH3	allophone of EH	060
+	EH2	sound equivalent of EH3	070
+	A1	allophone of EH	100
+	A2	sound equivalent of A1	095
+nr x3 whad
+fIaafR	AE		100	h-nx3uhad
+	AE1	sound equivalent of AE	100
+nr x3 whod
+fIofR	AW		235	h-nx3uhod
+	AW2	sound equivalent of AW	090
+	AW1	allophone of AW	143
+nr x3 whood
+fIufR	OO		178	h-nx3uhood
+	OO1	sound equivalent of OO	103
+	IU	allophone of OO	063
+nr x3 whud
+fIafR	UH		103	h-nx3uhud
+	UH1	sound equivalent of UH	095
+	UH2	sound equivalent of UH	050
+	UH3	allophone of UH	070
+	UH3	sound equivalent of UH3	103
+	UH2	allophone of UH	060
+nr x3 whard
+fIarfR	AH1		143	h-nx3uhard
+	AH2	sound equivalent of AH1	070
+nr x3 whawed
+fIawfR	O		178	h-nx3uhawed
+	O1	sound equivalent of O	118
+	O2	sound equivalent of O	083
+	O	allophone of O	178
+	O1	sound equivalent of O	123
+	O2	sound equivalent of O	090
+nr x3 wwho d
+fIuufR	U		178	h-nx3uwhod
+	U1	sound equivalent of U	090
+nr x3 wheard
+fIerfR	ER		143	h-nx3uheard
+nr x3 wheed
+fIeefR	E		178	h-nx3uheed
+	E1	sound equivalent of E	118
+fIrfR	R		090
+	R	allophone of R	050
+fIwfR	W		083
+	W	allophone of W	083
+lnx0uul
+sp3
+ce
+Table 112  Votrax sound segments and their durations
+bp
+lnx0uul
+sp
+nr x1 wVotrax2
+nr x2 wduration msec2
+nr x3 wtest word
+	h-n1uVotrax		0h-nx2uduration msec	h-nx3utest word
+lnx0uul
+sp
+fIlfR	L		105
+	L1	allophone of L	105
+fIyfR	Y		103
+	Y1	allophone of Y	083
+fImfR	M		105
+fIbfR	B		070
+fIpfR	P		100
+	PH	aspiration burst for use with P	088
+fInfR	N		083
+fIdfR	D		050
+	D	allophone of D	053
+fItfR	T		090
+	DT	allophone of T	050
+	S	aspiration burst for use with T	070
+fIngfR	NG		120
+fIgfR	G		075
+	G	allophone of G	075
+fIkfR	K		075
+	K	allophone of K	080
+	X1	aspiration burst for use with K	068
+fIsfR	S		090
+fIzfR	Z		070
+fIshfR	SH		118
+	CH	allophone of SH	055
+fIzhfR	ZH		090
+	J	allophone of ZH	050
+fIffR	F		100
+fIvfR	V		070
+fIthfR	TH		070
+fIdhfR	THV		070

@@ -1,0 +1,100 @@
+The problem of memorizing commands is alleviated by establishing some
+system-wide conventions  Each input is terminated by a  and
+the meaning of standard commands is given in Table 15
+RF
+fi
+nh
+na
+in 03i
+nr x0 w alone  
+nr x1 wem  
+ta nx0u +nx1u
+nr x2 nx0+nx1
+in+nx2u
+ti-nx2u
+	em	Erase this input line regardless of what has
+been typed before the 
+ti-nx2u
+0	em	Stop  Used to exit from any service
+ti-nx2u
+1	em	Yes
+ti-nx2u
+2	em	No
+ti-nx2u
+3	em	Repeat question or summarize state of current
+transaction
+ti-nx2u
+ alone	em	Short form of repeat  Repeats or summarizes
+in an abbreviated fashion
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+nf
+FG Table 15  System-wide conventions for the service
+pp
+A summary of services available on the system is given in
+Table 16
+RF
+fi
+na
+in 03i
+nr x0 w000  
+nr x1 wem  
+nr x2 nx0+nx1
+in+nx2u
+ta nx0u +nx1u
+ti-nx2u
+001	em	tells the time
+ti-nx2u
+002	em	Biffo a game of NIM
+ti-nx2u
+003	em	MOO a game similar to that marketed under the name Mastermind
+ti-nx2u
+004	em	error demonstration
+ti-nx2u
+005	em	speak a file in phonetic format
+ti-nx2u
+006	em	listening test
+ti-nx2u
+007	em	music allows you to enter a tune and play it
+ti-nx2u
+008	em	gives the date
+sp
+ti-nx2u
+100	em	squash ladder
+ti-nx2u
+101	em	stores information service
+ti-nx2u
+102	em	computes means and standard deviations
+ti-nx2u
+103	em	telephone directory
+sp
+ti-nx2u
+411	em	user information
+ti-nx2u
+412	em	change password
+ti-nx2u
+413	em	gripe permits feedback on services from caller
+sp
+ti-nx2u
+600	em	first year laboratory marks entering service
+sp
+ti-nx2u
+910	em	repeat utterance allows testing of system
+ti-nx2u
+911	em	speak utterance allows testing of system
+ti-nx2u
+912	em	enabledisable user 100 a no-password guest user number
+ti-nx2u
+913	em	mount a magnetic tape on the computer
+ti-nx2u
+914	em	setreset demonstration mode prohibits access by low-priority users
+ti-nx2u
+915	em	inhibit games
+ti-nx2u
+916	em	inhibit the MOO game
+ti-nx2u
+917	em	disable password checking when users log in
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+nf
+FG Table 16  Summary of services on a telephone enquiry system

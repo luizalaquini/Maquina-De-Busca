@@ -1,0 +1,100 @@
+lnx0uul
+in 0
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+FG Table 101  Keying equivalents of some words
+As a more extensive example in a dictionary of 24500 words just under 2000
+ambiguities 8 of words were discovered
+Such ambiguities would have to be resolved interactively by the system explaining
+its dilemma and asking the user for a choice
+Notice incidentally that although the keyed sequences do not have the same
+lexicographic order as the words
+no extra cost will be associated with the table-searching
+operation if the dictionary is stored in inverted form with each legal
+number pointing to its English equivalent or equivalents
+pp
+A command language syntax is also a powerful way of disambiguating
+keystrokes entered
+Figure 104 shows the keypad layout for a telephone voice calculator
+Newhouse and Sibley 1969
+
+Newhouse Sibley 1969
+
+FC Figure 104
+This calculator provides the standard arithmetic operators
+ten numeric registers a range of pre-defined mathematical functions
+and even the ability for a user to enter his own functions over the
+telephone
+The number representation is fixed-point with user control through a system
+function over the precision
+Input of numbers is free format
+pp
+Despite the power of the calculator language the dialogue is defined
+so that each keystroke is unique in context and never has to be disambiguated
+explicitly by the user
+Table 102 summarizes the command language syntax in an informal and rather
+heterogeneous notation
+RF
+nr x0 13i+17i+wsome functions do not need the value partu
+nr x1 nl-nx02
+in nx1u
+ta 13i +17i
+lnx0uul
+construct	definition	explanation
+lnx0uul
+sp
+calculation		a sequence of operations followed by a
+		call to the system function  fIE  X  I  TfR
+sp
+operation	add OR subtract OR
+	multiply OR divide OR
+	function OR clear OR
+	erase OR answer OR
+	display-last OR display OR
+	repeat OR cancel
+sp
+add	+  value    OR  +    function
+sp
+subtract
+multiply		similar to add
+divide
+sp
+value	numeric-value  OR  fIregisterfR single-digit
+sp
+numeric-value		a sequence of keystrokes like
+		1    2  3  4  or  1  2  3    4  or  1  2  3  4
+sp
+function	fIfunctionfR name    value  
+		some functions do not need the value part
+sp
+name		a sequence of keystrokes like
+		fIS  I  NfR  or  fIE  X  I  TfR  or  fIM  Y  F  U  N  CfR
+sp
+clear	fIclear registerfR single-digit  
+		clears one of the 10 registers
+sp
+erase	fIerasefR  	undoes the effect of the last operation
+sp
+answer	fIanswer registerfR single-digit  
+		reads the contents of a register
+sp
+display-last
+display		these provide repeat facilities
+repeat
+sp
+cancel		aborts the current utterance
+lnx0uul
+in 0
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+FG Table 102  Syntax for a telephone calculator
+A calculation is a sequence of operations followed by an EXIT function call
+There are twelve different operations one for each button on the keypad
+Actually two of them em
+ul
+cancel
+and
+ul
+function
+em share the same key so that  can be reserved for use as a
+separator but the context ensures that they cannot be confused by the system
+pp
+Six of the operations give control over the dialogue

@@ -1,0 +1,100 @@
+ds K 
+ds T The parsing program for automatic text-to-speech synthesis developed at the Electrotechnical Laboratory in 1968
+ds J IEEE Trans Acoustics Speech and Signal Processing
+ds V ASSP-23
+ds N 2
+ds P 183-188
+nr P 1
+ds O April
+nr T 0
+nr A 1
+nr O 0
+ 1 journal-article
+in+2n
+in-2n
+Umeda-1976-6
+-
+ds A Umeda N
+ds D 1976
+ds K 
+ds T Linguistic rules for text-to-speech synthesis
+ds J Proc IEEE
+ds V 64
+ds N 4
+ds P 443-451
+nr P 1
+ds O April
+nr T 0
+nr A 1
+nr O 0
+ 1 journal-article
+in+2n
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 10  DESIGNING THE MAN-COMPUTER DIALOGUE
+ds RT The man-computer dialogue
+ds CX Principles of computer speech
+pp
+Interactive computers are being used more and more by non-specialist people
+without much previous computer experience
+As processing costs continue to decline the overall expense of providing
+highly interactive systems
+becomes increasingly dominated by terminal and communications equipment
+Taken together these two factors highlight the need for easy-to-use
+low-bandwidth interactive terminals that make maximum use of the existing
+telephone network for remote access
+pp
+Speech output can provide versatile feedback from a computer at very low
+cost in distribution and terminal equipment  It is attractive from several
+points of view
+Terminals em telephones em are invariably in place already
+People without experience of computers are accustomed to their use
+and are not intimidated by them
+The telephone network is cheap to use and extends all over the world
+The touch-tone keypad or a portable tone generator
+provides a complementary data input device which will do for many
+purposes until the technology of speech recognition becomes better developed
+and more widespread
+Indeed many applications em especially information retrieval ones em need
+a much smaller bandwidth from user to computer than in the reverse direction
+and voice output combined with restricted keypad entry provides a good match
+to their requirements
+pp
+There are however severe problems in implementing natural and useful
+interactive systems using speech output
+The eye can absorb information at a far greater rate than can the ear
+You can scan a page of text in a way which has no analogy in auditory terms
+Even so it is difficult to design a dialogue which allows you to search
+computer output visually at high speed
+In practice scanning a new report is often better done at your desk
+with a printed copy than at a computer terminal with a viewing program
+although this is likely to change in the near future
+pp
+With speech the problem of organizing output becomes even harder
+Most of the information we learn using our ears is presented in a
+conversational way either in face-to-face discussions or over the telephone
+Verbal but non-conversational presentations as in the
+university lecture theatre are known to be a rather inefficient way
+of transmitting information
+The degree of interaction is extremely high even in a telephone conversation
+and communication relies heavily on speech gestures such as hesitations
+grunts and pauses on prosodic features such as intonation pitch range
+tempo and voice quality and on conversational gambits such as interruption
+and long silence
+I emphasized in the last two chapters the rudimentary state of knowledge
+about how to synthesize
+prosodic features and the situation is even worse
+for the other paralinguistic phenomena
+pp
+There is also a very special problem with voice output namely the transient
+nature of the speech signal
+If you miss an utterance its gone
+With a visual display unit at least the last few interactions usually remain
+available
+Even then it is not uncommon to look up beyond the top of the screen and
+wish that more of the history was still visible
+This obviously places a premium on a voice response systems
+ability to repeat utterances

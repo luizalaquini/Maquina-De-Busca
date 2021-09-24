@@ -1,0 +1,100 @@
+fIeefR	h-nx1uvoicing	0290	2270	3090		h-nx2ulong vowel
+fIerfR	h-nx1uvoicing	0580	1380	2440		h-nx2ulong vowel
+fIarfR	h-nx1uvoicing	0680	1080	2540		h-nx2ulong vowel
+fIawfR	h-nx1uvoicing	0450	0740	2640		h-nx2ulong vowel
+fIuufR	h-nx1uvoicing	0310	0940	2320		h-nx2ulong vowel
+nr x1 waspiration2
+nr x2 wh2
+fIhfR	h-nx1uaspiration					h-nx2uh
+nr x1 wvoicing2
+nr x2 wglide2
+fIrfR	h-nx1uvoicing	0240	1190	1550			 h-nx2uglide
+fIwfR	h-nx1uvoicing	0240	0650			h-nx2uglide
+fIlfR	h-nx1uvoicing	0380	1190			h-nx2uglide
+fIyfR	h-nx1uvoicing	0240	2270			h-nx2uglide
+nr x2 wnasal2
+fImfR	h-nx1uvoicing	0190	0690	2000		h-nx2unasal
+nr x1 wnone2
+nr x2 wstop2
+fIbfR	h-nx1unone	0100	0690	2000		h-nx2ustop
+fIpfR	h-nx1unone	0100	0690	2000		h-nx2ustop
+nr x1 wvoicing2
+nr x2 wnasal2
+fInfR	h-nx1uvoicing	0190	1780	3300		h-nx2unasal
+nr x1 wnone2
+nr x2 wstop2
+fIdfR	h-nx1unone	0100	1780	3300		h-nx2ustop
+fItfR	h-nx1unone	0100	1780	3300		h-nx2ustop
+nr x1 wvoicing2
+nr x2 wnasal2
+fIngfR	h-nx1uvoicing	0190	2300	2500		h-nx2unasal
+nr x1 wnone2
+nr x2 wstop2
+fIgfR	h-nx1unone	0100	2300	2500		h-nx2ustop
+fIkfR	h-nx1unone	0100	2300	2500		h-nx2ustop
+nr x1 wfrication2
+nr x2 wvoice + fric2
+nr x3 wfricative2
+fIsfR	h-nx1ufrication				6000	h-nx3ufricative
+fIzfR	h-nx2uvoice + fric	0190	1780	3300	6000	h-nx3ufricative
+fIshfR	h-nx1ufrication				2300	h-nx3ufricative
+fIzhfR	h-nx2uvoice + fric	0190	2120	2700	2300	h-nx3ufricative
+fIffR	h-nx1ufrication				4000	h-nx3ufricative
+fIvfR	h-nx2uvoice + fric	0190	0690	3300	4000	h-nx3ufricative
+fIthfR	h-nx1ufrication				5000	h-nx3ufricative
+fIdhfR	h-nx2uvoice + fric	0190	1780	3300	5000	h-nx3ufricative
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 74  Rule table for an event-based synthesis-by-rule program
+pp
+Now the rule table which is shown in Table 74
+holds simple target positions for each phoneme segment as well as
+the segment type  The latter is used to trigger events by computer
+procedures which have access to the context of the segment
+In principle this allows considerably more sophistication to be
+introduced than does a simple segment-by-segment approach
+RF
+nr x1 05i+05i+wpreceding consonant in this syllable suppress burst if fricativeu
+nr x1 nl-nx12
+in nx1u
+ta 05i +05i
+fricative bursts on stops
+aspiration bursts on unvoiced stops affected by
+	preceding consonant in this syllable suppress burst if fricative
+	following consonant suppress burst if another stop introduce
+		nasal plosion if a nasal
+	prosodics increase burst if syllable is stressed
+voice bar on voiced stops in intervocalic position
+post-voicing on terminating voiced stops if syllable is stressed
+anticipatory coarticulation for fIhfR
+vowel colouring when a nasal or glide follows
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 75  Some coarticulation effects
+pp
+For example Table 75 summarizes some of the subtleties of the
+speech production process which have been mentioned earlier in this
+chapter  Most of them are context-dependent with the prosodic
+context whether two segments are in the same syllable whether a
+syllable is stressed playing a significant role  A scheme where
+data-dependent demons fire on particular patterns in a linked list
+seems to be a sensible approach towards incorporating such rules
+rh Discussion
+There are two opposing trends in speech synthesis by rule
+On the one hand larger and larger segment inventories can be used
+containing more and more allophones explicitly
+This is the approach of the Votrax sound-segment synthesizer
+discussed in Chapter 11
+It puts an increasing burden on the person who codes the utterances
+for synthesis although as we shall see computer programs can assist with
+this task
+On the other hand the segment inventory can be kept small perhaps
+comprising just the logical phonemes as in the ISP system
+This places the onus on the computer program to accomodate allophonic variations
+and to do so it must take account of the segmental and prosodic
+context of each phoneme
+An event-based approach seems to give the best chance of incorporating
+contextual modification whilst avoiding undesired interactions
+pp
+The second trend brings synthesis closer to the articulatory process

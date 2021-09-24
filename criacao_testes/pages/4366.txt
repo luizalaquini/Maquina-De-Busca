@@ -1,0 +1,100 @@
+contours of originals A and B were quite different
+and in these cases it was immediately obvious to the ear that two of
+the four utterances shared the same intonation
+which was different to that shared by the other two
+pp
+Experienced researchers in speech analysis-synthesis served as
+judges
+In order to make the test as stringent as possible it was explained
+to them exactly what had been done
+except that the order of the utterances in each quadruple was kept secret
+They were asked to identify which two of the four sentences did not have their
+original contours
+and were allowed to listen to each quadruple as often as they liked
+On occasion they were prepared to identify only one or even none
+of the sentences as artificial
+pp
+The result was that an utterance with pitch transferred
+from another lexically identical one is indistinguishable from
+a resynthesized version of the original even to a skilled ear
+To be more precise this hypothesis
+could not be rejected even at the 1 level of statistical significance  This
+gave confidence in the transfer procedure
+However one particular judge was quite successful at identifying the bogus contours
+and he attributed his success to the fact that
+on occasion the segmental durations did not accord with the
+pitch contour
+This casts a shadow of suspicion on the linear stretching and
+squashing mechanism
+pp
+The second experiment examined pitch transfers between utterances having only one variable part
+each the price is  cents to test the transfer
+method under relatively controlled conditions
+Ten sentences of the form
+LB
+The price is em cents
+LE
+were selected to cover
+a wide range of syllable structures
+Each one was regenerated with pitch transferred from each of
+the other nine
+and these nine versions were paired with the original resynthesized
+with its natural pitch
+The 10 times 9=90 resulting pairs were recorded on tape in random order
+pp
+Five males and five females with widely differing occupations
+secretaries teachers academics and students served as judges
+Written instructions explained that the tape contained pairs of
+sentences which were lexically identical but had a slight difference
+in tone of voice and that the subjects were to judge which of
+each pair sounded most natural and intelligible  The
+response form gave the price associated with each pair em
+a preliminary experiment had shown that there was never
+any difficulty in identifying this em and a column for decision
+With each decision the subjects recorded their confidence in the decision
+Subjects could rest at any time during the test which lasted for about
+30 minutes but they were not permitted to hear any pair a second time
+pp
+Defining a success to be a choice of the utterance with
+natural pitch as the best of a pair
+the overall success rate was about 60
+If choices were random one would of course expect only a 50 success rate
+and the figure obtained was significantly different from this
+Almost half the choices were correct and made with high confidence
+high-confidence but incorrect choices accounted for a quarter of the
+judgements
+pp
+To investigate structural effects in the pitch transfer process
+low confidence decisions were ignored to eliminate noise and the others
+lumped together and tabulated by source and target utterance
+The number of stressed and unstressed syllables does not appear to play
+an important part in determining whether a particular utterance is an
+easy target
+For example it proved to be particularly difficult to tell
+EQ
+delim 
+EN
+natural from transferred contours with utterances 037 and 077
+EQ
+delim 
+EN
+In fact the results showed no better than random discrimination for them
+even though the decisions in which listeners expressed little confidence
+had been discarded
+Hence it seems that the syllable alignment procedure and the policy
+of replication were successful
+pp
+EQ
+delim 
+EN
+The worst target scores were for utterances 011 and 079
+EQ
+delim 
+EN
+Both of these contained large unbroken voiced periods
+in the variable part em almost twice as long as the next longest
+voiced period
+The first has an unstressed syllable followed by
+a stressed one with no break in voicing
+involving in a natural contour
+a fast but continuous climb in pitch over the juncture

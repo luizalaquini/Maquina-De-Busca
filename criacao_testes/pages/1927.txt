@@ -1,0 +1,100 @@
+The complete procedure is given as Procedure 61 and is shown
+diagrammatically in Figure 65
+FC Figure 65
+RF
+fi
+na
+nh
+ul
+const
+N=256 p=15
+ul
+type
+svec =
+ul
+array
+0N-1
+ul
+of
+real
+cvec =
+ul
+array
+1p
+ul
+of
+real
+sp
+ul
+procedure
+autocorrelationsignal vec window svec
+ul
+var
+coeff cvec
+sp
+computes linear prediction coefficients by autocorrelation method
+in coeff1p
+sp
+ul
+var
+R temp
+ul
+array
+0p
+ul
+of
+real
+n 0N-1 ij 0p E real
+sp
+ul
+begin
+window the signal
+in+6n
+ul
+for
+n=0
+ul
+to
+N-1
+ul
+do
+signaln = signalnwindown
+sp
+compute autocorrelation vector
+br
+ul
+for
+i=0
+ul
+to
+p
+ul
+do begin
+in+2n
+Ri = 0
+br
+ul
+for
+n=0
+ul
+to
+N-1-i
+ul
+do
+Ri = Ri + signalnsignaln+i
+in-2n
+ul
+end
+sp
+solve the matrix equation by the Durbin-Levinson method
+br
+E = R0
+br
+coeff1 = R1E
+br
+ul
+for
+i=2
+ul
+to
+p

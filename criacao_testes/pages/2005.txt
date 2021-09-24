@@ -1,0 +1,100 @@
+a zero at
+LB
+EQ
+s=- 1 over R sub 2 C sub 2  
+EN
+LE
+If  R sub 2 C sub 2  is sufficiently small this zero will have
+negligible effect at audio frequencies and the filter has
+the following parameters
+LB
+centre frequency     mark
+1 over 2 pi k over RR sub 1 C sub 2 C sub 3   sup 12  Hz
+sp
+bandwidthlineup
+1 over 2 pi 1 over R sub 3 C sub 3+
+k R sub 2 over RR sub 1 C sub 3    Hz
+LE
+pp
+Note first that the centre frequency is proportional to the square root of
+the control value k
+Hence a non-linear transformation must be implemented on the control
+signal after DA conversion to achieve the required logarithmic relationship
+between parameter value and resonant frequency
+The formant bandwidth is not constant as it should be see Chapter 5
+but depends upon the control value k
+This dependency can be minimized by selecting component values such that
+LB
+EQ
+k R sub 2 over RR sub 1 C sub 31 over R sub 3 C sub 3
+EN
+LE
+for the largest value of k which can occur
+Then the bandwidth is solely determined by the time constant  R sub 3 C sub 3
+pp
+The existence of the zero can be exploited for the fricative resonance
+This should have zero DC gain and so the component values for the fricative
+filter should make the time-constant  R sub 2 C sub 2  large enough to place
+the zero sufficiently near the frequency origin
+rh Market orientation
+As mentioned above Computalker is designed for the computer hobbies market
+Figure 114 shows a photograph of the device
+FC Figure 114
+It plugs into the S-100 bus which has been a
+ul
+de facto
+standard for hobbyists for several years and has recently been adopted
+as a standard by the Institute of Electrical and Electronic Engineers
+This makes it immediately accessible to many microcomputer systems
+pp
+An inexpensive synthesis-by-rule program which runs on
+the popular 8080 microprocessor is available to drive Computalker
+The input is coded in a machine-readable version of the standard phonetic
+alphabet similar to that which was introduced in Chapter 2 Table 21
+Stress digits may appear in the transcription and the program caters for
+five levels of stress
+The punctuation mark at the end of an utterance has some effect on pitch
+The program is perhaps remarkable in that it occupies only 6 Kbyte of storage
+including phoneme tables and runs on an 8-bit microprocessor
+but not in real time
+It is however
+ul
+unc
+remarkable in that it produces rather poor speech
+According to a demonstration cassette
+most people find the speech to be readily intelligible
+especially after a little practice listening to it
+but this seems extremely optimistic
+It also cunningly insinuates that if you dont understand it you yourself
+may share the blame with the synthesizer em after all
+ul
+most
+people do
+Nevertheless Computalker has made synthetic speech accessible to a large
+number of home computer users
+sh 112  Sound-segment synthesizer
+pp
+Votrax was the first fully commercial speech synthesizer and at the time of
+writing is still the only off-the-shelf speech output
+peripheral as distinct from reading machine which is aimed
+specifically at synthesis-by-rule rather than storage of parameter tracks
+extracted from natural utterances
+Figure 115 shows a photograph of the Votrax ML-I
+FC Figure 115
+pp
+Votrax accepts as input a string of codes representing sound segments
+each with additional bits to control the duration and pitch of the segment
+In the earlier versions eg model VS-6 there are 63 sound segments specified
+by a 6-bit code and two further bits accompany each segment to provide a
+4-level control over pitch
+Four pitch levels are quite inadequate to generate acceptable intonation
+contours for anything but isolated words spoken in citation form
+However a later model ML-I uses an 8-level pitch specification
+as well as a 4-level duration qualifier
+associated with each sound segment
+It provides a vocabulary of 80 sound segments together with an additional
+code which allows local amplitude modifications and extra duration alterations
+to following segments
+A further low-cost model VS-K is now available which plugs in to the S-100
+bus and
+is aimed primarily at

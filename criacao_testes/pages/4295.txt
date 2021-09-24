@@ -1,0 +1,100 @@
+a  =  R1 over R0  
+EN
+LE
+where R1 is the correlation of the signal with itself delayed by one sample
+and R0 is the correlation without delay that is the signal variance
+This is reasonable intuitively because high sample-to-sample correlation
+is to be expected in voiced speech so that R1 is very nearly as great as
+R0 and the ratio becomes 1 whereas little or no sample-to-sample correlation
+will be present in unvoiced speech making the ratio close to 0  Such a
+scheme is reminiscent of ADPCM with adaptive prediction
+pp
+However this sophisticated pre-emphasis method does not seem to be worthwhile
+in practice  Usually the breakpoint in an analogue pre-emphasis filter is
+chosen to be rather greater than 100 Hz to limit the amplification of fricative
+energy  In fact the channel vocoder described by Holmes 1980 has the
+breakpoint at 1 kHz limiting the gain to 12 dB at 4 kHz two octaves above
+
+Holmes 1980 JSRU channel vocoder
+
+sh 43  Digital signal analysis
+pp
+You may be wondering how the frequency response for the digital pre-emphasis
+filters displayed in Figure 42 can be calculated  Suppose a digitized
+sinusoid is applied as input to the filter
+LB
+EQ
+yn  =  xn - axn-1
+EN
+LE
+A sine wave of frequency f has equation  xt  =  sin  2 pi ft and when
+sampled at t=0 T 2T  where T is the sampling interval 125 msec for
+an 8 kHz sample rate this becomes  xn  =  sin  2 pi fnT  It is much
+more convenient to consider a complex exponential
+input  e sup  j2 pi fnT  em the response to a sinusoid can then be derived
+by taking imaginary parts if necessary  The output for this input is
+LB
+EQ
+yn  =  e sup j2 pi fnT -ae sup j2 pi fn-1T  = 
+1-ae sup -j2 pi fT e sup j2 pi fnT 
+EN
+LE
+a sinusoid at the same frequency as the input  The
+factor  1-ae sup -j2 pi fT  is complex with both amplitude and phase
+components  Thus the output will be a phase-shifted and amplified version
+of the input  The amplitude response at frequency f is therefore
+LB
+EQ
+|1 -  ae sup -j2 pi fT |  = 
+1 + a sup 2 - 2acos2 pi fT  sup 12 
+EN
+LE
+or
+LB
+EQ
+10  log sub 10 1 + a sup 2  -  2a cos 2 pi fT
+EN
+dB
+LE
+Normalizing to 20 dB at 1 kHz and assuming 8 kHz sampling yields
+LB
+EQ
+20 +  10 log sub 10 1 + a sup 2 - 2a cos   pi f over 4000 
+ - 10 log sub 10 1 + a sup 2 - 2a cos  pi over 4 
+EN
+dB
+LE
+With a=09 and 1 this gives the graphs of Figure 42
+pp
+Frequency responses for analogue filters are often plotted with a logarithmic
+frequency scale as well as a logarithmic amplitude one to bring out the
+asymptotes in dBoctave as straight lines  For digital filters the response
+is usually drawn on a
+ul
+linear
+frequency axis extending to half the sampling frequency  The response is
+symmetric about this point
+pp
+Analyses like the above are usually expressed in terms of the z-transform
+Denote the unit delay operation by z sup -1  The choice of the inverse rather
+than z itself is of course an arbitrary matter but the convention has stuck
+Then the filter can be characterized
+by Figure 43 which signifies that the output is the input minus a delayed
+and scaled version of itself
+FC Figure 43
+The transfer function of the filter is
+LB
+EQ
+Hz  =  1 - az sup -1 
+EN
+LE
+and we have seen that the effect of the system on a complex exponential of
+frequency f is to multiply it by
+LB
+EQ
+1 - ae sup -j2 pi fT
+EN
+LE
+To get the frequency response from the transfer function replace z sup -1
+by e sup -j2 pi fT  Amplitude and phase responses can then be found by
+taking the modulus and angle of the complex frequency response

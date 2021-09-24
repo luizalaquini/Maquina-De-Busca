@@ -1,0 +1,100 @@
+of
+real
+sp
+ul
+procedure
+reflectioncoeff cvec
+ul
+var
+refl cvec
+sp
+computes reflection coefficients in refl1p corresponding
+to linear prediction coefficients in coeff1p
+sp
+ul
+var
+temp cvec  i m 1p
+sp
+ul
+begin
+in+6n
+ul
+for
+m=p
+ul
+downto
+1
+ul
+do begin
+in+2n
+reflm = coeffm
+br
+ul
+for
+i=1
+ul
+to
+m-1
+ul
+do
+tempi = coeffi
+br
+ul
+for
+i=1
+ul
+to
+m-1
+ul
+do
+ti+2n
+coeffi =
+ti+4n
+coeffi + reflmtempm-i  1 - reflmreflm
+in-2n
+ul
+end
+in-6n
+ul
+end
+nf
+MT 2
+Procedure 63  Pascal algorithm for producing reflection coefficients
+from filter coefficients
+TE
+pp
+Although we will not go into the theoretical details here
+reflection coefficients are bounded by +-1 for stable filters
+and hence form a useful test for stability  Having a limited
+range makes them easy to quantize for transmission and in fact
+they behave better under quantization than do the filter coefficients
+One could resynthesize speech from reflection coefficients by first
+converting them to filter coefficients and using the synthesis
+method described above  However it is natural to seek a single-stage
+procedure which can regenerate speech directly from reflection
+coefficients
+pp
+Such a procedure does exist and is called a
+ul
+lattice filter
+Figure 68 shows one form of lattice for speech synthesis
+FC Figure 68
+The error signal whether transmitted or synthesized
+enters at the upper left-hand corner passes along the top forward
+signal path being modified on the way to give the output signal
+at the right-hand side
+Then it passes back through a chain of delays along the bottom
+backward path and is used to modify subsequent forward signals
+Finally it is discarded at the lower left-hand corner
+pp
+There are p stages in the lattice structure of Figure 68 where p is the
+order of the linear predictive filter
+Each stage involves two multiplications by the appropriate
+reflection coefficients one by the backward signal em the
+result of which is added into the forward path em and the other by
+the forward signal em the result of which is subtracted from the
+backward path  Thus the number of multiplications is twice
+the order of the filter and hence twice as many as for the
+realization using coefficients a sub k  If the labour necessary
+to turn the reflection coefficients into a sub ks is included
+the computational load becomes the same  Moreover since the

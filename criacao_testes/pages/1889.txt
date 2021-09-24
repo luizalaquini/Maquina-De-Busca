@@ -1,0 +1,100 @@
+power-supply noise injection or ground coupling
+NP
+changes in characteristics as a result of temperature or ageing
+LE
+Care must be taken with the analogue interface to ensure that the precision
+implied by the resolution of the AD and DA converters is not compromised
+by inadequate analogue circuitry  It is especially important to eliminate
+high-frequency noise caused by fast edges on nearby computer buses
+sh 32  Coding in the time domain
+pp
+There are several methods of coding the time waveform of a speech signal to
+reduce the data rate for a given signal-to-noise ratio or alternatively to
+reduce the signal-to-noise ratio for a given data rate  They almost all require
+more processing both at the encoding for storage and decoding for
+regeneration ends of the digitization process  They are sometimes used to
+economize on memory in systems using stored speech
+for example the System X telephone exchange and the travel consultant described
+in Chapter 1 and so will be described here  However it is to be expected
+that simple time-domain coding techniques will be superseded by the more complex
+linear predictive method which is covered in Chapter 6 because this
+can give a much more substantial reduction in the data rate for only a small
+degradation in speech quality  Hence the aim of this section is to introduce
+the ideas in a qualitative way  theoretical development and summaries of
+results of listening tests can be found elsewhere eg Rabiner and Schafer 1978
+
+Rabiner Schafer 1978 Digital processing of speech signals
+
+The methods we will examine are summarized in Table 32
+RF
+nr x0 wlinear PCM      u
+nr x1 nx0+w    adaptive quantization or adaptive predictionu
+nr x2 nl-nx12
+in nx2u
+ta nx0u
+lnx1uul
+sp
+linear PCM	linearly-quantized pulse code modulation
+sp
+log PCM	logarithmically-quantized pulse code modulation
+	    instantaneous companding
+sp
+APCM	adaptively quantized pulse code modulation
+	    usually syllabic companding
+sp
+DPCM	differential pulse code modulation
+sp
+ADPCM	differential pulse code modulation with either
+	    adaptive quantization or adaptive prediction
+	    or both
+sp
+DM	delta modulation 1-bit DPCM
+sp
+ADM	delta modulation with adaptive quantization
+lnx1uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 32  Time-domain encoding techniques
+rh Syllabic companding
+We have already studied one time-domain encoding technique namely logarithmic
+quantization or log PCM sometimes called instantaneous companding  A more
+sophisticated encoder could track slowly varying trends in the overall amplitude
+of the speech signal and use this information to adjust the quantization
+levels dynamically  Speech coding methods based on this principle are called
+adaptive pulse code modulation systems APCM  Because the overall amplitude
+changes slowly it is sufficient to adjust the quantization relatively infrequently
+compared with the sampling rate and this is often done at rates approximating
+the syllable rate of running speech leading to the term syllabic companding
+A block floating-point format can be used with a common exponent being
+stored every M samples with M say 125 for a 100 msec block rate at 8 kHz
+sampling but the mantissa being stored at the regular sample rate  The overall
+energy in the block
+LB
+sum from n=h to h+M-1 xn sup 2    M = 125 say
+LE
+is used to determine a suitable exponent and every sample
+in the block em namely
+xh xh+1  xh+M-1 em is scaled according to that exponent
+Note that for speech transmission systems this method necessitates a delay of
+M samples at the encoder and indeed some methods base the exponent on the
+energy in the last block to avoid this  For speech storage however the delay
+is irrelevant  A rather different nonsyllabic method of adaptive PCM is
+continually to change the step size of a uniform quantizer by multiplying it by
+a constant at each sample which is based on the magnitude of the previous code
+word
+pp
+Adaptive quantization exploits information about the amplitude of the signal
+and as a rough generalization yields a reduction of one bit per sample
+in the data rate for telephone-quality speech over ordinary logarithmic
+quantization for a given signal-to-noise ratio  Alternatively for the
+same data rate an improvement of 6 dB in signal-to-noise ratio can be obtained
+Some results for actual schemes are given by Rabiner and Schafer 1978
+
+Rabiner Schafer 1978 Digital processing of speech signals
+
+However there is other information in the time waveform of speech namely the
+sample-to-sample correlation which can be exploited to give further reductions
+rh Differential coding
+Differential pulse code modulation DPCM in its simplest form uses the
+present speech sample as a prediction of the next one
+and stores the prediction error em that is the sample-to-sample difference

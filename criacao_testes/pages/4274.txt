@@ -1,0 +1,100 @@
+sounds like aaah which have their source in larynx vibration are
+known technically as voiced  Aspirated and fricative sounds are called
+unvoiced  Thus the three different sound types can be classified as
+LB
+NP
+voiced
+NP
+unvoiced fricative
+NP
+unvoiced aspirated
+LE
+Can any of these three types occur together
+It would seem that voicing and aspiration can not for the former requires
+the larynx to be vibrating regularly but for the latter it must be
+generating turbulent noise
+However there is a condition known technically as breathy voice
+which occurs when the vocal cords are slightly apart still vibrating
+but with a large volume of air passing between to create turbulence
+Voicing can easily occur in conjunction with frication
+Corresponding to
+ul
+s
+ul
+sh
+and
+ul
+f
+we get the
+ul
+voiced
+fricatives
+ul
+z
+the sound in the middle of words like vision which I will call
+ul
+zh
+and
+ul
+v
+A simple illustration of voicing is to say ffffvvvvffff 
+During the voiced part you can feel the larynx vibrations with a finger
+on your Adams apple and it can be heard quite clearly if you stop up
+your ears
+Technically there is nothing to prevent frication and aspiration
+from occurring together em they do for example when a voiced fricative
+is whispered em but the combination is not an important one
+pp
+The complicated acoustic effects of noisy excitations in speech can be
+seen in the spectrogram in Figure 24 of
+high altitude jets whizz past screaming
+FC Figure 24
+rh The source-filter model of speech production
+We have been talking in terms of a sound source be it voiced or unvoiced
+exciting the resonances of the oral and possible the nasal tract
+This model which is used extensively in speech analysis and synthesis
+is known as
+the source-filter model of speech production  The reason for its success
+is that the effect of the resonances can be modelled as a frequency-selective
+filter operating on an input which is the source excitation
+Thus the frequency spectrum of the source is modified by multiplying it
+by the frequency characteristic of the filter or adding it if amplitudes
+are expressed logarithmically
+This can be seen in Figure 25 which shows a source
+spectrum and filter characteristic which combine to give the overall
+spectrum of Figure 22
+FC Figure 25
+pp
+Although as mentioned above the various fricatives are not subjected
+to the resonances of the vocal tract to the same extent
+that voiced and aspirated
+sounds are they can still be modelled as a noise source followed by
+a filter to give them their different sound qualities
+pp
+The source-filter model is an oversimplification of the actual speech
+production system  There is inevitably some coupling between the vocal
+tract and the lungs through the glottis during the period when
+it is open  This effectively makes the filter characteristics
+change during each individual cycle of the excitation
+However although the effect is of interest to speech researchers
+it is probably not of great significance for practical speech output
+pp
+One very interesting implication of the
+source-filter model is that the prosodic features of
+pitch and amplitude are largely properties of the source while
+segmental ones are introduced by the filter  This makes it possible to
+separate some aspects of
+overall prosody from the actual segmental content of an
+utterance so that for example a human utterance can be stored initially
+and then spoken by a machine with a variety of different intonations
+sh 22  Classification of speech sounds
+pp
+The need to classify sound segments as a basis for storing generalized acoustic
+information and retrieving it was mentioned earlier  There is a real
+difficulty here because speech is by nature continuous and classifications are
+discrete
+It is important to remember this difficulty because it is all too easy
+to criticize the complex and often confusing attempts of linguists to
+tackle the classification task
+pp
+Linguists call a written representation of the

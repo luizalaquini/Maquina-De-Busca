@@ -1,0 +1,100 @@
+Even a poor model like a record of his last few transactions and their
+results is well worth having
+rh Varied speech
+Synthetic speech is usually rather dreary to listen to
+Successive utterances with identical intonations should be carefully avoided
+Small changes in speaking rate pitch range and mean pitch level
+all serve to add variety
+Unfortunately little is known at present about the role of intonation in
+interactive dialogue although this is an active research area and
+new developments can be expected for a detailed report of a recent
+research project relevant to this topic see Brown
+ul
+et al
+1980
+
+Brown Currie Kenworthy 1980
+
+However even random variations in certain parameters of the pitch contour
+are useful to relieve the tedium of repetitive intonation patterns
+sh 102  The applications programming environment
+pp
+The comments in the last section are aimed at the applications programmer
+who is designing the dialogue and constructing the interactive system
+But what kind of environment should
+ul
+he
+be given to assist with this work
+pp
+The best help the applications programmer can have is a speech generation
+method which makes it easy for him to enter new utterances and modify
+them on-line in cut-and-try attempts to render the man-machine dialogue
+as natural as possible
+This is perhaps the most important advantage of synthesizing speech by rule
+from a textual representation
+If encoded versions of natural utterances are stored it becomes quite
+difficult to make minor modifications to the dialogue in the light of
+experience with it for a recording session must be set up
+to acquire new utterances
+This is especially true if more than one voice is used or if the
+voice belongs to a person who cannot be recalled quickly by the programmer
+to augment the utterance library
+Even if it is his own voice there will still be delays for recording
+speech is a real-time job which usually needs a stand-alone processor
+and if data compression is used a substantial amount of computation will
+be needed before the utterance is in a useable form
+pp
+The broad phonetic input required by segmental speech synthesis-by-rule
+systems is quite suitable for utterance representation
+Utterances can be entered quickly from a standard computer terminal
+and edited as text files
+Programmers must acquire skill in phonetic transcription
+but this is a small inconvenience
+The art is easily learned in an interactive situation where the effect
+of modifications to the transcription can be heard immediately
+If allophones must be represented explicitly in the input then the
+programmers task becomes considerably more complicated because of the
+combinatorial explosion in trial-and-error modifications
+pp
+Plain text input is also quite suitable
+A significant rate of error is tolerable if immediate audio feedback
+of the result is available so that the operator can adjust his text
+to suit the pronunciation idiosyncrasies of the program
+But it is acceptable and indeed preferable if prosodic features are
+represented explicitly in the input rather than being assigned automatically
+by a computer program
+pp
+The application of voice response to interactive computer dialogue is
+quite different to the problem of reading aloud from text
+We have seen that a major concern with reading machines is how to glean
+information about intonation rhythm emphasis tone of voice and so on
+from an input of ordinary English text
+The significant problems of semantic processing utilization of pragmatic
+knowledge and syntactic analysis do not fortunately arise in interactive
+information retrieval systems
+In these the end user is communicating with a program which has been
+created by a person who knows what he wants it to say
+Thus the major difficulty is in
+ul
+describing
+the prosodic features rather than
+ul
+deriving
+them from text
+pp
+Speech synthesis by rule is a subsidiary process to the main interactive
+procedure
+It would be unwise to allow
+the updating of resonance parameter tracks to be interrupted by
+other calls on the system and so the synthesis process needs to be executed
+in real time
+If a stand-alone processor is used for the interactive dialogue it may
+be able to handle the synthesis rules as well
+In this case the speech-by-rule program could be a library procedure
+if the system is implemented in a compiled language
+An interesting alternative with an interpretive-language implementation
+such as Basic is to alter the language interpreter to add a new
+command speak which simply transfers a string representing an utterance
+to an asynchronous process which synthesizes it
+However there must be some way for an intepreted program to abort the
+current synthesis in the event of an interrupt signal from the user

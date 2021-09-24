@@ -1,0 +1,100 @@
+ta w| ment000u +wreplace final ie by y000u
+suffix	action	notes and exceptions
+lnx0uul
+sp
+s	strip off final s	except in context us
+	strip off final 
+ie	replace final ie by y
+e	replace final e by E	when it is the only vowel in a word
+	long e
+
+| able	place suffix mark as	except when no vowel would remain in
+| ably	shown	the rest of the word
+e | d
+e | n
+e | r
+e | ry
+e | st
+e | y
+| ful
+| ing
+| less
+| ly
+| ment
+| ness
+| or
+
+| ic	place suffix mark as
+| ical	shown and terminate
+e |	final e processing
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 97  Rules for detecting suffixes for final e processing
+pp
+Table 97 shows the suffixes which the program recognizes with some comments
+on their processing
+Multiple suffixes are detected and marked in words like
+force|ful|ly and spite|ful|ness
+This allows silent es to be spotted even when they occur far back in a
+word
+Notice that the suffix marks are available to the word-fragment
+rules of Table 95 and are frequently used by them
+pp
+The program has some
+ul
+ad hoc
+rules for dealing with compound words like race|track house|boat
+these are applied as well as normal suffix splitting so that multiple
+decompositions like pace|make|r can be accomplished
+The rules look for short letter sequences which do not
+usually appear in monomorphemic words
+It is impossible however to detect every morph boundary
+by such rules and the program inevitably makes mistakes
+Examples of boundaries which go undetected are
+edge|ways fence|post horse|back large|mouth where|in
+while boundaries are incorrectly inserted into comple|mentary
+male|volent prole|tariat Pame|la
+pp
+We now seem to have presented two opposing points of view on the pronunciation
+problem
+Charivarius the Dutch poet shows that an enormous number of
+exceptional words exist whereas McIlroys program makes do with a tiny
+exception dictionary
+These views can be reconciled by noting that most of Charivarius words
+are relatively uncommon
+McIlroy tested his program against the 2000 most frequent words in a large
+corpus Kucera and Francis 1967
+and found that 97 were pronounced correctly if word frequencies were
+taken into account
+
+Kucera Francis 1967
+
+The notion of correctness is of course a rather subjective one  However
+he estimated that on the remaining words the success rate was only 88
+pp
+The system is particularly impressive in that it is prepared to say
+anything  if used for example on source programs in a high-level
+computer language it will say the keywords and pronouncable
+identifiers spell the other identifiers and even give the names of special
+symbols like +  = correctly
+rh Morphological analysis
+The use of letter-to-sound rules provides a cheap and fast technique
+for pronunciation em the fragment table and exception dictionary for the
+program described above occupy only 11 Kbyte of storage and can easily
+be kept in solid-state read-only memory
+It produces reasonable results if careful attention is paid to rules
+for suffix-splitting
+However it is inherently limited because it is not possible in general
+to detect compound words by simple rules which operate on the lexical
+structure of the word
+pp
+Compounds can only be found reliably by using a morph dictionary
+This gives the added advantage that syntactic information
+can be stored with the morphs to assist with rhythm assignment according
+to the Chomsky-Halle theory
+However it was noted earlier that morphs unlike the grammatically-determined
+morphemes are not very well defined from a linguistic point of view
+Some morphemic decompositions are obviously not morphic because the
+constituents do not in any way resemble the final word
+while others where the word is simply a concatenation

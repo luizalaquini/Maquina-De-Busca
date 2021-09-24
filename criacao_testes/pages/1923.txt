@@ -1,0 +1,100 @@
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This little book by one of Britains foremost workers in the field
+introduces the subject of speech synthesis and speech synthesizers
+It has a particularly good discussion of parallel synthesizers
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 6  LINEAR PREDICTION OF SPEECH
+ds RT Linear prediction of speech
+ds CX Principles of computer speech
+pp
+The speech coding techniques which were discussed in Chapter 3 operate
+in the time domain while the analysis and synthesis techniques
+of Chapters 4 and 5 are
+based in the frequency domain  Linear prediction is a relatively
+new method of speech analysis-synthesis
+introduced in the early 1970s and used
+extensively since then which is primarily a time-domain coding method
+but can be used to give frequency-domain parameters like formant
+frequency bandwidth and amplitude
+pp
+It has several advantages over other speech analysis techniques and is
+likely to become increasingly dominant in speech output systems
+As well as bridging the gap between time- and frequency-domain techniques it
+is of equal value for both speech storage and speech synthesis and forms
+an extremely convenient basis for speech-output systems which use high-quality
+stored speech for routine messages and synthesis from phonetics or text
+for unusual or exceptional conditions  Linear prediction can be used to
+separate the excitation source properties of pitch and amplitude from the
+vocal tract filter which governs phoneme articulation or in other words
+to separate much of the prosodic from the segmental information
+Hence it makes it easy to use stored segmentals with synthetic prosody
+which is just what is needed to enhance the flexibility of stored speech by
+providing overall intonation contours for utterances formed by word
+concatenation see Chapter 7
+pp
+The frequency-domain analysis technique
+of Fourier transformation necessarily involves approximation because it
+applies only to periodic waveforms and so the artificial operation
+of windowing is required to suppress the aperiodicity of real
+speech  In contrast the linear predictive technique being a time-domain
+method can em in certain forms em deal more rationally with aperiodic
+signals
+pp
+The basic idea of linear predictive coding is exactly the same as
+one form of adaptive differential pulse code modulation which
+was introduced briefly in Chapter 3  There it was noted that a speech
+sample xn can be predicted quite closely by the previous sample
+xn-1  The prediction can be improved by multiplying the previous
+sample by a number say a sub 1 which is adapted on a syllabic
+time-scale  This can be utilized for speech coding by transmitting
+only the prediction error
+LB
+EQ
+en=xn-a sub 1 xn-1
+EN
+LE
+and using it and the value of a sub 1 to reconstitute the signal
+xn at the receiver  It is worthwhile noting that
+exactly the same relationship was used for digital
+preemphasis in Chapter 4 with the value of a sub 1
+being constant at about 09 em although
+the possibility of adapting it to take into account the difference
+between voiced and unvoiced speech was discussed
+pp
+An obvious extension is to use several past values of the signal to form
+the prediction instead of just one  Different multipliers for each would
+be needed so that the prediction error could be written as
+LB
+EQ
+en mark =xn-a sub 1 xn-1-a sub 2 xn-2--a sub p xn-p
+EN
+sp
+EQ
+lineup =xn-sum from k=1 to p a sub k xn-k
+EN
+LE
+The multipliers a sub k should be adapted to minimize the error signal
+and we will consider how to do this in the next section  It turns out
+that they must be re-calculated and transmitted on a time-scale that is
+rather faster than syllabic but much slower than
+the basic sampling rate  intervals
+of 10-25 msec are usually used compare this with the 125 musec sampling
+rate for telephone-quality speech
+A configuration for high-order adaptive differential
+pulse code modulation is shown in Figure 61
+FC Figure 61
+pp
+Figure 62 shows typical time waveforms for each of the ten coefficients
+over a 1-second stretch of speech
+FC Figure 62
+Notice that they vary much more slowly than say the speech waveform of
+Figure 35
+pp
+Turning the above relationship into z-transforms gives

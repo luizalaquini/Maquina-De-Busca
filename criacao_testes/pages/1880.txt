@@ -1,0 +1,100 @@
+
+These three sounds are all made
+at the front of the mouth while
+ul
+t
+ul
+d
+and
+ul
+n
+which bear the
+same resemblance to each other are made in the middle and
+ul
+k
+ul
+g
+and
+ul
+ng
+are made at the back  This introduces another
+possible classification according to
+ul
+place of articulation
+pp
+The unvoiced fricatives are quite straightforward except perhaps
+for
+ul
+th
+which is the sound at the beginning of thigh
+They are paired with the voiced fricatives on the basis of place
+of articulation  The voiced version of
+ul
+th
+is the
+ul
+dh
+at
+the beginning of thy
+ul
+zh
+is a fairly rare phoneme which
+is heard in the middle of vision  Affricates are similar to
+fricatives but begin with a stopped posture and we mentioned earlier
+the controversy as to whether they should be considered to be
+single phonemes or
+sequences of stop phonemes and fricatives
+Finally comes the lonely aspirate
+ul
+h
+Aspiration does occur
+elsewhere in speech during the plosive burst of unvoiced stops
+rh Narrow phonetic transcription
+The phonological classification outlined above is based upon a clear
+rationale for distinguishing between sounds according to how
+they affect meaning em although the rationale does become
+somewhat muddied in difficult cases
+Narrower transcriptions are not so systematic
+They use units called
+ul
+allophones
+which are defined by reference to physical acoustic criteria rather
+than purely logical ones
+Phone is a more old-fashioned term for the same thing
+and the misused word phoneme is often employed where allophone is
+meant that is as a physical rather than a logical
+unit  Each phoneme has several allophones
+more or less depending on how narrow or broad the transcription is
+and the allophones are different acoustic realizations of the same
+logical unit
+For example the
+ul
+kc
+s in key and caw may be considered as different
+allophones in a slightly narrow transcription
+Although we will not use symbols for allophones here
+they are often indicated by diacritical marks in a text
+which modify the basic phoneme classes
+For example a tilde  over a vowel means that it is nasalized while a small
+circle underneath a consonant means that it is devoiced
+pp
+Allophonic variation in speech is governed by a mechanism called
+ul
+coarticulation
+where a sound is affected by those that come either side of it
+Key-caw is a clear example of this where the tongue
+position in the
+ul
+k
+anticipates that of the following vowel em high
+in the first case low in the second
+Most allophonic variation in English is anticipatory in that the sound
+is influenced by the following articulation rather than by
+preceding ones
+pp
+Nasalization is a feature which applies to vowels in English through
+anticipatory coarticulation
+In many languages for example French it is a
+ul
+distinctive
+feature for vowels in that it serves to distinguish one vowel phoneme class

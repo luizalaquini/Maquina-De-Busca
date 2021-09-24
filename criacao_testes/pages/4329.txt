@@ -1,0 +1,100 @@
+LB
+EQ
+sum from k=1 to p a sub k sum from n=h to h+N-1 xn-jxn-k =
+sum from n=h to h+N-1 xnxn-jj=12p
+EN
+LE
+Alternatively we could write
+LB
+EQ
+sum from k=1 to p a sub k  Q sub jk sup h=Q sub 0j sup h
+j=12p
+EN
+LE
+where
+LB
+EQ
+Q sub jk sup h=sum from n=h to h+N-1 xn-jxn-k
+EN
+LE
+Note that some values of xn outside the range  h  =  n    h+N  are
+required  these are shown diagrammatically in Figure 66
+FC Figure 66
+pp
+Now  Q sub jk sup h = Q sub kj sup h  so the equation has
+a diagonally symmetric matrix and in fact the matrix Q sup h can
+be shown to be positive semidefinite em and is almost always positive
+definite in practice  Advantage can be taken of these facts
+to provide a computationally efficient method for solving the
+equation  According to a result called Choleskys theorem a
+positive definite symmetric matrix Q can be factored into the form
+Q  =  LL sup T where L is a lower triangular matrix
+This leads to an efficient
+solution algorithm
+pp
+This method of computing prediction coefficients has become known
+as the
+ul
+covariance method
+It does not use windowing of the speech signal and can give accurate
+estimates of the prediction coefficients with a smaller analysis
+frame than the autocorrelation method  Typically 50 to 100 speech samples
+might be used to estimate the coefficients and they are re-calculated
+every 100 to 250 samples
+rh Algorithm for the covariance method
+An algorithm for the covariance method is given in Procedure 62
+RF
+fi
+na
+nh
+ul
+const
+N=100 p=15
+ul
+type
+svec =
+ul
+array
+-pN-1
+ul
+of
+real
+cvec =
+ul
+array
+1p
+ul
+of
+real
+sp
+ul
+procedure
+covariancesignal svec
+ul
+var
+coeff cvec
+sp
+computes linear prediction coefficients by covariance method
+in coeff1p
+sp
+ul
+var
+Q
+ul
+array
+0p0p
+ul
+of
+real
+n 0N-1 ijr 0p X real
+sp
+ul
+begin
+calculate upper-triangular covariance matrix in Q
+in+6n
+ul
+for
+i=0
+ul
+to
+p

@@ -1,0 +1,100 @@
+ds C New York
+nr T 0
+nr A 0
+nr O 0
+ 2 book
+in+2n
+This is a remarkable collection of tried and tested Fortran programs
+for digital signal analysis
+They are all available from the IEEE in machine-readable form on magnetic
+tape
+Included are programs for digital filter design discrete Fourier transformation
+and cepstral analysis as well as others like linear predictive analysis
+see Chapter 6
+Each program is accompanied by a concise well-written description of how
+it works with references to the relevant literature
+in-2n
+Oppenheim-1975-4
+-
+ds A Oppenheim AV
+as A  and Schafer RW
+ds D 1975
+ds T Digital signal processing
+ds I Prentice Hall
+ds C Englewood Cliffs New Jersey
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This is one of the standard texts on most aspects of digital signal processing
+It treats the z-transform digital filters and discrete Fourier transformation
+in far more detail than we have been able to here
+in-2n
+Rabiner-1975-5
+-
+ds A Rabiner LR
+as A  and Gold B
+ds D 1975
+ds T Theory and application of digital signal processing
+ds I Prentice Hall
+ds C Englewood Cliffs New Jersey
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This is the other standard text on digital signal processing
+It covers the same ground as Oppenheim and Schafer 1975 above
+but with a slightly faster and consequently more difficult presentation
+It also contains major sections on special-purpose hardware for
+digital signal processing
+in-2n
+Rabiner-1978-1
+-
+ds A Rabiner LR
+as A  and Schafer RW
+ds D 1978
+ds T Digital processing of speech signals
+ds I Prentice Hall
+ds C Englewood Cliffs New Jersey
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+Probably the best single reference for digital speech analysis
+as it is for the time-domain encoding techniques of the last chapter
+Unlike the books cited above it is specifically oriented to speech processing
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 5  RESONANCE SPEECH SYNTHESIZERS
+ds RT Resonance speech synthesizers
+ds CX Principles of computer speech
+pp
+This chapter considers the design of speech synthesizers which
+implement a direct electrical analogue of
+the resonance properties of the vocal tract by providing a filter for each
+formant whose resonant frequency is to be controlled  Another method is the
+channel vocoder with a bank of fixed filters whose gains are varied to match
+the spectrum of the speech as described in Chapter 4  This is not generally
+used for synthesis from a written representation however because it is hard
+to get good quality speech  It
+ul
+is
+used sometimes for low-bandwidth
+transmission and storage for
+it is fairly easy to analyse natural speech into fixed frequency bands
+A second alternative to the resonance synthesizer is the linear predictive
+synthesizer which at present is used quite extensively and is likely to become
+even more popular  This is covered in the next chapter
+Another alternative is the articulatory synthesizer which
+attempts to model the vocal tract directly rather than
+modelling the acoustic output from it
+Although as noted in Chapter 2 articulatory synthesis holds a promise of
+high-quality speech em for the coarticulation effects caused by tongue
+and jaw inertia can be modelled directly em this has not yet been realized
+pp

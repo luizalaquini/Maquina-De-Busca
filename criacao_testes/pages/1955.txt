@@ -1,0 +1,100 @@
+NI
+5  quantities which specify how to calculate boundary values for
+amplitudes
+LE
+This table is rather large  There are 80 segments in all remember
+that many phonemes are represented by more than one segment
+and so it has 2000 entries  The system was an offline one which ran on
+what was then em 1964 em a large computer
+pp
+The advantage of such a large table of rules is the
+flexibility it affords
+Notice that transition durations are specified independently for
+formant frequency and amplitude parameters em this permits
+fine control which is particularly useful for stops
+For each parameter the boundary value between segments is calculated
+using a fixed contribution from the dominant one
+and a proportion of the steady state value of the other
+pp
+It is possible that the two transition durations which are
+calculated for a segment actually exceed the overall duration specified
+for it  In this case the steady-state target values will be approached
+but not actually attained simulating a situation where coarticulation
+effects prevent a target value from being reached
+rh An event-based system
+The synthesis system described above in common with many others takes
+an uncompromisingly segment-by-segment view of speech
+The next phoneme is read perhaps split into a few segments and
+these are synthesized one by one with due attention being paid
+to transitions between them
+Some later work has taken a more syllabic view
+Mattingly 1976 urges a return to syllables for both practical and
+theoretical reasons
+
+Mattingly 1976 Syllable synthesis
+
+Transitional effects are particularly strong
+within a syllable and comparatively weak but by no means negligible
+from one syllable to the next  From a theoretical viewpoint
+there are much stronger phonetic restrictions on phoneme sequences
+than there are on syllable sequences  pretty well any syllable can
+follow another although whether the pair makes sense is
+a different matter but the linguistically
+acceptable phoneme sequences are only a fraction
+of those formed by combining phonemes in all
+possible ways
+Hill 1978 argues against what be calls the segmental assumption
+that progress through the utterance should be made one segment at a time
+and recommends a description of speech based upon perceptually relevant
+events
+
+Hill 1978 A program structure for event-based speech synthesis by rules
+
+This framework is interesting because it provides an opportunity for prosodic
+considerations to be treated as an integral part of the synthesis
+process
+pp
+The phonetic segments and other information that specify an utterance
+can be regarded as a list of events which describes it
+at a relatively high level
+Synthesis-by-rule is the act of taking this list and elaborating on it
+to produce lower-level events which are realized by the vocal tract
+or acoustically simulated by a resonance synthesizer to give a speech
+waveform
+In articulatory terms an event might be begin tongue motion towards
+upper teeth with a given effort while in resonance terms it could be
+begin second formant transition towards 1500 Hz at a given rate
+These two examples are
+ul
+not
+intended to describe the same event  a tongue motion causes much more
+than the transition of a single formant  Coarticulation
+issues such as stop burst suppression and nasal plosion should
+be easier to imitate within an event-based scheme than a segment-to-segment
+one
+pp
+The ISP system Witten and Abbess 1979 is event-based
+
+Witten Abbess 1979
+
+The key to its operation is the
+ul
+synthesis list
+To prepare an utterance for synthesis the lexical items which specify
+it are joined into a linked list  Figure 73 shows the start of
+the list created for
+LB
+1
+ul
+dh i z  i z  d zh aa k s  h aa u s
+LE
+this is Jacks house the 1      are
+prosodic markers which will be discussed in the next chapter
+FC Figure 73
+Next the rhythm and pitch assignment routines
+augment the list with syllable boundaries phoneme
+cluster identifiers and duration and pitch specifications
+Then it is passed to the segmental synthesis routine
+which chains events into the appropriate places and as it
+proceeds removes the no longer useful elements phoneme names
+pitch specifiers etc which originally constituted the synthesis list

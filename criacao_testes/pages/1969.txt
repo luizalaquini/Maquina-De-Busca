@@ -1,0 +1,100 @@
+From a pragmatic point of view there are two advantages to basing
+a synthesis strategy on this hypothesis
+Firstly it provides a way to represent the many influences of higher-level
+processes like syntax and semantics on rhythm using a simple notation which
+fits naturally into the phonetic utterance representation
+and which people find quite easy to understand and generate
+Secondly it tends to produce a heavily accentuated but not unnatural
+speech rhythm which can easily be moderated into a more acceptable rhythm
+by departing from isochrony in a controlled manner
+pp
+The ISP procedure does not make feet exactly isochronous
+It starts with a standard foot time and attempts to fit the syllables of the
+foot into this time
+If doing so would result in certain syllables having less than a preset minimum
+duration the isochrony constraint is relaxed and the foot is expanded
+There is no preset
+ul
+maximum
+syllable length
+However when the durations of individual phoneme postures are adjusted
+to realize the calculated syllable durations
+limits are imposed on the amount by which individual phonemes can be expanded
+or contracted
+Thus a hierarchy of limits exists
+pp
+The rate of talking is determined by the standard foot time
+If this time is short many feet will be forced to have durations longer than
+the standard and the speech will be less isochronous
+This seems to accord with common human experience
+If the standard time is longer however the minimum syllable limit
+will always be exceeded and the speech will be completely isochronous
+If it is too long the above-mentioned limits to phoneme expansion will
+come into play and again partially destroy the isochrony
+pp
+It has often been observed that the final foot of an utterance tends to be
+longer than others as does the tonic foot em that which bears the
+major stress
+This is easy to accomodate simply by making the target duration
+longer for these feet
+rh From feet to syllables
+A foot is a succession of syllables one or more
+And it is obvious that since there are more syllables in some feet than
+in others some syllables must occupy less time than others in order to preserve
+the tendency towards isochrony of feet
+pp
+However the duration of a foot is not divided evenly between its constituent
+syllables  The syllables have a definite rhythm of their own which seems
+to be governed by
+LB
+NP
+the nature of the salient that is the first syllable of the foot
+NP
+the presence of word boundaries within the foot
+LE
+A salient syllable tends to be long either if it contains one of
+a class of so-called long vowels or if there is a cluster of two or more
+consonants following the vowel
+The pattern of syllables and word boundaries governs the rhythm of the foot
+and Table 82 shows the possibilities for one- two- and three-syllable feet
+This theory of speech rhythm is due to Abercrombie 1964
+
+Abercrombie 1964 Syllable quantity and enclitics in English
+
+RF
+nr x2 wthree-syllable feet  u
+nr x3 wsal-short  u
+nr x4 wweak   u
+nr x5 wweak      u
+nr x6 wfIit s inconfRceivable    u
+nr x1 wsyllable rhythm2
+nr x7 nx2+nx3+nx4+nx5+nx6+nx1+nx1
+nr x7 nl-nx72
+in nx7u
+ta nx2u +nx3u +nx4u +nx5u +nx6u
+ul
+	syllable pattern		example	00h-nx1usyllable rhythm
+sp
+one-syllable feet	salient			fIgoodfR show	1
+		weak		fI goodfRbye	21
+sp
+two-syllable feet	sal-long	weak		fIcentrefR forward	11
+	sal-short	weak		fIatomfR bomb	12
+	salient  	weak		fItea forfR two	21
+sp
+three-syllable feet	salient  	weak 	weak	fIone for thefR road	211
+				fIits inconfRceivable
+	sal-long	weak 	weak	fIafter thefR war	231
+	sal-short	weak 	weak	fImiddle tofR top	132
+	sal-long	weak	weak	fInobodyfR knows	312
+	sal-short	weak	weak	fIanythingfR more	111
+sp
+	 denotes a word boundary
+	 is an optional word boundary
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+FG Table 82  Syllable patterns and rhythms
+pp
+A foot may have the rhythmical characteristics of a two-syllable foot
+while having only one syllable if the first place in it is filled by a
+silent stress marked by 
+This is shown in the second one-syllable example of

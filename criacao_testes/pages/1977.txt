@@ -1,0 +1,100 @@
+a prime example of a situation where arbitrary unannotated texts
+must be read
+rh Intonation analysis
+One distinction which a program can usefully try
+to make is between basically rising
+and basically falling pitch contours  It is often said that pitch rises on
+a question and falls on a statement but if you listen to speech you will
+find this to be a gross oversimplification  It normally
+falls on statements certainly but it falls as often as it rises on questions
+It is more accurate to say that pitch rises on yes-no questions
+and falls on other utterances although this rule is still only a rough guide
+A simple test which operates lexically on the input text is to determine
+whether a sentence is a question by looking at the 
+punctuation mark at its end and then to examine the first word
+If it is a wh-word like what which when why and also how
+a falling contour is likely to fit
+If not the question is probably a yes-no one and the contour
+should rise
+Such a crude rule will certainly not be very accurate
+it fails for example when the wh-word is embedded in a phrase as in
+at what time are you going but at least it provides a starting-point
+pp
+An air of finality is given to an utterance when it bears a definite
+fall in pitch dropping to a rather low value at the end
+This should accompany the last intonation unit in an utterance
+unless it is a yes-no question
+However a rise-fall contour such as Hallidays tone group 5 Figure 85
+can easily be used in utterance-final position by one person
+in a conversation em
+although it would be unlikely to terminate the dialogue altogether
+A new topic is frequently introduced by a fall-rise contour em such as
+Hallidays tone group 4 em and this often begins a paragraph
+pp
+Determining the type of pitch contour is only one part of
+intonation assignment  There are really three separate problems
+LB
+NP
+dividing the utterance into tone groups
+NP
+choosing the tonic syllable or major stress point of each one
+NP
+assigning a pitch contour to each tone group
+LE
+Let us continue to use the Halliday notation for intonation which was introduced
+in simplified form in the previous chapter
+Moreover assume that the foot boundaries can be placed correctly em
+this problem will be discussed in the next subsection
+Then a scheme which considers only the lexical form of the utterance
+and does not attempt to understand it whatever that means is as follows
+LB
+NP
+place a tone group boundary at every punctuation mark
+NP
+place the tonic at the first syllable of the last foot in a tone group
+NP
+use contour 4 for the first tone group in a paragraph and contour 1
+elsewhere except for a yes-no question which receives contour 2
+LE
+RF
+nr x0 wFrom Scarborough to Whitby0000+w4    from Scarborough to Whitby is a
+nr x1 nl-nx02
+in nx1u
+ta wFrom Scarborough to Whitby000000u
+plain text	text adorned with prosodic markers
+lnx0uul
+sp
+From Scarborough to Whitby is a	4  from Scarborough to Whitby is a
+very pleasant journey with	1- very pleasant journey with
+very beautiful countryside	1- very beautiful countryside 
+In fact the Yorkshire coast is	1+  in fact the Yorkshire coast is
+0000lovely	0000lovely
+all along ex-	1+ all along ex
+cept the parts that are covered	4 cept the parts that are covered
+0000in caravans of course and	0000in caravans of course and
+if you go in spring	4 if you go in spring
+when the gorse is out	4  when the gorse is out
+or in summer	4  or in summer
+when the heathers out	4  when the heathers out
+its really one of the most	13  its really one of the most
+0000delightful areas in the	0000delightful areas in the
+whole country	1 whole country
+sp
+The moorland is	4  the moorland is
+rather high up and	1 rather high up and
+fairly flat em a	1 fairly flat a
+sort of plateau	1 sort of plateau 
+At least	1  at least
+it isnt really flat	13  it isnt really flat
+when you get up on the top	-3  when you get up on the top
+its rolling moorland	1  its rolling moorland
+cut across by steep valleys  But	1 cut across by steep valleys but
+seen from the coast its	4 seen from the coast its 
+up there on the moors and you	1 up there on the moors and you
+always think of it as a	4 always think of it as a
+kind of tableland	1 kind of tableland
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 92  Example of intonation and rhythm analysis from Halliday 1970
+

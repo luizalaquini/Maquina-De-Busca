@@ -1,0 +1,100 @@
+before the British Broadcasting Corporation
+adopted a policy of more informal more regional speech
+Female speakers have formant frequencies approximately 15 higher
+than male ones
+Secondly the third formant is relatively unimportant for vowel
+identification it is
+the first and second that give the vowels their character
+Thirdly formant values for
+ul
+h
+are not given for they would be meaningless
+Although it is certainly a steady-state sound
+ul
+h
+changes radically
+in context  If you say had heed hud and so on and freeze
+your vocal tract posture on the initial
+ul
+h
+you will find it
+already configured for the following vowel em an excellent
+example of anticipatory coarticulation
+Fourthly amplitude values do play some part in identification
+particularly for fricatives
+ul
+th
+is the weakest sound closely followed by
+ul
+f
+with
+ul
+s
+and
+ul
+sh
+the
+strongest  It is necessary to get a reasonable mix of excitation in
+the voiced fricatives the voicing amplitude is considerably less than
+in vowels  Finally there are other sounds that might be considered
+steady state ones  You can probably identify
+ul
+m n
+and
+ul
+ng
+just by
+their steady states  However the difference is not particularly
+strong it is the transitional parts which discriminate most effectively
+between these sounds  The steady state of
+ul
+r
+is quite distinctive too
+for most speakers because the top of the tongue is curled back in a
+so-called retroflex action and this causes a radical change in the
+third formant resonance
+rh Transient segments
+Transient sounds include diphthongs glides
+nasals voiced and unvoiced stops and affricates
+The first two are relatively easy to characterize for they are
+basically continuous gradual transitions from one vocal tract posture
+to another em sort of dynamic vowels  Diphthongs and glides are
+similar to each other  In fact you could be transcribed as
+a triphthong
+ul
+i e uu
+except that in the initial posture the tongue
+is even higher and the vocal tract correspondingly more constricted
+than in
+ul
+i
+hid em though not as constricted as in
+ul
+sh
+Both categories can be represented in terms of target formant
+values on the understanding that these are not to be
+interpreted as steady state configurations but strictly as
+extreme values at the beginning or end of the formant motion for
+transitions out of and into the segment respectively
+pp
+Nasals have a steady-state portion comprising a strong nasal formant
+at a fairly low frequency on account of the large size of the
+combined nasal and oral cavity which is resonating
+Higher formants are relatively weak because of attenuation effects
+Transitions into and out of nasals are strongly nasalized
+as indeed are adjacent vocalic segments with
+the oral and nasal tract operating in parallel  As discussed in
+Chapter 5 this cannot be simulated on a series synthesizer
+However extremely fast motions of the formants occur on account of
+the binary switching action of the velum and it turns out that
+fast formant transitions are sufficient to simulate nasals because
+the speech perception mechanism is accustomed to hearing them only
+in that context  Contrast this with the extremely slow transitions
+in diphthongs and glides
+pp
+Stops form the most interesting category and research using the pattern
+playback synthesizer was instrumental in providing adequate acoustic
+characterizations for them  Consider unvoiced stops
+They each have three phases  transition in silent central portion
+and transition out  There is a lot of action on the transition out
+and many phoneticians would divide this part alone into several phases

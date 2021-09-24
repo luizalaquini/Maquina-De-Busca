@@ -1,0 +1,100 @@
+known and the computational burden of slow Fourier transformation was
+prohibitive
+For example a project at IBM stored manually-derived parameter tracks
+for diphones identified by pairs of phoneme names Dixon and Maxey 1968
+
+Dixon Maxey 1968
+
+To generate a synthetic utterance it was coded in
+phonetic form and used to access
+the diphone table to give a set of parameter tracks for the complete
+utterance  Note that this is the first system we have encountered
+whose input is a phonetic transcription which relates to an inventory
+of truly synthetic character  all previous schemes used recordings of
+live speech albeit processed in some form
+Since the inventory was synthetic there was no difficulty in ensuring
+that discontinuities did not arise between segments beginning and ending with
+the same phoneme  Thus interpolation was irrelevant and the synthesis
+procedure concentrated on prosodic questions  The resulting speech
+was reported to be quite impressive
+pp
+Strictly speaking diphones are not demisyllables but phoneme pairs
+In the simplest case they happen to be similar for two primary diphones
+characterize a consonant-vowel-consonant syllable
+There is an advantage to using demisyllables rather than diphones as the basic
+unit for many syllables begin or end with complicated consonant clusters
+which are not easy to produce convincingly by diphone
+concatenation
+But they are not easy to produce by hand-editing resonance parameters
+either
+Now that speech analysis methods have been developed and refined
+resonance parameters or linear predictive coefficients
+can be extracted automatically
+from natural utterances and there has been a resurgence of interest in
+syllabic and demisyllabic synthesis methods  The wheel has turned
+full circle from segments of natural speech to hand-tailored parameters
+and back again
+pp
+The advantage of storing demisyllables over syllables or lisibles from
+the point of view of storage capacity has already been pointed out
+perhaps 1000-2000 demisyllables as opposed to 4000-10000 syllables
+But it is probably not too significant with the continuing decline
+of storage costs
+The requirements are of the order of 25 Kbyte versus 05 Mbyte
+for 1200 bits linear predictive coding and the latter could
+almost be accomodated today em 1981 em on a state-of-the-art
+read-only memory chip
+A bigger advantage comes from rhythmic considerations
+As we will see in the next chapter the rhythms of fluent speech cause
+dramatic variations in syllable duration but these seem to affect
+the vowel and closing consonant cluster much more than the initial consonant
+cluster  Thus if a demisyllable is deemed to begin shortly say 60 msec
+after onset of the vowel when the formant structure has settled down
+the bulk of the vowel and the closing consonant cluster will form a
+single demisyllable  The opening cluster of the next syllable will lie
+in the next demisyllable  Then differential lengthening can be applied
+to that part of the syllable which tends to be stretched in live speech
+pp
+One system for demisyllable concatenation has produced excellent results
+for monosyllabic English words Lovins and Fujimura 1976
+
+Lovins Fujimura 1976
+
+Complex word-final consonant clusters are excluded from the inventory by
+using syllable affixes
+ul
+s z t
+and
+ul
+d
+these are attached to the
+syllabic core as a separate exercise Macchi and Nigro 1977
+
+Macchi Nigro 1977
+
+Prosodic rather than segmental considerations are likely to prove the major
+limiting factor when this scheme is extended to running speech
+pp
+Monosyllabic words spoken in isolation are coded as linear predictive
+reflection coefficients and segmented by digital editing into the initial
+consonant cluster and the vocalic nucleus plus final cluster
+The cut is made 60 msec into the vowel as suggested above
+This minimizes the difficulty of interpolation when concatenating
+segments for there is ample voicing on either side of the juncture
+The reflection coefficients should not differ radically because the
+vowel is the same in each demisyllable
+A 40 msec overlap is used with the usual linear interpolation
+An alternative smoothing rule applies when the second segment has
+a nasal or glide after the vowel  In this case anticipatory coarticulation
+occurs affecting even the early part of the vowel  For example a vowel
+is frequently nasalized when followed by a nasal sound em even in English
+where nasalization is not a distinctive feature in vowels see Chapter 2
+Under these circumstances the overlap area is moved forward in time so
+that the colouration applies throughout almost the whole vowel
+sh 73  Phoneme synthesis
+pp
+Acoustic phonetics is the study of how the acoustic
+signal relates to the phonetic sequence which was spoken or heard
+People em especially engineers em often ask how could phonetics not
+be acoustic  In fact it can be articulatory auditory or linguistic
+phonological for example and we have touched on the first and last

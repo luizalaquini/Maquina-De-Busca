@@ -1,0 +1,100 @@
+ds CX Principles of computer speech
+pp
+The most familiar device that produces speech output is the ordinary tape
+recorder which stores information in analogue form on magnetic tape
+However this is unsuitable for speech output from computers
+One reason is that it is difficult to access different utterances quickly
+Although random-access tape recorders do exist they are expensive and
+subject to mechanical breakdown because of the stresses associated with
+frequent starting and stopping
+pp
+Storing speech on a rotating drum instead of
+tape offers the possibility of access to any track within one revolution time
+For example the IBM 7770 Audio Response Unit employs drums rotating twice
+a second which are able to store up to 32 500-msec words  These can be accessed
+randomly within half a second at most
+Although one can
+arrange to store longer words by allowing overflow on to an adjacent track at
+the end of the rotation period the discrete time-slots provided by this
+system make it virtually impossible for it to generate connected utterances
+by assembling appropriate words from the store
+pp
+The Cognitronics Speechmaker has a similar structure but with
+the analogue speech waveform recorded on photographic film
+Storing audio waveforms optically is not an unusual technique for this is how
+soundtracks are recorded on ordinary movie films  The original version of
+the speaking clock of the British Post Office used optical storage in
+concentric tracks on flat glass discs
+It is described by Speight and Gill 1937
+who include a fascinating account of how the utterances are synchronized
+
+Speight Gill 1937
+
+A 4 Hz signal from a pendulum clock was used to supply current to an electric
+motor which drove a shaft equipped with cams and gears that rotated
+the glass discs containing utterances for seconds minutes and hours
+at appropriate speeds
+pp
+A second reason for avoiding analogue storage is price  It is difficult to see how a random-access
+tape recorder could be incorporated into a talking pocket calculator or
+childs toy without considerably inflating the cost
+Solid-state electronics is much cheaper than mechanics
+pp
+But the best reason is that in many of the applications we have discussed
+it is necessary to form utterances by concatenating separately-recorded
+parts  It is totally infeasible for example to store each and every
+possible telephone number as an individual recording  And
+utterances that are formed by concatenating individual words which were
+recorded in isolation or in a different context do not sound completely
+natural  For example in an early experiment Stowe and Hampton 1961 recorded
+individual words on acoustic tape spliced the tape with the words in a different
+order to make sentences and played the result to subjects who were scored on
+the number of key words which they identified correctly
+
+Stowe Hampton 1961
+
+The overall conclusion was that while embedding a word in normally-spoken sentences
+ul
+increases
+the probability of recognition because the extra context gives clues about the
+word embedding a word in a constructed sentence where intonation and rhythm
+are not properly rendered
+ul
+decreases
+the probability of recognition  When the speech was uttered slowly
+however a considerable improvement was noticed indicating that if the
+listener has more processing time he can overcome the lack of proper intonation
+and rhythm
+pp
+Nevertheless many present-day voice response systems
+ul
+do
+store what amounts to a direct recording of the acoustic wave
+However the storage medium is digital rather than analogue
+This means that standard computer storage devices can be used providing
+rapid access to any segment of the speech at relatively low cost em for
+the economics of mass-production ensures a low price for random-access
+digital devices compared with random-access analogue ones
+Furthermore it reduces the amount of special equipment needed for speech
+output  One can buy very cheap speech inputoutput interfaces for home computers
+which connect to standard hobby buses
+Another advantage of digital over analogue recording is that
+integrated circuit read-only memories ROMs
+can be used for hand-held devices which need small quantities of speech
+Hence this chapter begins by showing how waveforms are stored digitally
+and then describes some techniques for reducing the data needed for a given
+utterance
+sh 31  Storing waveforms digitally
+pp
+When an analogue signal is converted to digital form it is made discrete
+both in time and in amplitude  Discretization in time is the operation of
+ul
+sampling
+whilst in amplitude it is
+ul
+quantizing
+It is worth pointing out that the transmission of analogue information by
+digital means is called PCM standing for pulse code modulation in
+telecommunications jargon
+Much of the theory of digital signal processing investigates signals which
+are sampled but not quantized or quantized into sufficiently many levels to

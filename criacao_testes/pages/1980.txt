@@ -1,0 +1,100 @@
+ul
+quire
+However detecting prefixes by a simple splitting algorithm is dangerous
+For example predate is a verb with stress on what appears to be a prefix
+contrary to the rule while the pre in predator is not a prefix em at
+least it is not pronounced as the prefix pre normally is
+Moreover polysyllabic words like diplomat diplomacy diplomatic
+or telegraph telegraphy telegraphic cannot be handled on such a simple
+basis
+pp
+In 1968 a remarkable work on English sound structure was published
+Chomsky and Halle 1968 which proposes a system of rules to transform
+English text into a phonetic representation in terms of distinctive features
+with the aid of a lexicon
+
+Chomsky Halle 1968
+
+A great deal of attention is paid to stress and rules are given which
+perform well in many tricky cases
+pp
+It uses the American system of levels of stress marking
+so-called primary stress with a superscript 1 secondary stress with a
+superscript 2 and so on
+The superscripts are written on the vowel of the stressed
+syllable  completely unstressed syllables receive no annotation
+For example the sentence take Johns blackboard eraser is written
+LB
+tau2dke Jou3dhns blau1dckboau5drd erau4dser
+LE
+In foot notation this utterance
+is
+LB
+take Johns blackboard eraser
+LE
+It undoubtedly contains less information than the stress-level version
+For example the second syllable of blackboard and the first one of erase
+are both unstressed although the rhythm rules given in Chapter 8
+will cause them
+to be treated differently because they occupy different places in the
+syllable pattern of the foot
+Take Johns and the second syllable of erase are all non-tonic
+foot-initial syllables and hence are not distinguished in the notation
+although the pitch contours schematized in Figure 89 will give them different
+intonations
+pp
+An indefinite number of levels of stress can be used  For example according
+to the rules given by Chomsky and Halle the word sad in
+LB
+my friend cant help being shocked at anyone who would fail to consider
+his sad plight
+LE
+has level-8 stress the final two words being annotated
+as sau8dd pliu1dght
+However only the first few levels are used regularly and
+it is doubtful whether acoustic distinctions are made in speech
+between the weaker ones
+pp
+Chomsky and Halle are concerned to distinguish between such utterances as
+LB
+NI
+blau2dck boau1drd-erau3dser    board eraser that is black
+NI
+blau1dckboau3drd erau2dser     eraser for a blackboard
+NI
+blau3dck boau1drd erau2dser    eraser of a black board
+LE
+and their stress assignment rules do indeed produce each version when
+appropriate
+In foot notation the distinctions can still be made
+LB
+NI
+black board-eraser
+NI
+blackboard eraser
+NI
+black board eraser
+LE
+pp
+The rules operate on a grammatical derivation tree
+of the text
+For instance input for the three examples would be written
+LB
+NI
+dNPudAu black dAu dNudNu boarddNu
+dNu eraser dNudNudNPu
+NI
+dNudNudAu black dAu dNu board dNudNu dNu eraser dNudNu
+NI
+dNudNPudAu black dAu dNu board dNudNPu dNu eraser dNudNu
+LE
+representing the trees shown in Figure 92
+FC Figure 92
+Here N stands for a noun NP for a noun phrase and A for an adjective
+These categories appear explicitly as nodes in the tree
+In the linearized textual representation they are used to label
+brackets which represent the tree structure
+An additional piece of information which is needed is the lexical entry for
+eraser which would show that it has only one accented
+that is potentially stressed syllable namely the second
+pp

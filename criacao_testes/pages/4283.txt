@@ -1,0 +1,100 @@
+nr O 0
+ 2 book
+in+2n
+This is an excellent book which covers all of the areas of this
+chapter in much more detail than has been possible here
+in-2n
+Brown-1980-2
+ds F 2
+-
+ds A Brown Gill
+as A  Currie KL
+as A  and Kenworthy J
+ds D 1980
+ds T Questions of intonation
+ds I Croom Helm
+ds C London
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+An intensive study of the prosodics of colloquial living speech
+is presented with particular reference to intonation  Although
+not particularly relevant to speech output from computers
+this book gives great insight into how conversational speech
+differs from reading aloud
+in-2n
+Fry-1979-1
+ds F 1
+-
+ds A Fry DB
+ds D 1979
+ds T The physics of speech
+ds I Cambridge University Press
+ds C Cambridge England
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This is a simple and readable account of speech science with a good
+and completely non-mathematical introduction to frequency analysis
+in-2n
+Ladefoged-1975-4
+ds F 4
+-
+ds A Ladefoged P
+ds D 1975
+ds T A course in phonetics
+ds I Harcourt Brace and Johanovich
+ds C New York
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+Usually books entitled A course on  are dreadfully dull but
+this is a wonderful exception  An exciting readable almost racy
+introduction to phonetics full of little experiments you can try
+yourself
+in-2n
+Lehiste-1970-5
+ds F 5
+-
+ds A Lehiste I
+ds D 1970
+ds T Suprasegmentals
+ds I MIT Press
+ds C Cambridge Massachusetts
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This fairly comprehensive study of the prosodics of speech
+complements Ladefogeds book which is mainly concerned with segmental
+phonetics
+in-2n
+OConnor-1973-1
+ds F 1
+-
+ds A OConnor JD
+ds D 1973
+ds T Phonetics
+ds I Penguin
+ds C London
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This is another introductory book on phonetics
+It is packed with information on all aspects of the subject
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 3  SPEECH STORAGE
+ds RT Speech storage

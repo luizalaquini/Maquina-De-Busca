@@ -1,0 +1,100 @@
+second but in fact the spectrum can change quite a lot within a single
+phoneme especially a stop sound
+Between 10 and 25 msec 100 Hz and 40 Hz
+is generally thought to be a satisfactory interval for transmitting or storing
+the spectrum to preserve a reasonably faithful representation of the speech
+Of course the entire spectrum as well as the source characteristics must
+be stored at this rate
+The channel vocoder described by Holmes 1980 uses 48 bits to encode
+the information
+
+Holmes 1980 JSRU channel vocoder
+
+Repeated every 20 msec this gives a data rate of 2400 bits em very
+considerably less than any of the time-domain encoding techniques
+pp
+It needs some care to encode the output of 19 filters the excitation type
+and the pitch into 48 bits of information  Holmes uses 6 bits for pitch
+logarithmically encoded
+and one bit for excitation type
+This leaves 41 bits to encode the output of the 19 filters and so a differential
+technique is used which transmits just the difference between adjacent
+channels em for the spectrum does not change abruptly in the frequency domain
+Three bits are used for the absolute level in channel 1 and two bits
+for each channel-to-channel difference giving a total of 39 bits for the whole
+spectrum  The remaining two bits per frame are reserved for signalling or
+monitoring purposes
+pp
+A 2400 bits channel vocoder degrades the speech in a telephone channel quite
+perceptibly  It is sufficient for interactive communication where
+if you do not understand something you can always ask for it to be repeated
+It is probably not good enough for most voice response applications
+However the vocoder principle can be used with larger filter banks and much
+higher bit rates and still reduce the data rate substantially below that
+required by log PCM
+sh 42  Pre-emphasis
+pp
+There is an
+overall -6 dBoctave trend in speech radiated from the lips
+as frequency increases
+We will discuss why this is so in the next chapter
+Notice that this trend means that the signal power is reduced
+by a factor of 4 or the signal amplitude by a factor of 16 for each
+doubling in frequency
+For vocoders and indeed for other methods of spectral analysis of speech
+it is usually desirable to equalize this by a +6 dBoctave lift prior to
+processing so that the channel outputs occupy a similar range of levels
+On regeneration the output speech is passed through an inverse filter which
+provides 6 dBoctave of attenuation
+pp
+For a digital system such pre-emphasis
+can either be implemented as an analogue circuit which precedes the presampling
+filter and digitizer or as a digital operation on the sampled and quantized
+signal  In the former case the characteristic is usually flat up to a certain
+breakpoint which occurs somewhere between 100 Hz and 1 kHz em the exact
+position does not seem to be critical em at which point the +6 dBoctave lift
+begins  Although de-emphasis on output ought to have an exactly inverse
+characteristic it is sometimes modified or even eliminated altogether in an
+attempt to counteract approximately
+the  sin pi ff sub s  pi ff sub s   distortion
+introduced by the desampling operation which was discussed in an earlier
+section  Above half the sampling frequency the characteristic of the
+pre-emphasis is irrelevant because any effect will be suppressed by the presampling
+filter
+pp
+The effect of a 6 dBoctave lift can also be achieved digitally by differencing
+the input  The operation
+LB
+EQ
+yn =  xn - axn-1
+EN
+LE
+is suitable where the constant parameter a is usually chosen between 09 and 1
+The latter value gives straightforward differencing and this amounts to
+creating a DPCM signal as input to the spectral analysis  Figure 42 plots
+the frequency response of this operation with a sample frequency of 8 kHz
+for two values of the parameter together with that of a 6 dBoctave lift
+above 100 Hz
+FC Figure 42
+The vertical positions of the plots have been adjusted to give
+the same gain 20 dB at 1 kHz
+The difference at 34 kHz the upper end of the telephone spectrum is just
+over 2 dB  At frequencies below the breakpoint in this case 100 Hz the
+difference between analogue and digital pre-emphasis can be very great  For
+a=09 the attenuation at DC zero frequency is 18 dB below that at 1 kHz
+which happens to be close to that of the analogue filter for frequencies below the
+breakpoint  However if the breakpoint had been at 1 kHz there would have been
+20 dB difference between the analogue and a=09 plots at DC  And of course
+the a=1 characteristic has infinite attenuation at DC
+In practice however the exact form of the pre-emphasis does not seem to be at all
+critical
+pp
+The above remarks apply only to voiced speech  For unvoiced speech there appears
+to be no real need for pre-emphasis indeed it may do harm by reinforcing
+the already large high-frequency components  There is a case for altering the
+parameter a according to the excitation mode of the speech  a=1 for voiced
+excitation and a=0 for unvoiced gives pre-emphasis just when it is needed
+This can be achieved by expressing the parameter in terms of the autocorrelation
+of the incoming signal as
+LB
+EQ

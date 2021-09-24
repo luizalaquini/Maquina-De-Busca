@@ -1,0 +1,100 @@
+fIhfR	H		070
+	H1	allophone of H	070
+	H1	allophone of H	048
+fIsilencefR	PA0		045
+	PA1		175
+	PA1		005
+
+	PA2 used to change amplitude and duration	00-
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+sp3
+ce
+Table 112  continued
+bp
+ta 08i +26i +wAH1 UH2  O U000u
+nr x0 08i+26i+wAH1 UH2  O U000+w i uh  - here
+lnx0uul
+sp
+vowel clusters
+	EH I	A1 AY	 e i  - hey
+	UH OO	O U	 uh u  - ho
+	AE I	AH1 EH3 I	 aa i  - hi
+	AE OO	AH1 UH2 O U	 aa u  - how
+	AW I	O UH E	 o i  - hoi
+	I UH	E I	 i uh  - here
+	EH UH	EH A1 EH	 e uh  - hair
+	OO UH	OO UH	 u uh  - poor
+	Y U	Y1 IU U
+sp
+vowel transitions
+	F M B P O	O1 O
+	L R EH	EH3 EH
+	B K T D R UH	UH3 UH
+	T D A1	EH3 A1
+	T D AW	AH1 AW
+	W I	I3 I
+	G SH W K OO	IU OO
+	AY K G T D	AY Y
+	E M T	E Y
+	I M T	I Y
+	E L	I3 UH
+	EH R N S D T	EH EH3
+	I R T	I I3
+	AE S N	AE EH
+	AE K	AE EH3
+	A1 R	A1 EH1
+	AH1 R P K	AH1 UH
+	AH1 ZH	AH1 EH3
+sp
+intervocalics
+	voiced T voiced	DT
+sp
+consonant transitions
+	L EH	L1
+	H U OO IU	H1
+lnx0uul
+sp3
+ce
+Table 115  Contextual rules for Votrax sound segments
+bp
+lnx0uul
+sp
+consonant clusters
+	B stop-consonant	B PA0
+	P stop-consonant	P PA0
+	D stop-consonant	D PA0
+	T stop-consonant	T PA0
+	DT stop-consonant	T PA0
+	G stop-consonant	G PA0
+	K stop-consonant	K PA0
+	D T R	X1 R
+	K R	K X1 R
+	consonant R	R
+	consonant L	L1
+	K W	K W
+	D ZH	D J
+	T SH	T CH
+sp
+initial effects
+	syll P vowel	P PH
+	syll K vowel	K H1
+	syll T vowel	T S
+	syll L	L1
+	syll H U OO O AW AH1	H1
+sp
+terminal effects
+	E PA0	E Y
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+sp3
+ce
+Table 115  continued
+ev
+
+
+
+The comet’s tail spread across the dawn a red slash that bled above the crags of Dragonstone like a wound in the pink and purple sky
+
+The maester stood on the windswept balcony outside his chambers It was here the ravens came after long flight Their droppings speckled the gargoyles that rose twelve feet tall on either side of him a hellhound and a wyvern two of the thousand that brooded over the walls of the ancient fortress When first he came to Dragonstone the army of stone grotesques had made him uneasy but as the years passed he had grown used to them Now he thought of them as old friends The three of them watched the sky together with foreboding
+

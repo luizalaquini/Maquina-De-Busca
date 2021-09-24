@@ -1,0 +1,100 @@
+transmitted instead
+Because the linear predictive coefficients are intimately related to
+formant frequencies and bandwidths a frame rate in the region
+of 10 to 25 msec is appropriate because this approximates the maximum rate
+at which acoustic events happen in speech production
+pp
+At the receiver the excitation waveform
+is reconstituted
+For voiced speech it is impulsive at the specified
+frequency and with the specified amplitude while for unvoiced speech it
+is random with the specified amplitude  This signal en together
+with the transmitted parameters a sub 1  a sub p is used
+to regenerate the speech waveform by
+LB
+EQ
+xn=en+sum from k=1 to p a sub k xn-k 
+EN
+LE
+em which is the inverse of the transmitters formula for calculating en
+namely
+LB
+EQ
+en=xn-sum from k=1 to p a sub k xn-k 
+EN
+LE
+This relies on knowing the past p values of the speech samples
+Many systems set these past values to zero at the beginning of each pitch
+cycle
+pp
+Linear prediction can also be used for speech analysis rather than
+for speech coding as shown in Figure 64
+FC Figure 64
+Instead of transmitting the coefficients a sub k
+they are used to determine the formant positions and bandwidths
+We saw above that the polynomial
+LB
+EQ
+1-a sub 1 z sup -1 -a sub 2 z sup -2 --a sub p z sup -p 
+EN
+LE
+when factored into a product of second-order terms gives the formant
+characteristics as well as the spectral compensation term
+Factoring is equivalent to finding the complex roots of the polynomial
+and this is fairly demanding computationally em especially if done at
+a high rate  Consequently peak-picking algorithms are sometimes
+used instead  The absolute value of the polynomial gives the
+frequency spectrum of the vocal tract filter and the formants
+appear as peaks em just as they do in cepstrally smoothed speech
+see Chapter 4
+pp
+The chief deficiency in the linear predictive method whether it
+is used for speech coding or for speech analysis is that em like a series
+synthesizer em it
+implements an all-pole model of the vocal tract
+We mentioned in Chapter 5 that this is rather simplistic
+especially for nasalized sounds which involve a cavity in parallel
+with the oral one  Some research has been done on incorporating zeros
+into a linear predictive model but it complicates the problem of
+calculating the parameters enormously  For most purposes people seem
+to be able to live with the limitations of the all-pole model
+sh 61  Linear predictive analysis
+pp
+The key problem in linear predictive coding is to determine the values
+of the coefficients a sub 1  a sub p
+If the error signal is to be transmitted on a sample-by-sample basis
+as it is in adaptive differential pulse code modulation then it can be most
+economically encoded if its mean power is as small as possible
+Thus the coefficients are chosen to minimize
+LB
+EQ
+sum en sup 2
+EN
+LE
+over some period of time
+The period of time used is related to the frame rate at which the
+coefficients are transmitted or stored although there is no need
+to make it exactly the same as one frame interval  As mentioned above
+the frame size
+is usually chosen to be in the region of 10 to 25 msec  Some
+schemes minimize the error signal over as few as 30 samples
+corresponding to 3 msec at a 10 kHz sampling rate  Others take
+longer up to 250 samples 25 msec
+pp
+However if the error signal is to be considered as impulsive and
+parametrized by its frequency and amplitude before transmission
+or if the coefficients a sub k are to be used for spectral calculations
+then it is not immediately obvious how the coefficients should be
+calculated
+In fact it is still best to choose them to minimize the above sum
+This is at least plausible for an impulsive excitation will have a
+rather small mean power em most of the samples are zero
+It can be justified theoretically in terms of
+ul
+spectral whitening
+for it can be shown that minimizing the mean-squared error
+produces an error signal whose spectrum is maximally flat
+Now the only two waveforms whose spectra are absolutely flat
+are a single impulse and white noise  Hence if
+the speech is voiced minimizing the mean-squared error
+will lead to an error signal which is as nearly impulsive

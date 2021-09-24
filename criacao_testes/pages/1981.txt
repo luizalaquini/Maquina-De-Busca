@@ -1,0 +1,100 @@
+Consider now how to account for stress in prefixed and
+suffixed words and those polysyllabic ones with more than one potential
+stress point
+For these the morphological structure must appear in the input
+pp
+Now
+ul
+morphemes
+are well-defined minimal units of grammatical analysis from which a word
+may be composed
+For example  went = go + ed  is
+a morphemic decomposition where ed denotes the
+past-tense morpheme
+This representation is not particularly suitable for speech synthesis
+for the obvious reason that the result bears no phonetic resemblance to
+the input
+What is needed is a decomposition into
+ul
+morphs
+which occur only when the lexical or phonetic representation of a word may
+easily be segmented into parts
+Thus  wanting = want + ing  and  bigger = big + er  are
+simultaneously morphic and morphemic decompositions
+Notice that in the second example a rule about final consonant doubling has
+been applied at the lexical level although it is not needed in
+a phonetic representation  this comes into the sphere
+of easy segmentation
+Contrast this with  went = go + ed  which
+is certainly not an easy segmentation and hence a
+morphemic but not a morphic decomposition
+But between these extremes there are some difficult
+cases  specific = specify + ic  is probably morphic
+as well as morphemic but it is not clear
+that  galactic = galaxy + ic  is
+pp
+Assuming that the input is given as a derivation tree with morphological
+structure made explicit Chomsky and Halle present rules which assign stress
+correctly in nearly all cases  For example their rules give
+LB
+NI
+dAudNu incident dNu + aldAu  em  iu2dncideu1dntal
+LE
+and if the stem is marked by  dSu  dSu  in prefixed words
+they can deduce
+LB
+NI
+dNu tele dSu graph dSudNu		em  teu1dlegrau3dph
+NI
+dNudNu tele dSu graph dSudNu y dNu	em  teleu1dgraphy
+NI
+dAudNu tele dSu graph dSudNu ic dAu	em  teu3dlegrau1dphiu2dc
+LE
+pp
+There are two rules which account for the word-level stress
+on such examples  the main stress
+rule and the alternating stress rule
+In essence the main stress rule emphasizes the last strong syllable
+of a stem
+A syllable is strong either if it contains one of a class of so-called
+long vowels or if there is a cluster of two or more consonants
+following the vowel otherwise it is weak
+If you are exceptionally observant you will notice that this strongemweak
+distinction has been used before when discussing the rhythm of feet in
+syllables  Thus the verb torment receives stress on the second syllable
+for it is a strong one
+A noun like torment is treated as being derived from the corresponding verb
+and the rule assigns stress to the verb first and then modifies it for the noun
+The second alternating stress rule gives some stress to alternate
+syllables of polysyllabic words like formc
+ul
+alc
+dec
+ul
+hydec
+
+pp
+It is quite easy to incorporate the word-level rules into a computer
+program which uses feet rather than stress levels as the basis for prosodic
+description
+A foot boundary is simply placed before the primary-stressed level-1 syllable
+except for function words which do not begin a foot
+The other stress levels should be ignored
+except that for slow deliberate speech secondary level-2 stress is
+mapped into a foot boundary too if it precedes the primary stress
+There is also a rule which reduces vowels in unstressed
+syllables
+pp
+The stress assignment rules can work on phonemic script as well as English
+For example starting from the phonetic
+form  dVu c
+ul
+aa s t o n i sh c
+dVu
+the stress assignment rules
+produce  c
+ul
+aa s t ou1d n i sh c
+  the
+vowel reduction rule
+generates  c

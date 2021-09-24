@@ -1,0 +1,100 @@
+discrete
+ul
+timec
+-domain one
+pp
+Fourier transforms can only deal with a finite stretch of a time signal
+by assuming that the signal is periodic for if gt is evaluated from
+its transform Gr according to the formula above and t is chosen outside
+the interval 0b then a periodic extension of the function gt is obtained
+automatically
+Furthermore periodicity in one domain implies discreteness in the other
+Hence if we transform a
+ul
+finite
+stretch of a
+ul
+discrete
+time waveform
+we get a frequency-domain representation which is also finite or equivalently
+periodic and discrete
+This is the discrete Fourier transform DFT
+and takes a discrete periodic time-domain function into a discrete
+periodic frequency-domain one as illustrated in Figure 44
+FC Figure 44
+It is defined by
+LB
+
+gn  = 
+1 over N  sum from r=0 to N-1Gre sup  + j2 pi rnN
+
+Gr  =  sum from n=0 to N-1 gne sup  - j2 pi rnN 
+
+LE
+or writing  W=e sup -j2 pi N
+LB
+
+gn  = 
+1 over N  sum from r=0 to N-1GrW sup -rn
+
+Gr  =  sum from n=0 to N-1 gnW sup rn 
+
+LE
+sp
+The 1N in the first equation is the same normalizing
+factor as the 1b in the Fourier series
+for the finite time domain is 0N
+in the discrete case and 0b in the Fourier series case
+It does not matter
+whether it is written into the forward or the reverse transform but it is usually
+placed as shown above as a matter of convention
+pp
+As illustrated by Figure 45 discrete Fourier transforms
+take an input of N real values representing equally-spaced time samples
+in the interval 0b and produce as output N complex values representing
+equally-spaced frequency samples in the interval 0Nb
+FC Figure 45
+Note that the end-point of this frequency interval is the sampling frequency
+It seems odd that the input is real and the output is the same number of
+ul
+complex
+quantities  we seem to be getting some numbers for nothing
+However this isnt so for it is easy to show that if the input sequence is
+real the output frequency
+spectrum has a symmetry about its mid-point half the sampling frequency
+This can be expressed as
+LB
+DFT symmetry000000 
+ mark G half N +r = G half N -r sup   if g is real-valued
+LE
+where  denotes the conjugate of a complex quantity
+that is a+jb sup  = a-jb
+pp
+It was argued above that the frequency spectrum in the DFT is periodic with
+the spectrum from 0 to the sampling frequency being repeated regularly up and
+down the frequency axis  It can easily be seen from the DFT equation that
+this is so  It can be written
+LB
+DFT periodicity lineup GN+r = Gr  always
+LE
+Figure 46 illustrates the properties of symmetry and periodicity
+FC Figure 46
+sh 45  Estimating the frequency spectrum of speech using the DFT
+pp
+Speech signals are not exactly periodic  Although the waveform in a particular
+pitch period will usually resemble those in the preceding and following pitch
+periods it will certainly not be identical to them
+As the articulation of the speech changes the formant positions will alter
+As we saw in Chapter 2 the pitch itself is certainly not constant
+Hence the fundamental assumption of the DFT that the waveform is periodic
+is not really justified  However the signal is quasi-periodic for changes
+from period to period will not usually be very great  One way of computing
+the short-term frequency spectrum of speech is to use
+ul
+pitch-synchronous
+Fourier transformation where single pitch periods are isolated from the
+waveform and processed with the DFT  This gives a rather accurate estimate
+of the spectrum  Unfortunately it is difficult to determine the beginning
+and end of each pitch cycle as we shall see later in this chapter when
+discussing pitch extraction techniques
+pp

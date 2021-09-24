@@ -1,0 +1,100 @@
+pp
+The importance of prosodics for automatic speech
+ul
+recognition
+is beginning to be appreciated too  Some research projects
+have attended to the automatic identification of points of stress
+in the hope that the clear articulation of stressed syllables can be used
+to provide anchor points in an unknown utterance for example see Lea
+ul
+et al
+1975
+
+Lea Medress Skinner 1975
+
+pp
+But prosodics and segmentals are closely intertwined
+I have chosen to
+treat them in separate chapters in order to split the material up into
+manageable chunks rather than to enforce a deep division between them
+It is also true that synthesis of prosodic features is an uncharted and
+controversial area which gives this chapter rather a different
+flavour from the last
+It is hard to be as definite about alternative strategies
+and methods as you can for segment concatenation
+In order to make the treatment as concrete and down-to-earth as possible
+I will describe in some detail two example projects in prosodic synthesis
+The first treats the problem of transferring pitch from one utterance to
+another while the second considers how artificial timing and pitch can be
+assigned to synthetic speech
+These examples illustrate quite different problems and are reasonably
+representative of current research activity
+Other systems are described by Mattingly 1966 Rabiner
+ul
+et al
+1969  Before
+
+Mattingly 1966
+
+
+Rabiner Levitt Rosenberg 1969
+
+looking at the two examples we will discuss
+a feature which is certainly prosodic but does not appear in the
+list given earlier em stress
+sh 81  Stress
+pp
+Stress is an everyday notion and when
+listening to natural speech people can usually agree on which syllables
+are stressed  But it is difficult to characterize in acoustic terms
+From the speakers point of view a stressed syllable is produced by
+pushing more air out of the lungs  For a listener the points of stress
+are obvious
+You may think that stressed syllables are louder than the others  however
+instrumental studies show that this is not necessarily nor even usually
+so eg Lehiste and Peterson 1959
+
+Lehiste Peterson 1959
+
+Stressed syllables frequently have a longer vowel than unstressed
+ones but this is by no means universally true em if you say little
+or bigger you will find that the vowel in the first stressed syllable
+is short and shows little sign of lengthening as you increase the emphasis
+Moreover experiments using bisyllabic nonsense words have indicated
+that some people consistently judge the
+ul
+shorter
+syllable to be stressed in the absence of other clues Morton and Jassem
+1965
+
+Morton Jassem 1965
+
+Pitch often helps to indicate stress
+It is not that stressed syllables are always higher- or lower-pitched
+than neighbouring ones or even that they are uttered with a rising or
+falling pitch  It is the
+ul
+rate of change
+of pitch that tends to be greater
+for stressed syllables  a sharp rise or fall
+or a reversal of direction helps to give emphasis
+pp
+Stress is acoustically manifested in timing and pitch
+and to a much lesser extent in loudness
+However it is a rather subtle feature and does
+ul
+not
+correspond simply to duration increases or pitch rises
+It seems that listeners unconsciously put together all the clues
+that are present in an utterance in order to deduce which syllables are
+stressed
+It may be that speech is perceived by a listener with reference to how
+he would have produced it himself and that this is how he detects which syllables
+were given greater vocal effort
+pp
+The situation is confused by the fact that certain syllables in words are
+often said in ordinary language to be stressed on account of their
+position in the word  For example the words
+diplomat diplomacy and diplomatic have stress on the first
+second and third syllables respectively
+But here we are talking about the word itself rather than

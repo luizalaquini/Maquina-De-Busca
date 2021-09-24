@@ -1,0 +1,100 @@
+the stored speech output while for synthetic speech the accent is the
+machines and the tone of voice is determined by the synthesis program
+pp
+Probably the most attractive representation of utterances in man-machine
+systems is ordinary English text as used by the Kurzweil reading machine
+But as noted above this poses extraordinarily difficult problems for the
+synthesis procedure and these inevitably result in severely degraded speech
+Although in the very long term these problems may indeed be solved
+most speech output systems can adopt as their representation of an utterance
+a description of it which explicitly conveys the difficult features of
+intonation rhythm and even pronunciation
+In the kind of applications described above barring the reading machine
+input will be prepared by a
+programmer as he builds the software system which supports the interactive
+dialogue
+Although it is important that the method of specifying utterances be easily
+learned it is not necessary that plain English
+is used  It should be simple for the programmer to enter new
+utterances and modify them on-line in cut-and-try attempts to render the
+man-machine dialogue as natural as possible  A phonetic input
+can be quite adequate for this especially if the system allows the
+programmer to hear immediately the synthesized version of the message
+he types  Furthermore markers which indicate rhythm and intonation can
+be added to the message so that the system does not have to deduce these features
+by attempting to understand the plain text
+pp
+This brings us to another disadvantage of speech storage as compared with
+speech synthesis  To provide utterances for a voice response system using
+stored human speech one must assemble together special input hardware
+a quiet room and probably a dedicated computer  If the speech is to be
+heavily encoded either expensive special hardware is required or the encoding
+process if performed by software on a general-purpose computer will take
+a considerable length of time perhaps hundreds of times real-time  In
+either case time-consuming editing of the speech will be necessary with
+follow-up recordings to clarify sections of speech which turn out to be
+unsuitable or badly recorded  If at a later date the voice response
+system needs modification it will be necessary to recall the same speaker
+or re-record the entire utterance set  This discourages the application
+programmer from adjusting his dialogue in the light of experience
+Synthesizing from a textual representation on the other hand allows him
+to change a speech prompt as simply as he could a VDU one and evaluate
+its effect immediately
+pp
+We will return to methods of digitizing and compacting speech in Chapters 3
+and 4 and carry on to consider speech synthesis in subsequent chapters
+Firstly however it is necessary to take a look at what speech is and how
+people produce it
+sh 18  References
+LB nnnn
+
+LIST
+
+LE nnnn
+sh 19  Further reading
+pp
+There are remarkably few general books on speech output although a
+substantial specialist literature exists for the subject
+In addition to the references listed above I suggest that you look
+at the following
+LB nn
+Ainsworth-1976-1
+-
+ds A Ainsworth WA
+ds D 1976
+ds T Mechanisms of speech recognition
+ds I Pergamon
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+A nice easy-going introduction to speech recognition this book covers
+the acoustic structure of the speech signal in a way which makes
+it useful as background reading for speech synthesis as well
+It complements Lea 1980 cited above which presents more recent results
+in greater depth
+in-2n
+Flanagan-1973-2
+-
+ds A Flanagan JL
+as A  and Rabiner LR Editors
+ds D 1973
+ds T Speech synthesis
+ds I Wiley
+nr T 0
+nr A 0
+nr O 0
+ 2 book
+in+2n
+This is a collection of previously-published research papers on speech
+synthesis rather than a unified book
+It contains many of the classic papers on the subject from 1940 - 1972
+and is a very useful reference work
+in-2n
+LeBoss-1980-3
+-
+ds A LeBoss B
+ds D 1980
+ds K 
+ds T Speech IO is making itself heard

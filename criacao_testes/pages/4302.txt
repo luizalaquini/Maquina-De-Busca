@@ -1,0 +1,100 @@
+Hence the response of the system to an arbitrary input is
+LB
+EQ
+yn =  sum from k=- infinity to infinity  xk hn-k 
+EN
+LE
+This is called a
+ul
+convolution sum
+and is sometimes written
+LB
+EQ
+yn = xn  hn
+EN
+LE
+pp
+Lets write this in terms of z-transforms  The two-sided z-transform of yn
+is
+LB
+EQ
+Yz =  sum from n=- infinity to infinity ynz sup -n  =
+ sum from n  sum from k xkhn-k z sup -n 
+EN
+LE
+Writing z sup -n as  z sup -n-k z sup -k  and interchanging the order
+of summation this becomes
+LB
+EQ
+Yz mark =  sum from k  sum from n  hn-kz sup -n-k xkz sup -k
+EN
+br
+EQ
+lineup =  sum from k Hzz sup -k  =  Hz sum from k xkz sup
+-k =HzXz 
+EN
+LE
+Thus convolution in the time domain is the same as multiplication in the
+z-transform domain a very important result  Applied to the linear system of
+Figure 410 this means that the output z-transform is the input z-transform
+multiplied by the z-transform of the systems impulse response
+pp
+What we really want to do is to relate the frequency spectrum of
+the output to the response of the system and the spectrum of the
+input
+In fact frequency spectra are very closely connected with z-transforms  A
+periodic signal xn which repeats every N samples has DFT
+LB
+EQ
+sum from n=0 to N-1 xne sup -j2 pi rnN 
+EN
+LE
+and its z-transform is
+LB
+EQ
+sum from n=- infinity to infinity xn z sup -n 
+EN
+LE
+Hence the DFT is the same as the z-transform of a single cycle of the signal
+evaluated at the points  z= e sup j2 pi rN  for r=0 1   N-1
+In other
+words the frequency components are samples of the z-transform at N
+equally-spaced points around the unit circle
+Hence the frequency spectrum at the output of a linear system is the product of
+the
+input spectrum and the frequency response of the system itself that is the
+transform of its impulse response function
+It should be admitted that this statement is somewhat questionable
+because to get from z-transforms to DFTs we have assumed that
+a single cycle only is transformed em and the impulse response function of
+a system is not necessarily periodic  The real action of the system is
+to multiply z-transforms not DFTs  However it is useful in imagining
+the behaviour of the system to think in terms of products of DFTs and in
+practice it is always these rather than z-transforms which are computed
+because of the existence of the FFT algorithm
+pp
+Figure 411 shows the frequency spectrum of a typical voiced speech signal
+FC Figure 411
+The overall shape shows humps at the formant positions like those in the
+idealized Figure 22  However superimposed on this is an oscillation
+in the frequency domain at the pitch frequency  This occurs because the
+transform of the vocal tract filter has been multiplied by that of the
+pitch pulse the latter having components at harmonics of the pitch frequency
+The oscillation must be suppressed before the formants
+can be estimated to any degree of accuracy
+pp
+One way of eliminating the oscillation is to perform pitch-synchronous
+analysis
+This removes the influence of pitch from the frequency domain by dealing with
+it in the time domain  The snag is of course that it is not easy to estimate
+the pitch frequency  some techniques for doing so are discussed in the next
+main section
+Another way is to use linear predictive analysis which really does get rid
+of pitch information without having to estimate the pitch period first  A
+smooth
+frequency spectrum can be produced using the analysis techniques described in
+Chapter 6 which provides
+a suitable starting-point for formant frequency estimation
+The third method is to remove the pitch ripple from the frequency spectrum
+directly  This will be discussed in an intuitive rather than a
+theoretical way because linear predictive methods are becoming dominant

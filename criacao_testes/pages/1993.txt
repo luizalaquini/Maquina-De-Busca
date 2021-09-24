@@ -1,0 +1,100 @@
+detail has been swept under the carpet
+pp
+There are two important messages that are worth reiterating once more
+The first is that the representation of the input em that is
+whether it be a concept
+in some semantic domain a syntactic description of an utterance a
+decomposition into morphs plain text or some contrived re-spelling of it em
+is crucial to the quality of the output
+Almost any extra information about the utterance can be taken into account
+and used to improve the speech
+It is difficult to derive such information if it is not provided explicitly
+for the process of climbing the tree from text to semantic representation is
+at least as hard as descending it to a phonetic transcription
+pp
+Secondly simple algorithms perform remarkably well em witness the
+punctuation-driven intonation assignment scheme and word fragment rules
+for pronunciation
+However the combined degradation contributed by several imperfect
+processes is likely to impair speech quality very seriously
+And great complexity is introduced when these simple algorithms are
+discarded in favour of more sophisticated ones
+There is for example a world of difference between a pronunciation
+program that copes with 97 of common words and one that deals correctly
+with 99 of a random sample from a dictionary
+pp
+Some of the options that face the system designer are recapitulated in
+Figure 94
+FC Figure 94
+Starting from text one can take the simple approach of lexically-based
+suffix-splitting letter-to-sound rules and prosodics derived
+from punctuation to generate a phonetic transcription
+This will provide a cheap system which is relatively easy to implement
+but whose speech quality will probably not be acceptable to any but the
+most dedicated listener
+such as a blind person with no other access to reading material
+pp
+The biggest improvement in speech quality from such a system would
+almost certainly come from more intelligent prosodic
+control em particularly of intonation
+This unfortunately is also by far the most difficult to make unless
+intonation contours tonic stresses and tone-group boundaries are hand-coded
+into the input
+To generate the appropriate information from text one has to climb to the
+upper levels in Figure 94 em and even when these are reached the problems
+are by no means over
+Still let us climb the tree
+pp
+For syntax analysis part-of-speech information is needed and for this
+the grammatical roles of individual words in the text must be ascertained
+A morph dictionary is the most reliable way to do this
+A linguist may prefer to go from morphs to syntax by way of morphemes
+but this is not necessary for the present purpose
+Just the information that
+the morph went is a verb can be stored in the dictionary instead
+of its decomposition  went = go + ed
+pp
+Now that we have the morphological structure of the text stress assignment rules
+can be applied to produce more accurate speech rhythms
+The morph decomposition will also allow improvements to be made to the
+pronunciation particularly in the case of silent es in compound words
+But the ability to assign intonation has hardly been improved at all
+pp
+Let us proceed upwards
+Now the problems become really difficult
+A semantic representation of the text is needed but what exactly does this
+mean
+We certainly must have
+ul
+morphemic
+knowledge for now the fact that went is a derivative of go
+rather than any other verb becomes crucial
+Very well let us augment the morph dictionary with morphemic information
+But this does not attack the problem of semantic representation
+We may wish to resolve pronoun references to help assign stress
+Parts of the problem are solved in principle
+and reported in the artificial intelligence
+literature but if such an ability is incorporated into the speech
+synthesis system it will become enormously complicated
+In addition we have seen that knowledge of antitheses in the text will greatly
+assist intonation assignment but procedures for extracting this
+information constitute a research topic in their own right
+pp
+Now step back and take a top-down approach
+What could we do with this semantic understanding and knowledge of the structure
+of the discourse if we had it
+Suppose the input were a concept in some as yet undetermined representation
+What are the
+ul
+acoustic
+manifestations of such high-level features as anaphoric references or
+antithetical comparisons
+of parenthetical or satirical remarks
+of emotions  warmth sarcasm sadness and despair
+Can we program the art of elocution
+These are good questions 
+sh 94  References
+LB nnnn
+
+LIST
+

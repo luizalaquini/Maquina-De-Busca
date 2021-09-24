@@ -1,0 +1,100 @@
+pp
+Table 73 summarizes some of the acoustic phases of voiced and unvoiced
+stops  There are many variations that have not been mentioned
+Nasal plosion good news occurs at the word boundary in this case
+when the nasal formant pervades the
+opening phase  Stop bursts are suppressed when the next sound is a stop
+too the burst on the
+ul
+p
+of apt for example
+It is difficult to distinguish a voiced stop from an unvoiced one
+at the end of a word cab and cap if the speaker is trying to
+make himself particularly clear he will put a short neutral vowel
+after the voiced stop to emphasize its early onset of voicing
+If he is Italian he will probably do this anyway for it is the norm
+in his own language
+pp
+Finally we turn to affricates of which there are only two
+in English
+ul
+ch
+chin and
+ul
+j
+djinn
+They are very similar to the stops
+ul
+t
+and
+ul
+d
+followed by the fricatives
+ul
+sh
+and
+ul
+zh
+respectively and their acoustic characterization is similar to that
+of the phoneme pair
+ul
+ch
+has a closing phase a stopped phase and a long fricative burst
+There is no aspiration
+for the vocal cords are not involved
+ul
+j
+is the same except that voicing extends further into the stopped
+portion and the terminating fricative is also voiced
+It may be pronounced with a voice bar if the preceding segment is voiced
+adjunct
+sh 75  Speech synthesis by rule
+pp
+Generation of speech by rules acting upon a phonetic transcription
+was first investigated in the early 1960s Kelly and Gerstman 1961
+
+Kelly Gerstman 1961
+
+Most systems employ a hardware resonance synthesizer analogue or digital
+series or parallel
+to reduce the load on the computer which operates the rules
+The speech-by-rule program rather than the
+synthesizer inevitably contributes by far the greater part of the
+degradation in the resulting speech
+Although parallel synthesizers offer greater potential control over
+the spectrum it is not clear to what extent a synthesis program can take
+advantage of this  Parameter tracks for a series synthesizer can
+easily be converted into linear predictive coefficients and systems
+which use a linear predictive synthesizer will probably become popular
+in the near future
+pp
+The phrase synthesis by rule which is in common use does not
+make it clear just what sort of features the rules are supposed to
+accomodate and what information must be included explicitly in the
+input transcription
+Early systems made no attempt to simulate prosodics
+Pitch and rhythm could be controlled but only by inserting
+pitch specifiers and duration markers in the input
+Some kind of prosodic control was often incorporated later
+but usually as a completely separate phase from segmental synthesis
+This does not allow interaction effects such as the extra
+aspiration for voiceless stops in accented syllables to be taken
+into account easily
+Even systems which perform prosodic operations invariably need to have
+prosodic specifications embedded explicitly in the input
+pp
+Generating parameter tracks for a synthesizer from a phonetic transcription
+is a process of data
+ul
+expansion
+Six bits are ample to specify a phoneme and a speaking rate of 12 phonemessec
+leads to an input data rate of 72 bits
+The data rate required to control the synthesizer will depend upon the number
+of parameters and the rate at which they are sampled
+but a typical figure is 6 Kbits Chapter 5
+Hence there is something like a hundredfold data expansion
+pp
+Figure 71 shows the parameter tracks for a series synthesizers rendering
+of the utterance
+ul
+s i k s

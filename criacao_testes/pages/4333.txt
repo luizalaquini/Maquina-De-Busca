@@ -1,0 +1,100 @@
+reflection coefficients from the filter coefficients a sub k
+RF
+fi
+na
+nh
+ul
+const
+p=15
+ul
+type
+cvec =
+ul
+array
+1p
+ul
+of
+real
+sp
+ul
+procedure
+reflectioncoeff cvec
+ul
+var
+refl cvec
+sp
+computes reflection coefficients in refl1p corresponding
+to linear prediction coefficients in coeff1p
+sp
+ul
+var
+temp cvec  i m 1p
+sp
+ul
+begin
+in+6n
+ul
+for
+m=p
+ul
+downto
+1
+ul
+do begin
+in+2n
+reflm = coeffm
+br
+ul
+for
+i=1
+ul
+to
+m-1
+ul
+do
+tempi = coeffi
+br
+ul
+for
+i=1
+ul
+to
+m-1
+ul
+do
+ti+2n
+coeffi =
+ti+4n
+coeffi + reflmtempm-i  1 - reflmreflm
+in-2n
+ul
+end
+in-6n
+ul
+end
+nf
+MT 2
+Procedure 63  Pascal algorithm for producing reflection coefficients
+from filter coefficients
+TE
+pp
+Although we will not go into the theoretical details here
+reflection coefficients are bounded by +-1 for stable filters
+and hence form a useful test for stability  Having a limited
+range makes them easy to quantize for transmission and in fact
+they behave better under quantization than do the filter coefficients
+One could resynthesize speech from reflection coefficients by first
+converting them to filter coefficients and using the synthesis
+method described above  However it is natural to seek a single-stage
+procedure which can regenerate speech directly from reflection
+coefficients
+pp
+Such a procedure does exist and is called a
+ul
+lattice filter
+Figure 68 shows one form of lattice for speech synthesis
+FC Figure 68
+The error signal whether transmitted or synthesized
+enters at the upper left-hand corner passes along the top forward
+signal path being modified on the way to give the output signal
+at the right-hand side

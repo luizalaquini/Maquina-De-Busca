@@ -1,0 +1,100 @@
+ul
+sounds
+of an utterance a phonetic
+transcription of it  The same utterance can be transcribed at
+different levels of detail  simple transcriptions are called broad
+and more specific ones are called narrow
+Perhaps the most logically satisfying kind of transcription employs units
+termed phonemes  This is the broadest transcription
+and is sometimes called a
+ul
+phonemic
+transcription to emphasize that that it is in terms of phonemes
+Unfortunately the word phoneme is often used somewhat loosely
+In its true sense a phoneme is a
+ul
+logical
+unit rather than a physical acoustic one
+and is defined in relation to a particular language by reference
+to its use in discriminating different words
+Classifications of sounds which are based on their
+semantic
+role as word-discriminators are called
+ul
+phonological
+classifications  we could ensure that there is no ambiguity in the sense
+with which we use the term phoneme by calling it a phonological unit and
+the phonemic transcription could be called a phonological one
+rh Broad phonetic transcription
+A phoneme is an abstract unit representing a set of different sounds
+The issue is confused by the fact that the members of the set actually
+sound very similar if not identical to the untrained ear em precisely because
+the difference between them plays no part in distinguishing words from
+each other in the particular language concerned
+pp
+Take the words key and caw for example  Despite the difference in
+spelling both of them begin with a
+ul
+k
+sound that belongs in English
+to the same phoneme set called
+ul
+k
+However say them two or three times each concentrating on the position of
+the tongue during the
+ul
+k
+It is quite different in each case  For key it
+is raised close to the roof of the mouth in preparation for the
+ul
+ee
+whereas in caw it is much lower down
+The sound of the
+ul
+k
+is actually quite different in the two cases
+Yet they belong to the same phoneme for there is no pair of words which
+relies on this difference to distinguish them em key and caw are
+obviously distinguished by their vowels not by the initial
+consonant
+You probably cannot hear clearly the difference between the two
+ul
+kc
+s
+precisely because they belong to the same phoneme and so the difference
+is not important for English
+pp
+The point is sharpened by considering another language where we make a
+distinction em and hence can hear the difference em between two sounds
+that belong in the language to the same phoneme
+Japanese does not distinguish
+ul
+r
+from
+ul
+l
+Japanese people
+ul
+do not hear
+the difference between lice and rice in the same way that you do
+not hear the difference between the two
+ul
+kc
+s above
+Cockneys do not hear except with a special effort the difference
+between has and as or haitch and aitch for the Cockney dialect
+does not recognize initial
+ul
+hc
+s
+pp
+So what is a phoneme  It is a set of sounds whose members do not
+discriminate between any words in the language under consideration
+If you are mathematically minded you could think of it as an equivalence
+class of sounds determined by the relationship
+LB
+sound sub 1 is related to sound sub 2 if sound sub 1 and sound sub 2
+do not discriminate any pair of words in the language
+LE
+The
+ul

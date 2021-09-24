@@ -1,0 +1,100 @@
+LE
+directs the operator to cut 25 of red wire attach one end to a specified point
+on the terminal strip and attach the other to a pin of the tube socket  The
+tape recorder is fitted with a pedal switch to allow a sequence of such instructions
+to be executed by the operator at his own pace
+pp
+The usual way of recording the instruction tape is to have a human reader
+dictate them from a printed list
+The tape is then checked against the list by another listener to ensure that
+the instructions are correct  Since wiring lists are usually stored and
+maintained in machine-readable form it is natural to consider whether speech
+synthesis techniques could be used to generate the acoustic tape directly by
+a computer Flanagan
+ul
+et al
+1972
+
+Flanagan Rabiner Schafer Denman 1972
+
+pp
+Table 12 shows the vocabulary needed for this application
+RF
+nr x1 20i+20i+wtube socketu
+nr x1 nl-nx12
+in nx1u
+ta 20i +20i
+A	green	seventeen
+black	left	six
+bottom	lower	sixteen
+break	make	strip
+C	nine	ten
+capacitor	nineteen	terminal
+eight	one	thirteen
+eighteen	P	thirty
+eleven	point	three
+fifteen	R	top
+fifty	red	tube socket
+five	repeat coil	twelve
+forty	resistor	twenty
+four	right	two
+fourteen	seven	upper
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 12  Vocabulary needed for computer-generated wiring instructions
+It is rather larger
+than that of the talking calculator em about 25 seconds of speech em but well
+within the limits of single-chip storage in ROM compressed by the linear
+predictive technique  However at the time that the scheme was investigated
+1970-71 the method of linear predictive coding had not been fully developed
+and the technology for low-cost microcircuit implementation was not available
+But this is not important for this particular application for there is
+no need to perform the synthesis on a miniature low-cost computer system
+nor need it
+be accomplished in real time  In fact a technique of concatenating
+spectrally-encoded words was used described in Chapter 7 and it was
+implemented on a minicomputer  Operating much slower than real-time the system
+calculated the speech waveform and wrote it to disk storage  A subsequent phase
+read the pre-computed messages and recorded them on a computer-controlled analogue
+tape recorder
+pp
+Informal evaluation showed the scheme to be quite successful  Indeed the
+synthetic speech whose quality was not high was actually preferred to
+natural speech in the noisy environment of the production line for each
+instruction was spoken in the same format with the same programmed pause
+between the items
+A list of 58 instructions of the form shown above was recorded and used
+to wire several pieces of apparatus without errors
+sh 13  Telephone enquiry service
+pp
+The computer-generated wiring scheme illustrates how speech can be used to give
+instructions without diverting visual attention from the task at hand
+The next system we examine shows how speech output can make the telephone
+receiver into a remote computer terminal for a variety of purposes
+Witten and Madams 1977
+
+Witten Madams 1977 Telephone Enquiry Service
+
+The caller employs the touch-tone keypad shown in Figure 13 for input and the
+computer generates
+a synthetic voice response
+FC Figure 13
+Table 13 shows the process of making
+contact with the system
+RF
+fi
+nh
+na
+in 03i
+nr x0 wCOMPUTER  
+nr x1 wCALLER  
+in+nx0u
+ti-nx0u
+CALLERhnx0u-nx1u  Dials the service
+ti-nx0u
+COMPUTER  Answers telephone
+Hello Telephone Enquiry Service  Please
+enter your user number
+ti-nx0u
+CALLERhnx0u-nx1u  Enters user number
+ti-nx0u

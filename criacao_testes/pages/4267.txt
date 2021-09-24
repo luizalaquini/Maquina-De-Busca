@@ -1,0 +1,100 @@
+ti-nx0u
+CALLERhnx0u-nx1u  Please repeat the arrival time
+ti-nx0u
+COMPUTER  The arrival time is five twenty five pm
+ti-nx0u
+CALLERhnx0u-nx1u  I will take the flight
+ti-nx0u
+COMPUTER  Your reservation on flight number nine two to Chicago on Friday is confirmed  Thank you
+in 0
+nf
+MT 2
+Table 17  A conversation with an airline flight information service
+from Levinson and Shipley 1980
+TE
+
+Levinson Shipley 1980
+
+The user dials the system from an
+ordinary telephone  The recognition side must be trained by each user and
+accepts isolated words spoken with brief pauses between them
+The voice response unit has a vocabulary of around 200 words and
+synthesizes its answers by slotting words into templates evoked by the speech
+understanding part in response to a query  For example
+LB
+NI
+This flight makes em stops
+NI
+Flight number em leaves em at em  arrives in em at em
+LE
+are templates which when called with specific slot fillers could produce the
+utterances
+LB
+NI
+This flight makes three stops
+NI
+Flight number nine two leaves New York at four pm
+arrives in Chicago at five twenty-five pm
+LE
+The chief research interest of the system is in its speech understanding
+capabilities and the method used for speech output is relatively
+straightforward  The templates and words are recorded digitized compressed
+slightly and stored on disk files totalling a few hundred thousand bytes of
+storage using techniques similar to those of System X
+Again no independent manipulation of pitch is possible and so the utterances
+sound intelligible but the transition between templates and slot fillers is not
+completely fluent  However the overall context of the interaction means that
+the communication is not seriously disrupted even if the machine occasionally
+misunderstands the man or vice versa  The users attention is drawn away from
+recognition accuracy and focussed on the exchange of information with the machine
+The authors conclude that progress in speech recognition can best be made by
+studying it in the context of communication rather than in a vacuum or as part
+of a one-way channel and the same is undoubtedly true of speech synthesis as
+well
+sh 16  Reading machine for the blind
+pp
+Perhaps the most advanced attempt to provide speech output from a computer
+is the Kurzweil reading machine for the blind first marketed in the late
+1970s Figure 14
+FC Figure 14
+This device reads an ordinary book aloud  Users adjust the reading
+speed according to the content of the material and their familiarity with
+it and the maximum rate has recently been improved to around 225 words per
+minute em perhaps half as fast again as normal human speech rates
+pp
+As well as generating speech from text the machine has to scan the document
+being read and identify the characters presented to it  A scanning camera
+is used controlled by a program which searches for and tracks the lines of
+text  The output of the camera is digitized and the image is enhanced
+using signal-processing techniques  Next each individual letter must be
+isolated and its geometric features identified and compared with a pre-stored
+table of letter shapes  Isolation of letters is not at all trivial for
+many type fonts have ligatures which are combinations of characters joined
+together for example the letters fi are often run together  The
+machine must cope with many printed type fonts as well as typewritten ones
+The text-recognition side of the Kurzweil reading machine is in fact one of
+its most advanced features
+pp
+We will discuss the problem of speech generation from text in Chapter 9
+It has many facets  First there is pronunciation the
+translation of letters to sounds  It is important to take into account
+the morphological structure of words dividing them into root and endings
+Many words have concatenated suffixes like like-li-ness  These are
+important to detect because a final e which appears on a root word
+is not pronounced itself but affects the pronunciation of the previous
+vowel  Then there is the difficulty that some words look the same
+but are pronounced differently depending on their meaning or on the syntactic
+part that they play in the sentence
+Appropriate intonation is extremely difficult to generate from a plain textual
+representation for it depends on the meaning of the text and the way in which
+emphasis is given to it by the reader  Similarly the rhythmic structure is
+important partly for correct pronunciation and partly for purposes of
+emphasis
+Finally the sounds that have been deduced from the text need to be synthesized
+into acoustic form taking due account of the many and varied contextual effects
+that occur in natural speech  This by itself is a challenging problem
+pp
+The performance of the Kurzweil reading machine is not good  While it seems
+to be true that some blind people can make use of it it is far from
+comprehensible to an untrained listener  For example
+it will miss out words and even whole phrases hesitate in a

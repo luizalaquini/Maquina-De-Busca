@@ -1,0 +1,100 @@
+C	pitch range on whole of pretonic
+D	departure from linearity on each foot of pretonic
+E	pitch change at start of tonic
+F	pitch range on tonic
+G	departure from linearity on tonic
+H	continuation to next tone group
+		zero gives no continuation
+		non-zero gives pitch at end of tone group
+I	fraction along foot of the non-linearity position for pretonic feet
+J	fraction along foot of the non-linearity position for the tonic foot
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 83  The quantities that define a pitch contour
+pp
+The intention of this parametric method of specifying contours
+is that the parameters should be easily derivable from semantic variables
+like emphasis novelty of idea surprise uncertainty incompleteness
+Here we really are getting into controversial unresearched areas
+Roughly speaking parameters D and G control emphasis G by itself
+controls novelty and surprise and H and the relative sizes of E and F
+control uncertainty and incompleteness
+Certain parameters notably I and J are defined because although they
+do not appear to correspond to semantic distinctions we do not yet know
+how to generate them automatically
+RF
+nr x0 06i+05i+05i+05i+05i+05i+05i+05i+05i+05i+05i+w0000
+nr x1 nl-nx02
+in nx1u
+ta 06i +05i +05i +05i +05i +05i +05i +05i +05i +05i +05i
+Hallidays
+tone group	00A	00B	00C	00D	00E	00F	00G	00H	00I	00J
+lnx0uul
+sp
+	1	0000	0175	0000	0-40	0000	-100	0-40	0000	033	005
+	2	0000	0280	0000	0-40	-190	0100	0000	0000	033	005
+	3	0000	0175	0000	0-40	0-70	0045	0-10	0000	033	005
+	4	0000	0280	-100	0-40	0020	0045	0-45	0000	033	005
+	5	0000	0175	0060	0-40	0-20	0-45	0045	0000	033	005
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 84  Pitch contour table for Hallidays primary tone groups
+pp
+One basic requirement of the pitch assignment scheme was the ability to
+generate contours which approximate Hallidays five primary tone groups
+Values of the ten specifiable quantities are given in Table 84 for each
+tone group
+All pitches are given in Hz
+A distinctly dipping pitch movement has been given to each pretonic foot
+parameter D
+to lend prominence to the salient syllables
+sh 84  Evaluating prosodic synthesis
+pp
+It is extraordinarily difficult to evaluate schemes for prosodic synthesis
+and this is surely a large part of the reason why prosodics are among the
+least advanced aspects of artificial speech
+Segmental synthesis can be tested by playing people minimal pairs of
+words which differ in just one feature that is being investigated
+For example one might experiment with pit bit tot dot
+cot got to test the rules which discriminate unvoiced from voiced stops
+There are standard word-lists for intelligibility tests which can be
+used to compare systems too
+No equivalent of such micro-level evaluation exists for prosodics
+for they by definition have a holistic effect on utterances
+They are most noticeable and most important in longish stretches of speech
+Even monotonous arhythmic speech will be intelligible in
+sufficiently short samples provided the segmentals are good enough
+but it is quite impossible to concentrate on such speech in quantity
+Some attempts at evaluation appear in Ainsworth 1974 and McHugh 1976
+but these are primarily directed at assessing the success of pronunciation
+rules which are discussed in the next chapter
+
+Ainsworth 1974 Performance of a speech synthesis system
+
+
+McHugh 1976 Listener preference and comprehension tests
+
+pp
+One evaluation technique is to compare synthetic with natural versions
+of utterances as was done in the pitch transfer experiment
+The method described earlier used a sensitive paired-comparison test
+where subjects heard both versions in quick succession and were asked
+to judge which was most natural and intelligible
+This is quite a stringent test and one that may not be so useful
+for inferior completely synthetic contours
+It is essential to degrade the natural utterance so that it is
+comparable segmentally to the synthetic one  this was done in the
+experiment described by extracting its pitch and resynthesizing it
+from linear predictive coefficients
+pp
+Several other experiments could be undertaken to evaluate artificial
+prosody
+For example one could compare
+LB
+NP
+natural and artificial rhythms using artificial segmental synthesis
+in both cases
+NP
+natural and artificial pitch contours using artificial segmental synthesis
+in both cases

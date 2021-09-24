@@ -1,0 +1,100 @@
+ul
+hc
+-like
+aspiration quite clearly
+It doesnt always occur though for example you will hear little
+aspiration when a fricative like
+ul
+s
+precedes the stop in the
+same syllable as in spot scot  The aspiration is a distinguishing
+feature between white spot and the rather unlikely Whites pot
+It tends to increase as the emphasis on the syllable increases
+and this in an example of a prosodic feature influencing segmental
+characteristics  Finally at the end of the segment
+the aspiration em if any em will turn to voicing
+pp
+What has been described applies to
+ul
+all
+unvoiced stops
+What distinguishes one from another
+The tiny fricative burst will be different because the noise is produced
+at different places in the vocal tract em at the lips for
+ul
+p
+tongue and front of palate for
+ul
+t
+and tongue and back of palate for
+ul
+k
+The most important difference however is the formant motion illuminated
+by the last vestiges of voicing at closure and by both aspiration and the
+onset of voicing at opening
+Each stop has target formant values which although
+they cannot be heard during the stopped portion for there is no
+sound there do affect the transitions in and out
+An added complexity is that the target positions themselves vary to some
+extent depending on the adjacent segments
+If the stop is heavily aspirated the vocal posture will have almost
+attained that for the following vowel before voicing begins but
+the formant transitions will be perceived because they affect
+the sound quality of aspiration
+pp
+The voiced stops
+ul
+b d
+and
+ul
+g
+are quite similar to their unvoiced analogues
+ul
+p t
+and
+ul
+k
+What distinguishes them from each other are the formant transitions to
+target positions heard during closure and opening
+They are distinguished from their unvoiced counterparts by the fact
+that more voicing is present  it lingers on longer at closure
+and begins earlier on opening  Thus little or no aspiration appears
+during the opening phase  If an unvoiced stop is uttered in a context
+where aspiration is suppressed as in spot it is almost identical to the
+corresponding voiced stop sbot  Luckily no words in English require
+us to make a distinction in such contexts
+Voicing sometimes pervades the entire stopped portion of a voiced stop
+especially when it is surrounded by other voiced segments
+When saying a word like baby slowly you can choose whether or not to
+prolong voicing throughout the second
+ul
+b
+If you do creating what is
+called a voice bar in spectrograms
+the sound escapes through the cheeks for
+the lips are closed em try doing it for a very long time and your cheeks
+will fill up with air
+This severely attenuates high-frequency components and can
+be simulated with a weak first formant at a low resonant frequency
+RF
+nr x0 wunvoiced stops    u
+nr x1 4n
+nr x2 nx0+nx1+waspiration burst context- and emphasis-dependentu
+nr x3 nl-nx22
+in nx3u
+ta nx0u +nx1u
+unvoiced stops	closure early cessation of voicing
+	silent steady state
+	opening comprising
+		short fricative burst
+		aspiration burst context- and emphasis-dependent
+		onset of voicing
+sp
+voiced stops	closure late cessation of voicing
+	steady state possibility of voice bar
+	opening comprising
+		pre-voicing
+		short fricative burst
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 73  Acoustic phases of stop consonants

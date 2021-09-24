@@ -1,0 +1,100 @@
+in speech processing
+rh Cepstral processing of speech
+Suppose the frequency spectrum of Figure 411 were actually a time waveform
+To remove the high-frequency pitch ripple is easy  just filter it out
+However
+filtering removes
+ul
+additive
+ripples whereas this is a
+ul
+multiplicative
+ripple  To turn multiplication into addition take logarithms  Then the
+procedure would be
+LB
+NP
+compute the DFT of the speech waveform windowed overlapped
+NP
+take the logarithm of the transform
+NP
+filter out the high-frequency part corresponding to pitch ripple
+LE
+pp
+Filtering is often best done using the DFT  If the rippled waveform of Figure
+411 is transformed a strong component could be expected at the ripple
+frequency with weaker ones at its harmonics  These components can be
+simply removed by setting them to zero and inverse-transforming the result
+to give a smoothed version of the original frequency spectrum
+A spectrum of the logarithm of a frequency spectrum is often called a
+ul
+cepstrum
+em a sort of backwards spectrum  The horizontal axis of the cepstrum
+having the dimension of time is called quefrency  Note that high-frequency
+signals have low quefrencies and vice versa  In practice
+because the pitch ripple is usually well above the quefrency of interest for
+formants the upper end of the cepstrum is often simply cut off from a fixed
+quefrency which corresponds to the maximum pitch expected  However identifying
+the pitch peaks of the cepstrum has the useful byproduct of giving the pitch
+period of the original speech
+pp
+To summarize then the procedure for spectral smoothing by the cepstral method
+is
+LB
+NP
+compute the DFT of the speech waveform windowed overlapped
+NP
+take the logarithm of the transform
+NP
+take the DFT of this log-transform calling it the cepstrum
+NP
+identify the lowest-quefrency peak in the spectrum as the pitch
+confirming it by examining its harmonics which should be
+equally spaced at the pitch quefrency
+NP
+remove pitch effects from the cepstrum by cutting off its high-quefrency
+part above either the pitch quefrency or some constant representing the maximum
+expected pitch which is the minimum expected pitch quefrency
+NP
+inverse DFT the resulting cepstrum to give a smoothed spectrum
+LE
+rh Estimating formant frequencies from smoothed spectra
+The difficulties of formant extraction are not over even when a smooth frequency
+spectrum has been obtained  A simple peak-picking algorithm which identifies
+a peak at the kth frequency component whenever
+LB
+
+Xk-1  Xk
+  and  
+Xk  Xk+1
+
+LE
+will quite often identify formants incorrectly
+It helps to specify in advance minimum and maximum formant frequencies em say
+100 Hz and 3 kHz for three-formant identification and ignore peaks lying
+outside these limits  It helps to estimate
+the bandwidth of the peaks and reject those with bandwidths greater than
+500 Hz em for real formants are never this wide  However if two formants are
+very close then they may appear as a single wide peak and be rejected by
+this criterion  It is usual to take account of formant positions identified
+in previous frames under these conditions
+pp
+Markel and Gray 1976 describe in detail several estimation algorithms
+
+Markel Gray 1976 Linear prediction of speech
+
+Their simplest uses the number of peaks identified in the raw spectrum
+under 3 kHz and with
+bandwidths greater than 500 Hz to determine what to do  If exactly three
+peaks are found they are used as the formant positions  It is claimed that
+this happens about 85 to 90 of the time
+If only one peak is found the present frame is ignored and the
+previously-identified
+formant positions are used this happens less than 1 of the time
+The remaining cases are two peaks em corresponding to omission of one formant em
+and four peaks em corresponding to an extra formant being included  More
+than
+four peaks never occurred in their data  Under these conditions
+a nearest-neighbour measure is used for disambiguation  The measure is
+LB
+EQ
+v sub ij  =  | F sup   sub i k - F sub j k-1| 

@@ -1,0 +1,100 @@
+Neither is it true for glides for prolonging
+ul
+w
+in want or
+ul
+y
+in you results in vowels resembling respectively
+ul
+u
+hood or
+ul
+ee
+heed
+Fricatives voiced or unvoiced can be identified from the steady state
+but stops can not for theirs is silent or em in the case
+of voiced stops em something close to it
+pp
+Segments which are identifiable from their steady state are easy to synthesize
+The difficulty lies with the others for it must be the transitions which
+carry the information  Thus transitions are an essential part of speech
+and perhaps the term is unfortunate for it calls to mind an unimportant
+bridge between one segment and the next
+It is tempting to use the words continuant and non-continuant to distinguish
+the two categories unfortunately they are used by phoneticians in a different
+sense
+We will call them steady-state and transient segments  The latter term
+is not particularly appropriate for even sounds in this class
+ul
+can
+be prolonged  the point is that the identifying information is in the
+transitions rather than the steady state
+RF
+nr x1 wexcitation2
+nr x2 wformant resonance2
+nr x3 wfricative2
+nr x4 wfrequencies Hz2
+nr x5 wresonance Hz2
+nr x0 4n+17i+08i+06i+06i+10i+w00+nx5
+nr x6 nl-nx02
+in nx6u
+ta 4n +17i +08i +06i +06i +10i
+		h-nx1uexcitation		00h-nx2uformant resonance	00h-nx3ufricative
+				00h-nx4ufrequencies Hz	00c
+h-nx5uresonance Hz
+lnx0uul
+sp
+nr x1 wvoicing2
+fIuhfR	the	h-nx1uvoicing	0500	1500	2500
+fIafR	bud	h-nx1uvoicing	0700	1250	2550
+fIefR	head	h-nx1uvoicing	0550	1950	2650
+fIifR	hid	h-nx1uvoicing	0350	2100	2700
+fIofR	hod	h-nx1uvoicing	0600	0900	2600
+fIufR	hood	h-nx1uvoicing	0400	0950	2450
+fIaafR	had	h-nx1uvoicing	0750	1750	2600
+fIeefR	heed	h-nx1uvoicing	0300	2250	3100
+fIerfR	heard	h-nx1uvoicing	0600	1400	2450
+fIarfR	hard	h-nx1uvoicing	0700	1100	2550
+fIawfR	hoard	h-nx1uvoicing	0450	0750	2650
+fIuufR	food	h-nx1uvoicing	0300	0950	2300
+nr x1 waspiration2
+fIhfR	he	h-nx1uaspiration
+nr x1 wfrication2
+nr x2 wfrication and voicing2
+fIsfR	sin	h-nx1ufrication				6000
+fIzfR	zed	h-nx2ufrication and voicing				6000
+fIshfR	shin	h-nx1ufrication				2300
+fIzhfR	vision	h-nx2ufrication and voicing				2300
+fIffR	fin	h-nx1ufrication				4000
+fIvfR	vat	h-nx2ufrication and voicing				4000
+fIthfR	thin	h-nx1ufrication				5000
+fIdhfR	that	h-nx2ufrication and voicing				5000
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 72  Resonance synthesizer parameters for steady-state sounds
+rh Steady-state segments
+Table 72 shows appropriate values for the resonance parameters and
+excitation sources of a resonance synthesizer for steady-state
+segments only
+There are several points to note about it
+Firstly all the frequencies involved obviously depend upon the
+speaker em the size of his vocal tract his accent and speaking habits
+The values given are nominal ones for a male speaker with a dialect of
+British English called received pronunciation RP em for it is what
+used to be received on the wireless in the old days
+before the British Broadcasting Corporation
+adopted a policy of more informal more regional speech
+Female speakers have formant frequencies approximately 15 higher
+than male ones
+Secondly the third formant is relatively unimportant for vowel
+identification it is
+the first and second that give the vowels their character
+Thirdly formant values for
+ul
+h
+are not given for they would be meaningless
+Although it is certainly a steady-state sound
+ul
+h
+changes radically

@@ -1,0 +1,100 @@
+The qualifier has a multiplicative effect shown in Table 113
+RF
+nr x1 wrate qualifier2
+nr x2 win Table 112 by2
+nr x0 nx1+2i+w00+nx2
+nr x3 nl-nx02
+in nx3u
+ta nx1u +2i
+lnx0uul
+sp
+nr x2 wmultiply duration2
+rate qualifier		00h-nx2umultiply duration
+nr x2 win Table 112 by2
+		00h-nx2uin Table 112 by
+lnx0uul
+sp
+	3	100
+	2	111
+	1	122
+	0	135
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 113  Effect of the 2-bit per-segment rate qualifier
+pp
+As well as the 2-bit rate qualifier each sound segment is accompanied by
+a 3-bit pitch specification  This provides a linear control over fundamental
+frequency and Table 114 shows the measured values
+RF
+nr x1 wpitch specifier2
+nr x2 wpitch Hz2
+nr x0 nx1+15i+nx2
+nr x3 nl-nx02
+in nx3u
+ta nx1u +15i
+lnx0uul
+sp
+pitch specifier	h-nx2upitch Hz
+lnx0uul
+sp
+	0	0575
+	1	0641
+	2	0694
+	3	0758
+	4	0806
+	5	0877
+	6	0943
+	7	1000
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 114  Effect of the 3-bit per-segment pitch specifier
+The quantization interval varies from
+one to two semitones
+Votrax interpolates pitch from phoneme to phoneme in a highly satisfactory
+manner and this permits surprisingly sophisticated intonation contours
+to be generated considering the crude 8-level quantization
+pp
+The notation in which the Votrax manual defines utterances
+gives duration qualifiers and pitch specifications as digits
+preceding the sound segment and separated from it by a slash 
+Thus for example
+LB
+14THV
+LE
+defines the sound segment THV with duration qualifier 1 multiplies the
+70 msec duration of Table 112 by 122 em from Table 113 em to give 85 msec
+and pitch specification 4 81 Hz
+This representation of a segment is transformed into two ASCII characters before transmission
+to the synthesizer
+rh Converting a phonetic transcription to sound segments
+It would be useful to have a computer procedure to produce a specification for
+an utterance in terms of Votrax sound segments from a standard phonetic
+transcription
+This could remove much of the tedium from utterance preparation
+by incorporating the contextual rules given in the Votrax manual
+Starting with a phonetic transcription each phoneme should be converted
+to its default Votrax representative
+The resulting wide Votrax transcription must be
+transformed into a narrow one by application of contextual rules
+Separate rules are needed for
+LB
+NP
+vowel clusters diphthongs
+NP
+vowel transitions ie consonant-vowel and vowel-consonant
+where the vowel segment is altered
+NP
+intervocalic consonants
+NP
+consonant transitions ie consonant-vowel and vowel-consonant
+where the consonant segment is altered
+NP
+consonant clusters
+NP
+stressed-syllable effects
+NP
+utterance-final effects
+LE
+Stressed-syllable effects which include

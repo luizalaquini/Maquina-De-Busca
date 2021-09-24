@@ -1,0 +1,100 @@
+stuttering manner blatantly mis-pronounce many words fail to detect
+es which should be silent and give completely wrong rhythms
+to words making them impossible to understand
+Its intonation is decidedly unnatural monotonous and often downright
+misleading  When it reads completely new text to people unfamiliar with its
+quirks
+they invariably fail to understand more than an odd word here and there
+and do not improve significantly when the text is repeated more than once
+Naturally performance improves if the material is familiar or expected
+in some way
+One useful feature is the machines ability to spell out difficult words
+on command from the user
+pp
+While not wishing to denigrate the Kurzweil machine which is a remarkable
+achievement in that it integrates together many different advanced
+technologies there is no doubt that the state of the art in speech synthesis
+directly from unadorned text is extremely primitive at present
+It is vital not to overemphasize the potential usefulness of abysmal speech
+which takes a great deal of training on the part of the user before
+it becomes at all intelligible  To make a rather extreme analogy
+Morse code could be used as
+audio output requiring a great deal of training but capable of being understood
+at quite high rates by an expert
+It could be generated very cheaply
+But clearly the man in the street would find it quite unacceptable as
+an audio output medium because of the excessive effort required to learn to use
+it  In many applications very bad synthetic speech is just as useless
+However the issue is complicated by the fact that for people who use
+synthesizers regularly synthetic speech becomes quite easily comprehensible
+We will return to the problem of evaluating the quality of artificial speech
+later in the book Chapter 8
+sh 17  System considerations for speech output
+pp
+Fortunately very many of the applications of speech output from computers
+do not need to read unadorned text
+In all the example systems described above except the reading machine
+it is enough to be able to store utterances in some representation which can
+include pre-programmed cues for pronunciation rhythm and intonation in
+a much more explicit way than ordinary text does
+pp
+Of course techniques
+for storing audio information have been in use for decades
+For example a domestic cassette tape recorder stores speech at much better
+than telephone quality at very low cost  The method of direct
+recording of an analogue waveform is currently used for announcements in
+the telephone network to provide information such as the time weather
+forecasts and even bedtime stories
+However it is difficult to provide rapid access to messages stored in
+analogue form and although some computer peripherals which use analogue
+recordings for voice-response applications have been marketed em they are
+discussed briefly at the beginning of Chapter 3 em they have been
+superseded by digital storage techniques
+pp
+Although direct storage of a digitized audio waveform is used in some
+voice-response systems the approach has certain limitations  The most
+obvious one is the large storage requirement  suitable coding can reduce
+the data-rate of speech to as little as one hundredth of that needed by
+direct digitization and textual representations reduce it by another factor
+of ten or twenty  Of course the speech quality is inevitably compromised
+somewhat by data-compression techniques  However the cost of storage is
+dropping so fast that this is not necessarily an overriding factor
+A more fundamental limitation is that utterances stored directly cannot sensibly
+be modified in any way to take account of differing contexts
+pp
+If the results of certain kinds of analyses
+of utterances are stored instead of simply the digitized waveform
+a great deal more flexibility can be gained
+It is possible to separate out the features of intonation and amplitude from
+the articulation of the speech and this raises the attractive possibility
+of regenerating utterances with pitch contours different from those with which they were
+recorded
+The primary analysis technique used for this purpose is
+ul
+linear prediction
+of speech and this is treated in some detail in Chapter 6  It also reduces drastically the
+data-rate of speech by a factor of around 50
+It is likely that many voice-response systems in the short- and medium-term
+future will use linear predictive representations for utterance storage
+pp
+For maximum flexibility however it is preferable to store a textual
+representation of the utterance
+There is an important distinction between speech
+ul
+storage
+where an actual human utterance is recorded perhaps processed to lower
+the data-rate and stored for subsequent regeneration when required
+and speech
+ul
+synthesis
+where the machine produces its own individual utterances which are not based
+on recordings of a person saying the same thing  The difference is summarized
+in Figure 15
+FC Figure 15
+In both cases something is stored  for the first it is
+a direct representation of an actual human utterance while for the second
+it is a typed
+ul
+description
+of the utterance in terms of the sounds or phonemes which constitute it
+The accent and tone of voice of the human speaker will be apparent in

@@ -1,0 +1,100 @@
+The lowest formant called formant one varies from around 200 Hz
+to 1000 Hz during speech the exact range depending on the size
+of the vocal tract
+Formant two varies from around 500 to 2500 Hz and formant three
+from around 1500 to 3500 Hz
+pp
+You can easily hear the lowest formant by whispering the vowels in
+the words heed hid head had hod hawed and whod
+They appear to have a steadily descending pitch yet since you are
+whispering there is no fundamental frequency
+What you hear is the lowest resonance of the vocal tract em formant one
+Some masochistic people can play simple tunes with this formant by putting
+their mouth in successive vowel shapes and knocking the top of their head
+with their knuckles em hard
+pp
+A difficulty occurs when trying to identify the lower formants for speakers
+with high-pitched voices
+When a formant frequency falls below the fundamental excitation frequency
+of the voice its effect is diminished em although it is still present
+The vibrato used by opera singers provides a very low-frequency excitation
+at the vibrato rate which helps to illuminate the lower formants even
+when the pitch of the voice is very high
+pp
+Of course speech is not a static phenomenon
+The organ-pipe model describes the speech spectrum during a continuously
+held vowel with the mouth in a neutral position such as for aaah
+But in real speech the tongue and lips are in continuous motion
+altering the shape of the vocal tract and hence the positions of the resonances
+It is as if the organ-pipe were being squeezed and expanded in
+different places all the time
+Say
+ul
+ee
+as in heed and feel how close your tongue is to the roof of your mouth
+causing a constriction near the front of the vocal cavity
+pp
+Linguists and speech engineers use a special frequency analyser called a
+sound spectrograph to make a three-dimensional plot of the variation
+of the speech energy spectrum with time
+Figure 23 shows a spectrogram of the
+utterance go away
+FC Figure 23
+Frequency is given on the vertical axis
+and bands are shown at the beginning to indicate the scale
+Time is plotted horizontally
+and energy is given by the darkness of any particular area
+The lower few formants can be seen as dark bands extending horizontally
+and they are in continuous motion
+In the neutral first vowel of away the formant frequencies
+pass through
+approximately the 500 Hz 1500 Hz and 2500 Hz that we calculated earlier
+In fact formants two and three are somewhat lower than these values
+pp
+The
+fine vertical striations in the spectrogram correspond to single openings of the vocal cords
+Pitch changes continuously throughout an utterance
+and this can be seen on the spectrogram by the differences in spacing
+of the striations
+Pitch change or
+ul
+intonation
+is singularly important in
+lending naturalness to speech
+pp
+On a spectrogram a continuously held vowel shows up as a static energy spectrum
+But beware em what we call a vowel in everyday language is not the same thing as a
+vowel in phonetic terms
+Say I and feel how the tongue moves continuously while youre speaking
+Technically this is a
+ul
+diphthong
+or slide between two vowel positions
+and not a single vowel
+If you say
+ul
+ar
+as in hard
+and change slowly to
+ul
+ee
+as in heed you will obtain a diphthong not unlike that in I
+And there are many more phonetically different vowel sounds
+than the a e i o and u that we normally think of
+The words hood and mood have different vowels for example as do head and mead
+The principal acoustic difference between the various vowel sounds
+is in the frequencies of the first two formants
+pp
+A further complication is introduced by the nasal tract  This is
+a large cavity which is coupled to the oral tract by a passage at the
+back of the mouth
+The passage is guarded by a flap of skin called the velum
+You know about this because inadvertent opening of the velum while
+swallowing causes food or drink to go up your nose
+The nasal cavity is switched in and out of the vocal tract
+by the velum during speech
+It is used for consonants
+ul
+m
+ul
+n

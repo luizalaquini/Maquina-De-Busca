@@ -1,0 +1,100 @@
+Whereas the 2920 is intended for general signal-processing jobs
+Telesensory Systems PDSP
+Programmable Digital Signal Processor is aimed specifically at speech
+synthesis
+It comprises two separate chips a control unit and an arithmetic unit
+To build a synthesizer these must be augmented with external memory
+and a DA converter arranged in a configuration like that of Figure 1112
+FC Figure 1112
+pp
+The control unit accepts parameter data from a host computer one byte at a time
+The data is temporarily held in buffer memory before being serialized and passed
+to the arithmetic unit
+Notice that for the 2920 we assumed that parameters were presented
+to the chip already serialized and precisely timed  the PDSP control unit
+effectively releases the host from this high-speed real-time operation
+But it does more
+It generates both a voiced and an unvoiced excitation source and passes them
+to the arithmetic unit to relieve the latter of the general-purpose
+programming required for both these tasks and allow its instruction set
+to be highly specialized for digital filtering
+pp
+The arithmetic unit has rather a peculiar structure
+It accomodates only 16 program steps and can execute the full 16-instruction
+program at a rate of 10 kHz
+The internal word-length is 18 bits but coefficients and the digital output
+are only 10 bits
+Each instruction can accomplish quite a lot of work
+Figure 1113 shows that there are four separate blocks of store in addition
+to the program memory
+FC Figure 1113
+One location of each block is automatically associated with each program step
+Thus on instruction 2 for example two 18-bit scratchpad registers MA2
+and MB2 and two 10-bit coefficient registers A12 and A22 are
+accessible
+In addition five general registers curiously numbered R1 R2 R5 R6 R7
+are available to every program step
+pp
+Each instruction has five fields
+A single instruction loads all the general registers and simultaneously
+performs two multiplications and up to three additions
+The fields specify exactly which operands are involved in these operations
+pp
+The instructions of the PDSP arithmetic unit are really very powerful
+For example a second-order digital formant resonator requires only
+two program steps
+A two-multiplier lattice stage needs only one step and
+a complete 12-stage lattice filter can be implemented in the 16 steps available
+An important feature of the architecture is that it
+is quite easy to incorporate more than one
+arithmetic unit into a system with a single control unit
+Intermediate data can be transferred digitally between arithmetic units
+since the DA converter is off-chip
+A four-multiplier normalized lattice Chapter 6 with 12 stages can be implemented
+on two arithmetic units as can a lattice filter which incorporates zeros
+as well as poles and a complex seriesparallel formant synthesizer
+with a total of 12 resonators whose centre frequencies and bandwidths
+can be controlled independently Klatt 1980
+
+Klatt 1980
+
+pp
+How this device will fare in actual commercial products is yet to be seen
+It is certainly much more sophisticated than the TI Speak n Spell chip
+and a complete system will necessitate a much higher chip count and consequently
+more expense
+Telesensory Systems are committed to producing a text-to-speech
+system based upon it
+for use both in a reading machine for the blind and as a text-input
+speech-output computer peripheral
+sh 115  References
+LB nnnn
+
+LIST
+
+LE nnnn
+bp
+ev2
+ta wfIsilencefR u +wEH100u +wused to change amplitude and duration00u +w00000000000test wordu
+nr x0 wfIsilencefR +wEH100+wused to change amplitude and duration00+w00000000000test word
+lnx0uul
+sp
+nr x1 wVotrax2
+nr x2 wduration msec2
+nr x3 wtest word
+	h-nx1uVotrax		0h-nx2uduration msec	h-nx3utest word
+lnx0uul
+sp
+nr x3 whid
+fIifR	I		118	h-nx3uhid
+	I1	sound equivalent of I	083
+	I2	sound equivalent of I	058
+	I3	allophone of I	058
+	I3	sound equivalent of I3	083
+	AY	allophone of I	065
+nr x3 whead
+fIefR	EH		118	h-nx3uhead
+	EH1	sound equivalent of EH	070
+	EH2	sound equivalent of EH	060
+	EH3	allophone of EH	060
+	EH2	sound equivalent of EH3	070

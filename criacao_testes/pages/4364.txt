@@ -1,0 +1,100 @@
+and the points of maximum hull-loudness difference in each of the
+two halves  are selected as further tentative
+boundaries
+The procedure continues recursively until the maximum hull-loudness
+difference with the hull anchored at each tentative boundary
+falls below a certain minimum say 4 dB
+pp
+At this stage the number of tentative boundaries will greatly exceed
+the actual number of syllables by a factor of around 5
+Many of the extraneous boundaries are eliminated by the following
+constraints
+LB
+NP
+if two boundaries lie within a certain time of each other
+say 120 msec one of them is discarded
+NP
+if the maximum loudness within a tentative syllable falls too
+far short of the overall maximum for the utterance
+more than 20 dB one boundary is discarded
+LE
+The question of which boundary to discard can be decided by
+examining the voicing continuity of the utterance
+If possible voicing across a syllable boundary should be avoided
+Otherwise the boundary with the smallest hull-loudness
+difference should be rejected
+RF
+nr x0 wboundaries moved slightly to correspond better with voicing
+nr x1 nl-nx02
+in nx1u
+ta 34i +05i
+lnx0uul
+sp
+total syllable count	332
+boundaries missed by algorithm	009	3
+extra boundaries inserted by algorithm	029	9
+boundaries moved slightly to correspond better with voicing
+	003	1
+sp
+total errors	041	12
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 81  Success of the syllable segmentation procedure
+pp
+Table 81 illustrates the success of this syllabification
+procedure in a particular example
+Segmentation is performed with less than 10 of extraneous
+boundaries being inserted
+and much less than 10 of actual boundaries being missed
+These figures are rather sensitive to the values of the
+three thresholds
+The values were chosen to err on the side
+of over-zealous syllabification because all the boundaries need to be checked
+by ear and eye and it is easier to delete
+a boundary by hand than to insert one at an appropriate place
+It may well be that with careful optimization of thresholds
+better figures could be
+achieved
+rh Stressed and unstressed syllables
+If the source and target utterances have the same number of
+syllables and the same pattern of stressed and unstressed syllables
+pitch can simply be transferred from a syllable in the source
+to the corresponding one in the target
+But if the pattern differs em even though the
+number of syllables may be the same as in eleven and seventeen em
+then a one-to-one mapping will conflict with the stress points
+and certainly sound unnatural
+Hence an attempt should be made to ensure that the pitch is mapped in a
+plausible way
+pp
+The syllables of each utterance can be classified as stressed
+and unstressed
+This distinction could be made automatically by
+inspection of the pitch contour within the domain of utterances used
+and possibly even in general Lea
+ul
+et al
+1975
+
+Lea Medress Skinner 1975
+
+However in many cases it is expedient to perform the job by hand
+In our example the sentences have fixed carrier parts and
+variable number parts
+The stressed carrier syllables namely
+LB
+ price  dol-  cents
+LE
+can be marked as such by hand
+to facilitate proper alignment between the source and target
+This marking would be difficult to do automatically
+because it would be hard to distinguish the carrier from the numbers
+pp
+Even after classifying the syllables as carrier stressed
+stressed and unstressed alignment still presents problems
+because the configuration of syllables in the variable parts
+of the utterances may differ
+Syllables in the source which have no
+correspondence in the target can be ignored
+The pitch track of

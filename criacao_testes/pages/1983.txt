@@ -1,0 +1,100 @@
+The higher-level semantic problems associated with speech output were
+studied some years go under the
+title synthetic elocution Vanderslice 1968
+
+Vanderslice 1968
+
+A set of rules was generated and tested by hand on a sample passage
+the first part of which is shown in Table 94
+However no attempt was made to formalize the rules in a computer program
+and indeed it was recognized that a number of important questions
+such as the form of the semantic information assumed at the input
+had been left unanswered
+RF
+nr x0 w00  psychologist   +wemphasis assigned because of antithesis with  
+nr x1 nl-nx02
+in nx1u
+ta w00  psychologist   u
+lnx0uul
+sp
+Human experience and human behaviour are accessible to
+observation by everyone  The psychologist tries to bring
+them under systematic study  What he perceives however
+anyone can perceive for his task he requires no microscope
+or electronic gear
+sp2
+00  word	comments
+lnx0uul
+sp
+01  Human	special treatment because paragraph-initial
+04  human	accent deleted because it echoes word 1
+13  psychologist	emphasis assigned because of antithesis with
+	everyone
+17  them	anaphoric to Human experience and human
+	behaviour
+19  systematic	emphasis assigned because of contrast with
+	observation
+20  study	emphasis em text is ambiguous whether
+	observation is a kind of study that is
+	nonsystematic or an activity contrasting
+	with the entire concept of systematic study
+21  What	increase in pitch for What he perceives
+	because it is not the subject
+22  he	accented although anaphoric to word 13
+	because of antithesis with word 25
+24  however	decrease in pitch because it is parenthetical
+25  anyone	emphasized by antithesis with word 22
+27  perceive	unaccented because it echoes word 23
+	perceives
+00  	semicolon assigns falling intonation
+30  task	unaccented because it is anaphoric with
+	tries to bring them under systematic study
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 94  Sample passage and comments pertinent to synthetic elocution
+pp
+The comments in the table which are selected and slightly edited versions
+of those appearing in the original work Vanderslice 1968 are intended
+as examples of the nature and subtlety of the prosodic influences which
+were examined
+
+Vanderslice 1968
+
+The concepts of accent and emphasis are used these relate to stress
+but are not easy to define precisely in our tone-group terminology
+Fortunately we do not need an exact characterization of them for the present
+purpose
+Roughly speaking accent encompasses both foot-initial stress and
+tonic stress whereas emphasis is something more than this
+typically being realized by the fall-rise or rise-fall contours of
+Hallidays tone groups 4 and 5 Figure 85
+pp
+Particular attention is paid to anaphora and antithesis amongst other things
+The first term means the repetition of a word or phrase in the text
+and is often applied to pronoun references
+In the example the word human is repeated in the first few words
+them in the second sentence refers to human experience and human
+behaviour he in the third sentence is the previously-mentioned
+psychologist and task is anaphoric with tries to bring them under
+systematic study
+Other things being equal anaphoric references are unaccented
+In our terms this means that they certainly do not receive tonic stress
+and may not even receive foot stress
+pp
+Antithesis is defined as the contrast of ideas expressed by parallelism of
+strongly contrasting words or phrases and the second element taking part
+in it is generally emphasized
+Psychologist in the passage is an antithesis of everyone
+systematic and possibly study of observation
+Thus
+LB
+NI
+ the psychologist
+LE
+would probably receive intonation contour 4 since it is also introducing
+a new actor while
+LB
+NI
+tries to bring them under systemmatic study
+LE

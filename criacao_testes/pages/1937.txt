@@ -1,0 +1,100 @@
+the previous value of  Y sup -  which is not the same
+as  z sup -2 Y sup -  sup 2
+pp
+It has been shown Gray and Markel 1975 that the four-multiplier
+configuration has some stability properties which are not shared by other
+digital filter structures
+
+Gray Markel 1975 Normalized digital filter structure
+
+When a linear predictive filter is used for synthesis the parameters
+of the filter em the k-parameters in the case of lattice filters
+and the a-parameters in the case of direct ones em change with time
+It is usually rather difficult to guarantee stability in the case of
+time-varying filter parameters but some guarantees can be made for a
+chain of four-multiplier lattices  Furthermore if the input is a
+discrete delta function the cumulative energies at each stage of the
+lattice are the same and so maximum dynamic range will be achieved
+for the whole filter if each section is implemented with the same
+word size
+rh Lattice analysis
+It is quite easy to construct a filter which is inverse to
+a single-stage lattice
+The structure of Figure 612a does the job
+Ignore for a moment
+the dashed lines connecting Figure 612a and b  Its matrix transfer
+function is
+FC Figure 612
+LB
+ne4
+
+left  matrix ccol Y sup + above Y sup - right  =
+left  matrix ccol 1 above -k ccol -kz sup -1 above z sup -1 right 
+ left  matrix ccol X sup + above X sup - right 
+	analysis lattice Figure 612a
+LE
+Notice that this is exactly the same as the transfer function of the
+synthesis lattice of Figure 69 which is reproduced
+in Figure 612b except that the Xs and Ys are reversed
+LB
+ne4
+
+left  matrix ccol X sup + above X sup - right  =
+left  matrix ccol 1 above -k ccol -kz sup -1 above z sup -1 right 
+ left  matrix ccol Y sup + above Y sup - right 
+	synthesis lattice Figure 612b
+LE
+or in other words
+LB
+ne4
+
+left  matrix ccol Y sup + above Y sup - right   = 
+left  matrix ccol 1 above -k ccol -kz sup -1 above z sup -1
+right  sup -1
+ left  matrix ccol X sup + above X sup - right 
+	synthesis lattice Figure 612b
+LE
+Hence if the filters of Figures 612a and b were connected together
+as shown by the dashed lines they
+would cancel each other out and the overall transfer would be unity
+LB
+ne4
+EQ
+left  matrix ccol 1 above -k ccol -kz sup -1 above z sup -1
+right  
+left  matrix ccol 1 above -k ccol -kz sup -1 above z sup -1
+right  sup -1  = 
+left  matrix ccol 1 above 0 ccol 0 above 1 right   
+EN
+LE
+Actually such a connection is not possible in physical terms
+for although the upper paths can be joined together the lower ones can not
+The right-hand lower point of Figure 612a is an
+ul
+output
+terminal and so is the left-hand lower one of Figure 612b  However
+there is no need to envisage a physical connection of the lower paths
+It is sufficient for cancellation just to assume that the signals at both
+of the points turn out to be the same
+pp
+And they do
+The general case of a p-stage analysis lattice
+connected to a p-stage synthesis
+lattice is shown in Figure 613
+FC Figure 613
+Notice that the forward and backward paths are connected together at both
+of the extreme ends of the system
+It is not difficult to show that under these
+conditions the signal at the lower righthand
+terminal of the analysis chain will equal that at the lower lefthand
+terminal of the synthesis chain even though they are not connected
+provided the upper terminals are connected together as shown by the dashed
+line
+Of course the reflection coefficients  k sub 1 k sub 2 
+k sub p  in the analysis lattice must equal those in the synthesis
+lattice and as Figure 613 shows the order is reversed in the synthesis
+lattice
+Successive analysis and synthesis sections pair off working from
+the middle outwards  At each stage the sections cancel each other out
+giving a unit transfer function as demonstrated above
+rh Estimating reflection coefficients

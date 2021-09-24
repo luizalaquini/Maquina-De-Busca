@@ -1,0 +1,100 @@
+k =  Ex sup + n x sup - n-1  over Ex sup + n-1 sup 2 
+  
+EN
+LE
+Unfortunately either of these expressions can exceed 1 leading to an
+unstable filter
+The value of k cited earlier is the geometric mean of these two
+expressions and since it is a correlation coefficient must be less than 1
+pp
+Another possibility is to minimize the expected value of the sum of the
+squares of the upper and lower outputs
+LB
+EQ
+y sup + n sup 2 + y sup - n sup 2  = 
+1+k sup 2 x sup + n sup 2 - 2kx sup + n x sup - n-1 +
+1+k sup 2 x sup - n sup 2 
+EN
+LE
+Taking expected values and setting the derivative with respect to k to zero
+leads to
+LB
+EQ
+k =  Ex sup + n x sup - n-1  over
+ half  Ex sup + n sup 2 + x sup - n-1 sup 2  
+EN
+LE
+This also is guaranteed to be less than 1 and has given good results
+in speech analysis systems
+pp
+Figure 614 shows the implementation of a single section of an analysis
+lattice
+FC Figure 614
+The signals x sup + n and x sup - n-1 are fed to a
+correlator which produces a suitable value for k
+This value is used to calculate the output of the lattice section
+and hence the input to the next lattice section
+The reflection coefficient needs to be low-pass filtered because it will
+only be transmitted to the synthesizer occasionally say every 20 msec and so a
+short-term average is required
+pp
+One implementation of the correlator is shown in Figure 615 Kang 1974
+
+Kang 1974
+
+FC Figure 615
+This calculates the value of k given by the last equation above and does it
+by summing and differencing the two
+signals x sup + n and x sup - n-1 squaring the results to give
+LB
+EQ
+x sup + n sup 2 + 2x sup + n mark  x sup - n-1 +x sup - n-1 sup 2
+ x sup + n sup 2 - 2x sup + n x sup - n-1 +x sup - n-1 sup 2
+ 
+EN
+LE
+and summing and differencing these to yield
+LB
+EQ
+lineup 2x sup + n sup 2 + 2x sup - n-1 sup 2 
+4x sup + n x sup - n-1  
+EN
+LE
+sp
+Before these are divided to give the final coefficient k they are
+individually low-pass filtered
+While some rather complex schemes have been proposed
+based upon Kalman filter theory eg Matsui
+ul
+et al
+1972
+
+Matsui Nakajima Suzuki Omura 1972
+
+a simple exponential weighted past average has been found to be
+satisfactory  This has z-transform
+LB
+EQ
+1 over 64 - 63 z sup -1  
+EN
+LE
+that is in the time domain
+LB
+EQ
+yn =  63 over 64  yn-1 + 1 over 64  yn  
+EN
+LE
+This filter exponentially averages past sample values
+with a time-constant of 64 sampling intervals
+em that is 8 msec at an 8 kHz sampling rate
+sh 64  Pitch estimation
+pp
+It is sometimes useful to think of linear prediction as a kind of
+curve-fitting technique
+Figure 616 illustrates how four samples of a speech signal can predict
+the next one
+FC Figure 616
+In essence a curve is drawn through four points
+to predict the position of the fifth and only the prediction error
+is actually transmitted  Now if the order of linear prediction
+is high enough at least 10 and if the coefficients are chosen

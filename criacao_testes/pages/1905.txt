@@ -1,0 +1,100 @@
+phonetic text
+pp
+Another issue which is closely bound up with pitch extraction is
+the voiced-unvoiced distinction   A good pitch estimator ought to
+fail when presented with aperiodic input such as an unvoiced
+sound and so give a reliable indication of whether the frame of
+speech is voiced or not
+pp
+One method of pitch estimation which uses the cepstrum has been outlined
+above  It involves a substantial amount of computation
+and has a high degree of complexity  However if implemented
+properly it gives excellent results because the source-filter
+structure of the speech is fully utilized
+Another method using the
+linear prediction residual will be described in Chapter 6
+Again this requires a great deal of computation of a fairly sophisticated
+nature and gives good results em although it relies on a
+somewhat more
+restricted version of the source-filter model than cepstral
+analysis
+rh Autocorrelation methods
+The most reliable way of estimating the pitch of a periodic
+signal which is corrupted by noise is to examine its
+short-time autocorrelation function
+The autocorrelation of a signal xn with lag k is defined as
+LB
+EQ
+phi k  =  sum from n=- infinity to infinity  xnxn+k 
+EN
+LE
+If the signal is quasi-periodic with slowly varying period
+a finite stretch of it can be isolated with a window
+wi which is 0 when i is outside the range 0N
+Beginning this window at sample m gives the windowed signal
+LB
+EQ
+xnwn-m
+EN
+LE
+whose autocorrelation
+the
+ul
+short-time
+autocorrelation of the signal x at point m is
+LB
+EQ
+phi sub m k =  sum from n  xnwn-mxn+kwn-m+k 
+EN
+LE
+pp
+The autocorrelation function exhibits peaks at lags which correspond to
+the pitch periods and multiples of it  At such lags the signal is in
+phase with a delayed version of itself giving high correlation
+The pitch of natural speech ranges about three octaves from 50 Hz low-pitched men to around
+400 Hz children  To ensure that at least two pitch cycles are seen even at
+the
+low end the window needs to be at least 40 msec long and the autocorrelation
+function calculated for lags up to 20 msec  The peaks which occur at lags
+corresponding to multiples of the pitch become smaller as the multiple
+increases because the speech waveform will change slightly and the pitch
+period is not perfectly constant  If signals at the high end of the pitch
+range 400 Hz are
+viewed through a 40 msec autocorrelation window considerable smearing of
+pitch resolution in the time domain is to be expected  Finally for unvoiced
+speech no substantial peaks of autocorrelation will occur
+pp
+If all deviations from perfect periodicity can be attributed to
+additive white Gaussian noise then it can be shown from
+standard detection theory that autocorrelation methods are
+appropriate for pitch identification  Unfortunately this is
+certainly not the case for speech signals  Although the
+short-time autocorrelation of voiced speech exhibits peaks at
+multiples of the pitch period it is not clear that it is any
+easier to detect these peaks in the autocorrelation function
+than it is in the original time waveform  To take a simple
+example if a signal contains a fundamental and in-phase first
+and second harmonics
+LB
+EQ
+xn = a sin 2 pi fnT + b sin 4 pi fnT + c sin 6 pi fnT 
+EN
+LE
+then its autocorrelation function is
+LB
+EQ
+phi k = a sup 2 cos2 pi fkT+b sup 2 cos2 pi
+fkT+c sup 2 cos 2 pi fkT over 2  
+EN
+LE
+There is no reason to believe that detection of the fundamental
+period of this signal will be any easier in the autocorrelation
+domain than in the time domain
+pp
+The most common error of pitch detection by autocorrelation
+analysis is that the periodicities of the formants are confused
+with the pitch  This typically leads to the repetition time
+being identified as  T sub pitch  +-  T sub formant1  where the
+Ts are the periods of the pitch and first formant  Fortunately
+there are simple ways of processing the signal non-linearly to
+reduce the effect of formants on pitch estimation using autocorrelation

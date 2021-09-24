@@ -1,0 +1,100 @@
+automatic dictation by then
+pp
+Lets return now to speech output and take a look at some systems which use it
+to illustrate the advantages and disadvantages of speech in practical
+applications
+sh 11  Talking calculator
+pp
+Figure 11 shows a calculator that speaks
+FC Figure 11
+Whenever a key is pressed
+the device confirms the action by saying the keys name
+The result of any computation is also spoken aloud
+For most people the addition of speech output to a calculator is simply a
+gimmick
+Note incidentally that speech
+ul
+input
+is a different matter altogether  The ability to dictate lists of numbers and
+commands to a calculator without lifting ones eyes from the page would have
+very great advantages over keypad input  Used-car
+salesmen find that speech output sometimes helps to clinch a deal  they key in
+the basic car price and their bargain-basement deductions and the customer is so
+bemused by the resulting price being spoken aloud to him by a machine that he
+signs the cheque without thinking  More seriously there may be some small
+advantage to be gained when keying a list of figures by touch from having their
+values read back for confirmation  For blind people however such devices
+are a boon em and there are many other applications like talking elevators
+and talking clocks which benefit from even very restricted voice output
+Much more sophisticated is a typewriter with audio feedback designed by
+IBM for the blind  Although blind typists can remember where the keys on a
+typewriter are without difficulty they rely on sighted proof-readers to help
+check
+their work  This device could make them more useful as office typists and
+secretaries  As well as verbalizing the material including punctuation
+that has been typed either by attempting to pronounce the words or by spelling
+them out as individual letters it prompts the user through the more complex action sequences
+that are possible on the typewriter
+pp
+The vocabulary of the talking calculator comprises the 24 words of Table 11
+RF
+nr x1 20i+wpercentu
+nr x1 nl-nx12
+in nx1u
+ta 20i
+zero	percent
+one	low
+two	over
+three	root
+four	em m
+five	times
+six	point
+seven	overflow
+eight	minus
+nine	plus
+times-minus	clear
+equals	swap
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 11  Vocabulary of a talking calculator
+This represents a total of about 13 seconds of speech  It is stored
+electronically in read-only memory ROM and Figure 12 shows the circuitry
+of the speech module inside the calculator
+FC Figure 12
+There are three large integrated circuits
+Two of them are ROMs and the other is a special synthesis chip which decodes the
+highly compressed stored data into an audio waveform
+Although the mechanisms used for storing speech by commercial devices are
+not widely advertised by the manufacturers the talking calculator almost
+certainly uses linear predictive coding em a technique that we will examine
+in Chapter 6
+The speech quality is very poor because of the highly compressed storage and
+words are spoken in a grating monotone
+However because of the very small vocabulary the quality is certainly good
+enough for reliable identification
+sh 12  Computer-generated wiring instructions
+pp
+I mentioned earlier that one big advantage of speech over visual output is that
+it leaves the eyes free for other tasks
+When wiring telephone equipment during manufacture the operator needs to use
+his hands as well as eyes to keep his place in the task
+For some time tape-recorded instructions have been used for this in certain
+manufacturing plants  For example the instruction
+LB
+NI
+Red 25    11A terminal strip    7A tube socket
+LE
+directs the operator to cut 25 of red wire attach one end to a specified point
+on the terminal strip and attach the other to a pin of the tube socket  The
+tape recorder is fitted with a pedal switch to allow a sequence of such instructions
+to be executed by the operator at his own pace
+pp
+The usual way of recording the instruction tape is to have a human reader
+dictate them from a printed list
+The tape is then checked against the list by another listener to ensure that
+the instructions are correct  Since wiring lists are usually stored and
+maintained in machine-readable form it is natural to consider whether speech
+synthesis techniques could be used to generate the acoustic tape directly by
+a computer Flanagan
+ul
+et al

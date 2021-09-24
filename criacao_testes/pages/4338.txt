@@ -1,0 +1,100 @@
+of the extreme ends of the system
+It is not difficult to show that under these
+conditions the signal at the lower righthand
+terminal of the analysis chain will equal that at the lower lefthand
+terminal of the synthesis chain even though they are not connected
+provided the upper terminals are connected together as shown by the dashed
+line
+Of course the reflection coefficients  k sub 1 k sub 2 
+k sub p  in the analysis lattice must equal those in the synthesis
+lattice and as Figure 613 shows the order is reversed in the synthesis
+lattice
+Successive analysis and synthesis sections pair off working from
+the middle outwards  At each stage the sections cancel each other out
+giving a unit transfer function as demonstrated above
+rh Estimating reflection coefficients
+As stated earlier in this chapter the key problem in linear prediction is to
+determine the values of the predictive coefficients em in this case the
+reflection coefficients
+If this is done correctly we have shown using Procedure 63 that
+the the synthesis part of Figure 613 performs the same calculation that
+a conventional direct-form linear predictive synthesizer would and hence
+the signal that excites it em that is the signal represented by the
+dashed line em must be the prediction residual or error signal discussed
+earlier  The system is effectively the same as the high-order adaptive
+differential pulse code modulation one of Figure 61
+pp
+One of the most interesting features of the lattice structure for
+analysis filters is that calculation of suitable values for the
+reflection coefficients can be done locally at each stage of the lattice
+For example consider the ith section of the analysis lattice in
+Figure 613  It is possible to determine a suitable value of k sub i
+simply by performing a calculation on the inputs to the ith
+section ie X sup + and X sup - in Figure 612
+No longer need the complicated global optimization technique of matrix
+inversion be used as in the autocorrelation and covariance methods discussed
+earlier
+pp
+A suitable value for k in the single lattice section of Figure 612 is
+LB
+EQ
+k =  E x sup + n x sup - n-1 over
+ E x sup + n sup 2  E x sup - n-1 sup 2   sup 12  
+EN
+LE
+that is the statistical correlation between x sup + n and
+x sup - n-1
+Here x sup + n and x sup - n represent the input signals to the
+upper and lower paths recall that X sup + and X sup -
+are their z-transforms
+x sup - n-1 is just x sup - n delayed by one time unit that is
+the output of the z sup -1 box in the Figure
+pp
+The criterion of optimality for the autocorrelation and covariance methods
+was that the prediction error that is the signal which emerges from
+the right-hand end of the upper path of a lattice analysis filter
+should be minimized in a mean-square sense
+The reflection coefficients obtained from the above formula do not necessarily
+satisfy any such global minimization criterion
+Nevertheless they do keep the error signal small and have been used with
+success in speech analysis systems
+pp
+It is easy to minimize the output from either the upper or the lower path
+of the lattice filter at each stage  For example the z-transform of the
+upper output is given by
+LB
+EQ
+Y sup + = X sup + - k z sup -1 X sup - 
+EN
+LE
+or
+LB
+EQ
+y sup + n = x sup + n - k x sup - n-1 
+EN
+LE
+Hence
+LB
+EQ
+Ey sup + n sup 2   =  Ex sup + n sup 2  -
+2kEx sup + n x sup - n-1  + k sup 2 E x sup - n-1 sup 2  
+EN
+LE
+where E stands for expected value and this reaches a minimum when the
+derivative with respect to k becomes zero
+LB
+EQ
+-2Ex sup + n x sup - n-1  + 2kEx sup - n-1 sup 2  =0 
+EN
+LE
+that is when
+LB
+EQ
+k =  Ex sup + n x sup - n-1  over Ex sup - n-1 sup 2 
+  
+EN
+LE
+A similar calculation shows that the output of the lower path is minimized
+when
+LB
+EQ

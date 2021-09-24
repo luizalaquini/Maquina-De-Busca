@@ -1,0 +1,100 @@
+Then it passes back through a chain of delays along the bottom
+backward path and is used to modify subsequent forward signals
+Finally it is discarded at the lower left-hand corner
+pp
+There are p stages in the lattice structure of Figure 68 where p is the
+order of the linear predictive filter
+Each stage involves two multiplications by the appropriate
+reflection coefficients one by the backward signal em the
+result of which is added into the forward path em and the other by
+the forward signal em the result of which is subtracted from the
+backward path  Thus the number of multiplications is twice
+the order of the filter and hence twice as many as for the
+realization using coefficients a sub k  If the labour necessary
+to turn the reflection coefficients into a sub ks is included
+the computational load becomes the same  Moreover since the
+reflection coefficients need fewer quantization bits than the a sub ks
+for a given speech quality the word lengths are smaller in the
+lattice realization
+pp
+The advantages of the lattice method of synthesis over direct evaluation
+of the prediction using filter coefficients a sub k then are
+LB
+NP
+the reflection coefficients are used directly
+NP
+the stability of the filter is obvious from the reflection coefficient
+values
+NP
+the system is more tolerant to quantization errors in fixed-point
+implementations
+LE
+Although it may seem unlikely that an unstable filter would be produced
+by linear predictive analysis instability is in fact a real problem
+in non-lattice implementations  For example
+coefficients are often interpolated at the receiver to allow longer
+frame times and smooth over sudden transitions and it is quite likely that
+an unstable configuration is obtained when interpolating filter coefficients
+between two stable configurations
+This cannot happen with reflection coefficients however because a
+necessary and sufficient condition for stability is that all
+coefficients lie in the interval -1+1
+sh 63  Lattice filtering
+pp
+Lattice filters are an important new method of linear predictive
+ul
+analysis
+as well as synthesis and so
+it is worth considering the theory behind them a little further
+rh Theory of the lattice synthesis filter
+Figure 69 shows a single stage of the synthesis lattice given earlier
+FC Figure 69
+There are two signals at each side of the lattice and the z-transforms
+of these have been labelled X sup + and X sup - at the left-hand side
+and Y sup + and Y sup - at the right-hand side
+The direction of signal flow is forwards along the upper positive path
+and backwards along the lower negative one
+pp
+The signal flows show that the following two relationships hold
+LB
+EQ
+Y sup + = X sup + + k z sup -1 Y sup - 
+EN
+for the forward upper path
+br
+EQ
+X sup -  = -kY sup + + z sup -1 Y sup - 
+EN
+h-w-ufor the backward lower path
+LE
+Re-arranging the first equation yields
+LB
+EQ
+X sup +  = Y sup + - k z sup -1 Y sup - 
+EN
+LE
+and so we can describe the function of the lattice by a single matrix
+equation
+LB
+ne4
+EQ
+left  matrix ccol X sup + above X sup - right  =
+left  matrix ccol 1 above -k ccol -kz sup -1 above z sup -1 right 
+ left  matrix ccol Y sup + above Y sup - right   
+EN
+LE
+It would be nice to be able to
+call this an input-output equation but it is not
+for the input signals to the lattice stage are X sup + and Y sup -
+and the outputs are X sup - and Y sup +
+We have written it in this form because it allows a multi-stage lattice to
+be described by cascading these matrix equations
+pp
+A single-stage lattice filter has Y sup + and Y sup - connected together
+forming its output call this X sub output while the input is X sup +
+X sub input
+Hence the input is related to the output by
+LB
+EQ
+left  matrix ccol X sub input above sq  right   =
+ left  matrix ccol 1 above -k ccol -k z sup -1

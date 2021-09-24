@@ -1,0 +1,100 @@
+ds C London
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+An intensive study of the prosodics of colloquial living speech
+is presented with particular reference to intonation  Although
+not particularly relevant to speech output from computers
+this book gives great insight into how conversational speech
+differs from reading aloud
+in-2n
+Fry-1979-1
+ds F 1
+-
+ds A Fry DB
+ds D 1979
+ds T The physics of speech
+ds I Cambridge University Press
+ds C Cambridge England
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This is a simple and readable account of speech science with a good
+and completely non-mathematical introduction to frequency analysis
+in-2n
+Ladefoged-1975-4
+ds F 4
+-
+ds A Ladefoged P
+ds D 1975
+ds T A course in phonetics
+ds I Harcourt Brace and Johanovich
+ds C New York
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+Usually books entitled A course on  are dreadfully dull but
+this is a wonderful exception  An exciting readable almost racy
+introduction to phonetics full of little experiments you can try
+yourself
+in-2n
+Lehiste-1970-5
+ds F 5
+-
+ds A Lehiste I
+ds D 1970
+ds T Suprasegmentals
+ds I MIT Press
+ds C Cambridge Massachusetts
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This fairly comprehensive study of the prosodics of speech
+complements Ladefogeds book which is mainly concerned with segmental
+phonetics
+in-2n
+OConnor-1973-1
+ds F 1
+-
+ds A OConnor JD
+ds D 1973
+ds T Phonetics
+ds I Penguin
+ds C London
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+This is another introductory book on phonetics
+It is packed with information on all aspects of the subject
+in-2n
+LE nn
+EQ
+delim 
+EN
+CH 3  SPEECH STORAGE
+ds RT Speech storage
+ds CX Principles of computer speech
+pp
+The most familiar device that produces speech output is the ordinary tape
+recorder which stores information in analogue form on magnetic tape
+However this is unsuitable for speech output from computers
+One reason is that it is difficult to access different utterances quickly
+Although random-access tape recorders do exist they are expensive and
+subject to mechanical breakdown because of the stresses associated with
+frequent starting and stopping
+pp
+Storing speech on a rotating drum instead of
+tape offers the possibility of access to any track within one revolution time
+For example the IBM 7770 Audio Response Unit employs drums rotating twice
+a second which are able to store up to 32 500-msec words  These can be accessed
+randomly within half a second at most

@@ -1,0 +1,100 @@
+pp
+In theory therefore it would be possible to use five parallel formants to
+model a five-formant series synthesizer exactly  Then the same higher-formant
+correction filter would be needed for the parallel synthesizer as for the
+series one  If the formant amplitudes were set slightly incorrectly however
+the five filters would not combine to give a total of 60 dBoctave high-frequency
+decay above the resonances  It is easy to see this in the context of the
+simplified two-formant combination above  if the amplitudes were not chosen
+exactly right then the s sup 2
+term in the numerator would not be quite zero
+Then the decay in the two-formant combination would be -12 dBoctave instead
+of -24 dBoctave and in the five-formant case the decay would in fact still be
+-12 dBoctave  Advantage can be taken of this to equalize the levels
+within the synthesizer so that large amplitude variations do not occur
+This can best be done by associating relatively low-gain fixed correction filters
+with each formant instead of providing one comprehensive correction to the
+combined spectrum  these are shown in Figure 59
+Suitable correction filters
+have been determined empirically by Holmes 1972
+
+Holmes 1972 Speech synthesis
+
+They provide a 6 dBoctave
+lift above 640 Hz for formant 1 and 6 dBoctave lift above 300 Hz for formant
+2  Formants 3 and 4 are uncorrected whilst for formant 5 the correction begins
+as a 6 dBoctave decay above 600 Hz and increases to an 18 dBoctave decay
+above 55 kHz
+pp
+The disadvantage of a parallel synthesizer is that the amplitudes of the
+formants must be specified as well as their frequencies  Furthermore the
+formant bandwidths should all be equal but they are often chosen to be such
+in series synthesizers because of the uncertainty as to their exact
+values  However the extra amplitude parameters clearly give greater
+control over the frequency spectrum of the synthesized speech
+pp
+A good example of how this extra control can usefully be exploited is the
+synthesis of nasal sounds
+Nasalization introduces a cavity parallel to the oral tract as illustrated
+in Figure 510 and this causes zeros in the transfer function
+FC Figure 510
+It is as if two different copies of the vocal tract transfer function one for
+the oral and the other for the nasal passage were added
+together  We have seen the effect of this above when considering parallel
+synthesis  The combination
+LB
+EQ
+Hs  =  A sub 1 w sub o sup 2 over
+s sup 2 + b sub o s + w sub o sup 2
++A sub 2 w sub n sup 2
+over s sup 2 + b sub n s + w sub n sup 2  
+EN
+LE
+where the subscript o stands for oral and n for nasal
+produces zeros in the
+numerator unless the amplitudes are carefully adjusted to avoid them
+These cannot be modelled by a series synthesizer but they obviously can be
+by a parallel one
+pp
+Although they are certainly needed for accurate imitation of human speech
+transfer function zeros to simulate nasal sounds are not essential for
+synthesis of intelligible English  It is not difficult to get a sound
+like a nasal consonant
+c
+ul
+n
+or
+ul
+mc
+
+with an all-pole synthesizer
+Nevertheless it is certainly true that a parallel synthesizer gives better
+ul
+potential
+control over the spectrum than a series one  Whether the added flexibility
+can be used properly by a synthesis-by-rule computer program is another matter
+rh Implementation of formant filters
+Formant filters can be built in either analogue or digital form  A
+second-order resonance is needed whose centre frequency can be controlled
+but whose bandwidth is fixed  If the control can be arranged as two
+tracking resistors then the simple analogue configuration of Figure 511
+with two operational amplifiers will suffice
+FC Figure 511
+pp
+The transfer function of this arrangement is
+LB
+EQ
+-   1C sub 1 R sub 1 C sub 2 R sub 2  over
+ s sup 2 + 1 over C sub 2 R sub 2s
++1 over C sub 1 R sub 1 C sub 2 R sub 2   
+EN
+LE
+which characterizes it as a low-pass resonator with DC gain
+of  - R sub 1 R sub 1   bandwidth of  12 pi C sub 2 R sub 2 Hz  and
+centre frequency of  12 pi C sub 1 R sub 1 C sub 2 R sub 2  sup 12 Hz
+Tracking R sub 1 with R sub 1 ensures that the DC gain remains constant
+and that the centre frequency follows  R sub 1 sup -12  Moreover
+neither is especially sensitive to slight departures from exact tracking
+of R sub 1 with R sub 1
+Such a filter has been used in a simple hand-controlled speech synthesizer
+built for demonstration and amusement Witten and Madams 1978

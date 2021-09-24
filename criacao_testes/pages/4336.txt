@@ -1,0 +1,100 @@
+LE
+pp
+A third-order filter is described by
+LB
+EQ
+left  matrix ccol X sub input above sq  right   =
+ left  matrix ccol 1 above -k sub 3  ccol -k sub 3 z sup -1
+above z sup -1 right 
+ left  matrix ccol 1 above -k sub 2  ccol -k sub 2 z sup -1
+above z sup -1 right 
+ left  matrix ccol 1 above -k sub 1  ccol -k sub 1 z sup -1
+above z sup -1 right 
+ left  matrix ccol X sub output above X sub output right   
+EN
+LE
+and brave souls can verify that this gives an input-output
+relationship
+LB
+EQ
+X sub output over X sub input  =  
+1 over 1+k sub 2 k sub 3 + k sub 1 1-k sub 2  z sup -1 +
+k sub 1 k sub 3 1-k sub 2  -k sub 2  z sup -2 - k sub 3 z sup -3   
+EN
+LE
+It is fairly obvious that a pth order lattice filter will give the
+required all-pole pth order synthesis form
+LB
+EQ
+1 over  1- sum from k=1 to p a sub k z sup -k   
+EN
+LE
+pp
+We have not shown that the algorithm given in Procedure 63 for producing
+reflection coefficients from filter coefficients gives those values
+for k sub i which are necessary to make the lattice filter equivalent
+to the ordinary synthesis filter  However this is the case and it is
+easy to verify by hand for the first second and third-order cases
+rh Different lattice configurations
+The lattice filters of Figures 68 69 and 610 have two multipliers
+per section
+This is called a two-multiplier configuration
+However there are other configurations which achieve
+the same effect but require different numbers of multiplies
+Figure 611 shows one-multiplier and four-multiplier configurations
+along with the familiar two-multiplier one
+FC Figure 611
+It is easy to verify that the three configurations can be modelled in
+matrix terms by
+LB
+ne4
+
+left  matrix ccol X sup + above X sup - right   = 
+left  matrix ccol 1 above -k ccol -kz sup -1 above z sup -1 right 
+ left  matrix ccol Y sup + above Y sup - right 
+		two-multiplier configuration
+sp
+sp
+ne4
+
+left  matrix ccol X sup + above X sup - right   = 
+left  1-k over 1+k right  sup 12 
+left  matrix ccol 1 above -k ccol -kz sup -1 above z sup -1 right 
+ left  matrix ccol Y sup + above Y sup - right 
+	one-multiplier configuration
+sp
+sp
+ne4
+
+left  matrix ccol X sup + above X sup - right   = 
+1 over 1-k sup 2 sup 12 
+left  matrix ccol 1 above -k ccol -kz sup -1 above z sup -1 right 
+ left  matrix ccol Y sup + above Y sup - right 
+	four-multiplier configuration
+LE
+Each of the three has the same frequency-domain response although
+a different constant factor is involved in each case
+The effect of this can be annulled by performing a single multiply
+operation on the output of a complete lattice chain
+The multiplier has the form
+LB
+EQ
+left  1 - k sub p over 1 + k sub p 
+1 - k sub p-1 over 1 + k sub p-1 
+1 - k sub 1 over 1 + k sub 1 right  sup 12
+EN
+sp
+LE
+for single-multiplier lattices and
+LB
+EQ
+left  1 over 1 - k sub p sup 2 
+1 over 1 - k sub p-1 sup 2 
+1 over 1 - k sub 1 sup 2 right  sup 12
+EN
+LE
+for four-multiplier lattices where the reflection coefficients
+in the lattice are k sub p k sub p-1  k sub 1
+pp
+There are important differences between these three configurations
+If multiplication is time-consuming the one-multiplier model has obvious

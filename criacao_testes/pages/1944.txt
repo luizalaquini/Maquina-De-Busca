@@ -1,0 +1,100 @@
+However now the burden of producing an allophonic transcription
+has been transferred to the person who codes the utterance prior
+to synthesizing it  If he is skilful and patient he should
+be able to coax the system into producing fairly understandable
+speech but the effort required for this on a per-utterance basis
+should not be underestimated
+RF
+nr x0 wsentences  
+nr x1 w  
+nr x2 wdepends on  
+nr x3 wgeneralized or  
+nr x4 wnatural speech  
+nr x5 wauthor of segment
+nr x6 nx0u+nx1u+nx2u+nx3u+nx4u+nx5u
+nr x7 nl-nx62
+in nx7u
+ta nx0u +nx1u +nx2u +nx3u +nx4u
+	|	size of	storage	source of	principal
+	|	utterance	method	utterance	burden is
+	|	inventory		inventory	placed on
+	|h-10ilnx6uul
+	|
+sentences	|	depends on	waveform or	natural speech	recording artist
+	|	application	source-filter		storage medium
+	|		parameters
+	|
+words	|	depends on	source-filter	natural speech	recording artist
+	|	application	parameters		and editor
+	|				storage medium
+	|
+syllables	|	00010000	source-filter	natural speech	recording editor
+  lisibles	|		parameters
+	|
+demi-	|	00001000	source-filter	natural speech	recording editor
+  syllables	|		parameters	or artificially	or inventory
+	|			generated	compiler
+	|
+phonemes	|	00000040	generalized	artificially	author of segment
+	|		parameters	generated	concatenation
+	|				program
+	|
+allophones	|	0050-100	generalized or	artificially	coder of
+	|		source-filter	generated or	synthesized
+	|		parameters	natural speech	utterances
+	|h-10ilnx6uul
+in 0
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+FG Table 71  Some issues relevant to choice of basic unit
+pp
+Table 71 summarizes in broad brush-strokes the issues which relate to the
+choice of basic unit for concatenation
+The sections which follow provide more detail about the different
+methods of joining segments of speech together
+Only segmental aspects are considered for the important problems of
+prosody will be treated in the next chapter
+All of the methods rely to some extent on the acoustic properties of speech
+and as smaller basic units are considered the role of speech acoustics
+becomes more important
+It is impossible in a book like this to give a detailed account of acoustic
+phonetics for it would take several volumes
+What I aim to do in the following pages is to highlight some salient features
+which are relevant to segment concatenation without attempting to be
+complete
+sh 71  Word concatenation
+pp
+For general speech output word concatenation is an inherently limited
+technique because of the large number of phonetically different words
+Despite this fact it is at present the most widely-used synthesis
+method and is likely to remain so for several years
+We have seen that the primary problems are word-to-word
+coarticulation and prosody and both can be overcome at least to a useful
+approximation by coding the words in source-filter form
+rh Time-domain techniques
+Nevertheless a surprising number of applications simply store
+the time waveform coded usually by one of the techniques described in
+Chapter 3
+From an implementation point of view there are many advantages to this
+Speech quality can easily be controlled by selecting a suitable sampling
+rate and coding scheme
+A natural-sounding voice is guaranteed male or female as desired
+The equipment required is minimal em a digital-to-analogue
+converter and post-sampling filter will do for synthesis if
+PCM coding is used and
+DPCM ADPCM and delta modulation decoders are not much more complicated
+pp
+From a speech point of view the resulting utterances can never be made
+convincingly fluent
+We discussed the early experiments of Stowe and Hampton 1961
+at the beginning of Chapter 3
+
+Stowe Hampton 1961
+
+A major drawback to word concatenation in the
+analogue domain is the introduction of clicks and other interference
+between words  it is difficult to prevent the time waveform transitions
+from adding extraneous sounds
+This poses no problem with digital storage however for the waveforms
+can be edited accurately prior to storage so that they start
+and finish at an exactly
+zero level

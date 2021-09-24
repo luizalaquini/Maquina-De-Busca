@@ -1,0 +1,100 @@
+The source-filter model of speech production indicates that an electrical
+analogue of the vocal tract can be obtained by considering the source
+excitation and the filter that produces the formant frequencies separately
+This approach was pioneered by Fant 1960 and we shall present much of his
+work in this chapter
+
+Fant 1960 Acoustic theory of speech production
+
+There has been some discussion over whether the source-filter model really
+is a good one and some
+synthesizers
+explicitly introduce an element of
+sub-glottal coupling which simulates the effect of the lung cavity
+on the vocal tract transfer function during the periods when the glottis is
+open for an example see Rabiner 1968
+
+Rabiner 1968 Digital formant synthesizer JASA
+
+However this is very much a low-order effect when considering
+speech synthesized by rule from a written representation for the software
+which calculates parameter values to drive the synthesizer is a far greater
+source of degradation in speech quality
+sh 51  Overall spectral considerations
+pp
+Figure 51 shows the source-filter model of speech production
+FC Figure 51
+For voiced speech the excitation source produces a waveform whose frequency
+components decay at about 12 dBoctave as we shall see in a later section
+The excitation passes into the vocal tract filter  Conceptually this can best
+be viewed as an infinite series of formant filters although for implementation
+purposes only the first few are modelled explicitly and the effect of the rest
+is lumped together into a higher-formant compensation network  In either case
+the overall frequency profile of the filter is a flat one upon which humps are
+superimposed at the various formant frequencies  Thus the output of the
+vocal tract filter falls off at 12 dBoctave just as the input does
+However measurements of actual speech show a 6 dBoctave decay with increasing
+frequency  This is explained by the effect of radiation of speech from the
+lips which in fact has a differentiating action producing a 6 dBoctave
+rise in the frequency spectrum  This 6 dBoctave lift is similar to that
+provided by a treble boost control on a radio or amplifier  Speech synthesized
+without it sounds unnaturally heavy and bassy
+pp
+These overall spectral shapes which are derived from considering the human
+vocal tract are summarized in the upper annotations in Figure 51  But there
+is no real necessity for a synthesizer to model the frequency characteristics
+of the human vocal tract at intermediate points  only the output speech is of
+any concern  Because the system is a linear one the filter blocks in the
+figure can be shuffled around to suit engineering requirements  One such
+requirement is the desire to minimize internally-generated noise in the
+electrical implementation most of which will arise in the vocal tract filter
+because it is much more complicated than the other components  For this
+reason an excitation source with a flat spectrum is often preferred as shown
+in the lower annotations  This can be generated either by taking the desired
+glottal pulse shape with its 12 dBoctave fall-off and passing it through a
+filter giving 12 dBoctave lift at higher frequencies or if the pulse shape
+is to be stored digitally by storing its second derivative instead
+Then the radiation compensation which is now more properly called
+spectral equalization will comprise a 6 dBoctave fall-off to give the
+required trend in the output spectrum
+pp
+For a given pitch period this scheme yields exactly the same spectral
+characteristics as the original system which modelled the human vocal tract
+However when the pitch varies there will be a difference for sounds with
+higher excitation frequencies will be attenuated by -6 dBoctave in the new
+system and +6 dBoctave in the old by the final spectral equalization
+In practice the pitch of the human voice lies quite low in the frequency
+region em usually below 400 Hz em and if all filter characteristics begin
+their roll-off at this frequency the two systems will be the same  This
+simplifies the implementation with a slight compromise in its accuracy in
+modelling the spectral trend of human speech for the overall -6 dBoctave
+decay actually begins at a frequency of around 100 Hz  If this is
+implemented some adjustment will need to be made to the amplitudes to ensure
+that high-pitched sounds are not attenuated unduly
+pp
+The discussion so far pertains to voiced speech only  The source spectrum of
+the random excitation in unvoiced sounds is substantially flat and combines
+with the radiation from the lips to give a +6 dBoctave rise in the output
+spectrum  Hence if spectral equalization is changed to -6 dBoctave to
+accomodate a voiced excitation with flat spectrum the noise source should
+show a 12 dBoctave rise to give the correct overall effect
+sh 52  The excitation sources
+pp
+In human speech the excitation source for voiced sounds is produced by two
+flaps of skin called the vocal cords  These are blown apart by pressure from
+the lungs  When they come apart the pressure is relieved and the muscles
+tensioning the skin cause the flaps to come together again  Subsequently the
+lung pressure em called sub-glottal pressure em builds up once more and the
+process is repeated  The factors which influence the rate and nature of
+vibration are muscular tension of the cords and the sub-glottal pressure  The detail
+of the excitation has considerable importance to speech synthesis because it
+greatly influences the apparent naturalness of the sound produced  For example
+if you have inflamed vocal cords caused by laryngitis the sound quality
+changes dramatically  Old people who do not have proper muscular control over
+their vocal cord tension produce a quavering sound  Shouted speech can easily
+be distinguished from quiet speech even when the volume cue is absent em you
+can verify this by fiddling with the volume control of a tape recorder em because
+when shouting the vocal cords stay apart for a much smaller fraction of the
+pitch cycle than at normal volumes
+rh Voiced excitation in natural speech
+There are two basic ways to examine the shape of the excitation source in

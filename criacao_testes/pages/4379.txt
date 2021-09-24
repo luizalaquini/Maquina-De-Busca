@@ -1,0 +1,100 @@
+tonic syllable at the beginning
+of the final foot
+sp
+number of tone groups whose	17 68	51 69
+contours are correctly assigned
+lnx0uul
+sp
+number of compound tone groups	02 08	06 08
+sp
+number of secondary intonation	07 28	13 17
+contours
+lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+FG Table 93  Success of simple intonation assignment rules
+pp
+Applying the simple rules given above to the text of Table 92 leads to
+the results in the first column of Table 93
+Three-quarters of the foot boundaries are flagged by
+punctuation marks with no extraneous ones being included
+88 of tone groups have a tonic syllable at the start of the final foot
+However the compound tone groups each have two tonic syllables
+and of course only the second one is predicted by the final-foot rule
+Assigning intonation contours on the extremely simple basis of using
+contour 4 for the first tone group in a paragraph and contour 1 thereafter
+also seems to work quite well  Secondary contours such as 1+ and 1-
+have been mapped into the appropriate primary contour 1 in this case
+for the present purpose and compound tone groups have been assigned the first
+contour of the pair
+The result is that 68 of contours are given correctly
+pp
+In order to give some idea of the reliability of these figures the results
+for the whole passage transcribed by Halliday em of which Table 92 is an
+excerpt em are shown in the second column of Table 93  Although it
+looks as though the rules may have been slightly lucky with the excerpt
+the general trends are the same with 65 to 80 of features being assigned
+correctly
+It could be argued though that the complete text is punctuated fairly liberally by
+present-day standards so that the tone-group boundary rule is unusually
+successful
+pp
+These results are really astonishingly good considering the crudeness of
+the rules  However they should be interpreted with caution
+What is missed by the rules although appearing to comprise only
+20 to 35 of the features is certain to include the important
+information-bearing and variety-producing features that give the utterance
+its liveliness and interest
+It would be rash to assume that all tone-group boundaries
+all tonic positions and all intonation contours are equally
+important for intelligibility and naturalness
+It is much more likely that the rules predict a
+default pattern while most information is borne by deviations from
+them
+To give an engineering analogy it may be as though the carrier waveform
+of a modulated transmission is being simulated instead of the
+information-bearing signal
+Certainly the utterance will if synthesized with intonation given by these
+rules sound extremely dull and repetitive mainly because of the
+overwhelming predominance of tone group 1 and the universal placement
+of tonic stress on the final foot
+pp
+There are certainly many different ways to orate any particular text
+and that given by Halliday and reproduced in Table 92 is only one possible
+version
+However it is fair to say that the default intonation discussed above
+could only occur naturally under very unusual circumstances em such as
+a petulant child unwilling and sulky having been forced to read aloud
+This is hardly how we want our computers to speak
+rh Rhythm analysis
+Consider now how to decide where foot boundaries should be placed
+in English text
+Clearly semantic considerations sometimes play a part in this em one could
+say
+LB
+ is this train going to London
+LE
+instead of the more usual
+LB
+ is this train going to London
+LE
+in circumstances where the train might be going
+ul
+to
+or
+ul
+from
+London
+Such effects are ignored here although it is worth noting in passing that the
+rogue words will often be marked by underscoring or italicizing
+as in the previous sentence
+If the text is liberally underlined semantic analysis may
+be unnecessary for the purposes of rhythm
+pp
+A rough and ready rule for placing foot boundaries is to insert one before
+each word which is not in a small closed set of function words
+The set includes for example a and but for is the to
+If a verb or adjective begins with a prefix the boundary should be moved
+between it and the root em but not for a noun
+This will give the distinction between
+ul

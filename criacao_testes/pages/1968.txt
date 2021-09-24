@@ -1,0 +1,100 @@
+
+Halliday 1970 Course in spoken English Intonation
+
+pp
+Here are examples of the way utterances can be conveyed to the ISP
+speech synthesis system which was described in the previous chapter
+The notation is based upon Hallidays
+LB
+NI
+3
+ul
+  aw t uhm aa t i k  s i n th uh s i s  uh v  s p ee t sh
+NI
+1
+ul
+  f r uh m  uh  f uhn e t i k  r e p r uh z e nt e i sh uh n
+LE
+Automatic synthesis of speech from a phonetic representation  Three
+levels of stress are distinguished  tonic or sentence stress
+marked by  before the syllable foot stress marked by 
+and unstressed syllables
+The notion of a foot controls the rhythm of the speech in a way that
+will be described shortly
+A fourth level of stress is indicated on a segmental basis when a syllable
+contains a reduced vowel
+pp
+Utterances are divided by punctuation into
+ul
+tone groups
+which are the basic prosodic unit em there are two in the example
+The shape of the pitch contour is governed by a numeral at the start of
+each tone group
+Crude control over pauses is achieved by punctuation marks  full stop for
+example signals a pause while comma does not
+Longer pauses can be obtained by several full stops as in   The
+ character stands for a so-called silent stress or breath point
+Word boundaries are marked by two spaces between phonemes
+As mentioned in the previous chapter syllable boundaries and explicit
+pitch and duration specifiers can also be included in the input
+If they are not the ISP system will attempt to compute them
+rh Rhythm
+Our understanding of speech rhythm knows many laws but little order
+In the mid 1970s there was a spate of publications reporting new data
+on segmental duration in various contexts and there is a growing
+awareness that segmental duration is influenced by a great many factors
+ranging from the structure of a discourse through semantic and syntactic
+attributes of the utterances their phonemic and phonetic make-up
+right down to physiological constraints
+these multifarious influences are ably documented and reviewed by
+Klatt 1976
+
+Klatt 1976 Linguistic uses of segment duration in English
+
+What seems to be lacking in this work is a conceptual framework on to
+which new information about segmental duration can be nailed
+pp
+One starting-point for imitating the rhythm of English speech is the
+hypothesis of regularly recurring stresses
+These stresses are primarily
+ul
+rhythmic
+ones and should be distinguished from the tonic stress mentioned above which
+is primarily an
+ul
+intonational
+one
+Rhythmic stresses are marked in the transcription by a 
+The stretch between one and the next is called a foot
+and the hypothesis above is often referred to as that of isochronous feet
+isochronous means of equal time
+There is considerable controversy about this hypothesis
+It is most popular among British linguists and it must be admitted
+amongst those who work by introspection and intuition and do not actually
+ul
+measure
+things
+Although the question of isochrony of feet has long been debated there
+seems to be general agreement
+em even amongst American linguists em
+that there is at least a tendency towards
+equal spacing of foot boundaries
+However little is known about the strength of this tendency and the extent
+of deviations from it see Hill
+ul
+et al
+1979 for an attempt
+to quantify it em and there is even evidence to suggest that it may in part
+be a
+ul
+perceptual
+phenomenon Lehiste 1973
+
+Hill Jassem Witten 1979
+
+
+Lehiste 1973
+
+On this basic point as on many others the designer of a prosodic synthesis
+strategy must needs make assumptions which cannot be properly justified
+pp

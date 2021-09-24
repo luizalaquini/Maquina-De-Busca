@@ -1,0 +1,100 @@
+1976 and compares
+favourably with other methods
+
+Rabiner Cheng Rosenberg McGonegal 1976
+
+pp
+However it must be admitted that this procedure seems to be rather
+ul
+ad hoc
+as are many other successful speech parameter estimation
+algorithms  Specifically it is not easy to predict what
+kinds of waveforms it will fail on and evaluation of it can
+only be pragmatic  When used to
+estimate the pitch of musical
+instruments and singers over a 6-octave range 40 Hz to 25 kHz
+instances were found where it failed dramatically Tucker and Bates 1978
+
+Tucker Bates 1978
+
+This is of
+course a much more difficult problem than pitch estimation for
+speech where the range is typically 3 octaves
+In fact for speech the feature
+detectors are usually preceded by
+a low-pass filter to attenuate the myriad
+of peaks
+caused by higher formants and this
+is inappropriate for
+musical applications
+pp
+There is evidence which shows that additional features can
+assist with pitch identification  The above features are all
+based upon the signal amplitude and could be described as
+ul
+secondary
+features derived from a single
+ul
+primary
+feature  Other primary features can easily be defined
+Tucker and Bates 1978 used a centre-clipped waveform and considered only
+the peaks rising above the central region
+
+Tucker Bates 1978
+
+They defined two
+further primary features in addition to the peak amplitude  the
+ul
+time width
+of a peak period for which it is
+outside the clipping level and its
+ul
+energy
+again outside the clipping level  The primary
+features are shown in Figure 417
+FC Figure 417
+Secondary features are
+defined based on these three primary ones and pitch estimates
+are made for each one  A further innovation was to combine the
+individual estimates on a way which is based upon
+autocorrelation analysis reducing to some degree the
+ul
+ad-hocery
+of the pitch detection process
+sh 49  References
+LB nnnn
+
+LIST
+
+LE nnnn
+sh 410  Further reading
+pp
+There are a lot of books on digital signal analysis although in general
+I find them rather turgid and difficult to read
+LB nn
+Ackroyd-1973-1
+-
+ds A Ackroyd MH
+ds D 1973
+ds T Digital filters
+ds I Butterworths
+ds C London
+nr T 0
+nr A 1
+nr O 0
+ 2 book
+in+2n
+Here is the exception to prove the rule
+This book
+ul
+is
+easy to read
+It provides a good introduction to digital signal processing
+together with a wealth of practical design information on digital filters
+in-2n
+CommitteeIDSP-1979-3
+-
+ds A IEEE Digital Signal Processing Committee
+ds D 1979
+ds T Programs for digital signal processing
+ds I Wiley

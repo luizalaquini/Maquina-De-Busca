@@ -1,0 +1,100 @@
+COMPUTER  Please enter your password
+ti-nx0u
+CALLERhnx0u-nx1u  Enters password
+ti-nx0u
+COMPUTER  Checks validity of password
+If invalid the user is asked to re-enter
+his user number
+Otherwise
+Which service do you require
+ti-nx0u
+CALLERhnx0u-nx1u  Enters service number
+in 0
+nf
+FG Table 13  Making contact with the telephone enquiry system
+pp
+Advantage is taken of the disparate speeds of input keyboard and
+output speech to hasten the dialogue by imposing a question-answer structure
+on it with the computer taking the initiative  The machine can
+afford to be slightly verbose if by so doing it makes the callers
+response easier and therefore more rapid  Moreover operators who
+are experienced enough with the system to anticipate questions can
+easily forestall them just by typing ahead for the computer is programmed
+to examine its input buffer before issuing prompts and to suppress them if
+input has already been provided
+pp
+An important aim of the system is to allow application programmers with no
+special knowledge of speech to write independent services for it
+Table 14 shows an example of the use of one such application program
+RF
+fi
+nh
+na
+in 03i
+nr x0 wCOMPUTER  
+nr x1 wCALLER  
+in+nx0u
+ti-nx0u
+COMPUTER  Stores Information Service  Please enter
+component name
+ti-nx0u
+CALLERhnx0u-nx1u  Enters SN7406
+ti-nx0u
+COMPUTER  The component name is SN7406  Is this correct
+ti-nx0u
+CALLERhnx0u-nx1u  Enters 1 system convention for yes
+ti-nx0u
+COMPUTER  This component is in stores
+ti-nx0u
+CALLERhnx0u-nx1u  Enters 7 command for price
+ti-nx0u
+COMPUTER  The component price is 35 pence
+ti-nx0u
+CALLERhnx0u-nx1u  Enters 8 command for minimum number
+ti-nx0u
+COMPUTER  The minimum number of this component kept
+in stores is 10
+ti-nx0u
+CALLERhnx0u-nx1u  Enters SN7417
+ti-nx0u
+COMPUTER  The component name is SN7417  Is this correct
+ti-nx0u
+CALLERhnx0u-nx1u  Enters 1
+ti-nx0u
+COMPUTER  This component is not in stores
+ti-nx0u
+CALLERhnx0u-nx1u  Enters 9 command for delivery time
+ti-nx0u
+COMPUTER  The expected delivery time is 14 days
+ti-nx0u
+CALLERhnx0u-nx1u  Enters 0
+ti-nx0u
+COMPUTER  Which service do you require
+in 0
+nf
+FG Table 14  The Stores Information Service
+the
+Stores Information Service which permits enquiries to be made of a database
+holding information on electronic components kept in stock
+This subsystem is driven by
+ul
+alphanumeric
+data entered on the touch-tone keypad  Two or three letters are associated
+with each digit in a manner which is fairly standard in touch-tone telephone
+applications  These are printed on a card overlay
+that fits the keypad see Figure 13  Although true alphanumeric data entry
+would require a multiple key press for each character
+the ambiguity inherent in
+a single-key-per-character convention can usually be resolved by the computer
+if it has a list of permissible entries  For example the component names
+SN7406 and ZTX300 are read by the machine as 767406 and 189300 respectively
+Confusion rarely occurs if the machine is expecting a valid component code
+The same holds true of peoples names and file names em although with these
+one must take care not to identify a series of files by similar names like
+TX38A TX38B TX38C  It is easy for the machine to detect the rare cases
+where ambiguity occurs and respond by requesting further information  The
+component name is SN7406  Is this correct  In fact the Stores Information
+Service illustrated in Table 14 is defective in that it
+ul
+always
+requests confirmation of an entry even when no ambiguity exists  The

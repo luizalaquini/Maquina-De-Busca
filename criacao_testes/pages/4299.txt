@@ -1,0 +1,100 @@
+If a finite stretch of a speech waveform is isolated and Fourier transformed
+without regard to pitch of the speech then the periodicity assumption will
+be grossly violated  Figure 47 illustrates that the effect is the same
+as
+multiplying the signal by a rectangular
+ul
+window function
+which is 0 except during the period to be analysed where it is 1
+FC Figure 47
+The windowed sequence will almost certainly have discontinuities at its edges
+and these will affect the resulting spectrum  The effect can be analysed
+quite easily but we will not do so here  It is enough to say that the
+high frequencies associated with the edges of the window cause considerable
+distortion of the spectrum  The effect can be alleviated by
+using a smoother window than a rectangular one
+and several have been investigated extensively  The commonly-used windows of
+Bartlett Blackman and Hamming are illustrated in Figure 48
+FC Figure 48
+pp
+Because the DFT produces the same number of frequency samples equally spaced
+as there were points in the time waveform there is a tradeoff between
+frequency resolution and time resolution for a given sampling rate
+For example a 256-point transform with a sample rate of 8 kHz gives the 256
+equally-spaced frequency components between 0 and 8 kHz that are shown in Table
+42
+RF
+nr x0 wtime domain2
+nr x1 wfrequency domain2
+in+10i
+ta 10i 30i 40i
+h05i+2n-nx0utime domainh|35i+2n-nx1ufrequency domain
+sp
+sample	time	sample	h-3nfrequency
+number		number
+nr x0 1i+w00000
+lnx0uul	lnx0uul
+sp
+0000	00000 musec	0000	00000 Hz
+0001	00125	0001	00031
+0002	00250	0002	00062
+0003	00375	0003	00094
+0004	00500	0004	00125
+nr x2 w2
+h05i+4n-nx2uh|35i+4n-nx2u
+h05i+4n-nx2uh|35i+4n-nx2u
+h05i+4n-nx2uh|35i+4n-nx2u
+sp
+0254	31750	0254	07938
+0255	31875 musec	0255	07969 Hz
+lnx0uul	lnx0uul
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+in 0
+MT 2
+Table 42  Time domain and frequency domain samples for a 256-point DFT
+with 8 kHz sampling
+TE
+The top half of the frequency spectrum is of no interest because
+it contains the complex conjugates of the bottom half in reverse order
+corresponding to frequencies greater than half the sampling frequency
+Thus for a 30 Hz resolution in the frequency domain
+256 time samples or a 32 msec stretch of speech needs to be transformed
+A common technique is to take overlapping periods in the time domain to
+give a new frequency spectrum every 16 msec  From the acoustic point
+of view this is a reasonable rate to re-compute the spectrum for as noted
+above when discussing channel vocoders the rate of change in the spectrum
+is limited by the speed that the speaker can move his vocal organs and
+anything between 10 and 25 msec is a reasonable figure for transmitting
+or storing the spectrum
+pp
+The DFT is a complex transform and speech is a real signal  It is possible
+to do two DFTs at once by putting one time waveform into the real parts
+of the input and another into the imaginary parts  This destroys the DFT
+symmetry property for it only holds for real inputs  But given the DFT
+of a complex sequence formed in this way it is easy to separate out the
+DFTs of the two real time sequences  If the two time sequences are
+xn and yn then the transform of the complex sequence
+LB
+EQ
+gn  =  xn + jyn
+EN
+LE
+is
+LB
+EQ
+Gr  =  sum from n=0 to N-1 xnW sup rn + ynW sup rn  
+EN
+LE
+It follows that the complex conjugate of the aliased parts of the spectrum
+in the upper frequency region are
+LB
+EQ
+GN-r sup   =  sum from n=0 to N-1 xnW sup -N-rn
+- ynW sup -N-rn  
+EN
+LE
+and this is the same as
+LB
+EQ
+GN-r sup   =  sum from n=0 to N-1 xnW sup rn
+- ynW sup rn  

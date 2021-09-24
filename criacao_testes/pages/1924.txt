@@ -1,0 +1,100 @@
+LB
+EQ
+Ez=Xz-sum from k=1 to p a sub k z sup -k Xz=1-
+sum from k=1 to p a sub k z sup -k Xz
+EN
+LE
+Rewriting the speech signal in terms of the error
+LB
+EQ
+Xz=1 over 1- sum a sub k z sup -k Ez 
+EN
+LE
+pp
+Now let us bring together some facts from the previous chapter which will
+allow the time-domain technique of linear prediction to be interpreted
+in terms of the frequency-domain formant model of speech  Recall that speech
+can be viewed as an excitation source passing through a vocal tract filter
+followed by another filter to model the effect of radiation from the lips
+The overall spectral levels can be reassigned as in Figure 51 so that
+the excitation source has a 0 dBoctave spectral profile and hence is
+essentially impulsive
+Considering the vocal tract filter as a series connection
+of digital formant filters its transfer function is the product of terms like
+LB
+EQ
+1 over 1-b sub 1 z sup -1 +b sub 2 z sup -2 
+EN
+LE
+where b sub 1 and b sub 2 control the position and bandwidth of the formant resonances
+The -6 dBoctave spectral compensation can be modelled by the
+first-order digital filter
+LB
+EQ
+1 over 1-bz sup -1 
+EN
+LE
+The product of all these terms when multiplied out will have the
+form
+LB
+EQ
+1 over 1-c sub 1 z sup -1 -c sub 2 z sup -2 --
+c sub q z sup -q  
+EN
+LE
+where q is twice the number of formants plus one and the cs are calculated
+from the positions and bandwidths of the formant resonances and the spectral
+compensation parameter  Hence
+the z-transform of the speech is
+LB
+EQ
+Xz=1 over 1- sum from k=1 to q c sub k z sup -k Iz 
+EN
+LE
+where Iz is the transform of the impulsive excitation
+pp
+This is remarkably similar to the linear prediction relation given earlier  If
+p and q are the same then the linear predictive coefficients a sub k
+form a pth order polynomial which is the same as that obtained by multiplying
+together the second-order polynomials representing the individual formants
+together with the first-order one for spectral compensation
+Furthermore the predictive error Ez can be identified with the
+impulsive excitation Iz  This raises the very interesting
+possibility of parametrizing the error signal by its frequency and
+amplitude em two relatively slowly-varying quantities em instead of
+transmitting it sample-by-sample at an 8 kHz rate  This is how
+linear prediction separates out the excitation properties of the source
+from the vocal tract filter  the source parameters can be derived
+from the error signal and the vocal tract filter is represented by
+the linear predictive coefficients
+Figure 63 shows how this can be used for speech transmission
+FC Figure 63
+Note that
+ul
+no
+signals need now be transmitted at the speech sampling rate for the
+source parameters vary relatively slowly  This leads to an extremely
+low data rate
+pp
+Practical linear predictive coding schemes operate with a value of p between
+10 and 15 corresponding approximately to 4-formant and 7-formant synthesis
+respectively  The a sub ks are re-calculated every 10 to 25 msec and
+transmitted to the receiver  Also the pitch and amplitude
+of the speech are estimated and transmitted at the same rate
+If the speech
+is unvoiced there is no pitch value  an unvoiced flag is
+transmitted instead
+Because the linear predictive coefficients are intimately related to
+formant frequencies and bandwidths a frame rate in the region
+of 10 to 25 msec is appropriate because this approximates the maximum rate
+at which acoustic events happen in speech production
+pp
+At the receiver the excitation waveform
+is reconstituted
+For voiced speech it is impulsive at the specified
+frequency and with the specified amplitude while for unvoiced speech it
+is random with the specified amplitude  This signal en together
+with the transmitted parameters a sub 1  a sub p is used
+to regenerate the speech waveform by
+LB
+EQ

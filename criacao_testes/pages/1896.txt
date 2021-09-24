@@ -1,0 +1,100 @@
+multiplier
+If the transform of xn is defined as
+LB
+EQ
+Xz  =  sum from n=- infinity to infinity xn z sup -n 
+EN
+LE
+then on multiplication by z sup -1 we get a new transform say Vz
+LB
+EQ
+Vz  =  z sup -1 Xz  =
+ z sup -1 sum from n=- infinity to infinity xn z sup -n  =
+ sum xnz sup -n-1  =
+ sum xn-1z sup -n 
+EN
+LE
+Vz can also be expressed as the transform of a new sequence say vn by
+LB
+EQ
+Vz  =  sum from n=- infinity to infinity vn z sup -n 
+EN
+LE
+from which it becomes apparent that
+LB
+EQ
+vn  =  xn-1
+EN
+LE
+Thus vn is a delayed version of xn and we have accomplished what we
+set out to do namely to show that the delay
+ul
+operator
+z sup -1 can be treated as an ordinary
+ul
+multiplier
+in the z-transform domain where z-transforms are defined as the infinite
+sums given above
+pp
+In terms of z-transforms the filter can be written
+LB
+EQ
+Yz  =  1 - az sup -1 Xz
+EN
+LE
+where z sup -1 is now treated as a multiplier
+The transfer function of the filter is
+LB
+EQ
+Hz  =  Yz over Xz  =  1 - az sup -1 
+EN
+LE
+the ratio of the output to the input transform
+pp
+It may seem that little has been gained by inventing this rather abstract
+notion of transform simply to change an operator to a multiplier  After
+all the equation of the filter is no simpler in the transform domain than
+it was in the time domain using z sup -1 as an operator  However we will
+need to go on to examine more complex filters  Consider for example the
+transfer function
+LB
+EQ
+Hz  =  1+az sup -1 +bz sup -2 over 1+cz sup -1 +dz sup -2  
+EN
+LE
+If z sup -1 is treated as an operator it is not immediately obvious how
+this transfer function can be realized by a time-domain recurrence relation
+However with z sup -1 as an ordinary multiplier in the transform domain we can
+make purely mechanical manipulations with infinite sums to see what the transfer
+function means as a recurrence relation
+pp
+It is worth noting the similarity between the z-transform in the discrete
+domain and the Fourier and Laplace transforms in the continuous domains
+In fact the z-transform plays an analogous role in digital signal processing
+to the Laplace transform in continuous theory for the delay operator
+z sup -1
+performs a similar service to the differentiation operator s
+Recall first the continuous Fourier transform
+LB
+
+Gf  = 
+integral from - infinity to infinity gte sup -j2 pi ft dt
+    where f is real
+LE
+and the Laplace transform
+LB
+
+Fs  = 
+integral from 0 to infinity fte sup -st dt
+    where s is complex
+LE
+The main difference between these two transforms is that the range of integration
+begins at -infinity for the Fourier transform and at 0 for the Laplace
+Advocates of the Fourier transform which typically include people involved with
+telecommunications enjoy the freedom from initial conditions which is bestowed
+by an origin way back in the mists of time  Advocates of Laplace including
+most analogue filter theorists invariably
+consider systems where all is quiet before t=0 em altering the origin
+of measurement of time to achieve this if necessary em and welcome the opportunity
+to include initial conditions explicitly
+ul

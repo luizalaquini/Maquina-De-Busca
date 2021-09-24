@@ -1,0 +1,100 @@
+nr x1 nl-nx02
+in nx1u
+ta nx2u +nx3u +nx2u +nx3u +nx2u +nx3u +nx2u +nx3u +nx2u
+lnx0uul
+sp
+aback	22225	abide	22433	adage	23243	adore	23673	after	23837
+abaft	22238	abode	22633	adapt	23278	adorn	23676	again	24246
+abase	22273	abort	22678	adder	23337	adult	23858	agape	24273
+abash	22274	about	22688	addle	23353	adust	23878	agate	24283
+abate	22283	above	22683	adept	23378	aeger	23437	agave	24283
+abbey	22239	abuse	22873	adieu	23438	aegis	23447	agent	24368
+abbot	22268	abyss	22977	admit	23648	aerie	23743	agile	24453
+abeam	22326	acorn	22676	admix	23649	affix	23349	aglet	24538
+abele	22353	acrid	22743	adobe	23623	afoot	23668	agony	24669
+abhor	22467	actor	22867	adopt	23678	afore	23673	agree	24733
+lnx0uul
+in 0
+ta 08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i +08i
+FG Table 101  Keying equivalents of some words
+As a more extensive example in a dictionary of 24500 words just under 2000
+ambiguities 8 of words were discovered
+Such ambiguities would have to be resolved interactively by the system explaining
+its dilemma and asking the user for a choice
+Notice incidentally that although the keyed sequences do not have the same
+lexicographic order as the words
+no extra cost will be associated with the table-searching
+operation if the dictionary is stored in inverted form with each legal
+number pointing to its English equivalent or equivalents
+pp
+A command language syntax is also a powerful way of disambiguating
+keystrokes entered
+Figure 104 shows the keypad layout for a telephone voice calculator
+Newhouse and Sibley 1969
+
+Newhouse Sibley 1969
+
+FC Figure 104
+This calculator provides the standard arithmetic operators
+ten numeric registers a range of pre-defined mathematical functions
+and even the ability for a user to enter his own functions over the
+telephone
+The number representation is fixed-point with user control through a system
+function over the precision
+Input of numbers is free format
+pp
+Despite the power of the calculator language the dialogue is defined
+so that each keystroke is unique in context and never has to be disambiguated
+explicitly by the user
+Table 102 summarizes the command language syntax in an informal and rather
+heterogeneous notation
+RF
+nr x0 13i+17i+wsome functions do not need the value partu
+nr x1 nl-nx02
+in nx1u
+ta 13i +17i
+lnx0uul
+construct	definition	explanation
+lnx0uul
+sp
+calculation		a sequence of operations followed by a
+		call to the system function  fIE  X  I  TfR
+sp
+operation	add OR subtract OR
+	multiply OR divide OR
+	function OR clear OR
+	erase OR answer OR
+	display-last OR display OR
+	repeat OR cancel
+sp
+add	+  value    OR  +    function
+sp
+subtract
+multiply		similar to add
+divide
+sp
+value	numeric-value  OR  fIregisterfR single-digit
+sp
+numeric-value		a sequence of keystrokes like
+		1    2  3  4  or  1  2  3    4  or  1  2  3  4
+sp
+function	fIfunctionfR name    value  
+		some functions do not need the value part
+sp
+name		a sequence of keystrokes like
+		fIS  I  NfR  or  fIE  X  I  TfR  or  fIM  Y  F  U  N  CfR
+sp
+clear	fIclear registerfR single-digit  
+		clears one of the 10 registers
+sp
+erase	fIerasefR  	undoes the effect of the last operation
+sp
+answer	fIanswer registerfR single-digit  
+		reads the contents of a register
+sp
+display-last
+display		these provide repeat facilities
+repeat
+sp
+cancel		aborts the current utterance
+lnx0uul

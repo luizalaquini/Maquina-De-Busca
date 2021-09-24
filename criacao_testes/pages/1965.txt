@@ -1,0 +1,100 @@
+unstressed one
+pp
+The example of Figure 82 will help to make these rules clear
+FC Figure 82
+Note that the marking alone is done by hand
+The detailed mapping decisions can be left to the computer
+The rules were derived intuitively and do not have any sound theoretical
+basis
+They are intended to give reasonable results in the majority of cases
+pp
+Figure 83 shows the result of transferring the pitch from the price is ten
+cents to the price is seventy-seven cents
+FC Figure 83
+The syllable boundaries which are marked were determined automatically
+The use of the last 30 of the
+ten contour to cover the first -en syllable and its replication
+to serve the -ty syllable can be seen
+However the 70em30 proportion is applied to the source contour
+and the linear distortion described next upsets the proportion in the
+target utterance
+The contour of the second seven can be seen to be a
+replication of that of the first one lowered by 20
+Notice that the pitch extraction procedure has introduced an artifact into the final
+part of one of the cents contours by doubling the pitch
+rh Stretching and squashing
+The pitch contour over a source syllable nucleus must be stretched
+or squashed to match the duration
+of the target nucleus
+It is difficult to see how anything other than linear stretching
+and squashing could be done without considerably increasing the
+complexity of the procedure
+The gross non-linearities will have been accounted for
+by the syllable alignment process and so simple linear time-distortion
+should not cause too much degradation
+rh Pitch discontinuities
+Sudden jumps in pitch during voiced speech sound peculiar
+although they can in fact be produced naturally by yodelling
+People frequently burst into laughter on hearing them in synthetic speech
+It is particularly important to avoid this diverting effect in
+voice response applications
+for the listeners attention is instantly directed
+away from what is said to the voice that speaks
+pp
+Discontinuities can arise in the pitch-transfer procedure either by a
+voiced-unvoiced-voiced transition between syllables mapping on to
+a voiced-voiced transition in the target
+or by voicing continuity being broken when the syllable
+alignment procedure drops or replicates a syllable
+There are several ways in which at least some of the possibilities can
+be avoided
+For example one could hold unstressed syllables at a constant pitch
+whose value coincides with either the end of the previous
+syllables contour or the beginning of the next syllables contour
+depending on which transition is voiced
+Alternatively the policy of reserving the trailing part
+of a stressed syllable in the source to cover an unmatched following
+unstressed syllable in the target could be generalized to allow use of the leading 30
+of the next stressed syllables contour instead
+if that maintained voicing continuity
+A third solution is simply to merge the pitch contours
+at a discontinuity by mixing the average pitch value at the break
+with the pitch contour on either side of it in a proportion which
+increases linearly from the edges of the domain of influence to the discontinuity
+Figure 84 shows the effect of this merging
+when the pitch contour of the price is seven cents
+is transferred to the price is eleven cents
+FC Figure 84
+Of course the
+interpolated part will not necessarily be linear
+rh Results of an experiment on pitch transfer
+Some experiments have been conducted to evaluate the performance
+of this pitch transfer method on the kind of utterances discussed above
+Witten 1979
+
+Witten 1979 On transferring pitch from one utterance to another
+
+First the source and target sentences
+were chosen to be lexically identical that is the same words were spoken
+For this experiment alone
+expert judges were employed
+Each sentence was recorded twice by the same person
+and pitch was transferred from copy A
+to copy B and vice versa  Also the originals were resynthesized from their linear
+predictive coefficients with their own pitch contours
+Although all four often sounded extremely similar sometimes the pitch
+contours of originals A and B were quite different
+and in these cases it was immediately obvious to the ear that two of
+the four utterances shared the same intonation
+which was different to that shared by the other two
+pp
+Experienced researchers in speech analysis-synthesis served as
+judges
+In order to make the test as stringent as possible it was explained
+to them exactly what had been done
+except that the order of the utterances in each quadruple was kept secret
+They were asked to identify which two of the four sentences did not have their
+original contours
+and were allowed to listen to each quadruple as often as they liked
+On occasion they were prepared to identify only one or even none
+of the sentences as artificial

@@ -1,0 +1,100 @@
+correctly the prediction will closely model the resonances of the
+vocal tract  Thus the error will actually be zero except at pitch
+pulses
+pp
+Figure 617 shows a segment of voiced speech together with the prediction
+error often called the prediction residual
+FC Figure 617
+It is apparent that the
+error is indeed small except at pitch pulses
+This suggests that a good way to determine the pitch period is to examine
+the error signal perhaps by looking at its autocorrelation function
+As with all pitch detection methods one must be
+careful  spurious peaks can occur especially in nasal sounds when
+the all-pole model provided by linear prediction fails  Continuity
+constraints which use previous values of pitch period when determining
+which peak to accept as a new pitch impulse can eliminate many of these
+spurious peaks  Unvoiced speech should produce an error signal with no
+prominent peaks and this needs to be detected
+Voiced fricatives are a difficult case  peaks should be present
+but the general noise level of the error signal will be greater than
+it is in
+purely voiced speech
+Such considerations have been taken into account in a practical pitch
+estimation system based upon this technique Markel 1972
+
+Markel 1972 SIFT
+
+pp
+This method of pitch detection highlights another advantage of the lattice
+analysis technique  When using autocorrelation or covariance analysis to
+determine the filter or reflection coefficients the error signal is not
+normally produced  It can of course be found by taking the speech samples
+which constitute the current frame and running them through an analysis
+filter whose parameters are those determined by the analysis but this
+is a computationally demanding exercise for the filter must run at the
+speech sampling rate say 8 kHz instead of at the frame rate say 50 Hz
+Usually pitch is estimated by other methods like those discussed in
+Chapter 4 when using autocorrelation or covariance linear prediction
+However we have seen above that with the lattice method the error
+signal is produced as a byproduct  it appears at the right-hand end
+of the  upper path of the lattice chain  Thus it is already available
+for use in determining pitch periods
+sh 65  Parameter coding for linear predictive storage or transmission
+pp
+In this section the coding requirements of linear predictive parameters
+will be examined  The parameters that need to be stored or transmitted
+are
+LB
+NP
+pitch
+NP
+voiced-unvoiced flag
+NP
+overall amplitude level
+NP
+filter coefficients or reflection coefficients
+LE
+The first three are parameters of the excitation source
+They can be derived directly from the error signal as indicated above if
+it is generated as it is in lattice implementations or by other
+methods if no error signal is calculated
+The filter or reflection coefficients are of course the main product
+of linear predictive analysis
+pp
+It is generally agreed that around 60 levels logarithmically spaced
+are needed to represent pitch for telephone quality speech
+The voiced-unvoiced indication requires one bit but since pitch is
+irrelevant in unvoiced speech it can be coded as one of the pitch
+levels  For example with 6-bit coding of pitch the value 0 can be
+reserved to indicate unvoiced speech with values 1-63 indicating the
+pitch of voiced speech
+The overall gain has not been discussed above  it is simply the average
+amplitude of the error signal  Five bits on a logarithmic scale
+are sufficient to represent it
+pp
+Filter coefficients are not very amenable to quantization  At least
+8-10 bits are required for each one  However reflection coefficients
+are better behaved and 5-6 bits each seems adequate  The number of
+coefficients that must be stored or transmitted is the same as the
+order of the linear prediction  10 is commonly used for low-quality
+speech with as many as 15 for higher qualities
+pp
+These figures give around 100 bitsframe for a 10th order system using
+filter coefficients and around 65 bitsframe for a 10th order system
+using reflection coefficients  Frame lengths vary between 10 msec
+and 25 msec depending on the quality desired  Thus for 20 msec frames
+the data rates work out at around 5000 bits using filter coefficients
+and 3250 bits using reflection coefficients
+pp
+Substantially lower data rates can be achieved by more careful
+coding of parameters  In 1976 the US Government defined a standard
+coding scheme for 10-pole linear prediction with a data rate of
+2400 bits em conveniently chosen as one of the
+commonly-used rates for serial data transmission
+This standard called LPC-10 tackles the difficult problem of
+protection against transmission errors Fussell
+ul
+et al
+1978
+

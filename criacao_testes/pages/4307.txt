@@ -1,0 +1,100 @@
+
+It exhibits dips at pitch periods instead of the peaks of the
+autocorrelation function
+rh Feature-extraction methods
+Another possible way of extracting pitch in the time domain is to try to
+integrate information from different sources to give reliable
+pitch estimates  Several features of the time
+waveform can be defined each of which provides an estimate of the pitch period
+and
+an overall estimate can be obtained by majority vote
+pp
+For example suppose that the only feature of the speech
+waveform which is retained is the height and position of the
+peaks where a peak is defined by the simplistic criterion
+LB
+
+xn-1  xn
+  and  
+xn  xn+1 
+
+LE
+Having found a peak which is thought to represent a pitch pulse
+one could define a blanking period based upon the current
+pitch estimate within which the next pitch pulse could not
+occur  When this period has expired the next pitch pulse is
+sought  At first a stringent criterion should be used for
+identifying the next peak as a pitch pulse but it can gradually be
+relaxed if time goes on without a suitable pulse being
+located  Figure 415 shows a convenient way of doing this  a
+decaying exponential is begun at the end of the blanking period
+and when a peak shows above it is identified as a pitch pulse
+FC Figure 415
+One big advantage of this type of algorithm is that the data is
+greatly reduced by considering peaks only em which can be
+detected by simple hardware  Thus it can permit real-time
+operation on a small processor with minimal special-purpose
+hardware
+pp
+Such a pitch pulse detector is exceedingly simplistic and will
+often identify the pitch incorrectly  However it can be used
+in conjunction with other features to produce good pitch
+estimates  Gold and Rabiner 1969 who pioneered the
+approach used six features
+
+Gold Rabiner 1969 Parallel processing techniques for pitch periods
+
+LB
+NP
+peak height
+NP
+valley depth
+NP
+valley-to-peak height
+NP
+peak-to-valley depth
+NP
+peak-to-peak height if greater than 0
+NP
+valley-to-valley depth if greater than 0
+LE
+The features are symmetric with regard to peaks and valleys
+The first feature is the one described above and the second one works in
+exactly the same way
+The third feature records the
+height between each valley and the succeeding peak and fourth
+uses the depth between each peak and the succeeding valley  The
+purpose of the final two detectors is to eliminate secondary
+but rather large peaks from consideration  Figure 416 shows
+the kind of waveform on which the other features might
+incorrectly double the pitch but the last two features identify
+correctly
+FC Figure 416
+pp
+Gold and Rabiner also included the last two pitch estimates from each
+feature detector
+Furthermore for each feature the present estimate
+was added to the previous one to make a fourth and the previous one to
+the one before that to make a fifth and all three were added together
+to make a sixth so that for each feature there were 6 separate estimates of
+pitch  The reason for this is that if three consecutive estimates of the
+fundamental period are T sub 0 T sub 1 and T sub 2 then if some peaks are
+being falsely identified the actual period could be any of
+LB
+EQ
+T sub 0 + T sub 1  T sub 1 + T sub 2 
+T sub 0 + T sub 1 + T sub 2 
+EN
+LE
+It is essential to do this because
+a feature of a given type can occur more than once in a pitch period em
+secondary peaks usually exist
+pp
+Six features each contributing six separate estimates makes 36 estimates
+of pitch in all
+An overall figure was obtained from this
+set by selecting the most popular estimate within some
+pre-specified tolerance  The complete scheme has been
+evaluated extensively Rabiner
+ul
+et al
