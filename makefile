@@ -6,4 +6,4 @@ compile:
 	gcc *.c -o trab3 -g
 
 executar:
-	valgrind --leak-check=full ./trab3 teste1
+	./trab3 criacao_testes <criacao_testes/searches.txt >criacao_testes/sol.txt

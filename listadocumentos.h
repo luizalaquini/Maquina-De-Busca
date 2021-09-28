@@ -32,7 +32,7 @@ Documento* retornaElementoDaLista(ListaDocumentos *lista);
 * Entradas: lista - ponteiro para o início da lista que se deseja alterar // 
 *           documento - ponteiro para o documento que se deseja adiciona na lista. NULL se não quiser adicionar documento;
 * Saída: Um ponteiro para o primeiro elemento da lista alterada
-* Pós-condições: O documento é adicionado à primeira posição da lista retornada. A lista passada como parâmetro não é alterada diretamente.
+* Pós-condições: O documento é adicionado à primeira posição alocada da lista retornada. A lista passada como parâmetro não é alterada diretamente.
 */
 ListaDocumentos* adicionaDocumentoLista(ListaDocumentos *lista, Documento *documento);
 

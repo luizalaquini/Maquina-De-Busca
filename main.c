@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include "arvore_rubro_negra.h"
+#include "arvore_rn_termos.h"
 #include "documento.h"
 #include "listadocumentos.h"
 #include "leitura.h"
@@ -88,7 +88,6 @@ Documento** procuraDocumentos(char* args, ListaDocumentos *todosDocumentos, RBT 
     //Busca na árvore a lista de documentos
     stringToLower(token);
     intersecaoDocumentos = retornaListaRBT(RBT_search(rbtWords, token));
-    intersecaoDocumentos = intersecaoDuasListas(intersecaoDocumentos, intersecaoDocumentos); 
 
     ListaDocumentos *aux = NULL;
     token = strtok(NULL, s);
@@ -102,6 +101,7 @@ Documento** procuraDocumentos(char* args, ListaDocumentos *todosDocumentos, RBT 
         //Passa por todos os elementos em intersecao, se um documento não estiver presente em documentosTermo, removemos ele de interseção
         aux = intersecaoDuasListas(intersecaoDocumentos, documentosTermo);
         destroiListaDocumentos(intersecaoDocumentos);
+        destroiListaDocumentos(documentosTermo);
         intersecaoDocumentos = aux;
         //printf("\n\n-----------------------------------\n\n");
         //ImprimeLista(intersecaoDocumentos);        
@@ -248,6 +248,14 @@ int main(int argc, char** argv){
     clock_t escritaEnd = clock();
     double escritaTime = (double)(escritaEnd - escritaStart) / CLOCKS_PER_SEC;
     printf("Tempo de escrita de arquivo: %lf\n", escritaTime);
+
+
+    imprimeRBT(retornaRBTDocumentos(RBT_search(rbtWords, "rifle")));
+    printf("\n\n");
+
+    ListaDocumentos *test = retornaListaRBT(RBT_search(rbtWords, "rifle"));
+    ImprimeLista(test);
+    destroiListaDocumentos(test);
 
     ////////////////////////////
     ///// TESTES ///////////////

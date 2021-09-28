@@ -26,6 +26,9 @@ Documento* initDocumento(char* nomeDocumento){
 }
 
 char* retornaNomeDocumento(Documento *documento){
+    if(documento == NULL){
+        return NULL;
+    }
     return documento->nome;
 }
 

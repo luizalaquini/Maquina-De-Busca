@@ -3,7 +3,7 @@
 
 #include "listadocumentos.h"
 #include "documento.h"
-#include "arvore_rubro_negra.h"
+#include "arvore_rn_termos.h"
 
 //Funções de leitura
 

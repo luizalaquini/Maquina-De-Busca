@@ -115,11 +115,11 @@ RBT* lePaginas(ListaDocumentos *todosDocumentos, RBT *stopWords, char *nomePasta
             //printf("%s\n", leitura);
             //Verifica se a palavra está em stopwords
             if(RBT_search(stopWords, leitura) == NULL){
-                //Se não está, adiciona na árvore World
+                //Se não está, adiciona na árvore Word
                 rbtWord = RBT_insert(rbtWord, leitura, documentoAtual);
             }            
         }
-        
+
         fclose(page);
         todosDocumentos = retornaProximaCelulaLista(todosDocumentos);
     }
