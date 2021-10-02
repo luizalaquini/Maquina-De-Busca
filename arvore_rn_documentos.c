@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 
 #include "arvore_rn_documentos.h"
 #include "documento.h"
@@ -121,18 +120,4 @@ void destroiRBTdocs(RBTdocs* h) {
     if (h->r != NULL) destroiRBTdocs(h->r);
 
     free(h);
-}
-
-
-
-
-
-void imprimeRBT(RBTdocs* h){
-    if(h == NULL){
-        return;
-    }
-
-    printf("%s ", retornaNomeDocumento(h->key));
-    if (h->l != NULL) imprimeRBT(h->l);
-    if (h->r != NULL) imprimeRBT(h->r);
 }

@@ -6,4 +6,4 @@ compile:
 	gcc *.c -o trab3 -g
 
 executar:
-	./trab3 criacao_testes <criacao_testes/searches.txt >criacao_testes/sol.txt
+	./trab3 exemplo2 <exemplo2/searches.txt >sol.txt

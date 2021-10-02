@@ -22,8 +22,6 @@ RBT* RBT_insert(RBT *h, char *key, Documento *doc);
 */
 RBT* RBT_search (RBT *n, char* key);
 
-void imprimeRBT(RBT* h);
-
 /* Libera a memória da árvore.
 * Entradas: h - a árvore a ser destruida;
 * Saída: -;

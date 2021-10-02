@@ -32,7 +32,6 @@ ListaDocumentos* leIndex(char* nomePasta, int *numDocs){
     char leitura[BUFFER_LEITURA];
     *numDocs = 0;
     while(fscanf(index, "%s\n", leitura) == 1){
-        //printf("%s\n", leitura);
         Documento *novoDoc = initDocumento(leitura);
         listaDocs = adicionaDocumentoLista(listaDocs, novoDoc);
         (*numDocs)++;
@@ -53,20 +52,16 @@ void leGrafo(ListaDocumentos *todosDocumentos, char *nomePasta){
     char leitura[BUFFER_LEITURA];
     int nLinks=0;
     while(fscanf(graph, "%s", leitura) == 1){
-        //printf("%s ", leitura);
         //Encontra documento com nome lido
         Documento *docAtual = buscaDocumentoPorNome(todosDocumentos, leitura);
         //Lê quantos links de saída tem no documento
         fscanf(graph, "%d", &nLinks);
-        //printf("%d ", nLinks);
         //Lê os links de saída
         for(int i=0; i<nLinks; i++){
             fscanf(graph, "%s", leitura);
-            //printf("DocOut: %s\n", leitura);
             Documento *docOut = buscaDocumentoPorNome(todosDocumentos, leitura);
             adicionaLinkOut(docAtual, docOut);
         }
-        //printf("\n");
     }
     
     fclose(graph);
@@ -82,8 +77,7 @@ RBT* leStopWords(RBT* arvore, char* nomePasta){
     //Lê as Stop Words e cria a árvore rubro negra
     char leitura[BUFFER_LEITURA];
     while(fscanf(stopWords, "%s\n", leitura) == 1){
-        stringToLower(leitura);
-        //printf("%s\n", leitura);        
+        stringToLower(leitura);    
         arvore = RBT_insert(arvore, leitura, NULL);
     }
     
@@ -105,14 +99,12 @@ RBT* lePaginas(ListaDocumentos *todosDocumentos, RBT *stopWords, char *nomePasta
         char caminhoPagina[BUFFER_LEITURA];
         strcpy(caminhoPagina, caminhoPaginas);
         strcat(caminhoPagina, retornaNomeDocumento(documentoAtual));
-        //printf("\n\n%s :\n", caminhoPagina);
         FILE *page = fopen(caminhoPagina, "r");
 
         //Lê as palavras da página
         char leitura[BUFFER_LEITURA];
         while(fscanf(page, "%s", leitura) == 1){
             stringToLower(leitura);
-            //printf("%s\n", leitura);
             //Verifica se a palavra está em stopwords
             if(RBT_search(stopWords, leitura) == NULL){
                 //Se não está, adiciona na árvore Word

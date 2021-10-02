@@ -1,7 +1,6 @@
 #include "listadocumentos.h"
 #include "documento.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 struct listadocumentos {
     Documento *info;

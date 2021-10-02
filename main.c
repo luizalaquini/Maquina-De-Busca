@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <time.h>
 
 #include "arvore_rn_termos.h"
 #include "documento.h"
@@ -10,8 +9,6 @@
 
 
 #define alpha 0.85
-
-void ImprimeLista(ListaDocumentos *lista);
 
 double calculaMudancaPageRank(ListaDocumentos *todosDocumentos, int numDocumentos){
     double mudanca = 0;
@@ -82,7 +79,6 @@ Documento** procuraDocumentos(char* args, ListaDocumentos *todosDocumentos, RBT 
 
     ListaDocumentos *intersecaoDocumentos;
     if(token == NULL){
-        //printf("Token NULL\n");
         return NULL;
     }   
     //Busca na árvore a lista de documentos
@@ -93,7 +89,6 @@ Documento** procuraDocumentos(char* args, ListaDocumentos *todosDocumentos, RBT 
     token = strtok(NULL, s);
     while (token != NULL) {
         stringToLower(token);
-        //printf("%s\n", token);
         //Busca na árvore a lista de documentos
         ListaDocumentos *documentosTermo = retornaListaRBT(RBT_search(rbtWords, token));
 
@@ -103,9 +98,7 @@ Documento** procuraDocumentos(char* args, ListaDocumentos *todosDocumentos, RBT 
         destroiListaDocumentos(intersecaoDocumentos);
         destroiListaDocumentos(documentosTermo);
         intersecaoDocumentos = aux;
-        //printf("\n\n-----------------------------------\n\n");
-        //ImprimeLista(intersecaoDocumentos);        
-    
+  
         
         token = strtok(NULL, s);
     }
@@ -127,57 +120,26 @@ Documento** procuraDocumentos(char* args, ListaDocumentos *todosDocumentos, RBT 
     return vet; 
 }
 
-/*
-
-search:abacate ruim
-pages:c.txt b.txt
-pr:0.74067344 0.09541328
-
-tar -xzvf 2004209608.tar.gz
-make
-./trab3 /tmp/data/
-
-*/
 
 void imprimeResultado(Documento **resultado, char *args){
     int i=0;
     printf("\npages:");
     for(i=0; resultado[i] != NULL; i++){
-        printf("%s ", retornaNomeDocumento(resultado[i]));
+        if(i == 0){
+            printf("%s", retornaNomeDocumento(resultado[i]));
+        } else {
+            printf(" %s", retornaNomeDocumento(resultado[i]));
+        }        
     }
     printf("\npr:");
     for(i=0; resultado[i] != NULL; i++){
-        printf("%.16lf ", retornaPageRank(resultado[i]));
+        if(i == 0){
+            printf("%.16lf", retornaPageRank(resultado[i]));
+        } else {
+            printf(" %.16lf", retornaPageRank(resultado[i]));
+        }
     }
     printf("\n");
-}
-
-///////////////////////Funções de testes///////////////////////
-void ImprimeLista(ListaDocumentos *lista){
-    printf("Imprimindo lista:\n");
-    while(lista != NULL){
-        Documento *doc = retornaElementoDaLista(lista);
-        printf("%s PR: %lf IN: ", retornaNomeDocumento(doc), retornaPageRank(doc));
-        ListaDocumentos *links = retornaListaLinksIn(doc);
-        while(links != NULL){
-            Documento *docIn = retornaElementoDaLista(links);
-            printf("%s ", retornaNomeDocumento(docIn)); 
-
-            links = retornaProximaCelulaLista(links);
-        }
-
-        links = retornaListaLinksOut(doc);
-        printf(" // OUT: ");
-        while(links != NULL){
-            Documento *docIn = retornaElementoDaLista(links);
-            printf("%s ", retornaNomeDocumento(docIn)); 
-
-            links = retornaProximaCelulaLista(links);
-        }
-
-        printf("\n");
-        lista = retornaProximaCelulaLista(lista);
-    }
 }
 
 int main(int argc, char** argv){
@@ -188,51 +150,25 @@ int main(int argc, char** argv){
     }
     char* nomePasta = argv[1];
 
-    clock_t leituraStart = clock();
- 
     //Realização das leituras de arquivos
     //Index
-    clock_t indexStart = clock();
     int numDocs = 0;
     ListaDocumentos *todosDocumentos = leIndex(nomePasta, &numDocs);
-    clock_t indexEnd = clock();
-    double indexTime = (double)(indexEnd - indexStart) / CLOCKS_PER_SEC;
-    printf("Tempo de leitura de Index: %lf\n", indexTime);
 
     //Graph
-    clock_t graphStart = clock();
     leGrafo(todosDocumentos, nomePasta);
-    clock_t graphEnd = clock();
-    double graphTime = (double)(graphEnd - graphStart) / CLOCKS_PER_SEC;
-    printf("Tempo de leitura de graph: %lf\n", graphTime);
-
+    
     //StopWords
-    clock_t stopStart = clock();
     RBT* rbtStop = NULL;
     rbtStop = leStopWords(rbtStop, nomePasta);
-    clock_t stopEnd = clock();
-    double stopTime = (double)(stopEnd - stopStart) / CLOCKS_PER_SEC;
-    printf("Tempo de leitura de StopWords: %lf\n", stopTime);
-
+    
     //Pages
-    clock_t pagesStart = clock();
     RBT* rbtWords = lePaginas(todosDocumentos, rbtStop, nomePasta);
-    clock_t pagesEnd = clock();
-    double pagesTime = (double)(pagesEnd - pagesStart) / CLOCKS_PER_SEC;
-    printf("Tempo de leitura das paginas: %lf\n", pagesTime);
-
-    clock_t leituraEnd = clock();
-    double leituraTime = (double)(leituraEnd - leituraStart) / CLOCKS_PER_SEC;
-    printf("Tempo de leitura de arquivo: %lf\n", leituraTime);
+    
 
     //Cálculo do page rank de todas as páginas (documentos)
-    clock_t calcStart = clock();
     calculaPageRank(todosDocumentos, numDocs);
-    clock_t calcEnd = clock();
-    double calcTime = (double)(calcEnd - calcStart) / CLOCKS_PER_SEC;
-    printf("Tempo de calculo de PageRank: %lf\n", calcTime);
     
-    clock_t escritaStart = clock();
     char leitura[1000]; //Perguntar pro giovanni tamanho das entradas
     while(scanf("%[^\n]\n", leitura) == 1){
         //Imprime a pesquisa
@@ -245,28 +181,6 @@ int main(int argc, char** argv){
             free(resultado);
         }
     }
-    clock_t escritaEnd = clock();
-    double escritaTime = (double)(escritaEnd - escritaStart) / CLOCKS_PER_SEC;
-    printf("Tempo de escrita de arquivo: %lf\n", escritaTime);
-
-
-    imprimeRBT(retornaRBTDocumentos(RBT_search(rbtWords, "rifle")));
-    printf("\n\n");
-
-    ListaDocumentos *test = retornaListaRBT(RBT_search(rbtWords, "rifle"));
-    ImprimeLista(test);
-    destroiListaDocumentos(test);
-
-    ////////////////////////////
-    ///// TESTES ///////////////
-
-    //ImprimeLista(todosDocumentos);
-    /*printf("\n\nSTOP:\n");
-    imprimeRBT(rbtStop);
-    printf("\n\nWORD:\n");
-    imprimeRBT(rbtWords);*/
-    //ImprimeLista(retornaListaRBT(RBT_search(rbtWords, "sword")));
-
 
     //Libera as estruturas
     destroiListaDocumentosEDocumentos(todosDocumentos); 

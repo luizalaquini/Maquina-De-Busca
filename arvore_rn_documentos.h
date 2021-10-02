@@ -28,7 +28,4 @@ ListaDocumentos* criaListaAPartirRBTdocs(RBTdocs *docs, ListaDocumentos *lista);
 */
 void destroiRBTdocs(RBTdocs* h);
 
-
-void imprimeRBT(RBTdocs *h);
-
 #endif
